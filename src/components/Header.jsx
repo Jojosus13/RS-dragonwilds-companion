@@ -45,8 +45,11 @@ export default function Header({
     <header className="site-header">
       <div 
         className="header-brand" 
-        onClick={() => setActiveView('catalog')}
-        title="Volver al Catálogo Principal"
+        onClick={() => {
+          setActiveView('home');
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        }}
+        title="Ir al Menú de Inicio"
       >
         <img src="/icon.svg" alt="Dragonwilds Logo" className="brand-icon" />
         <div>
