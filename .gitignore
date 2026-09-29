@@ -11,7 +11,9 @@ node_modules
 dist
 dist-ssr
 dist-apk
+dist-zip
 *.apk
+*.zip
 *.local
 
 # Editor directories and files

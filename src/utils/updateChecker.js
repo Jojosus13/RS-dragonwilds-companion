@@ -125,10 +125,19 @@ export async function fetchLatestRelease(options = {}) {
     const cleanRemoteVersion = remoteTag.replace(/^v/i, '').trim();
     const isNewer = compareVersions(APP_VERSION, cleanRemoteVersion) > 0;
 
-    // Buscar el archivo APK en los assets de la release
+    // Buscar archivo ZIP para actualizacion OTA en caliente y APK para instalacion limpia
+    const zipAsset = Array.isArray(data.assets)
+      ? data.assets.find(asset => asset.name && asset.name.toLowerCase().endsWith('.zip'))
+      : null;
+
     const apkAsset = Array.isArray(data.assets)
       ? data.assets.find(asset => asset.name && asset.name.toLowerCase().endsWith('.apk'))
       : null;
+
+    const zipDownloadUrl = zipAsset?.browser_download_url || null;
+    const zipAssetApiUrl = zipAsset?.url || null;
+    const zipFileName = zipAsset?.name || 'bundle.zip';
+    const zipFileSize = zipAsset ? formatBytes(zipAsset.size) : '';
 
     const assetApiUrl = apkAsset?.url || null;
     const apkDownloadUrl = apkAsset?.browser_download_url || data.html_url;
@@ -149,6 +158,11 @@ export async function fetchLatestRelease(options = {}) {
         day: 'numeric'
       }) : '',
       releaseUrl: data.html_url,
+      hasOtaZip: !!zipAsset,
+      zipDownloadUrl,
+      zipAssetApiUrl,
+      zipFileName,
+      zipFileSize,
       assetApiUrl,
       apkDownloadUrl,
       apkFileName,

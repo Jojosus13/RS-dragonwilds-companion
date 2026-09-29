@@ -1,19 +1,92 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const archiver = require('archiver');
+
+// Leer version dinamica desde src/utils/version.js si es posible
+let APP_VERSION = '1.0.5';
+try {
+  const versionFile = fs.readFileSync(path.resolve(__dirname, '../src/utils/version.js'), 'utf-8');
+  const match = versionFile.match(/APP_VERSION\s*=\s*['"]([^'"]+)['"]/);
+  if (match) APP_VERSION = match[1];
+} catch (e) {}
 
 const GITHUB_OWNER = 'Jojosus13';
 const GITHUB_REPO = 'RS-dragonwilds-companion';
-const TAG_NAME = 'v1.0.4';
-const RELEASE_NAME = 'Dragonwilds Companion v1.0.4 - Correccion de Mapa y Visibilidad';
-const RELEASE_BODY = `## Novedades y Correcciones en v1.0.4
+const TAG_NAME = `v${APP_VERSION}`;
+const RELEASE_NAME = `Dragonwilds Companion v${APP_VERSION} - Actualizacion OTA en Caliente`;
+const RELEASE_BODY = `## Novedades y Correcciones en v${APP_VERSION}
 
-- Correccion del corte de texto y overflow en marcadores y waypoints del mapa interactivo.
-- Boton de buscar actualizaciones visible unicamente en la aplicacion instalable de Android.
-- Prevencion de bucles en reinicios y optimizacion del flujo de descarga.
+- Soporte para actualizaciones instantaneas en caliente (OTA) sin necesidad de abrir Chrome ni reinstalar manualmente el APK.
+- Reinicio automatico dentro de la aplicacion al completar la descarga del paquete.
+- Optimizacion y estabilidad del sistema de compendio y mapa interactivo.
 `;
 
-const APK_PATH = path.resolve(__dirname, '../dist-apk/RS-Dragonwilds-v1.0.4.apk');
+const APK_PATH = path.resolve(__dirname, `../dist-apk/RS-Dragonwilds-v${APP_VERSION}.apk`);
+const DIST_DIR = path.resolve(__dirname, '../dist');
+const ZIP_PATH = path.resolve(__dirname, `../dist-zip/RS-Dragonwilds-bundle-v${APP_VERSION}.zip`);
+
+function zipDistDirectory(sourceDir, outPath) {
+  return new Promise((resolve, reject) => {
+    const dir = path.dirname(outPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+
+    const output = fs.createWriteStream(outPath);
+    const archive = archiver('zip', { zlib: { level: 9 } });
+
+    output.on('close', () => {
+      console.log(`[OK] Paquete OTA comprimido (${(archive.pointer() / (1024 * 1024)).toFixed(2)} MB): ${outPath}`);
+      resolve();
+    });
+
+    archive.on('error', (err) => reject(err));
+    archive.pipe(output);
+    archive.directory(sourceDir, false);
+    archive.finalize();
+  });
+}
+
+async function uploadAsset(uploadUrlBase, filePath, assetName, contentType, token) {
+  const fileStats = fs.statSync(filePath);
+  const uploadUrl = uploadUrlBase.replace(/\{(\?name,label)?\}/, '') + `?name=${encodeURIComponent(assetName)}`;
+  const urlObj = new URL(uploadUrl);
+
+  const fileStream = fs.createReadStream(filePath);
+
+  const uploadOptions = {
+    hostname: urlObj.hostname,
+    path: urlObj.pathname + urlObj.search,
+    method: 'POST',
+    headers: {
+      'User-Agent': 'Node-Release-Publisher',
+      'Authorization': `Bearer ${token.trim()}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': contentType,
+      'Content-Length': fileStats.size
+    }
+  };
+
+  return new Promise((resolve, reject) => {
+    const req = https.request(uploadOptions, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        if (res.statusCode === 201) {
+          const json = JSON.parse(body);
+          console.log(`[OK] Asset subido: ${assetName} -> ${json.browser_download_url}`);
+          resolve(json);
+        } else {
+          console.error(`[ERROR] Fallo al subir ${assetName} (HTTP ${res.statusCode}):`, body);
+          reject(new Error(`Fallo HTTP ${res.statusCode} al subir asset`));
+        }
+      });
+    });
+    req.on('error', reject);
+    fileStream.pipe(req);
+  });
+}
 
 async function main() {
   const token = process.argv[2] || process.env.GITHUB_TOKEN;
@@ -23,16 +96,27 @@ async function main() {
     process.exit(1);
   }
 
-  if (!fs.existsSync(APK_PATH)) {
-    console.error(`ERROR: No se encontro el archivo APK en ${APK_PATH}`);
+  // 1. Verificar y comprimir dist/
+  if (!fs.existsSync(DIST_DIR) || !fs.existsSync(path.join(DIST_DIR, 'index.html'))) {
+    console.error(`ERROR: No se encontro el directorio build dist/ o falta index.html. Ejecuta npm run build primero.`);
     process.exit(1);
   }
 
-  const apkStats = fs.statSync(APK_PATH);
-  console.log(`[INFO] APK encontrado: RS-Dragonwilds-v1.0.4.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
-  console.log(`[INFO] Creando Release ${TAG_NAME} en GitHub (${GITHUB_OWNER}/${GITHUB_REPO})...\n`);
+  console.log(`[INFO] Comprimiendo paquete OTA desde ${DIST_DIR}...`);
+  await zipDistDirectory(DIST_DIR, ZIP_PATH);
 
-  // 1. Crear la Release
+  // 2. Comprobar si existe APK
+  const hasApk = fs.existsSync(APK_PATH);
+  if (hasApk) {
+    const apkStats = fs.statSync(APK_PATH);
+    console.log(`[INFO] APK encontrado: ${path.basename(APK_PATH)} (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  } else {
+    console.warn(`[WARN] No se encontro APK en ${APK_PATH}. Se publicara solo el paquete OTA.`);
+  }
+
+  console.log(`\n[INFO] Creando Release ${TAG_NAME} en GitHub (${GITHUB_OWNER}/${GITHUB_REPO})...`);
+
+  // 3. Crear Release en GitHub
   const releaseData = JSON.stringify({
     tag_name: TAG_NAME,
     target_commitish: 'main',
@@ -73,46 +157,31 @@ async function main() {
 
   const releaseJson = JSON.parse(releaseRes.body);
   console.log(`[OK] Release creada con exito: ${releaseJson.html_url}`);
-  console.log(`[INFO] Subiendo archivo APK a los assets de la release...`);
 
-  // 2. Subir el APK como asset
-  const uploadUrl = releaseJson.upload_url.replace(/\{(\?name,label)?\}/, '') + `?name=RS-Dragonwilds-v1.0.4.apk`;
-  const urlObj = new URL(uploadUrl);
+  // 4. Subir paquete OTA ZIP
+  console.log(`[INFO] Subiendo paquete OTA ZIP...`);
+  await uploadAsset(
+    releaseJson.upload_url,
+    ZIP_PATH,
+    `RS-Dragonwilds-bundle-v${APP_VERSION}.zip`,
+    'application/zip',
+    token
+  );
 
-  const fileStream = fs.createReadStream(APK_PATH);
-
-  const uploadOptions = {
-    hostname: urlObj.hostname,
-    path: urlObj.pathname + urlObj.search,
-    method: 'POST',
-    headers: {
-      'User-Agent': 'Node-Release-Publisher',
-      'Authorization': `Bearer ${token.trim()}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'Content-Type': 'application/vnd.android.package-archive',
-      'Content-Length': apkStats.size
-    }
-  };
-
-  const uploadRes = await new Promise((resolve, reject) => {
-    const req = https.request(uploadOptions, (res) => {
-      let body = '';
-      res.on('data', chunk => body += chunk);
-      res.on('end', () => resolve({ statusCode: res.statusCode, body }));
-    });
-    req.on('error', reject);
-    fileStream.pipe(req);
-  });
-
-  if (uploadRes.statusCode !== 201) {
-    console.error(`[ERROR] Error al subir APK (HTTP ${uploadRes.statusCode}):`, uploadRes.body);
-    process.exit(1);
+  // 5. Subir archivo APK si existe
+  if (hasApk) {
+    console.log(`[INFO] Subiendo instalador APK...`);
+    await uploadAsset(
+      releaseJson.upload_url,
+      APK_PATH,
+      `RS-Dragonwilds-v${APP_VERSION}.apk`,
+      'application/vnd.android.package-archive',
+      token
+    );
   }
 
-  const assetJson = JSON.parse(uploadRes.body);
-  console.log(`\n[EXITO] Release y APK publicados correctamente.`);
+  console.log(`\n[EXITO] Release v${APP_VERSION} publicada correctamente con soporte OTA y APK.`);
   console.log(`Release URL: ${releaseJson.html_url}`);
-  console.log(`Direct APK Download: ${assetJson.browser_download_url}`);
 }
 
 main().catch(err => {

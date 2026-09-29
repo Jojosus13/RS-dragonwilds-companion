@@ -15,6 +15,11 @@
   "plugins": {
     "SplashScreen": {
       "backgroundColor": "#090b0e"
+    },
+    "CapacitorUpdater": {
+      "autoUpdate": false,
+      "autoDeleteFailed": true,
+      "autoDeletePrevious": true
     }
   }
 }
