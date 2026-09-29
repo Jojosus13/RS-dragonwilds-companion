@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertTriangle, Flame } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function VaultHazards({ hazards }) {
   if (!hazards || hazards.length === 0) return null;
@@ -8,7 +8,7 @@ export default function VaultHazards({ hazards }) {
     <div className="vault-section-card">
       <div className="vault-section-header">
         <div className="vault-sec-title-wrap">
-          <AlertTriangle size={20} color="#f6ad55" />
+          <GameIcon name="hazard-sign" size={20} color="#f6ad55" />
           <h2>Peligros y Trampas (Hazards)</h2>
         </div>
         <span className="vault-sec-count">{hazards.length} Trampas</span>
@@ -18,7 +18,7 @@ export default function VaultHazards({ hazards }) {
         {hazards.map((hz, idx) => (
           <div key={idx} className="vault-hazard-item">
             <div className="hazard-icon-col">
-              <Flame size={18} color="#fc8181" />
+              <GameIcon name="fire" size={18} color="#fc8181" />
             </div>
             <div className="hazard-info-col">
               <div className="hazard-title-row">

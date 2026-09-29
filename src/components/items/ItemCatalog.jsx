@@ -2,8 +2,6 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import {
   ArrowLeft,
   ArrowUpDown,
-  Sparkles,
-  Compass,
   ChevronRight,
   Search,
   X
@@ -13,6 +11,7 @@ import ItemFilterBar, { CATEGORY_DEFINITIONS, SUBCATEGORIES_CONFIG } from './Ite
 import ItemSortControls from './ItemSortControls';
 import ItemGrid from './ItemGrid';
 import { scoreItemSearch, normalizeText } from '../../utils/searchUtils';
+import GameIcon from '../GameIcon';
 
 export default function ItemCatalog({
   items,
@@ -202,7 +201,6 @@ export default function ItemCatalog({
 
         <div className="category-hub-grid">
           {CATEGORY_DEFINITIONS.map((cat) => {
-            const Icon = cat.icon;
             const count = categoryCounts[cat.id] || 0;
 
             return (
@@ -221,7 +219,7 @@ export default function ItemCatalog({
               >
                 <div className="category-card-top">
                   <div className="category-icon-box">
-                    <Icon size={24} color={cat.color} />
+                    <GameIcon name={cat.icon} size={24} color={cat.color} />
                   </div>
                   <span className="category-count-pill">{count} ítems</span>
                 </div>
@@ -250,7 +248,7 @@ export default function ItemCatalog({
     );
   }
 
-  const CurrentIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? Compass : Sparkles);
+  const currentCategoryIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? 'swap-bag' : 'sparkles');
 
   return (
     <div className="item-catalog-container">
@@ -278,7 +276,7 @@ export default function ItemCatalog({
               borderColor: currentCategoryConfig?.accentBorder || 'rgba(212, 175, 55, 0.3)'
             }}
           >
-            <CurrentIcon size={20} />
+            <GameIcon name={currentCategoryIcon} size={20} />
           </div>
           <div>
             <h2 className="category-nav-title">{currentCategoryConfig?.name || selectedCategory}</h2>

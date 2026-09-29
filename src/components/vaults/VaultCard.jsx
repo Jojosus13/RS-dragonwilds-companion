@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Layers, Compass, ChevronRight, MapPin } from 'lucide-react';
 import { POWER_LEVEL_COLORS } from './VaultFilterBar';
+import GameIcon from '../GameIcon';
 
 export default function VaultCard({
   vault,
@@ -38,13 +39,13 @@ export default function VaultCard({
               borderColor: levelMeta.border
             }}
           >
-            <Shield size={12} />
+            <GameIcon name="shield" size={12} />
             {levelMeta.label}
           </span>
 
           {chestsCount > 0 && (
             <span className="vault-card-chests-tag">
-              <Layers size={12} />
+              <GameIcon name="sparkles" size={12} />
               {chestsCount} {chestsCount === 1 ? 'Cofre' : 'Cofres'}
             </span>
           )}
@@ -54,7 +55,7 @@ export default function VaultCard({
       {/* Card Body */}
       <div className="vault-card-body">
         <div className="vault-card-region">
-          <Compass size={13} />
+          <GameIcon name="treasure-map" size={13} />
           <span>{vault.region}</span>
         </div>
 
@@ -65,8 +66,9 @@ export default function VaultCard({
         {vault.notableLoot && vault.notableLoot.length > 0 && (
           <div className="vault-card-loot-chips">
             {vault.notableLoot.slice(0, 3).map((lt, i) => (
-              <span key={i} className="card-loot-chip">
-                ✦ {lt.name.split(' (')[0]}
+              <span key={i} className="card-loot-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                <GameIcon name="sparkles" size={11} color="var(--gold-400)" />
+                <span>{lt.name.split(' (')[0]}</span>
               </span>
             ))}
           </div>
@@ -93,7 +95,7 @@ export default function VaultCard({
             }}
             title="Ver en el mapa interactivo"
           >
-            <MapPin size={14} />
+            <GameIcon name="position-marker" size={14} />
             <span>Mapa</span>
           </button>
         </div>

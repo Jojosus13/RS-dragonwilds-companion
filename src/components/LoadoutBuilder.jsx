@@ -15,98 +15,99 @@ import {
   Flame,
   Filter
 } from 'lucide-react';
+import GameIcon from './common/GameIcon';
 
 const SLOTS_CONFIG = [
   { 
     id: 'head', 
     name: 'Cabeza', 
-    icon: '👑', 
+    icon: 'crown', 
     typeFilter: ['helmet', 'hat', 'coif', 'med helm'],
     subtypes: [
       { id: 'all', name: 'Todos los Cascos' },
-      { id: 'heavy', name: '🛡️ Placas / Metal', keywords: ['helmet', 'helm', 'med helm'] },
-      { id: 'ranged', name: '🏹 Cuero / Coif', keywords: ['coif', 'leather', 'dragonhide'] },
-      { id: 'magic', name: '🧙 Magia / Sombreros', keywords: ['hat', 'hood', 'ancestral', 'apprentice'] }
+      { id: 'heavy', name: 'Placas / Metal', icon: 'shield', keywords: ['helmet', 'helm', 'med helm'] },
+      { id: 'ranged', name: 'Cuero / Coif', icon: 'bow-arrow', keywords: ['coif', 'leather', 'dragonhide'] },
+      { id: 'magic', name: 'Magia / Sombreros', icon: 'wizard-staff', keywords: ['hat', 'hood', 'ancestral', 'apprentice'] }
     ]
   },
   { 
     id: 'neck', 
     name: 'Amuleto', 
-    icon: '📿', 
+    icon: 'necklace', 
     typeFilter: ['amulet', 'necklace'],
     subtypes: [
       { id: 'all', name: 'Todos los Amuletos' },
-      { id: 'combat', name: '⚔️ Combate (Fuerza / Precisión)', keywords: ['strength', 'accuracy', 'glory'] },
-      { id: 'defense', name: '🛡️ Defensa', keywords: ['defence', 'defense'] },
-      { id: 'magic', name: '🔮 Magia y Especial', keywords: ['magic', 'bandosian', 'abraxus'] }
+      { id: 'combat', name: 'Combate (Fuerza / Precisión)', icon: 'crossed-swords', keywords: ['strength', 'accuracy', 'glory'] },
+      { id: 'defense', name: 'Defensa', icon: 'shield', keywords: ['defence', 'defense'] },
+      { id: 'magic', name: 'Magia y Especial', icon: 'crystal-ball', keywords: ['magic', 'bandosian', 'abraxus'] }
     ]
   },
   { 
     id: 'cape', 
     name: 'Capa', 
-    icon: '🧣', 
+    icon: 'cloak', 
     typeFilter: ['cape', 'accumulator'],
     subtypes: [
       { id: 'all', name: 'Todas las Capas' },
-      { id: 'skill', name: '🎖️ Capas de Habilidad', keywords: ['cape'] },
-      { id: 'ranged', name: '🏹 Munición (Acumulador)', keywords: ['accumulator'] }
+      { id: 'skill', name: 'Capas de Habilidad', icon: 'laurel-crown', keywords: ['cape'] },
+      { id: 'ranged', name: 'Munición (Acumulador)', icon: 'bow-arrow', keywords: ['accumulator'] }
     ]
   },
   { 
     id: 'body', 
     name: 'Pecho / Torso', 
-    icon: '🥋', 
+    icon: 'breastplate', 
     typeFilter: ['platebody', 'body', 'robe', 'tunic'],
     subtypes: [
       { id: 'all', name: 'Todos los Torsos' },
-      { id: 'heavy', name: '🛡️ Corazas de Metal', keywords: ['platebody', 'knight'] },
-      { id: 'ranged', name: '🏹 Cueros de Dragón', keywords: ['dragonhide body', 'tunic', 'leather'] },
-      { id: 'magic', name: '🧙 Ropajes Mágicos', keywords: ['robe', 'ancestral', 'apprentice'] }
+      { id: 'heavy', name: 'Corazas de Metal', icon: 'shield', keywords: ['platebody', 'knight'] },
+      { id: 'ranged', name: 'Cueros de Dragón', icon: 'bow-arrow', keywords: ['dragonhide body', 'tunic', 'leather'] },
+      { id: 'magic', name: 'Ropajes Mágicos', icon: 'wizard-staff', keywords: ['robe', 'ancestral', 'apprentice'] }
     ]
   },
   { 
     id: 'mainhand', 
     name: 'Arma Principal', 
-    icon: '⚔️', 
+    icon: 'crossed-swords', 
     typeFilter: ['weapon', 'sword', 'axe', 'bow', 'wand', 'staff', 'dagger', 'scimitar', 'whip', 'mace', 'crossbow', 'greataxe', 'greatsword', 'warhammer', 'arrow', 'bolt', 'ammunition'],
     subtypes: [
       { id: 'all', name: 'Todas las Armas' },
-      { id: 'swords', name: '⚔️ Espadas y Cimitarras', keywords: ['sword', 'greatsword', 'scimitar'] },
-      { id: 'axes', name: '🪓 Hachas de Guerra', keywords: ['greataxe', 'axe', 'warhammer', 'mace'] },
-      { id: 'whips', name: '🐍 Látigos (Whips)', keywords: ['whip'] },
-      { id: 'ranged', name: '🏹 Arcos y Ballestas', keywords: ['bow', 'shortbow', 'longbow', 'crossbow'] },
-      { id: 'ammo', name: '🎯 Munición (Flechas y Pernos)', keywords: ['arrow', 'bolt', 'ammunition'] },
-      { id: 'magic', name: '🔮 Varitas y Bastones', keywords: ['wand', 'staff', 'battlestaff'] },
-      { id: 'daggers', name: '🗡️ Dagas y Cortas', keywords: ['dagger', 'blade'] }
+      { id: 'swords', name: 'Espadas y Cimitarras', icon: 'crossed-swords', keywords: ['sword', 'greatsword', 'scimitar'] },
+      { id: 'axes', name: 'Hachas de Guerra', icon: 'battle-axe', keywords: ['greataxe', 'axe', 'warhammer', 'mace'] },
+      { id: 'whips', name: 'Látigos (Whips)', icon: 'snake', keywords: ['whip'] },
+      { id: 'ranged', name: 'Arcos y Ballestas', icon: 'bow-arrow', keywords: ['bow', 'shortbow', 'longbow', 'crossbow'] },
+      { id: 'ammo', name: 'Munición (Flechas y Pernos)', icon: 'target-arrows', keywords: ['arrow', 'bolt', 'ammunition'] },
+      { id: 'magic', name: 'Varitas y Bastones', icon: 'crystal-ball', keywords: ['wand', 'staff', 'battlestaff'] },
+      { id: 'daggers', name: 'Dagas y Cortas', icon: 'dagger', keywords: ['dagger', 'blade'] }
     ]
   },
   { 
     id: 'offhand', 
     name: 'Escudo / Offhand', 
-    icon: '🛡️', 
+    icon: 'shield', 
     typeFilter: ['shield'],
     subtypes: [
       { id: 'all', name: 'Todos los Escudos' },
-      { id: 'metal', name: '🛡️ Escudos de Metal', keywords: ['shield'] },
-      { id: 'dragon', name: '🐉 Anti-Dragón', keywords: ['anti-dragon'] }
+      { id: 'metal', name: 'Escudos de Metal', icon: 'shield', keywords: ['shield'] },
+      { id: 'dragon', name: 'Anti-Dragón', icon: 'dragon-head', keywords: ['anti-dragon'] }
     ]
   },
   { 
     id: 'legs', 
     name: 'Piernas', 
-    icon: '👖', 
+    icon: 'trousers', 
     typeFilter: ['platelegs', 'legs', 'chaps', 'leggings', 'robe legs'],
     subtypes: [
       { id: 'all', name: 'Todas las Perneras' },
-      { id: 'heavy', name: '🛡️ Perneras de Placas', keywords: ['platelegs', 'knight'] },
-      { id: 'ranged', name: '🏹 Pantalones de Cazador', keywords: ['chaps', 'leggings'] },
-      { id: 'magic', name: '🧙 Faldas Mágicas', keywords: ['robe legs', 'ancestral', 'apprentice'] }
+      { id: 'heavy', name: 'Perneras de Placas', icon: 'shield', keywords: ['platelegs', 'knight'] },
+      { id: 'ranged', name: 'Pantalones de Cazador', icon: 'bow-arrow', keywords: ['chaps', 'leggings'] },
+      { id: 'magic', name: 'Faldas Mágicas', icon: 'wizard-staff', keywords: ['robe legs', 'ancestral', 'apprentice'] }
     ]
   },
   { 
     id: 'ring', 
     name: 'Anillo', 
-    icon: '💍', 
+    icon: 'diamond-ring', 
     typeFilter: ['ring'],
     subtypes: [
       { id: 'all', name: 'Todos los Anillos' }
@@ -115,23 +116,23 @@ const SLOTS_CONFIG = [
   { 
     id: 'consumable1', 
     name: 'Poción / Comida 1', 
-    icon: '🧪', 
+    icon: 'potion-ball', 
     typeFilter: ['potion', 'food', 'consumable', 'stew', 'broth', 'pie', 'potato', 'fish'],
     subtypes: [
       { id: 'all', name: 'Todos los Consumibles' },
-      { id: 'potions', name: '🧪 Pociones y Elixires', keywords: ['potion', 'antifire', 'antipoison', 'elixir'] },
-      { id: 'food', name: '🍲 Comidas y Estofados', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish'] }
+      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir'] },
+      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish'] }
     ]
   },
   { 
     id: 'consumable2', 
     name: 'Poción / Comida 2', 
-    icon: '🍲', 
+    icon: 'cooking-pot', 
     typeFilter: ['potion', 'food', 'consumable', 'stew', 'broth', 'pie', 'potato', 'fish'],
     subtypes: [
       { id: 'all', name: 'Todos los Consumibles' },
-      { id: 'potions', name: '🧪 Pociones y Elixires', keywords: ['potion', 'antifire', 'antipoison', 'elixir'] },
-      { id: 'food', name: '🍲 Comidas y Estofados', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish'] }
+      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir'] },
+      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish'] }
     ]
   }
 ];
@@ -269,7 +270,7 @@ export default function LoadoutBuilder({
         {/* Character Paperdoll / Slot Grid */}
         <div className="loadout-character-stage">
           <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <UserCheck size={18} />
+            <GameIcon name="breastplate" size={18} />
             Ranuras de Equipamiento
           </h3>
 
@@ -309,7 +310,7 @@ export default function LoadoutBuilder({
                     </>
                   ) : (
                     <>
-                      <span style={{ fontSize: '1.4rem' }}>{slot.icon}</span>
+                      <GameIcon name={slot.icon} size={26} color="var(--gold-500)" />
                       <span className="gear-slot-label">{slot.name}</span>
                     </>
                   )}
@@ -322,15 +323,16 @@ export default function LoadoutBuilder({
         {/* Aggregate Stats Summary */}
         <div className="loadout-stats-box">
           <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Zap size={18} />
+            <GameIcon name="lightning-tear" size={18} />
             Estadísticas Totales del Personaje
           </h3>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
             <div className="recipe-section" style={{ padding: '14px' }}>
               <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>NIVEL DE PODER PROMEDIO</span>
-              <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--tier-7)', fontFamily: 'var(--font-title)' }}>
-                ★ {totals.avgPower}
+              <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--tier-7)', fontFamily: 'var(--font-title)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <GameIcon name="flat-star" size={18} color="var(--tier-7)" />
+                {totals.avgPower}
               </p>
             </div>
 
@@ -364,8 +366,9 @@ export default function LoadoutBuilder({
           </div>
 
           <div style={{ marginTop: 'auto', background: 'rgba(212,175,55,0.06)', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--gold-border)' }}>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-              💡 <strong>Consejo:</strong> En RuneScape: Dragonwilds, el daño y la resistencia escalan fuertemente con el nivel de poder de los objetos y las ascensiones en la Fragua Mística.
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <GameIcon name="light-bulb" size={16} color="var(--gold-400)" />
+              <span><strong>Consejo:</strong> En RuneScape: Dragonwilds, el daño y la resistencia escalan fuertemente con el nivel de poder de los objetos y las ascensiones en la Fragua Mística.</span>
             </p>
           </div>
         </div>
@@ -378,7 +381,9 @@ export default function LoadoutBuilder({
             {/* Modal Header */}
             <div className="modal-header">
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <span style={{ fontSize: '1.5rem' }}>{activeSlotConfig.icon}</span>
+                <div className="item-icon-frame" style={{ width: '38px', height: '38px' }}>
+                  <GameIcon name={activeSlotConfig.icon} size={22} color="var(--gold-400)" />
+                </div>
                 <div>
                   <h3 className="modal-title" style={{ fontSize: '1.2rem' }}>
                     Seleccionar {activeSlotConfig.name}
@@ -401,9 +406,10 @@ export default function LoadoutBuilder({
                     key={st.id}
                     className={`filter-chip ${modalSubtype === st.id ? 'active' : ''}`}
                     onClick={() => setModalSubtype(st.id)}
-                    style={{ whiteSpace: 'nowrap', fontSize: '0.78rem' }}
+                    style={{ whiteSpace: 'nowrap', fontSize: '0.78rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
                   >
-                    {st.name}
+                    {st.icon && <GameIcon name={st.icon} size={13} />}
+                    <span>{st.name}</span>
                   </button>
                 ))}
               </div>
@@ -440,31 +446,31 @@ export default function LoadoutBuilder({
                 </button>
                 <button
                   className={`filter-chip ${modalPowerTier === 't1-3' ? 'active' : ''}`}
-                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-1-3)' }}
+                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-1-3)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   onClick={() => setModalPowerTier('t1-3')}
                 >
-                  ★ T1-3
+                  <GameIcon name="flat-star" size={11} color="var(--tier-1-3)" /> T1-3
                 </button>
                 <button
                   className={`filter-chip ${modalPowerTier === 't4-6' ? 'active' : ''}`}
-                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-4-6)' }}
+                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-4-6)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   onClick={() => setModalPowerTier('t4-6')}
                 >
-                  ★ T4-6
+                  <GameIcon name="flat-star" size={11} color="var(--tier-4-6)" /> T4-6
                 </button>
                 <button
                   className={`filter-chip ${modalPowerTier === 't7' ? 'active' : ''}`}
-                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-7)' }}
+                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-7)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   onClick={() => setModalPowerTier('t7')}
                 >
-                  ★ T7
+                  <GameIcon name="flat-star" size={11} color="var(--tier-7)" /> T7
                 </button>
                 <button
                   className={`filter-chip ${modalPowerTier === 't8-9' ? 'active' : ''}`}
-                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-8-9)' }}
+                  style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-8-9)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   onClick={() => setModalPowerTier('t8-9')}
                 >
-                  ★ T8-9
+                  <GameIcon name="flat-star" size={11} color="var(--tier-8-9)" /> T8-9
                 </button>
               </div>
             </div>
@@ -473,7 +479,7 @@ export default function LoadoutBuilder({
             <div className="modal-body" style={{ maxHeight: '55vh', padding: '16px' }}>
               {slotCandidates.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '30px' }}>
-                  <Flame size={32} color="var(--gold-500)" style={{ margin: '0 auto 10px' }} />
+                  <GameIcon name="fire" size={32} color="var(--gold-500)" style={{ margin: '0 auto 10px' }} />
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
                     No se encontraron objetos con los filtros seleccionados.
                   </p>
@@ -500,8 +506,8 @@ export default function LoadoutBuilder({
                               {cand.name}
                             </h4>
                             {cand.powerLevel && (
-                              <span className="power-level-crest tier-7" style={{ fontSize: '0.68rem', padding: '1px 6px' }}>
-                                ★ {cand.powerLevel}
+                              <span className="power-level-crest tier-7" style={{ fontSize: '0.68rem', padding: '1px 6px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                                <GameIcon name="flat-star" size={10} color="var(--gold-300)" /> {cand.powerLevel}
                               </span>
                             )}
                           </div>

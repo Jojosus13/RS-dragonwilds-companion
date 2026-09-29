@@ -8,6 +8,7 @@ import {
   Square,
   ArrowRight
 } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function MaterialsSummary({
   plannerMode,
@@ -31,25 +32,28 @@ export default function MaterialsSummary({
           <button
             className={`filter-chip ${plannerMode === 'raw' ? 'active' : ''}`}
             onClick={() => setPlannerMode('raw')}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            <Pickaxe size={14} />
-            <span>🌿 Materia Prima Base (Desglose Total)</span>
+            <GameIcon name="plant-seed" size={14} />
+            <span>Materia Prima Base (Desglose Total)</span>
           </button>
 
           <button
             className={`filter-chip ${plannerMode === 'direct' ? 'active' : ''}`}
             onClick={() => setPlannerMode('direct')}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            <Package size={14} />
-            <span>📦 Materiales Directos ({directMaterials.length})</span>
+            <GameIcon name="cardboard-box-closed" size={14} />
+            <span>Materiales Directos ({directMaterials.length})</span>
           </button>
 
           <button
             className={`filter-chip ${plannerMode === 'steps' ? 'active' : ''}`}
             onClick={() => setPlannerMode('steps')}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            <Hammer size={14} />
-            <span>🔨 Guía por Estaciones ({workstationSteps.length})</span>
+            <GameIcon name="hammer-drop" size={14} />
+            <span>Guía por Estaciones ({workstationSteps.length})</span>
           </button>
         </div>
 
@@ -128,7 +132,10 @@ export default function MaterialsSummary({
                             <span>
                               <span style={{ color: 'var(--gold-400)' }}>•</span> Para crear <strong>{p.producesQty}x {p.producesItem}</strong>
                               {p.facility && <span style={{ color: 'var(--gold-400)', opacity: 0.85 }}> ({p.facility})</span>}
-                              <span style={{ color: 'var(--text-muted)' }}> ➔ <em>{p.finalTarget}</em></span>
+                              <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', marginLeft: '4px' }}>
+                                <ArrowRight size={11} style={{ marginRight: '4px' }} />
+                                <em>{p.finalTarget}</em>
+                              </span>
                             </span>
                           )}
                         </div>

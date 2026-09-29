@@ -21,6 +21,7 @@ import {
   Info
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import GameIcon from './common/GameIcon';
 
 export default function CraftingPlanner({ 
   plannerItems = [], 
@@ -313,7 +314,7 @@ export default function CraftingPlanner({
   if (plannerItems.length === 0) {
     return (
       <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
-        <Hammer size={54} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
+        <GameIcon name="hammer-drop" size={54} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
         <h2 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '8px' }}>
           Tu Taller de Crafteo está Vacío
         </h2>
@@ -385,7 +386,7 @@ export default function CraftingPlanner({
       {/* Target Items List with Breakdown Toggles */}
       <div className="craft-planner-list">
         <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Package size={18} />
+          <GameIcon name="cardboard-box" size={18} />
           Objetos a Fabricar
         </h3>
 
@@ -518,25 +519,28 @@ export default function CraftingPlanner({
             <button
               className={`filter-chip ${plannerMode === 'raw' ? 'active' : ''}`}
               onClick={() => setPlannerMode('raw')}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
             >
-              <Pickaxe size={14} />
-              <span>🌿 Materia Prima Base (Desglose Total)</span>
+              <GameIcon name="plant-seed" size={14} />
+              <span>Materia Prima Base (Desglose Total)</span>
             </button>
 
             <button
               className={`filter-chip ${plannerMode === 'direct' ? 'active' : ''}`}
               onClick={() => setPlannerMode('direct')}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
             >
-              <Package size={14} />
-              <span>📦 Materiales Directos ({directMaterials.length})</span>
+              <GameIcon name="cardboard-box-closed" size={14} />
+              <span>Materiales Directos ({directMaterials.length})</span>
             </button>
 
             <button
               className={`filter-chip ${plannerMode === 'steps' ? 'active' : ''}`}
               onClick={() => setPlannerMode('steps')}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
             >
-              <Hammer size={14} />
-              <span>🔨 Guía por Estaciones ({workstationSteps.length})</span>
+              <GameIcon name="hammer-drop" size={14} />
+              <span>Guía por Estaciones ({workstationSteps.length})</span>
             </button>
           </div>
 
@@ -615,7 +619,10 @@ export default function CraftingPlanner({
                               <span>
                                 <span style={{ color: 'var(--gold-400)' }}>•</span> Para crear <strong>{p.producesQty}x {p.producesItem}</strong>
                                 {p.facility && <span style={{ color: 'var(--gold-400)', opacity: 0.85 }}> ({p.facility})</span>}
-                                <span style={{ color: 'var(--text-muted)' }}> ➔ <em>{p.finalTarget}</em></span>
+                                <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', marginLeft: '4px' }}>
+                                  <ArrowRight size={11} style={{ marginRight: '4px' }} />
+                                  <em>{p.finalTarget}</em>
+                                </span>
                               </span>
                             )}
                           </div>
@@ -871,10 +878,14 @@ function RecipeTreeNode({ node, onSelectItem, isRoot = false }) {
                 color: '#68d391',
                 background: 'rgba(72,187,120,0.12)',
                 padding: '2px 6px',
-                borderRadius: '6px'
+                borderRadius: '6px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
               }}
             >
-              🌿 Recurso Base
+              <GameIcon name="plant-seed" size={11} color="#68d391" />
+              <span>Recurso Base</span>
             </span>
           )}
         </div>

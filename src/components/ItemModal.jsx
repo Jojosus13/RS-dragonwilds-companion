@@ -17,6 +17,7 @@ import {
   Flame,
   Compass
 } from 'lucide-react';
+import GameIcon from './GameIcon';
 
 export default function ItemModal({ 
   item, 
@@ -55,7 +56,7 @@ export default function ItemModal({
           <div className="modal-header-info">
             <div className="item-icon-frame" style={{ width: '60px', height: '60px' }}>
               {imgError ? (
-                <span style={{ fontSize: '1.6rem' }}>⚔️</span>
+                <GameIcon name="crossed-swords" size={32} color="var(--gold-400)" />
               ) : (
                 <img 
                   src={item.image} 
@@ -70,8 +71,9 @@ export default function ItemModal({
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <h2 className="modal-title">{item.name}</h2>
                 {item.powerLevel && (
-                  <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`}>
-                    ★ {item.powerLevel}
+                  <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                    <GameIcon name="flat-star" size={12} />
+                    <span>{item.powerLevel}</span>
                   </span>
                 )}
               </div>
@@ -90,7 +92,7 @@ export default function ItemModal({
             className={`modal-tab-btn ${activeTab === 'stats' ? 'active' : ''}`}
             onClick={() => setActiveTab('stats')}
           >
-            <Sword size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+            <GameIcon name="crossed-swords" size={14} style={{ marginRight: '6px' }} />
             Estadísticas
           </button>
 
@@ -99,7 +101,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'recipe' ? 'active' : ''}`}
               onClick={() => setActiveTab('recipe')}
             >
-              <Hammer size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="hammer-drop" size={14} style={{ marginRight: '6px' }} />
               Receta
             </button>
           )}
@@ -109,7 +111,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'usedIn' ? 'active' : ''}`}
               onClick={() => setActiveTab('usedIn')}
             >
-              <Layers size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="anvil-impact" size={14} style={{ marginRight: '6px' }} />
               Usado en ({item.usedIn.length})
             </button>
           )}
@@ -119,7 +121,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'upgrades' ? 'active' : ''}`}
               onClick={() => setActiveTab('upgrades')}
             >
-              <Zap size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="lightning-tear" size={14} style={{ marginRight: '6px' }} />
               Mejoras y Ascensión
             </button>
           )}
@@ -129,7 +131,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'journal' ? 'active' : ''}`}
               onClick={() => setActiveTab('journal')}
             >
-              <BookOpen size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="tied-scroll" size={14} style={{ marginRight: '6px' }} />
               Códice y Diario
             </button>
           )}
@@ -304,7 +306,12 @@ export default function ItemModal({
                   <tbody>
                     {item.upgrades.map((upg, idx) => (
                       <tr key={idx} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                        <td style={{ padding: '10px 14px', fontWeight: 'bold', color: '#f6ad55' }}>★ {upg.powerLevel}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: 'bold', color: '#f6ad55' }}>
+                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                            <GameIcon name="flat-star" size={11} />
+                            <span>{upg.powerLevel}</span>
+                          </span>
+                        </td>
                         <td style={{ padding: '10px 14px', color: '#fc8181' }}>{upg.baseDamage}</td>
                         <td style={{ padding: '10px 14px', color: 'var(--text-secondary)' }}>{upg.coresRequired || 'N/A'}</td>
                       </tr>
@@ -340,7 +347,7 @@ export default function ItemModal({
                 onClick={() => onEquipItem(item)}
                 title="Equipar en el Simulador de Personaje"
               >
-                <Shield size={16} />
+                <GameIcon name="shield" size={16} />
                 <span>Equipar</span>
               </button>
             )}
@@ -361,7 +368,7 @@ export default function ItemModal({
               className={`btn-fantasy ${isFavorite ? 'gold' : ''}`}
               onClick={() => onToggleFavorite(item)}
             >
-              <Bookmark size={16} fill={isFavorite ? 'currentColor' : 'none'} />
+              <GameIcon name="flat-star" size={16} color={isFavorite ? 'var(--gold-400)' : 'var(--text-muted)'} />
               <span>{isFavorite ? 'Guardado' : 'Favorito'}</span>
             </button>
 
@@ -372,7 +379,7 @@ export default function ItemModal({
               title="Buscar yacimientos y ver en el mapa interactivo"
               style={{ color: '#63b3ed', borderColor: 'rgba(66, 153, 225, 0.4)' }}
             >
-              <Compass size={16} />
+              <GameIcon name="position-marker" size={16} />
               <span>Ver en Mapa</span>
             </button>
           </div>

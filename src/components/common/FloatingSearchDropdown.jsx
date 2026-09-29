@@ -10,6 +10,7 @@ import {
   Search,
   X
 } from 'lucide-react';
+import GameIcon from './GameIcon';
 
 export default function FloatingSearchDropdown({
   results = [],
@@ -115,7 +116,7 @@ function FloatingResultItem({
       {/* Icon Frame */}
       <div className="floating-item-icon-box">
         {imgError ? (
-          <span style={{ fontSize: '1.2rem' }}>🗡️</span>
+          <GameIcon name="plain-dagger" size={18} color="var(--gold-400)" />
         ) : (
           <img
             src={item.image}
@@ -133,8 +134,9 @@ function FloatingResultItem({
         <div className="floating-item-title-row">
           <span className="floating-item-name">{item.name}</span>
           {item.powerLevel && (
-            <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`}>
-              ★ {item.powerLevel}
+            <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+              <GameIcon name="flat-star" size={10} />
+              <span>{item.powerLevel}</span>
             </span>
           )}
         </div>

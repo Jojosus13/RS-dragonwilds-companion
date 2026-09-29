@@ -90,7 +90,7 @@ export default function QuestStepList({
                   gap: '4px'
                 }}
               >
-                {isChecked ? 'Completado ✓' : 'Marcar paso'}
+                {isChecked ? 'Completado' : 'Marcar paso'}
               </button>
             </div>
 

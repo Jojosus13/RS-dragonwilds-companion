@@ -470,7 +470,8 @@ export const MAP_MARKERS = [
 export const PRESET_ROUTES = [
   {
     id: 'route-lodestones',
-    title: '🚀 Ruta Completa: Red de Lodestones de Ashenfall',
+    icon: 'sprint',
+    title: 'Ruta Completa: Red de Lodestones de Ashenfall',
     description: 'Recorrido para activar las Piedras Guía a través de las regiones de Ashenfall.',
     color: '#4299e1',
     waypoints: [
@@ -483,7 +484,8 @@ export const PRESET_ROUTES = [
   },
   {
     id: 'route-vaults',
-    title: '🛡️ Travesía de Bóvedas Dragonkin (Tier 1 a Tier 5)',
+    icon: 'shield',
+    title: 'Travesía de Bóvedas Dragonkin (Tier 1 a Tier 5)',
     description: 'Ruta secuencial por los santuarios y bóvedas Dragonkin de Ashenfall.',
     color: '#ecc94b',
     waypoints: [
@@ -499,7 +501,8 @@ export const PRESET_ROUTES = [
   },
   {
     id: 'route-bosses',
-    title: '🔥 Desafío de Jefes Mundiales y Élites',
+    icon: 'fire',
+    title: 'Desafío de Jefes Mundiales y Élites',
     description: 'Circuito para desafiar a los grandes líderes y jefes de mundo.',
     color: '#e53e3e',
     waypoints: [

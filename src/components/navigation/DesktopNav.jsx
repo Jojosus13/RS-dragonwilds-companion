@@ -1,22 +1,6 @@
 import React, { useState } from 'react';
-import {
-  Compass,
-  Sword,
-  Shield,
-  Pickaxe,
-  FlaskConical,
-  Layers,
-  Scroll,
-  Sparkles,
-  ChevronDown,
-  Zap,
-  Map,
-  BookOpen,
-  UserCheck,
-  Hammer,
-  Flame,
-  Bookmark
-} from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function DesktopNav({
   activeView,
@@ -30,14 +14,14 @@ export default function DesktopNav({
   const [isItemsDropdownOpen, setIsItemsDropdownOpen] = useState(true);
 
   const categories = [
-    { id: 'All', name: 'Todos los Ítems', icon: Compass },
-    { id: 'Armas de Combate', name: 'Armas de Combate', icon: Sword },
-    { id: 'Armaduras y Ropa', name: 'Armaduras y Ropa', icon: Shield },
-    { id: 'Herramientas', name: 'Herramientas', icon: Pickaxe },
-    { id: 'Pociones y Comida', name: 'Pociones y Comida', icon: FlaskConical },
-    { id: 'Materiales y Minerales', name: 'Materiales y Minerales', icon: Layers },
-    { id: 'Vestigios y Patrones', name: 'Vestigios y Patrones', icon: Scroll },
-    { id: 'Runas y Magia', name: 'Runas y Magia', icon: Sparkles }
+    { id: 'All', name: 'Todos los Ítems', icon: 'swap-bag', color: 'var(--gold-400)' },
+    { id: 'Armas de Combate', name: 'Armas de Combate', icon: 'crossed-swords', color: '#f87171' },
+    { id: 'Armaduras y Ropa', name: 'Armaduras y Ropa', icon: 'breastplate', color: '#60a5fa' },
+    { id: 'Herramientas', name: 'Herramientas', icon: 'mining', color: '#fbbf24' },
+    { id: 'Pociones y Comida', name: 'Pociones y Comida', icon: 'potion-ball', color: '#34d399' },
+    { id: 'Materiales y Minerales', name: 'Materiales y Minerales', icon: 'anvil-impact', color: '#a78bfa' },
+    { id: 'Vestigios y Patrones', name: 'Vestigios y Patrones', icon: 'scroll-unfurled', color: '#f472b6' },
+    { id: 'Runas y Magia', name: 'Runas y Magia', icon: 'crystal-ball', color: '#38bdf8' }
   ];
 
   return (
@@ -56,7 +40,7 @@ export default function DesktopNav({
               setIsItemsDropdownOpen(true);
             }}
           >
-            <Compass size={18} color="var(--gold-400)" />
+            <GameIcon name="swap-bag" size={18} color="var(--gold-400)" />
             <span>Explorador de Ítems</span>
           </button>
 
@@ -80,7 +64,6 @@ export default function DesktopNav({
         {isItemsDropdownOpen && (
           <div className="nav-submenu">
             {categories.map((cat) => {
-              const Icon = cat.icon;
               const count = categoryCounts[cat.id] || 0;
               const isSelected = activeView === 'catalog' && selectedCategory === cat.id;
 
@@ -93,7 +76,7 @@ export default function DesktopNav({
                     setSelectedCategory(cat.id);
                   }}
                 >
-                  <Icon size={15} />
+                  <GameIcon name={cat.icon} size={15} color={isSelected ? 'var(--gold-300)' : cat.color} />
                   <span className="subitem-name">{cat.name}</span>
                   <span className="badge">{count}</span>
                 </button>
@@ -107,7 +90,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'quests' ? 'active' : ''}`}
         onClick={() => setActiveView('quests')}
       >
-        <Scroll size={18} color="var(--gold-400)" />
+        <GameIcon name="tied-scroll" size={18} color="var(--gold-400)" />
         <span>Misiones (Quests)</span>
         <span className="badge">{questCount}</span>
       </button>
@@ -117,7 +100,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'vaults' ? 'active' : ''}`}
         onClick={() => setActiveView('vaults')}
       >
-        <Shield size={18} color="#63b3ed" />
+        <GameIcon name="shield" size={18} color="#63b3ed" />
         <span>Bóvedas Dragonkin</span>
         <span
           className="badge"
@@ -135,7 +118,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'spells' ? 'active' : ''}`}
         onClick={() => setActiveView('spells')}
       >
-        <Zap size={18} color="#b794f4" />
+        <GameIcon name="lightning-arc" size={18} color="#b794f4" />
         <span>Grimorio de Hechizos</span>
         <span className="badge">{spellCount}</span>
       </button>
@@ -144,7 +127,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'map' ? 'active' : ''}`}
         onClick={() => setActiveView('map')}
       >
-        <Map size={18} color="var(--gold-400)" />
+        <GameIcon name="treasure-map" size={18} color="var(--gold-400)" />
         <span>Mapa de Ashenfall</span>
         <span
           className="badge"
@@ -162,7 +145,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'lore' ? 'active' : ''}`}
         onClick={() => setActiveView('lore')}
       >
-        <BookOpen size={18} color="var(--gold-300)" />
+        <GameIcon name="book-cover" size={18} color="var(--gold-300)" />
         <span>Códice y Lore</span>
       </button>
 
@@ -172,7 +155,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'loadout' ? 'active' : ''}`}
         onClick={() => setActiveView('loadout')}
       >
-        <UserCheck size={18} />
+        <GameIcon name="breastplate" size={18} color="#48bb78" />
         <span>Simulador de Equipo</span>
       </button>
 
@@ -180,7 +163,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'planner' ? 'active' : ''}`}
         onClick={() => setActiveView('planner')}
       >
-        <Hammer size={18} />
+        <GameIcon name="hammer-drop" size={18} color="#ecc94b" />
         <span>Calculadora Crafteo</span>
       </button>
 
@@ -188,7 +171,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'skills' ? 'active' : ''}`}
         onClick={() => setActiveView('skills')}
       >
-        <Flame size={18} />
+        <GameIcon name="campfire" size={18} color="#fc8181" />
         <span>Habilidades y Guías</span>
       </button>
 
@@ -196,7 +179,7 @@ export default function DesktopNav({
         className={`nav-item ${activeView === 'favorites' ? 'active' : ''}`}
         onClick={() => setActiveView('favorites')}
       >
-        <Bookmark size={18} />
+        <GameIcon name="flat-star" size={18} color="var(--gold-400)" />
         <span>Mis Favoritos</span>
       </button>
     </aside>

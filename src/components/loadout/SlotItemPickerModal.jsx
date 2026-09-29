@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Search, Flame } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function SlotItemPickerModal({
   activeSlotConfig,
@@ -21,7 +22,9 @@ export default function SlotItemPickerModal({
         {/* Modal Header */}
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span style={{ fontSize: '1.5rem' }}>{activeSlotConfig.icon}</span>
+            <div className="item-icon-frame" style={{ width: '38px', height: '38px' }}>
+              <GameIcon name={activeSlotConfig.icon} size={22} color="var(--gold-400)" />
+            </div>
             <div>
               <h3 className="modal-title" style={{ fontSize: '1.2rem' }}>
                 Seleccionar {activeSlotConfig.name}
@@ -53,9 +56,10 @@ export default function SlotItemPickerModal({
                 key={st.id}
                 className={`filter-chip ${modalSubtype === st.id ? 'active' : ''}`}
                 onClick={() => setModalSubtype(st.id)}
-                style={{ whiteSpace: 'nowrap', fontSize: '0.78rem' }}
+                style={{ whiteSpace: 'nowrap', fontSize: '0.78rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}
               >
-                {st.name}
+                {st.icon && <GameIcon name={st.icon} size={13} />}
+                <span>{st.name}</span>
               </button>
             ))}
           </div>
@@ -103,31 +107,35 @@ export default function SlotItemPickerModal({
             </button>
             <button
               className={`filter-chip ${modalPowerTier === 't1-3' ? 'active' : ''}`}
-              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-1-3)' }}
+              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-1-3)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
               onClick={() => setModalPowerTier('t1-3')}
             >
-              ★ T1-3
+              <GameIcon name="flat-star" size={10} color="var(--tier-1-3)" />
+              <span>T1-3</span>
             </button>
             <button
               className={`filter-chip ${modalPowerTier === 't4-6' ? 'active' : ''}`}
-              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-4-6)' }}
+              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-4-6)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
               onClick={() => setModalPowerTier('t4-6')}
             >
-              ★ T4-6
+              <GameIcon name="flat-star" size={10} color="var(--tier-4-6)" />
+              <span>T4-6</span>
             </button>
             <button
               className={`filter-chip ${modalPowerTier === 't7' ? 'active' : ''}`}
-              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-7)' }}
+              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-7)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
               onClick={() => setModalPowerTier('t7')}
             >
-              ★ T7
+              <GameIcon name="flat-star" size={10} color="var(--tier-7)" />
+              <span>T7</span>
             </button>
             <button
               className={`filter-chip ${modalPowerTier === 't8-9' ? 'active' : ''}`}
-              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-8-9)' }}
+              style={{ padding: '3px 8px', fontSize: '0.72rem', color: 'var(--tier-8-9)', display: 'inline-flex', alignItems: 'center', gap: '3px' }}
               onClick={() => setModalPowerTier('t8-9')}
             >
-              ★ T8-9
+              <GameIcon name="flat-star" size={10} color="var(--tier-8-9)" />
+              <span>T8-9</span>
             </button>
           </div>
         </div>
@@ -175,8 +183,9 @@ export default function SlotItemPickerModal({
                           {cand.name}
                         </h4>
                         {cand.powerLevel && (
-                          <span className="power-level-crest tier-7" style={{ fontSize: '0.68rem', padding: '1px 6px' }}>
-                            ★ {cand.powerLevel}
+                          <span className="power-level-crest tier-7" style={{ fontSize: '0.68rem', padding: '1px 6px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                            <GameIcon name="flat-star" size={9} />
+                            <span>{cand.powerLevel}</span>
                           </span>
                         )}
                       </div>

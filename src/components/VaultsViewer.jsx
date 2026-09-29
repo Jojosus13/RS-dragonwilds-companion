@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import GameIcon from './GameIcon';
 import {
   Shield,
   MapPin,
@@ -131,7 +132,7 @@ export default function VaultsViewer({
                 onClick={() => onViewVaultOnMap(activeVault)}
                 title="Ver ubicación exacta en el mapa de Ashenfall"
               >
-                <MapPin size={16} />
+                <GameIcon name="position-marker" size={16} />
                 <span>Ver en el Mapa</span>
               </button>
               {activeVault.wikiUrl && (
@@ -175,17 +176,17 @@ export default function VaultsViewer({
                     borderColor: POWER_LEVEL_COLORS[activeVault.powerLevel]?.border || 'rgba(66, 153, 225, 0.4)'
                   }}
                 >
-                  <Shield size={14} />
+                  <GameIcon name="shield" size={14} />
                   Nivel de Poder: {activeVault.powerLevel}
                 </span>
 
                 <span className="vault-region-badge">
-                  <Compass size={14} />
+                  <GameIcon name="treasure-map" size={14} />
                   {activeVault.region}
                 </span>
 
                 <span className="vault-danger-badge">
-                  <Skull size={14} />
+                  <GameIcon name="skull-crossed-bones" size={14} />
                   Peligro: {activeVault.dangerLevel || 'Medio'}
                 </span>
               </div>
@@ -220,7 +221,7 @@ export default function VaultsViewer({
             <div className="vault-section-card">
               <div className="vault-section-header">
                 <div className="vault-sec-title-wrap">
-                  <AlertTriangle size={20} color="#f6ad55" />
+                  <GameIcon name="hazard-sign" size={20} color="#f6ad55" />
                   <h2>Peligros y Trampas (Hazards)</h2>
                 </div>
                 <span className="vault-sec-count">{activeVault.hazards.length} Trampas</span>
@@ -230,7 +231,7 @@ export default function VaultsViewer({
                 {activeVault.hazards.map((hz, idx) => (
                   <div key={idx} className="vault-hazard-item">
                     <div className="hazard-icon-col">
-                      <Flame size={18} color="#fc8181" />
+                      <GameIcon name="fire" size={18} color="#fc8181" />
                     </div>
                     <div className="hazard-info-col">
                       <div className="hazard-title-row">
@@ -250,7 +251,7 @@ export default function VaultsViewer({
             <div className="vault-section-card">
               <div className="vault-section-header">
                 <div className="vault-sec-title-wrap">
-                  <Skull size={20} color="#fc8181" />
+                  <GameIcon name="skull-crossed-bones" size={20} color="#fc8181" />
                   <h2>Enemigos de la Bóveda (Enemies)</h2>
                 </div>
                 <span className="vault-sec-count">Tier {activeVault.powerLevel}</span>
@@ -271,7 +272,9 @@ export default function VaultsViewer({
                       {activeVault.enemies.standard.map((en, idx) => (
                         <tr key={idx}>
                           <td className="enemy-name-cell">
-                            <span className="enemy-bullet">⚔️</span>
+                            <span className="enemy-bullet">
+                              <GameIcon name="crossed-swords" size={13} color="#fc8181" />
+                            </span>
                             <span>{en.name}</span>
                           </td>
                           <td style={{ textAlign: 'center', fontWeight: 'bold' }}>{en.amount}</td>
@@ -289,7 +292,7 @@ export default function VaultsViewer({
               {activeVault.enemies.soulrifted && activeVault.enemies.soulrifted.length > 0 && (
                 <div className="vault-subtable-block">
                   <div className="subtable-banner">
-                    <Zap size={16} color="#b794f4" />
+                    <GameIcon name="lightning-tear" size={16} color="#b794f4" />
                     <span>Enemigos del Reino Espiritual (Durante Soul Rifted)</span>
                   </div>
                   <table className="vault-wiki-table">
@@ -303,7 +306,9 @@ export default function VaultsViewer({
                       {activeVault.enemies.soulrifted.map((se, idx) => (
                         <tr key={idx}>
                           <td className="enemy-name-cell" style={{ color: '#b794f4' }}>
-                            <span className="enemy-bullet">👻</span>
+                            <span className="enemy-bullet">
+                              <GameIcon name="ghost" size={13} color="#b794f4" />
+                            </span>
                             <span>{se.name}</span>
                           </td>
                           <td style={{ textAlign: 'center', color: '#b794f4', fontWeight: 'bold' }}>{se.amount}</td>
@@ -337,7 +342,7 @@ export default function VaultsViewer({
             <div className="vault-section-card">
               <div className="vault-section-header">
                 <div className="vault-sec-title-wrap">
-                  <Award size={20} color="var(--gold-400)" />
+                  <GameIcon name="medal" size={20} color="var(--gold-400)" />
                   <h2>Botín Destacado y Recetas (Notable Loot)</h2>
                 </div>
               </div>
@@ -346,7 +351,7 @@ export default function VaultsViewer({
                 {activeVault.notableLoot && activeVault.notableLoot.map((lt, idx) => (
                   <div key={idx} className="vault-loot-card">
                     <div className="loot-card-icon">
-                      <Sparkles size={20} color="var(--gold-400)" />
+                      <GameIcon name="sparkles" size={20} color="var(--gold-400)" />
                     </div>
                     <div className="loot-card-content">
                       <div className="loot-card-header">
@@ -363,13 +368,13 @@ export default function VaultsViewer({
               {activeVault.recipes && activeVault.recipes.length > 0 && (
                 <div className="vault-recipes-subblock">
                   <h4 className="recipes-subtitle">
-                    <Scroll size={16} color="#63b3ed" />
+                    <GameIcon name="scroll-unfurled" size={16} color="#63b3ed" />
                     <span>Recetas de Forja Aprendibles en Efigies de Dragonkin:</span>
                   </h4>
                   <div className="recipes-chips-wrap">
                     {activeVault.recipes.map((rc, idx) => (
-                      <div key={idx} className="recipe-chip">
-                        <span className="recipe-dot">✦</span>
+                      <div key={idx} className="recipe-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                        <GameIcon name="sparkles" size={12} color="var(--gold-400)" />
                         <span className="recipe-name">{rc.name}</span>
                         {rc.type && <span className="recipe-cat">({rc.type})</span>}
                       </div>
@@ -385,7 +390,7 @@ export default function VaultsViewer({
             <div className="vault-section-card">
               <div className="vault-section-header">
                 <div className="vault-sec-title-wrap">
-                  <Layers size={20} color="#63b3ed" />
+                  <GameIcon name="sparkles" size={20} color="#63b3ed" />
                   <h2>Cofres del Tesoro y Secretos (Chests Guide)</h2>
                 </div>
                 <span className="vault-sec-count">{activeVault.chests.length} Cofres</span>
@@ -436,7 +441,7 @@ export default function VaultsViewer({
                       </div>
                     ) : (
                       <div className="chest-no-image-placeholder">
-                        <Shield size={24} color="rgba(255,255,255,0.2)" />
+                        <GameIcon name="shield" size={24} color="rgba(255,255,255,0.2)" />
                         <span>Sin captura disponible</span>
                       </div>
                     )}
@@ -451,7 +456,7 @@ export default function VaultsViewer({
             <div className="vault-section-card">
               <div className="vault-section-header">
                 <div className="vault-sec-title-wrap">
-                  <Sparkles size={20} color="#48bb78" />
+                  <GameIcon name="sprout" size={20} color="#48bb78" />
                   <h2>Recursos Extraíbles (Resources)</h2>
                 </div>
               </div>
@@ -462,7 +467,10 @@ export default function VaultsViewer({
                     <h4>Yacimientos y Ventilas:</h4>
                     <ul>
                       {activeVault.resources.nodes.map((node, i) => (
-                        <li key={i}>⛏️ {node}</li>
+                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <GameIcon name="mining" size={14} color="var(--gold-400)" />
+                          <span>{node}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -473,7 +481,10 @@ export default function VaultsViewer({
                     <h4>Plantas y Hierbas:</h4>
                     <ul>
                       {activeVault.resources.plants.map((plant, i) => (
-                        <li key={i}>🌿 {plant}</li>
+                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <GameIcon name="herbs-bundle" size={14} color="#48bb78" />
+                          <span>{plant}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -484,7 +495,10 @@ export default function VaultsViewer({
                     <h4>Objetos Especiales:</h4>
                     <ul>
                       {activeVault.resources.other.map((oth, i) => (
-                        <li key={i}>✦ {oth}</li>
+                        <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <GameIcon name="sparkles" size={14} color="var(--gold-400)" />
+                          <span>{oth}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -499,7 +513,7 @@ export default function VaultsViewer({
               className="btn-fantasy gold btn-large"
               onClick={() => onViewVaultOnMap(activeVault)}
             >
-              <MapPin size={18} />
+              <GameIcon name="position-marker" size={18} />
               <span>Ver Ubicación Exacta en el Mapa de Ashenfall</span>
             </button>
             <button
@@ -522,7 +536,7 @@ export default function VaultsViewer({
           <div className="vaults-header-banner">
             <div className="vaults-banner-content">
               <div className="vaults-banner-badge">
-                <Shield size={16} />
+                <GameIcon name="shield" size={16} />
                 <span>CÓDICE DRACONIS</span>
               </div>
               <h1 className="vaults-banner-title">Cámaras y Bóvedas Dragonkin</h1>
@@ -674,13 +688,13 @@ export default function VaultsViewer({
                           borderColor: levelMeta.border
                         }}
                       >
-                        <Shield size={12} />
+                        <GameIcon name="shield" size={12} />
                         {levelMeta.label}
                       </span>
 
                       {chestsCount > 0 && (
                         <span className="vault-card-chests-tag">
-                          <Layers size={12} />
+                          <GameIcon name="sparkles" size={12} />
                           {chestsCount} {chestsCount === 1 ? 'Cofre' : 'Cofres'}
                         </span>
                       )}
@@ -690,7 +704,7 @@ export default function VaultsViewer({
                   {/* Card Body */}
                   <div className="vault-card-body">
                     <div className="vault-card-region">
-                      <Compass size={13} />
+                      <GameIcon name="treasure-map" size={13} />
                       <span>{vault.region}</span>
                     </div>
 
@@ -701,8 +715,9 @@ export default function VaultsViewer({
                     {vault.notableLoot && vault.notableLoot.length > 0 && (
                       <div className="vault-card-loot-chips">
                         {vault.notableLoot.slice(0, 3).map((lt, i) => (
-                          <span key={i} className="card-loot-chip">
-                            ✦ {lt.name.split(' (')[0]}
+                          <span key={i} className="card-loot-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                            <GameIcon name="sparkles" size={11} color="var(--gold-400)" />
+                            <span>{lt.name.split(' (')[0]}</span>
                           </span>
                         ))}
                       </div>
@@ -731,7 +746,7 @@ export default function VaultsViewer({
                         }}
                         title="Ver en el mapa interactivo"
                       >
-                        <MapPin size={14} />
+                        <GameIcon name="position-marker" size={14} />
                         <span>Mapa</span>
                       </button>
                     </div>
@@ -743,7 +758,7 @@ export default function VaultsViewer({
 
           {filteredVaults.length === 0 && (
             <div className="vaults-empty-state">
-              <Shield size={48} color="var(--gold-400)" />
+              <GameIcon name="shield" size={48} color="var(--gold-400)" />
               <h3>No se encontraron bóvedas</h3>
               <p>Prueba con otros términos de búsqueda o restablece los filtros de región y nivel.</p>
               <button

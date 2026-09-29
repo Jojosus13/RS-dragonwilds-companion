@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skull, Zap } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function VaultEnemies({ enemies, powerLevel }) {
   if (!enemies) return null;
@@ -8,7 +8,7 @@ export default function VaultEnemies({ enemies, powerLevel }) {
     <div className="vault-section-card">
       <div className="vault-section-header">
         <div className="vault-sec-title-wrap">
-          <Skull size={20} color="#fc8181" />
+          <GameIcon name="skull-crossed-bones" size={20} color="#fc8181" />
           <h2>Enemigos de la Bóveda (Enemies)</h2>
         </div>
         <span className="vault-sec-count">Tier {powerLevel}</span>
@@ -29,7 +29,9 @@ export default function VaultEnemies({ enemies, powerLevel }) {
               {enemies.standard.map((en, idx) => (
                 <tr key={idx}>
                   <td className="enemy-name-cell">
-                    <span className="enemy-bullet">⚔️</span>
+                    <span className="enemy-bullet">
+                      <GameIcon name="crossed-swords" size={13} color="#fc8181" />
+                    </span>
                     <span>{en.name}</span>
                   </td>
                   <td style={{ textAlign: 'center', fontWeight: 'bold' }}>{en.amount}</td>
@@ -47,7 +49,7 @@ export default function VaultEnemies({ enemies, powerLevel }) {
       {enemies.soulrifted && enemies.soulrifted.length > 0 && (
         <div className="vault-subtable-block">
           <div className="subtable-banner">
-            <Zap size={16} color="#b794f4" />
+            <GameIcon name="lightning-tear" size={16} color="#b794f4" />
             <span>Enemigos del Reino Espiritual (Durante Soul Rifted)</span>
           </div>
           <table className="vault-wiki-table">
@@ -61,7 +63,9 @@ export default function VaultEnemies({ enemies, powerLevel }) {
               {enemies.soulrifted.map((se, idx) => (
                 <tr key={idx}>
                   <td className="enemy-name-cell" style={{ color: '#b794f4' }}>
-                    <span className="enemy-bullet">👻</span>
+                    <span className="enemy-bullet">
+                      <GameIcon name="ghost" size={13} color="#b794f4" />
+                    </span>
                     <span>{se.name}</span>
                   </td>
                   <td style={{ textAlign: 'center', color: '#b794f4', fontWeight: 'bold' }}>{se.amount}</td>

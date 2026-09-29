@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Download, Bookmark } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import GameIcon from './common/GameIcon';
 
 export default function Header({ 
   activeView, 
@@ -80,7 +81,7 @@ export default function Header({
           onClick={() => setActiveView('planner')}
           title="Calculadora de Crafteo / Lista de Materiales"
         >
-          <Sparkles size={16} />
+          <GameIcon name="hammer-drop" size={16} />
           <span>Crafteo</span>
           {plannerCount > 0 && <span className="badge">{plannerCount}</span>}
         </button>
@@ -91,7 +92,7 @@ export default function Header({
           onClick={() => setActiveView('favorites')}
           title="Ítems Guardados en Favoritos"
         >
-          <Bookmark size={16} />
+          <GameIcon name="flat-star" size={16} />
           <span>Favoritos</span>
           {favoritesCount > 0 && <span className="badge">{favoritesCount}</span>}
         </button>
@@ -103,7 +104,7 @@ export default function Header({
             onClick={onOpenInstallModal}
             title="Instalar en Móvil / iPad (Modo Offline)"
           >
-            <Download size={16} />
+            <GameIcon name="sprint" size={16} />
             <span>Instalar App</span>
           </button>
         )}

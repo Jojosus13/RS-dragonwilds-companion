@@ -1,5 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function EquipmentSlot({ slot, item, onOpenSlot, onUnequipSlot }) {
   return (
@@ -42,7 +43,7 @@ export default function EquipmentSlot({ slot, item, onOpenSlot, onUnequipSlot })
         </>
       ) : (
         <>
-          <span style={{ fontSize: '1.4rem' }}>{slot.icon}</span>
+          <GameIcon name={slot.icon} size={24} color="var(--gold-500)" />
           <span className="gear-slot-label">{slot.name}</span>
         </>
       )}

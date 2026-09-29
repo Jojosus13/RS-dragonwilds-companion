@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scroll } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function ChapterReader({ activeChapter }) {
   if (!activeChapter) return null;
@@ -20,7 +21,7 @@ export default function ChapterReader({ activeChapter }) {
       <span className="lore-quote-icon">“</span>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)', marginBottom: '8px' }}>
-        <Scroll size={20} />
+        <GameIcon name={activeChapter.icon || 'scroll-unfurled'} size={20} color="var(--gold-400)" />
         <span style={{ fontSize: '0.8rem', fontFamily: 'var(--font-title)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
           {activeChapter.category}
         </span>

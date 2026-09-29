@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import {
   X,
-  BookOpen,
-  Package,
-  Swords,
-  Award,
-  MapPin,
-  ListChecks,
-  Sparkles,
-  Check,
-  Compass,
   ExternalLink
 } from 'lucide-react';
 import { DIFFICULTY_COLORS } from './QuestFilterBar';
 import QuestStepList from './QuestStepList';
+import GameIcon from '../GameIcon';
 
 export default function QuestDetailModal({
   quest,
@@ -91,36 +83,36 @@ export default function QuestDetailModal({
         }}>
           <button
             className={`filter-chip ${activeModalTab === 'guide' ? 'active' : ''}`}
-            style={{ borderRadius: '0', borderBottom: activeModalTab === 'guide' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px' }}
+            style={{ borderRadius: '0', borderBottom: activeModalTab === 'guide' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}
             onClick={() => setActiveModalTab('guide')}
           >
-            <BookOpen size={14} />
+            <GameIcon name="book-cover" size={14} color="var(--gold-400)" />
             <span>Guía Paso a Paso</span>
           </button>
           <button
             className={`filter-chip ${activeModalTab === 'requirements' ? 'active' : ''}`}
-            style={{ borderRadius: '0', borderBottom: activeModalTab === 'requirements' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px' }}
+            style={{ borderRadius: '0', borderBottom: activeModalTab === 'requirements' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}
             onClick={() => setActiveModalTab('requirements')}
           >
-            <Package size={14} />
+            <GameIcon name="cardboard-box" size={14} color="#60a5fa" />
             <span>Requisitos y Objetos ({quest.itemsRequired?.length || 0})</span>
           </button>
           {quest.enemies && quest.enemies.length > 0 && (
             <button
               className={`filter-chip ${activeModalTab === 'enemies' ? 'active' : ''}`}
-              style={{ borderRadius: '0', borderBottom: activeModalTab === 'enemies' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px' }}
+              style={{ borderRadius: '0', borderBottom: activeModalTab === 'enemies' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}
               onClick={() => setActiveModalTab('enemies')}
             >
-              <Swords size={14} />
+              <GameIcon name="crossed-swords" size={14} color="#f87171" />
               <span>Enemigos ({quest.enemies.length})</span>
             </button>
           )}
           <button
             className={`filter-chip ${activeModalTab === 'rewards' ? 'active' : ''}`}
-            style={{ borderRadius: '0', borderBottom: activeModalTab === 'rewards' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px' }}
+            style={{ borderRadius: '0', borderBottom: activeModalTab === 'rewards' ? '2px solid var(--gold-400)' : 'none', padding: '10px 14px', display: 'flex', alignItems: 'center', gap: '6px' }}
             onClick={() => setActiveModalTab('rewards')}
           >
-            <Award size={14} />
+            <GameIcon name="crown" size={14} color="var(--gold-400)" />
             <span>Recompensas</span>
           </button>
         </div>
@@ -138,7 +130,7 @@ export default function QuestDetailModal({
               alignItems: 'center',
               gap: '10px'
             }}>
-              <MapPin size={18} color="var(--gold-400)" style={{ flexShrink: 0 }} />
+              <GameIcon name="position-marker" size={18} color="var(--gold-400)" style={{ flexShrink: 0 }} />
               <div>
                 <span style={{ fontSize: '0.72rem', color: 'var(--gold-400)', fontFamily: 'var(--font-title)', fontWeight: 600, display: 'block' }}>
                   PUNTO DE INICIO
@@ -176,7 +168,7 @@ export default function QuestDetailModal({
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div className="recipe-section" style={{ padding: '14px' }}>
                 <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.9rem', color: 'var(--gold-400)', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <ListChecks size={16} />
+                  <GameIcon name="shield" size={16} color="var(--gold-400)" />
                   REQUISITOS PREVIOS DE LA MISIÓN
                 </h4>
                 <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', fontSize: '0.88rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -188,7 +180,7 @@ export default function QuestDetailModal({
 
               <div className="recipe-section" style={{ padding: '14px', borderLeft: '3px solid var(--color-combat)' }}>
                 <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.9rem', color: '#fc8181', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Package size={16} />
+                  <GameIcon name="cardboard-box" size={16} color="#fc8181" />
                   OBJETOS OBLIGATORIOS (NECESARIOS)
                 </h4>
                 {quest.itemsRequired && quest.itemsRequired.length > 0 ? (
@@ -207,7 +199,7 @@ export default function QuestDetailModal({
               {quest.itemsRecommended && quest.itemsRecommended.length > 0 && (
                 <div className="recipe-section" style={{ padding: '14px', borderLeft: '3px solid #4299e1' }}>
                   <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.9rem', color: '#63b3ed', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <Sparkles size={16} />
+                    <GameIcon name="sparkles" size={16} color="#63b3ed" />
                     OBJETOS RECOMENDADOS
                   </h4>
                   <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', fontSize: '0.88rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -225,7 +217,7 @@ export default function QuestDetailModal({
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div className="recipe-section" style={{ padding: '14px', borderLeft: '3px solid var(--color-combat)' }}>
                 <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.9rem', color: '#fc8181', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Swords size={16} />
+                  <GameIcon name="crossed-swords" size={16} color="#fc8181" />
                   ENEMIGOS Y PELIGROS EN ESTA MISIÓN
                 </h4>
                 <ul style={{ paddingLeft: '20px', color: 'var(--text-primary)', fontSize: '0.88rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -242,7 +234,7 @@ export default function QuestDetailModal({
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div className="recipe-section" style={{ padding: '14px', borderLeft: '3px solid var(--gold-500)' }}>
                 <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.9rem', color: 'var(--gold-400)', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Award size={16} />
+                  <GameIcon name="crown" size={16} color="var(--gold-400)" />
                   RECOMPENSAS POR COMPLETAR LA MISIÓN
                 </h4>
                 <ul style={{ paddingLeft: '20px', color: '#e2e8f0', fontSize: '0.88rem', margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -261,9 +253,9 @@ export default function QuestDetailModal({
               style={{ flex: 1, minWidth: '180px', padding: '10px' }}
               onClick={() => onToggleStatus(quest.id, questStatus)}
             >
-              <Check size={16} />
+              <GameIcon name="check-mark" size={16} color={questStatus === 'completed' ? 'var(--gold-400)' : '#48bb78'} />
               <span>
-                {questStatus === 'completed' ? 'Misión Completada ✓' : 'Marcar como Completada'}
+                {questStatus === 'completed' ? 'Misión Completada' : 'Marcar como Completada'}
               </span>
             </button>
 
@@ -275,7 +267,7 @@ export default function QuestDetailModal({
                 onViewQuestOnMap && onViewQuestOnMap(quest);
               }}
             >
-              <Compass size={16} />
+              <GameIcon name="treasure-map" size={16} color="var(--gold-400)" />
               <span>Ver en Mapa</span>
             </button>
 

@@ -16,6 +16,7 @@ import ItemModalHeader from './modal/ItemModalHeader';
 import ItemStatsSection from './modal/ItemStatsSection';
 import ItemRecipeSection from './modal/ItemRecipeSection';
 import ItemUsedInSection from './modal/ItemUsedInSection';
+import GameIcon from '../GameIcon';
 
 export default function ItemModal({
   item,
@@ -64,7 +65,7 @@ export default function ItemModal({
             className={`modal-tab-btn ${activeTab === 'stats' ? 'active' : ''}`}
             onClick={() => setActiveTab('stats')}
           >
-            <Sword size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+            <GameIcon name="crossed-swords" size={14} style={{ marginRight: '6px' }} />
             Estadísticas
           </button>
 
@@ -73,7 +74,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'recipe' ? 'active' : ''}`}
               onClick={() => setActiveTab('recipe')}
             >
-              <Hammer size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="hammer-drop" size={14} style={{ marginRight: '6px' }} />
               Receta
             </button>
           )}
@@ -83,7 +84,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'usedIn' ? 'active' : ''}`}
               onClick={() => setActiveTab('usedIn')}
             >
-              <Layers size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="anvil-impact" size={14} style={{ marginRight: '6px' }} />
               Usado en ({item.usedIn.length})
             </button>
           )}
@@ -93,7 +94,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'upgrades' ? 'active' : ''}`}
               onClick={() => setActiveTab('upgrades')}
             >
-              <Zap size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="lightning-tear" size={14} style={{ marginRight: '6px' }} />
               Mejoras y Ascensión
             </button>
           )}
@@ -103,7 +104,7 @@ export default function ItemModal({
               className={`modal-tab-btn ${activeTab === 'journal' ? 'active' : ''}`}
               onClick={() => setActiveTab('journal')}
             >
-              <BookOpen size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} />
+              <GameIcon name="tied-scroll" size={14} style={{ marginRight: '6px' }} />
               Códice y Diario
             </button>
           )}
@@ -144,7 +145,10 @@ export default function ItemModal({
                     {item.upgrades.map((upg, idx) => (
                       <tr key={idx} style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                         <td style={{ padding: '10px 14px', fontWeight: 'bold', color: 'var(--gold-300)' }}>
-                          ★ {upg.powerLevel || idx + 1}
+                          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                            <GameIcon name="flat-star" size={11} />
+                            <span>{upg.powerLevel || idx + 1}</span>
+                          </span>
                         </td>
                         <td style={{ padding: '10px 14px', color: '#fc8181' }}>{upg.damage || '-'}</td>
                         <td style={{ padding: '10px 14px', color: '#63b3ed' }}>{upg.armour || '-'}</td>
@@ -179,7 +183,7 @@ export default function ItemModal({
                 onClick={() => onEquipItem(item)}
                 title="Equipar en el Simulador de Personaje"
               >
-                <Shield size={16} />
+                <GameIcon name="shield" size={16} />
                 <span>Equipar</span>
               </button>
             )}
@@ -200,7 +204,7 @@ export default function ItemModal({
               onClick={() => onToggleFavorite(item)}
               title={isFavorite ? 'Quitar de favoritos' : 'Guardar en favoritos'}
             >
-              <Bookmark size={16} fill={isFavorite ? 'currentColor' : 'none'} />
+              <GameIcon name="flat-star" size={16} color={isFavorite ? 'var(--gold-400)' : 'var(--text-muted)'} />
               <span>{isFavorite ? 'Guardado' : 'Favorito'}</span>
             </button>
 
@@ -210,7 +214,7 @@ export default function ItemModal({
               title="Buscar yacimientos y trazar ruta de farmeo en el mapa interactivo"
               style={{ color: '#63b3ed', borderColor: 'rgba(66, 153, 225, 0.35)' }}
             >
-              <Compass size={16} />
+              <GameIcon name="position-marker" size={16} />
               <span>Ver en Mapa</span>
             </button>
           </div>

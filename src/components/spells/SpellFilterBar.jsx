@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, X } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function SpellFilterBar({
   searchQuery,
@@ -34,8 +35,10 @@ export default function SpellFilterBar({
             key={cat.id}
             className={`filter-chip ${selectedCategory === cat.id ? 'active' : ''}`}
             onClick={() => setSelectedCategory(cat.id)}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
           >
-            {cat.name}
+            {cat.icon && <GameIcon name={cat.icon} size={14} />}
+            <span>{cat.name}</span>
           </button>
         ))}
       </div>

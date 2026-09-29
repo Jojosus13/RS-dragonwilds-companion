@@ -1,5 +1,6 @@
 import React from 'react';
-import { Search, Shield, Compass, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export const POWER_LEVEL_COLORS = {
   2: { label: 'Nivel 2', bg: 'rgba(72, 187, 120, 0.15)', text: '#48bb78', border: 'rgba(72, 187, 120, 0.35)' },
@@ -46,7 +47,7 @@ export default function VaultFilterBar({
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Compass size={14} color="var(--gold-400)" />
+            <GameIcon name="treasure-map" size={14} color="var(--gold-400)" />
             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
               REGIÓN:
             </span>
@@ -63,7 +64,7 @@ export default function VaultFilterBar({
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Shield size={14} color="#63b3ed" />
+            <GameIcon name="shield" size={14} color="#63b3ed" />
             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
               PODER:
             </span>

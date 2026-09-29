@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Compass, Scroll, AlertTriangle } from 'lucide-react';
 import questsData from '../../data/quests.json';
 import { normalizeText, getWordStems } from '../../utils/searchUtils';
 import QuestFilterBar from './QuestFilterBar';
 import QuestCard from './QuestCard';
 import QuestDetailModal from './QuestDetailModal';
+import GameIcon from '../GameIcon';
 
 export default function QuestViewer({ onViewQuestOnMap }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -131,7 +131,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
       >
         <div style={{ maxWidth: '650px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)', marginBottom: '6px' }}>
-            <Compass size={20} />
+            <GameIcon name="tied-scroll" size={20} color="var(--gold-400)" />
             <span style={{ fontSize: '0.8rem', fontFamily: 'var(--font-title)', letterSpacing: '2px', fontWeight: 700, textTransform: 'uppercase' }}>
               DIARIO DE AVENTURAS
             </span>
@@ -203,7 +203,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
       {/* Quests Grid */}
       {filteredQuests.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '50px 20px', background: 'rgba(0,0,0,0.2)', borderRadius: '12px', border: '1px dashed var(--gold-border)' }}>
-          <AlertTriangle size={36} color="var(--gold-400)" style={{ margin: '0 auto 12px auto' }} />
+          <GameIcon name="scroll-unfurled" size={36} color="var(--gold-400)" style={{ margin: '0 auto 12px auto' }} />
           <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '6px' }}>
             No se encontraron misiones
           </h3>

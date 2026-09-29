@@ -1,15 +1,9 @@
 import React from 'react';
 import {
-  Check,
-  Clock,
-  Circle,
-  MapPin,
-  Package,
-  BookOpen,
-  ChevronRight,
-  Compass
+  ChevronRight
 } from 'lucide-react';
 import { DIFFICULTY_COLORS } from './QuestFilterBar';
+import GameIcon from '../GameIcon';
 
 export default function QuestCard({
   quest,
@@ -106,17 +100,17 @@ export default function QuestCard({
         >
           {status === 'completed' ? (
             <>
-              <Check size={13} />
+              <GameIcon name="check-mark" size={13} color="#48bb78" />
               <span>Completada</span>
             </>
           ) : status === 'in_progress' ? (
             <>
-              <Clock size={13} />
+              <GameIcon name="sprint" size={13} color="#4299e1" />
               <span>En Curso</span>
             </>
           ) : (
             <>
-              <Circle size={13} />
+              <GameIcon name="tied-scroll" size={13} color="var(--text-muted)" />
               <span>Pendiente</span>
             </>
           )}
@@ -132,14 +126,14 @@ export default function QuestCard({
       <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
         {quest.startPoint && (
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
-            <MapPin size={13} color="var(--gold-400)" style={{ flexShrink: 0, marginTop: '2px' }} />
+            <GameIcon name="position-marker" size={13} color="var(--gold-400)" style={{ flexShrink: 0, marginTop: '2px' }} />
             <span style={{ color: '#cbd5e1', lineHeight: 1.3 }}>{quest.startPoint}</span>
           </div>
         )}
 
         {quest.itemsRequired && quest.itemsRequired.length > 0 && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Package size={13} color="#4299e1" style={{ flexShrink: 0 }} />
+            <GameIcon name="cardboard-box" size={13} color="#4299e1" style={{ flexShrink: 0 }} />
             <span style={{ color: 'var(--text-secondary)' }}>
               {quest.itemsRequired.length} {quest.itemsRequired.length === 1 ? 'objeto necesario' : 'objetos necesarios'}
             </span>
@@ -166,7 +160,7 @@ export default function QuestCard({
           style={{ flex: 1, padding: '9px', fontSize: '0.82rem', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px' }}
           onClick={() => onOpenModal(quest, 'guide')}
         >
-          <BookOpen size={14} />
+          <GameIcon name="book-cover" size={14} color="var(--gold-400)" />
           <span>Guía ({stepsCount})</span>
           <ChevronRight size={14} />
         </button>
@@ -177,7 +171,7 @@ export default function QuestCard({
           title="Localizar punto de inicio en el Mapa Interactivo y trazar ruta"
           onClick={() => onViewQuestOnMap && onViewQuestOnMap(quest)}
         >
-          <Compass size={14} />
+          <GameIcon name="treasure-map" size={14} color="var(--gold-400)" />
           <span>Mapa</span>
         </button>
       </div>

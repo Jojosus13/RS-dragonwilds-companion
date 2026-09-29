@@ -16,10 +16,15 @@ import MapSidebar from './MapSidebar';
 import MapMarkerPopup from './MapMarkerPopup';
 import MapCoordinatesHUD from './MapCoordinatesHUD';
 import CustomMarkerModal from './CustomMarkerModal';
+import GameIcon from '../GameIcon';
+
+const MapTreasureIcon = (props) => (
+  <GameIcon name="treasure-map" size={props.size || 14} style={{ color: props.color, ...props.style }} />
+);
 
 const CATEGORY_META = {
-  all: { label: 'Todos', icon: Compass, color: 'var(--gold-400)' },
-  lodestones: { label: 'Piedras Guía', icon: Compass, color: '#48bb78' },
+  all: { label: 'Todos', icon: MapTreasureIcon, color: 'var(--gold-400)' },
+  lodestones: { label: 'Piedras Guía', icon: MapTreasureIcon, color: '#48bb78' },
   vaults: { label: 'Bóvedas Dragonkin', icon: Shield, color: '#4299e1' },
   quests: { label: 'Misiones', icon: Scroll, color: '#ecc94b' },
   bosses: { label: 'Jefes y Élites', icon: Flame, color: '#e53e3e' },
@@ -416,7 +421,7 @@ export default function InteractiveMap({
       <div className="map-top-bar">
         <div className="map-title-wrap">
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Compass size={22} color="var(--gold-400)" />
+            <GameIcon name="treasure-map" size={22} color="var(--gold-400)" />
             <h2 className="map-title">Mapa Interactivo de Ashenfall</h2>
           </div>
           <span className="map-subtitle">Continente Ancestral de Dragonwilds</span>
@@ -510,7 +515,9 @@ export default function InteractiveMap({
         {/* Compass Rose */}
         <div className="map-compass-rose">
           <span className="compass-n">N</span>
-          <div className="compass-pointer">✦</div>
+          <div className="compass-pointer">
+            <GameIcon name="compass" size={24} color="var(--gold-400)" />
+          </div>
           <span className="compass-region">ASHENFALL</span>
         </div>
 
@@ -596,7 +603,7 @@ export default function InteractiveMap({
                     textAnchor="middle"
                     className="map-region-tier"
                   >
-                    ★ {reg.tier} · Peligro: {reg.dangerLevel}
+                    Tier {reg.tier} · Peligro: {reg.dangerLevel}
                   </text>
                 </g>
               );

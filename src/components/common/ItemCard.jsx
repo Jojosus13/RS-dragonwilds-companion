@@ -8,6 +8,7 @@ import {
   Plus,
   Check
 } from 'lucide-react';
+import GameIcon from './GameIcon';
 
 export default function ItemCard({
   item,
@@ -32,7 +33,7 @@ export default function ItemCard({
       <div className="card-top">
         <div className="item-icon-frame">
           {imgError ? (
-            <span style={{ fontSize: '1.4rem' }}>🗡️</span>
+            <GameIcon name="plain-dagger" size={24} color="var(--gold-400)" />
           ) : (
             <img
               src={item.image}
@@ -51,8 +52,9 @@ export default function ItemCard({
               {item.name || item.title}
             </h3>
             {item.powerLevel && (
-              <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`}>
-                ★ {item.powerLevel}
+              <span className={`power-level-crest ${getPowerTierClass(item.powerLevel)}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+                <GameIcon name="flat-star" size={11} />
+                <span>{item.powerLevel}</span>
               </span>
             )}
           </div>

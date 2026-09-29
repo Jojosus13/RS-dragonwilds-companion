@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  Compass, 
   Search, 
   CheckCircle2, 
   Clock, 
@@ -22,6 +21,7 @@ import {
 } from 'lucide-react';
 import questsData from '../data/quests.json';
 import { normalizeText, getWordStems } from '../utils/searchUtils';
+import GameIcon from './GameIcon';
 
 const DIFFICULTY_COLORS = {
   'Principiante': { bg: 'rgba(72, 187, 120, 0.15)', text: '#48bb78', border: 'rgba(72, 187, 120, 0.3)' },
@@ -270,7 +270,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
         borderRadius: 'var(--radius-lg)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <Compass size={22} color="var(--gold-400)" />
+          <GameIcon name="treasure-map" size={22} color="var(--gold-400)" />
           <div>
             <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', fontSize: '1.05rem', margin: 0 }}>
               GUÍAS Y DIARIO DE MISIONES DE ASHENFALL
@@ -487,7 +487,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
                     title="Localizar punto de inicio en el Mapa Interactivo y trazar ruta"
                     onClick={() => onViewQuestOnMap && onViewQuestOnMap(quest)}
                   >
-                    <Compass size={14} />
+                    <GameIcon name="treasure-map" size={14} />
                     <span>Mapa</span>
                   </button>
                 </div>
@@ -708,7 +708,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
                                   gap: '4px'
                                 }}
                               >
-                                {isChecked ? 'Completado ✓' : 'Marcar paso'}
+                                {isChecked ? 'Completado' : 'Marcar paso'}
                               </button>
                             </div>
 
@@ -831,7 +831,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
                 >
                   <Check size={16} />
                   <span>
-                    {questStatusMap[selectedQuestModal.id] === 'completed' ? 'Misión Completada ✓' : 'Marcar como Completada'}
+                    {questStatusMap[selectedQuestModal.id] === 'completed' ? 'Misión Completada' : 'Marcar como Completada'}
                   </span>
                 </button>
 
@@ -844,7 +844,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
                     onViewQuestOnMap && onViewQuestOnMap(quest);
                   }}
                 >
-                  <Compass size={16} />
+                  <GameIcon name="treasure-map" size={16} />
                   <span>Ver en Mapa</span>
                 </button>
 

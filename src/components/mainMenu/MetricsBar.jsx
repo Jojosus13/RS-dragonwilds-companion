@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, Scroll, Zap, Map } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function MetricsBar({ allItemsCount, questsCount, spellsCount, setActiveView, setSelectedCategory }) {
   return (
@@ -12,7 +12,7 @@ export default function MetricsBar({ allItemsCount, questsCount, spellsCount, se
         }}
       >
         <div className="metric-icon-box gold">
-          <Compass size={22} />
+          <GameIcon name="swap-bag" size={22} color="var(--gold-400)" />
         </div>
         <div className="metric-info">
           <span className="metric-number">{allItemsCount || 200}+</span>
@@ -22,7 +22,7 @@ export default function MetricsBar({ allItemsCount, questsCount, spellsCount, se
 
       <div className="metric-cell" onClick={() => setActiveView('quests')}>
         <div className="metric-icon-box orange">
-          <Scroll size={22} />
+          <GameIcon name="tied-scroll" size={22} color="#ed8936" />
         </div>
         <div className="metric-info">
           <span className="metric-number">{questsCount || 39}</span>
@@ -32,7 +32,7 @@ export default function MetricsBar({ allItemsCount, questsCount, spellsCount, se
 
       <div className="metric-cell" onClick={() => setActiveView('spells')}>
         <div className="metric-icon-box purple">
-          <Zap size={22} />
+          <GameIcon name="lightning-arc" size={22} color="#9f7aea" />
         </div>
         <div className="metric-info">
           <span className="metric-number">{spellsCount || 42}</span>
@@ -42,7 +42,7 @@ export default function MetricsBar({ allItemsCount, questsCount, spellsCount, se
 
       <div className="metric-cell" onClick={() => setActiveView('map')}>
         <div className="metric-icon-box blue">
-          <Map size={22} />
+          <GameIcon name="treasure-map" size={22} color="#63b3ed" />
         </div>
         <div className="metric-info">
           <span className="metric-number">100%</span>

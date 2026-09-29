@@ -21,13 +21,14 @@ import {
 import ItemCard from './ItemCard';
 import FloatingSearchDropdown from './FloatingSearchDropdown';
 import { scoreItemSearch, normalizeText } from '../utils/searchUtils';
+import GameIcon from './GameIcon';
 
 const CATEGORY_DEFINITIONS = [
   {
     id: 'All',
     name: 'Todos los Ítems',
     subtitle: 'Catálogo completo de Dragonwilds con 1,120+ objetos',
-    icon: Compass,
+    icon: 'swap-bag',
     color: 'var(--gold-400)',
     accentBg: 'rgba(212, 175, 55, 0.12)',
     accentBorder: 'rgba(212, 175, 55, 0.35)',
@@ -37,7 +38,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Armas de Combate',
     name: 'Armas de Combate',
     subtitle: 'Espadas, cimitarras, látigos, arcos, bastones y dagas',
-    icon: Sword,
+    icon: 'crossed-swords',
     color: '#f87171',
     accentBg: 'rgba(239, 68, 68, 0.12)',
     accentBorder: 'rgba(239, 68, 68, 0.35)',
@@ -47,7 +48,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Armaduras y Ropa',
     name: 'Armaduras y Ropa',
     subtitle: 'Cascos, corazas, perneras, escudos, capas y joyería',
-    icon: Shield,
+    icon: 'breastplate',
     color: '#60a5fa',
     accentBg: 'rgba(96, 165, 250, 0.12)',
     accentBorder: 'rgba(96, 165, 250, 0.35)',
@@ -57,7 +58,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Herramientas',
     name: 'Herramientas',
     subtitle: 'Picos de minería, hachas de tala, palas y regaderas',
-    icon: Pickaxe,
+    icon: 'mining',
     color: '#fbbf24',
     accentBg: 'rgba(251, 191, 36, 0.12)',
     accentBorder: 'rgba(251, 191, 36, 0.35)',
@@ -67,7 +68,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Pociones y Comida',
     name: 'Pociones y Comida',
     subtitle: 'Elixires, antifuego, estofados, pescados y raciones',
-    icon: FlaskConical,
+    icon: 'potion-ball',
     color: '#34d399',
     accentBg: 'rgba(52, 211, 153, 0.12)',
     accentBorder: 'rgba(52, 211, 153, 0.35)',
@@ -77,7 +78,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Materiales y Minerales',
     name: 'Materiales y Minerales',
     subtitle: 'Barras de metal, menas, maderas, cueros y esencias',
-    icon: Layers,
+    icon: 'anvil-impact',
     color: '#a78bfa',
     accentBg: 'rgba(167, 139, 250, 0.12)',
     accentBorder: 'rgba(167, 139, 250, 0.35)',
@@ -87,7 +88,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Vestigios y Patrones',
     name: 'Vestigios y Patrones',
     subtitle: 'Fragmentos rotos, esquemas, patrones y reliquias',
-    icon: Scroll,
+    icon: 'scroll-unfurled',
     color: '#f472b6',
     accentBg: 'rgba(244, 114, 182, 0.12)',
     accentBorder: 'rgba(244, 114, 182, 0.35)',
@@ -97,7 +98,7 @@ const CATEGORY_DEFINITIONS = [
     id: 'Runas y Magia',
     name: 'Runas y Magia',
     subtitle: 'Runas elementales, catalizadoras, tomos y grimorios',
-    icon: Sparkles,
+    icon: 'crystal-ball',
     color: '#38bdf8',
     accentBg: 'rgba(56, 189, 248, 0.12)',
     accentBorder: 'rgba(56, 189, 248, 0.35)',
@@ -107,54 +108,54 @@ const CATEGORY_DEFINITIONS = [
 
 const SUBCATEGORIES_CONFIG = {
   'Armas de Combate': [
-    { id: 'all', name: 'Todas las Armas' },
-    { id: 'swords', name: '⚔️ Espadas y Cimitarras', keywords: ['espada', 'espadón', 'cimitarra', 'sword', 'scimitar', 'greatsword'] },
-    { id: 'axes', name: '🪓 Hachas y Mazas', keywords: ['hacha', 'maza', 'martillo', 'greataxe', 'axe', 'warhammer', 'mace'] },
-    { id: 'whips', name: '🐍 Látigos', keywords: ['látigo', 'whip'] },
-    { id: 'ranged', name: '🏹 Arcos y Ballestas', keywords: ['arco', 'ballesta', 'bow', 'crossbow'] },
-    { id: 'ammo', name: '🎯 Munición (Flechas y Pernos)', keywords: ['flecha', 'perno', 'arrow', 'bolt'] },
-    { id: 'magic', name: '🔮 Varitas y Bastones', keywords: ['varita', 'bastón', 'wand', 'staff'] },
-    { id: 'daggers', name: '🗡️ Dagas y Cortas', keywords: ['daga', 'hoja', 'dagger', 'blade'] }
+    { id: 'all', name: 'Todas las Armas', icon: 'crossed-swords' },
+    { id: 'swords', name: 'Espadas y Cimitarras', icon: 'crossed-swords', keywords: ['espada', 'espadón', 'cimitarra', 'sword', 'scimitar', 'greatsword'] },
+    { id: 'axes', name: 'Hachas y Mazas', icon: 'battle-axe', keywords: ['hacha', 'maza', 'martillo', 'greataxe', 'axe', 'warhammer', 'mace'] },
+    { id: 'whips', name: 'Látigos', icon: 'vine-whip', keywords: ['látigo', 'whip'] },
+    { id: 'ranged', name: 'Arcos y Ballestas', icon: 'bow-arrow', keywords: ['arco', 'ballesta', 'bow', 'crossbow'] },
+    { id: 'ammo', name: 'Munición (Flechas y Pernos)', icon: 'target-arrows', keywords: ['flecha', 'perno', 'arrow', 'bolt'] },
+    { id: 'magic', name: 'Varitas y Bastones', icon: 'wizard-staff', keywords: ['varita', 'bastón', 'wand', 'staff'] },
+    { id: 'daggers', name: 'Dagas y Cortas', icon: 'plain-dagger', keywords: ['daga', 'hoja', 'dagger', 'blade'] }
   ],
   'Armaduras y Ropa': [
-    { id: 'all', name: 'Toda la Armadura' },
-    { id: 'helmets', name: '👑 Cascos y Capuchas', keywords: ['casco', 'capucha', 'sombrero', 'helmet', 'helm', 'coif', 'hat'] },
-    { id: 'bodies', name: '🥋 Corazas y Túnicas', keywords: ['coraza', 'túnica', 'platebody', 'body', 'robe', 'tunic'] },
-    { id: 'legs', name: '👖 Perneras y Pantalones', keywords: ['perneras', 'pantalones', 'falda', 'platelegs', 'legs', 'chaps'] },
-    { id: 'shields', name: '🛡️ Escudos', keywords: ['escudo', 'shield'] },
-    { id: 'capes', name: '🧣 Capas y Acumuladores', keywords: ['capa', 'acumulador', 'cape', 'accumulator'] },
-    { id: 'jewelry', name: '📿 Amuletos y Anillos', keywords: ['anillo', 'amuleto', 'collar', 'ring', 'amulet'] }
+    { id: 'all', name: 'Toda la Armadura', icon: 'shield' },
+    { id: 'helmets', name: 'Cascos y Capuchas', icon: 'crown', keywords: ['casco', 'capucha', 'sombrero', 'helmet', 'helm', 'coif', 'hat'] },
+    { id: 'bodies', name: 'Corazas y Túnicas', icon: 'breastplate', keywords: ['coraza', 'túnica', 'platebody', 'body', 'robe', 'tunic'] },
+    { id: 'legs', name: 'Perneras y Pantalones', icon: 'trousers', keywords: ['perneras', 'pantalones', 'falda', 'platelegs', 'legs', 'chaps'] },
+    { id: 'shields', name: 'Escudos', icon: 'shield', keywords: ['escudo', 'shield'] },
+    { id: 'capes', name: 'Capas y Acumuladores', icon: 'cloak', keywords: ['capa', 'acumulador', 'cape', 'accumulator'] },
+    { id: 'jewelry', name: 'Amuletos y Anillos', icon: 'necklace', keywords: ['anillo', 'amuleto', 'collar', 'ring', 'amulet'] }
   ],
   'Vestigios y Patrones': [
-    { id: 'all', name: 'Todos los Vestigios y Patrones' },
-    { id: 'vestiges', name: '🏺 Vestigios Rotos', keywords: ['vestigio', 'punta', 'hoja', 'espejo', 'talla', 'vestige', 'bladehead'] },
-    { id: 'patterns', name: '📜 Patrones y Diseños', keywords: ['patrón', 'pattern'] },
-    { id: 'masterwork', name: '⭐ Masterwork y Reliquias', keywords: ['masterwork', 'reliquia', 'memoria', 'relic', 'memory'] }
+    { id: 'all', name: 'Todos los Vestigios y Patrones', icon: 'scroll-unfurled' },
+    { id: 'vestiges', name: 'Vestigios Rotos', icon: 'amphora', keywords: ['vestigio', 'punta', 'hoja', 'espejo', 'talla', 'vestige', 'bladehead'] },
+    { id: 'patterns', name: 'Patrones y Diseños', icon: 'scroll-unfurled', keywords: ['patrón', 'pattern'] },
+    { id: 'masterwork', name: 'Masterwork y Reliquias', icon: 'flat-star', keywords: ['masterwork', 'reliquia', 'memoria', 'relic', 'memory'] }
   ],
   'Pociones y Comida': [
-    { id: 'all', name: 'Todos los Consumibles' },
-    { id: 'potions', name: '🧪 Pociones y Elixires', keywords: ['poción', 'antifuego', 'antiponzoña', 'elixir', 'potion'] },
-    { id: 'food', name: '🍲 Comidas y Estofados', keywords: ['estofado', 'caldo', 'tarta', 'patata', 'comida', 'stew', 'broth', 'pie'] },
-    { id: 'fish', name: '🐟 Pescados y Carnes', keywords: ['pescado', 'carne', 'fish', 'beef'] }
+    { id: 'all', name: 'Todos los Consumibles', icon: 'potion-ball' },
+    { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['poción', 'antifuego', 'antiponzoña', 'elixir', 'potion'] },
+    { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['estofado', 'caldo', 'tarta', 'patata', 'comida', 'stew', 'broth', 'pie'] },
+    { id: 'fish', name: 'Pescados y Carnes', icon: 'fish-cooked', keywords: ['pescado', 'carne', 'fish', 'beef'] }
   ],
   'Herramientas': [
-    { id: 'all', name: 'Todas las Herramientas' },
-    { id: 'pickaxes', name: '⛏️ Picos', keywords: ['pico', 'pickaxe'] },
-    { id: 'axes', name: '🪓 Hachas de Tala', keywords: ['hacha de tala', 'hacha', 'logging axe', 'axe'] },
-    { id: 'spades', name: '🪴 Palas y Regaderas', keywords: ['pala', 'regadera', 'spade', 'watering can'] }
+    { id: 'all', name: 'Todas las Herramientas', icon: 'mining' },
+    { id: 'pickaxes', name: 'Picos', icon: 'mining', keywords: ['pico', 'pickaxe'] },
+    { id: 'axes', name: 'Hachas de Tala', icon: 'battle-axe', keywords: ['hacha de tala', 'hacha', 'logging axe', 'axe'] },
+    { id: 'spades', name: 'Palas y Regaderas', icon: 'spade', keywords: ['pala', 'regadera', 'spade', 'watering can'] }
   ],
   'Materiales y Minerales': [
-    { id: 'all', name: 'Todos los Materiales' },
-    { id: 'bars', name: '🪙 Barras de Metal', keywords: ['barra', 'bar'] },
-    { id: 'ores', name: '🪨 Menas y Minerales', keywords: ['mena', 'mineral', 'arcilla', 'piedra', 'ore', 'clay', 'stone'] },
-    { id: 'logs', name: '🪵 Maderas y Tablas', keywords: ['tronco', 'tabla', 'madera', 'corteza', 'log', 'plank', 'bark'] },
-    { id: 'leather', name: '🐉 Cueros y Escamas', keywords: ['cuero', 'piel', 'escama', 'leather', 'hide', 'scale'] },
-    { id: 'essence', name: '✨ Esencias y Hilos', keywords: ['hilo', 'esencia', 'hueso', 'ceniza', 'espina', 'semilla', 'thread', 'essence'] }
+    { id: 'all', name: 'Todos los Materiales', icon: 'gold-bar' },
+    { id: 'bars', name: 'Barras de Metal', icon: 'gold-bar', keywords: ['barra', 'bar'] },
+    { id: 'ores', name: 'Menas y Minerales', icon: 'rock', keywords: ['mena', 'mineral', 'arcilla', 'piedra', 'ore', 'clay', 'stone'] },
+    { id: 'logs', name: 'Maderas y Tablas', icon: 'wood-pile', keywords: ['tronco', 'tabla', 'madera', 'corteza', 'log', 'plank', 'bark'] },
+    { id: 'leather', name: 'Cueros y Escamas', icon: 'dragon-head', keywords: ['cuero', 'piel', 'escama', 'leather', 'hide', 'scale'] },
+    { id: 'essence', name: 'Esencias y Hilos', icon: 'sparkles', keywords: ['hilo', 'esencia', 'hueso', 'ceniza', 'espina', 'semilla', 'thread', 'essence'] }
   ],
   'Runas y Magia': [
-    { id: 'all', name: 'Todas las Runas y Magia' },
-    { id: 'runes', name: '✨ Runas Elementales', keywords: ['runa', 'rune'] },
-    { id: 'staves', name: '🔮 Bastones y Libros', keywords: ['tomo', 'libro', 'manual', 'tome', 'spellbook'] }
+    { id: 'all', name: 'Todas las Runas y Magia', icon: 'sparkles' },
+    { id: 'runes', name: 'Runas Elementales', icon: 'sparkles', keywords: ['runa', 'rune'] },
+    { id: 'staves', name: 'Bastones y Libros', icon: 'wizard-staff', keywords: ['tomo', 'libro', 'manual', 'tome', 'spellbook'] }
   ]
 };
 
@@ -379,7 +380,6 @@ export default function ItemCatalog({
         {/* Grid of Category Cards */}
         <div className="category-hub-grid">
           {CATEGORY_DEFINITIONS.map((cat) => {
-            const Icon = cat.icon;
             const count = categoryCounts[cat.id] || 0;
 
             return (
@@ -398,7 +398,7 @@ export default function ItemCatalog({
               >
                 <div className="category-card-top">
                   <div className="category-icon-box">
-                    <Icon size={24} color={cat.color} />
+                    <GameIcon name={cat.icon} size={24} color={cat.color} />
                   </div>
                   <span className="category-count-pill">{count} ítems</span>
                 </div>
@@ -427,7 +427,7 @@ export default function ItemCatalog({
     );
   }
 
-  const CurrentIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? Compass : Sparkles);
+  const currentCategoryIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? 'swap-bag' : 'sparkles');
 
   return (
     <div className="item-catalog-container">
@@ -455,7 +455,7 @@ export default function ItemCatalog({
               borderColor: currentCategoryConfig?.accentBorder || 'rgba(212, 175, 55, 0.3)'
             }}
           >
-            <CurrentIcon size={20} />
+            <GameIcon name={currentCategoryIcon} size={20} />
           </div>
           <div>
             <h2 className="category-nav-title">
@@ -506,8 +506,10 @@ export default function ItemCatalog({
                   setSelectedSubtype(st.id);
                   setDisplayCount(48);
                 }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
               >
-                {st.name}
+                {st.icon && <GameIcon name={st.icon} size={14} />}
+                <span>{st.name}</span>
               </button>
             ))}
           </div>
@@ -528,31 +530,35 @@ export default function ItemCatalog({
             </button>
             <button
               className={`filter-chip ${selectedPowerTier === 't1-3' ? 'active' : ''}`}
-              style={{ color: 'var(--tier-1-3)' }}
+              style={{ color: 'var(--tier-1-3)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               onClick={() => setSelectedPowerTier('t1-3')}
             >
-              ★ T1-3
+              <GameIcon name="flat-star" size={12} color="var(--tier-1-3)" />
+              <span>T1-3</span>
             </button>
             <button
               className={`filter-chip ${selectedPowerTier === 't4-6' ? 'active' : ''}`}
-              style={{ color: 'var(--tier-4-6)' }}
+              style={{ color: 'var(--tier-4-6)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               onClick={() => setSelectedPowerTier('t4-6')}
             >
-              ★ T4-6
+              <GameIcon name="flat-star" size={12} color="var(--tier-4-6)" />
+              <span>T4-6</span>
             </button>
             <button
               className={`filter-chip ${selectedPowerTier === 't7' ? 'active' : ''}`}
-              style={{ color: 'var(--tier-7)' }}
+              style={{ color: 'var(--tier-7)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               onClick={() => setSelectedPowerTier('t7')}
             >
-              ★ T7
+              <GameIcon name="flat-star" size={12} color="var(--tier-7)" />
+              <span>T7</span>
             </button>
             <button
               className={`filter-chip ${selectedPowerTier === 't8-9' ? 'active' : ''}`}
-              style={{ color: 'var(--tier-8-9)' }}
+              style={{ color: 'var(--tier-8-9)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
               onClick={() => setSelectedPowerTier('t8-9')}
             >
-              ★ T8-9 Masterwork
+              <GameIcon name="flat-star" size={12} color="var(--tier-8-9)" />
+              <span>T8-9 Masterwork</span>
             </button>
           </div>
 

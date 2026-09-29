@@ -1,26 +1,11 @@
 import React, { useState } from 'react';
 import { 
-  Home,
-  Sword, 
-  Shield, 
-  Pickaxe, 
-  FlaskConical, 
-  Layers, 
-  Scroll, 
-  Sparkles, 
-  Compass, 
-  Bookmark, 
-  UserCheck, 
-  Flame, 
-  Hammer, 
-  BookOpen, 
-  Zap, 
   Menu, 
   X, 
   ChevronRight,
-  ChevronDown,
-  Map 
+  ChevronDown
 } from 'lucide-react';
+import GameIcon from './common/GameIcon';
 
 export default function Navigation({ 
   activeView, 
@@ -35,14 +20,14 @@ export default function Navigation({
   const [isItemsDropdownOpen, setIsItemsDropdownOpen] = useState(true);
 
   const categories = [
-    { id: 'All', name: 'Todos los Ítems', icon: Compass },
-    { id: 'Armas de Combate', name: 'Armas de Combate', icon: Sword },
-    { id: 'Armaduras y Ropa', name: 'Armaduras y Ropa', icon: Shield },
-    { id: 'Herramientas', name: 'Herramientas', icon: Pickaxe },
-    { id: 'Pociones y Comida', name: 'Pociones y Comida', icon: FlaskConical },
-    { id: 'Materiales y Minerales', name: 'Materiales y Minerales', icon: Layers },
-    { id: 'Vestigios y Patrones', name: 'Vestigios y Patrones', icon: Scroll },
-    { id: 'Runas y Magia', name: 'Runas y Magia', icon: Sparkles }
+    { id: 'All', name: 'Todos los Ítems', icon: 'swap-bag', color: 'var(--gold-400)' },
+    { id: 'Armas de Combate', name: 'Armas de Combate', icon: 'crossed-swords', color: '#f87171' },
+    { id: 'Armaduras y Ropa', name: 'Armaduras y Ropa', icon: 'breastplate', color: '#60a5fa' },
+    { id: 'Herramientas', name: 'Herramientas', icon: 'mining', color: '#fbbf24' },
+    { id: 'Pociones y Comida', name: 'Pociones y Comida', icon: 'potion-ball', color: '#34d399' },
+    { id: 'Materiales y Minerales', name: 'Materiales y Minerales', icon: 'anvil-impact', color: '#a78bfa' },
+    { id: 'Vestigios y Patrones', name: 'Vestigios y Patrones', icon: 'scroll-unfurled', color: '#f472b6' },
+    { id: 'Runas y Magia', name: 'Runas y Magia', icon: 'crystal-ball', color: '#38bdf8' }
   ];
 
   const isMoreActive = ['spells', 'vaults', 'loadout', 'planner', 'skills', 'lore', 'favorites'].includes(activeView);
@@ -65,7 +50,7 @@ export default function Navigation({
                 setIsItemsDropdownOpen(true);
               }}
             >
-              <Compass size={18} color="var(--gold-400)" />
+              <GameIcon name="swap-bag" size={18} color="var(--gold-400)" />
               <span>Explorador de Ítems</span>
             </button>
 
@@ -89,7 +74,6 @@ export default function Navigation({
           {isItemsDropdownOpen && (
             <div className="nav-submenu">
               {categories.map((cat) => {
-                const Icon = cat.icon;
                 const count = categoryCounts[cat.id] || 0;
                 const isSelected = activeView === 'catalog' && selectedCategory === cat.id;
 
@@ -102,7 +86,7 @@ export default function Navigation({
                       setSelectedCategory(cat.id);
                     }}
                   >
-                    <Icon size={15} />
+                    <GameIcon name={cat.icon} size={15} color={isSelected ? 'var(--gold-300)' : cat.color} />
                     <span className="subitem-name">{cat.name}</span>
                     <span className="badge">{count}</span>
                   </button>
@@ -116,7 +100,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'quests' ? 'active' : ''}`}
           onClick={() => setActiveView('quests')}
         >
-          <Scroll size={18} color="var(--gold-400)" />
+          <GameIcon name="tied-scroll" size={18} color="var(--gold-400)" />
           <span>Misiones (Quests)</span>
           <span className="badge">{questCount}</span>
         </button>
@@ -126,7 +110,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'vaults' ? 'active' : ''}`}
           onClick={() => setActiveView('vaults')}
         >
-          <Shield size={18} color="#63b3ed" />
+          <GameIcon name="shield" size={18} color="#63b3ed" />
           <span>Bóvedas Dragonkin</span>
           <span className="badge" style={{ background: 'rgba(66, 153, 225, 0.25)', color: '#63b3ed', borderColor: 'rgba(66, 153, 225, 0.4)' }}>12</span>
         </button>
@@ -135,7 +119,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'spells' ? 'active' : ''}`}
           onClick={() => setActiveView('spells')}
         >
-          <Zap size={18} color="#b794f4" />
+          <GameIcon name="lightning-arc" size={18} color="#b794f4" />
           <span>Grimorio de Hechizos</span>
           <span className="badge">{spellCount}</span>
         </button>
@@ -144,7 +128,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'map' ? 'active' : ''}`}
           onClick={() => setActiveView('map')}
         >
-          <Map size={18} color="var(--gold-400)" />
+          <GameIcon name="treasure-map" size={18} color="var(--gold-400)" />
           <span>Mapa de Ashenfall</span>
           <span className="badge" style={{ background: 'rgba(212, 175, 55, 0.25)', color: 'var(--gold-300)', borderColor: 'var(--gold-border)' }}>POIs</span>
         </button>
@@ -153,7 +137,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'lore' ? 'active' : ''}`}
           onClick={() => setActiveView('lore')}
         >
-          <BookOpen size={18} color="var(--gold-300)" />
+          <GameIcon name="book-cover" size={18} color="var(--gold-300)" />
           <span>Códice y Lore</span>
         </button>
 
@@ -163,7 +147,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'loadout' ? 'active' : ''}`}
           onClick={() => setActiveView('loadout')}
         >
-          <UserCheck size={18} />
+          <GameIcon name="breastplate" size={18} color="#48bb78" />
           <span>Simulador de Equipo</span>
         </button>
 
@@ -171,7 +155,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'planner' ? 'active' : ''}`}
           onClick={() => setActiveView('planner')}
         >
-          <Hammer size={18} />
+          <GameIcon name="hammer-drop" size={18} color="#ecc94b" />
           <span>Calculadora Crafteo</span>
         </button>
 
@@ -179,7 +163,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'skills' ? 'active' : ''}`}
           onClick={() => setActiveView('skills')}
         >
-          <Flame size={18} />
+          <GameIcon name="campfire" size={18} color="#fc8181" />
           <span>Habilidades y Guías</span>
         </button>
 
@@ -187,7 +171,7 @@ export default function Navigation({
           className={`nav-item ${activeView === 'favorites' ? 'active' : ''}`}
           onClick={() => setActiveView('favorites')}
         >
-          <Bookmark size={18} />
+          <GameIcon name="flat-star" size={18} color="var(--gold-400)" />
           <span>Mis Favoritos</span>
         </button>
       </aside>
@@ -203,7 +187,7 @@ export default function Navigation({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Compass size={19} />
+          <GameIcon name="swap-bag" size={19} />
           <span>Ítems</span>
         </button>
 
@@ -215,7 +199,7 @@ export default function Navigation({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Scroll size={19} />
+          <GameIcon name="tied-scroll" size={19} />
           <span>Misiones</span>
         </button>
 
@@ -230,7 +214,7 @@ export default function Navigation({
           title="Menú Principal (Inicio)"
         >
           <div className="center-fab-circle">
-            <Home size={21} className="center-fab-icon" />
+            <GameIcon name="castle" size={21} className="center-fab-icon" />
             <span className="center-fab-label">Inicio</span>
           </div>
         </button>
@@ -243,7 +227,7 @@ export default function Navigation({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Map size={19} />
+          <GameIcon name="treasure-map" size={19} />
           <span>Mapa</span>
         </button>
 
@@ -280,7 +264,7 @@ export default function Navigation({
           >
             <div className="modal-header" style={{ padding: '14px 20px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)' }}>
-                <Sparkles size={18} />
+                <GameIcon name="sparkles" size={18} color="var(--gold-400)" />
                 <h3 className="modal-title" style={{ fontSize: '1.1rem' }}>MÁS SECCIONES y GUÍAS</h3>
               </div>
               <button className="modal-close-btn" onClick={() => setIsMoreMenuOpen(false)}>
@@ -299,7 +283,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <Shield size={18} style={{ flexShrink: 0, color: '#63b3ed' }} />
+                  <GameIcon name="shield" size={18} color="#63b3ed" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Bóvedas Dragonkin (Cámaras)</span>
                 </div>
                 <span className="badge" style={{ background: 'rgba(66, 153, 225, 0.25)', color: '#63b3ed', borderColor: 'rgba(66, 153, 225, 0.4)', marginRight: '6px' }}>12</span>
@@ -315,7 +299,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <Zap size={18} style={{ flexShrink: 0, color: '#b794f4' }} />
+                  <GameIcon name="lightning-arc" size={18} color="#b794f4" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Grimorio de Hechizos</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />
@@ -330,7 +314,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <UserCheck size={18} style={{ flexShrink: 0, color: '#48bb78' }} />
+                  <GameIcon name="breastplate" size={18} color="#48bb78" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Simulador de Equipamiento</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />
@@ -345,7 +329,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <Hammer size={18} style={{ flexShrink: 0, color: '#ecc94b' }} />
+                  <GameIcon name="hammer-drop" size={18} color="#ecc94b" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Calculadora de Crafteo</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />
@@ -360,7 +344,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <Flame size={18} style={{ flexShrink: 0, color: '#fc8181' }} />
+                  <GameIcon name="campfire" size={18} color="#fc8181" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Habilidades y Guías</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />
@@ -375,7 +359,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <BookOpen size={18} style={{ flexShrink: 0, color: '#d69e2e' }} />
+                  <GameIcon name="book-cover" size={18} color="#d69e2e" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Códice y Lore de Ashenfall</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />
@@ -390,7 +374,7 @@ export default function Navigation({
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', flex: 1, minWidth: 0 }}>
-                  <Bookmark size={18} style={{ flexShrink: 0, color: 'var(--gold-400)' }} />
+                  <GameIcon name="flat-star" size={18} color="var(--gold-400)" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>Mis Objetos Favoritos</span>
                 </div>
                 <ChevronRight size={16} style={{ flexShrink: 0, marginLeft: '8px' }} />

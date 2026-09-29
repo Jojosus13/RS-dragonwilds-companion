@@ -1,19 +1,19 @@
 import React, { useState, useMemo } from 'react';
-import { Sparkles, Zap } from 'lucide-react';
 import spellsData from '../../data/spells.json';
 import { normalizeText, getWordStems } from '../../utils/searchUtils';
 import SpellFilterBar from './SpellFilterBar';
 import SpellCard from './SpellCard';
 import SpellDetailModal from './SpellDetailModal';
+import GameIcon from '../GameIcon';
 
 const SPELL_CATEGORIES = [
-  { id: 'all', name: 'Todos los Hechizos' },
-  { id: 'Combate', name: '⚔️ Combate y Daño' },
-  { id: 'Encantamiento', name: '✨ Encantamiento de Armas' },
-  { id: 'Transmutación', name: '🧪 Transmutación y Alquimia' },
-  { id: 'Teletransporte', name: '🌀 Teletransporte y Movilidad' },
-  { id: 'Defensa', name: '🛡️ Defensa y Protección' },
-  { id: 'Utilidad', name: '🪴 Utilidad y Recolección' }
+  { id: 'all', name: 'Todos los Hechizos', icon: 'wizard-staff' },
+  { id: 'Combate', name: 'Combate y Daño', icon: 'crossed-swords' },
+  { id: 'Encantamiento', name: 'Encantamiento de Armas', icon: 'sparkles' },
+  { id: 'Transmutación', name: 'Transmutación y Alquimia', icon: 'potion-ball' },
+  { id: 'Teletransporte', name: 'Teletransporte y Movilidad', icon: 'teleport' },
+  { id: 'Defensa', name: 'Defensa y Protección', icon: 'shield' },
+  { id: 'Utilidad', name: 'Utilidad y Recolección', icon: 'spade' }
 ];
 
 export default function SpellsViewer() {
@@ -48,11 +48,11 @@ export default function SpellsViewer() {
 
       return true;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [searchQuery, selectedCategory]);
 
   return (
     <div className="spells-viewer-container">
-      {/* Sticky Header with Search and Category Filters */}
+      {/* Filters */}
       <SpellFilterBar
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
@@ -77,7 +77,7 @@ export default function SpellsViewer() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <Sparkles size={22} color="#b794f4" />
+          <GameIcon name="sparkles" size={24} color="#b794f4" />
           <div>
             <h3 style={{ fontFamily: 'var(--font-title)', color: '#d6bcfa', fontSize: '1.05rem', margin: 0 }}>
               GRIMORIO ARCANO DE ASHENFALL
@@ -95,16 +95,8 @@ export default function SpellsViewer() {
 
       {/* Spells Grid */}
       {filteredSpells.length === 0 ? (
-        <div
-          style={{
-            textAlign: 'center',
-            padding: '60px 20px',
-            background: 'var(--bg-card)',
-            borderRadius: '16px',
-            border: '1px solid var(--gold-border)'
-          }}
-        >
-          <Zap size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
+        <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
+          <GameIcon name="lightning-arc" size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
           <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '8px' }}>
             No se encontraron hechizos
           </h3>
@@ -125,10 +117,12 @@ export default function SpellsViewer() {
       )}
 
       {/* Spell Detail Modal */}
-      <SpellDetailModal
-        spell={selectedSpellModal}
-        onClose={() => setSelectedSpellModal(null)}
-      />
+      {selectedSpellModal && (
+        <SpellDetailModal
+          spell={selectedSpellModal}
+          onClose={() => setSelectedSpellModal(null)}
+        />
+      )}
     </div>
   );
 }

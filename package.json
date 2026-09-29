@@ -17,12 +17,14 @@
     "@capacitor/cli": "^8.5.2",
     "@capacitor/core": "^8.5.2",
     "@capgo/capacitor-updater": "^8.51.25",
+    "@iconify/react": "^6.0.2",
     "canvas-confetti": "^1.9.4",
     "lucide-react": "^1.47.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@iconify-json/game-icons": "^1.2.4",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",

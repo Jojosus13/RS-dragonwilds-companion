@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layers, Info, Maximize2, Shield } from 'lucide-react';
+import { Info, Maximize2 } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function VaultChests({ chests, onZoomImage }) {
   if (!chests || chests.length === 0) return null;
@@ -8,7 +9,7 @@ export default function VaultChests({ chests, onZoomImage }) {
     <div className="vault-section-card">
       <div className="vault-section-header">
         <div className="vault-sec-title-wrap">
-          <Layers size={20} color="#63b3ed" />
+          <GameIcon name="sparkles" size={20} color="#63b3ed" />
           <h2>Cofres del Tesoro y Secretos (Chests Guide)</h2>
         </div>
         <span className="vault-sec-count">{chests.length} Cofres</span>
@@ -59,7 +60,7 @@ export default function VaultChests({ chests, onZoomImage }) {
               </div>
             ) : (
               <div className="chest-no-image-placeholder">
-                <Shield size={24} color="rgba(255,255,255,0.2)" />
+                <GameIcon name="shield" size={24} color="rgba(255,255,255,0.2)" />
                 <span>Sin captura disponible</span>
               </div>
             )}

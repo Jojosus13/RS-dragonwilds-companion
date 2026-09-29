@@ -29,6 +29,7 @@ import { MAP_MARKERS } from '../data/mapData';
 import vaultsData from '../data/vaults.json';
 import { APP_VERSION } from '../utils/version';
 import { Capacitor } from '@capacitor/core';
+import GameIcon from './common/GameIcon';
 
 export default function MainMenu({
   setActiveView,
@@ -128,7 +129,7 @@ export default function MainMenu({
       title: 'Explorador de Ítems',
       subtitle: `${allItems.length || 200}+ Objetos y Equipos`,
       desc: 'Códice completo de armas, armaduras, herramientas, consumibles, recetas y estadísticas.',
-      icon: Compass,
+      icon: 'swap-bag',
       tag: 'Códice',
       accentColor: 'var(--gold-400)',
       bgGlow: 'rgba(212, 175, 55, 0.15)',
@@ -143,7 +144,7 @@ export default function MainMenu({
       title: 'Mapa de Ashenfall',
       subtitle: 'POIs, Jefes y Rutas',
       desc: 'Mapa interactivo con capas de canteras, yacimientos, teletransportes y marcadores de misiones.',
-      icon: Map,
+      icon: 'treasure-map',
       tag: 'Interactivo',
       accentColor: '#63b3ed',
       bgGlow: 'rgba(66, 153, 225, 0.15)',
@@ -155,7 +156,7 @@ export default function MainMenu({
       title: 'Bóvedas Dragonkin',
       subtitle: '12 Cámaras y Cofres Secretos',
       desc: 'Guías de mazmorras ancestrales, trampas, efigies de forja, núcleos de tecnología y capturas de cofres.',
-      icon: Shield,
+      icon: 'shield',
       tag: 'Mazmorras',
       accentColor: '#63b3ed',
       bgGlow: 'rgba(66, 153, 225, 0.18)',
@@ -167,7 +168,7 @@ export default function MainMenu({
       title: 'Misiones y Aventuras',
       subtitle: `${quests.length || 39} Quests Disponibles`,
       desc: 'Guías de misiones paso a paso, ubicación de PNJs, requerimientos y recompensas de experiencia.',
-      icon: Scroll,
+      icon: 'tied-scroll',
       tag: 'Aventuras',
       accentColor: '#f6ad55',
       bgGlow: 'rgba(237, 137, 54, 0.15)',
@@ -179,7 +180,7 @@ export default function MainMenu({
       title: 'Grimorio de Hechizos',
       subtitle: `${spells.length || 42} Conjuros Arcanos`,
       desc: 'Magia de combate, runas elementales requeridas, niveles necesarios y tiempos de recarga.',
-      icon: Zap,
+      icon: 'lightning-arc',
       tag: 'Magia',
       accentColor: '#b794f4',
       bgGlow: 'rgba(128, 90, 213, 0.15)',
@@ -191,7 +192,7 @@ export default function MainMenu({
       title: 'Simulador de Equipo',
       subtitle: 'Calculadora de Estadísticas',
       desc: 'Configura tus 8 ranuras de combate, armas, protecciones y optimiza tu build de personaje.',
-      icon: UserCheck,
+      icon: 'breastplate',
       tag: 'Builds',
       accentColor: '#48bb78',
       bgGlow: 'rgba(72, 187, 120, 0.15)',
@@ -203,7 +204,7 @@ export default function MainMenu({
       title: 'Calculadora de Crafteo',
       subtitle: 'Planificador de Materiales',
       desc: 'Calcula los ingredientes en cadena, lingotes y minerales necesarios para forjar tu equipamiento.',
-      icon: Hammer,
+      icon: 'hammer-drop',
       tag: 'Artesanía',
       accentColor: '#ecc94b',
       bgGlow: 'rgba(236, 201, 75, 0.15)',
@@ -215,7 +216,7 @@ export default function MainMenu({
       title: 'Guía de Habilidades',
       subtitle: 'Entrenamiento y Supervivencia',
       desc: 'Aprende las mejores técnicas para subir Minería, Herrería, Combate, Cocina y Artesanía.',
-      icon: Flame,
+      icon: 'campfire',
       tag: 'Guías',
       accentColor: '#fc8181',
       bgGlow: 'rgba(245, 101, 101, 0.15)',
@@ -227,7 +228,7 @@ export default function MainMenu({
       title: 'Códice y Crónicas',
       subtitle: 'Historia de Ashenfall',
       desc: 'Descubre los misterios de los Dragones Ancestrales, el Rey de Ashenfall y las ruinas olvidadas.',
-      icon: BookOpen,
+      icon: 'book-cover',
       tag: 'Lore',
       accentColor: '#d69e2e',
       bgGlow: 'rgba(214, 158, 46, 0.15)',
@@ -238,30 +239,30 @@ export default function MainMenu({
 
   // Fast Category Chips
   const categoryShortcuts = [
-    { id: 'Armas de Combate', name: 'Armas', icon: Sword, color: '#e53e3e' },
-    { id: 'Armaduras y Ropa', name: 'Armaduras', icon: Shield, color: '#4299e1' },
-    { id: 'Herramientas', name: 'Herramientas', icon: Pickaxe, color: '#dd6b20' },
-    { id: 'Pociones y Comida', name: 'Consumibles', icon: FlaskConical, color: '#38a169' },
-    { id: 'Materiales y Minerales', name: 'Materiales', icon: Layers, color: '#d4af37' },
-    { id: 'Runas y Magia', name: 'Runas', icon: Sparkles, color: '#9f7aea' },
-    { id: 'Vestigios y Patrones', name: 'Patrones', icon: Scroll, color: '#ecc94b' }
+    { id: 'Armas de Combate', name: 'Armas', icon: 'crossed-swords', color: '#e53e3e' },
+    { id: 'Armaduras y Ropa', name: 'Armaduras', icon: 'breastplate', color: '#4299e1' },
+    { id: 'Herramientas', name: 'Herramientas', icon: 'mining', color: '#dd6b20' },
+    { id: 'Pociones y Comida', name: 'Consumibles', icon: 'potion-ball', color: '#38a169' },
+    { id: 'Materiales y Minerales', name: 'Materiales', icon: 'anvil-impact', color: '#d4af37' },
+    { id: 'Runas y Magia', name: 'Runas', icon: 'crystal-ball', color: '#9f7aea' },
+    { id: 'Vestigios y Patrones', name: 'Patrones', icon: 'scroll-unfurled', color: '#ecc94b' }
   ];
 
   const equippedCount = Object.keys(loadout).filter((k) => !!loadout[k]).length;
 
   const survivalTips = [
     {
-      icon: '🗺️',
+      icon: 'treasure-map',
       title: 'Rutas y Teletransporte',
       text: 'Utiliza el Mapa Interactivo para localizar los pilares arcanos y desbloquear viajes rápidos por todo el territorio.'
     },
     {
-      icon: '🔨',
+      icon: 'hammer-drop',
       title: 'Crafteo Eficiente',
       text: 'Agrega múltiples recetas a la Calculadora de Crafteo para ver la suma total de menas brutas requeridas.'
     },
     {
-      icon: '🛡️',
+      icon: 'shield',
       title: 'Optimización de Equipo',
       text: 'Prueba diferentes combinaciones en el Simulador de Equipo para maximizar la absorción de daño antes de un boss.'
     }
@@ -332,7 +333,7 @@ export default function MainMenu({
                     {searchResults.items.length > 0 && (
                       <div className="menu-results-group">
                         <div className="group-title">
-                          <Compass size={13} /> Objetos y Códice
+                          <GameIcon name="swap-bag" size={13} color="var(--gold-400)" /> Objetos y Códice
                         </div>
                         {searchResults.items.map((item) => (
                           <div
@@ -347,7 +348,7 @@ export default function MainMenu({
                               {item.image ? (
                                 <img src={item.image} alt={item.name} />
                               ) : (
-                                <span>🗡️</span>
+                                <GameIcon name="crossed-swords" size={18} color="var(--gold-400)" />
                               )}
                             </div>
                             <div className="result-details">
@@ -364,7 +365,7 @@ export default function MainMenu({
                     {searchResults.vaults && searchResults.vaults.length > 0 && (
                       <div className="menu-results-group">
                         <div className="group-title">
-                          <Shield size={13} color="#63b3ed" /> Bóvedas Dragonkin
+                          <GameIcon name="shield" size={13} color="#63b3ed" /> Bóvedas Dragonkin
                         </div>
                         {searchResults.vaults.map((vlt) => (
                           <div
@@ -377,7 +378,7 @@ export default function MainMenu({
                             }}
                           >
                             <div className="result-icon vault-icon" style={{ background: 'rgba(66, 153, 225, 0.2)', color: '#63b3ed', borderRadius: '4px', width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                              🛡️
+                              <GameIcon name="shield" size={16} color="#63b3ed" />
                             </div>
                             <div className="result-details">
                               <span className="result-name">{vlt.name || vlt.title}</span>
@@ -393,7 +394,7 @@ export default function MainMenu({
                     {searchResults.quests.length > 0 && (
                       <div className="menu-results-group">
                         <div className="group-title">
-                          <Scroll size={13} color="var(--gold-400)" /> Misiones (Quests)
+                          <GameIcon name="tied-scroll" size={13} color="var(--gold-400)" /> Misiones (Quests)
                         </div>
                         {searchResults.quests.map((qst) => (
                           <div
@@ -404,7 +405,9 @@ export default function MainMenu({
                               setSearchQuery('');
                             }}
                           >
-                            <div className="result-icon quest-icon">📜</div>
+                            <div className="result-icon quest-icon">
+                              <GameIcon name="tied-scroll" size={16} color="var(--gold-400)" />
+                            </div>
                             <div className="result-details">
                               <span className="result-name">{qst.name || qst.title}</span>
                               <span className="result-meta">Misión • {qst.startPoint || 'Ashenfall'}</span>
@@ -419,7 +422,7 @@ export default function MainMenu({
                     {searchResults.spells.length > 0 && (
                       <div className="menu-results-group">
                         <div className="group-title">
-                          <Zap size={13} color="#b794f4" /> Hechizos
+                          <GameIcon name="lightning-arc" size={13} color="#b794f4" /> Hechizos
                         </div>
                         {searchResults.spells.map((spl) => (
                           <div
@@ -430,7 +433,9 @@ export default function MainMenu({
                               setSearchQuery('');
                             }}
                           >
-                            <div className="result-icon spell-icon">⚡</div>
+                            <div className="result-icon spell-icon">
+                              <GameIcon name="lightning-arc" size={16} color="#b794f4" />
+                            </div>
                             <div className="result-details">
                               <span className="result-name">{spl.name}</span>
                               <span className="result-meta">{spl.type} • Nivel {spl.levelRequired || 1}</span>
@@ -445,7 +450,7 @@ export default function MainMenu({
                     {searchResults.pois.length > 0 && (
                       <div className="menu-results-group">
                         <div className="group-title">
-                          <Map size={13} color="#63b3ed" /> Lugares en el Mapa
+                          <GameIcon name="treasure-map" size={13} color="#63b3ed" /> Lugares en el Mapa
                         </div>
                         {searchResults.pois.map((poi) => (
                           <div
@@ -456,7 +461,9 @@ export default function MainMenu({
                               setSearchQuery('');
                             }}
                           >
-                            <div className="result-icon map-icon">📍</div>
+                            <div className="result-icon map-icon">
+                              <GameIcon name="treasure-map" size={16} color="#63b3ed" />
+                            </div>
                             <div className="result-details">
                               <span className="result-name">{poi.title || poi.name}</span>
                               <span className="result-meta">{poi.region} • {poi.category}</span>
@@ -490,7 +497,7 @@ export default function MainMenu({
       <section className="menu-metrics-bar">
         <div className="metric-cell" onClick={() => { setSelectedCategory(null); setActiveView('catalog'); }}>
           <div className="metric-icon-box gold">
-            <Compass size={22} />
+            <GameIcon name="swap-bag" size={22} color="var(--gold-400)" />
           </div>
           <div className="metric-info">
             <span className="metric-number">{allItems.length || 200}+</span>
@@ -500,7 +507,7 @@ export default function MainMenu({
 
         <div className="metric-cell" onClick={() => setActiveView('quests')}>
           <div className="metric-icon-box orange">
-            <Scroll size={22} />
+            <GameIcon name="tied-scroll" size={22} color="#ed8936" />
           </div>
           <div className="metric-info">
             <span className="metric-number">{quests.length || 39}</span>
@@ -510,7 +517,7 @@ export default function MainMenu({
 
         <div className="metric-cell" onClick={() => setActiveView('spells')}>
           <div className="metric-icon-box purple">
-            <Zap size={22} />
+            <GameIcon name="lightning-arc" size={22} color="#9f7aea" />
           </div>
           <div className="metric-info">
             <span className="metric-number">{spells.length || 42}</span>
@@ -520,7 +527,7 @@ export default function MainMenu({
 
         <div className="metric-cell" onClick={() => setActiveView('map')}>
           <div className="metric-icon-box blue">
-            <Map size={22} />
+            <GameIcon name="treasure-map" size={22} color="#63b3ed" />
           </div>
           <div className="metric-info">
             <span className="metric-number">100%</span>
@@ -534,7 +541,7 @@ export default function MainMenu({
         <section className="menu-personal-hub">
           <div className="personal-hub-header">
             <div className="hub-title">
-              <Crown size={18} color="var(--gold-400)" />
+              <GameIcon name="crown" size={18} color="var(--gold-400)" />
               <span>TU PROGRESO y HERRAMIENTAS ACTIVAS</span>
             </div>
           </div>
@@ -547,7 +554,7 @@ export default function MainMenu({
               >
                 <div className="personal-card-top">
                   <div className="personal-badge gold">
-                    <Bookmark size={14} />
+                    <GameIcon name="flat-star" size={14} color="var(--gold-400)" />
                     <span>Favoritos</span>
                   </div>
                   <span className="personal-count">{favorites.length}</span>
@@ -570,7 +577,7 @@ export default function MainMenu({
               >
                 <div className="personal-card-top">
                   <div className="personal-badge orange">
-                    <Hammer size={14} />
+                    <GameIcon name="hammer-drop" size={14} color="#ecc94b" />
                     <span>Crafteo</span>
                   </div>
                   <span className="personal-count">{plannerItems.length}</span>
@@ -593,7 +600,7 @@ export default function MainMenu({
               >
                 <div className="personal-card-top">
                   <div className="personal-badge green">
-                    <Shield size={14} />
+                    <GameIcon name="breastplate" size={14} color="#48bb78" />
                     <span>Equipamiento</span>
                   </div>
                   <span className="personal-count">{equippedCount}/8</span>
@@ -622,43 +629,40 @@ export default function MainMenu({
         </div>
 
         <div className="menu-portals-grid">
-          {mainPortals.map((portal) => {
-            const Icon = portal.icon;
-            return (
-              <div
-                key={portal.id}
-                className="portal-card"
-                onClick={portal.onClick}
-                style={{
-                  '--portal-accent': portal.accentColor,
-                  '--portal-glow': portal.bgGlow,
-                  '--portal-border': portal.borderColor
-                }}
-              >
-                <div className="portal-card-glow" />
-                
-                <div className="portal-header">
-                  <div className="portal-icon-wrapper">
-                    <Icon size={26} />
-                  </div>
-                  <span className="portal-tag">{portal.tag}</span>
+          {mainPortals.map((portal) => (
+            <div
+              key={portal.id}
+              className="portal-card"
+              onClick={portal.onClick}
+              style={{
+                '--portal-accent': portal.accentColor,
+                '--portal-glow': portal.bgGlow,
+                '--portal-border': portal.borderColor
+              }}
+            >
+              <div className="portal-card-glow" />
+              
+              <div className="portal-header">
+                <div className="portal-icon-wrapper">
+                  <GameIcon name={portal.icon} size={26} color={portal.accentColor} />
                 </div>
+                <span className="portal-tag">{portal.tag}</span>
+              </div>
 
-                <div className="portal-content">
-                  <h3 className="portal-title">{portal.title}</h3>
-                  <span className="portal-subtitle">{portal.subtitle}</span>
-                  <p className="portal-desc">{portal.desc}</p>
-                </div>
+              <div className="portal-content">
+                <h3 className="portal-title">{portal.title}</h3>
+                <span className="portal-subtitle">{portal.subtitle}</span>
+                <p className="portal-desc">{portal.desc}</p>
+              </div>
 
-                <div className="portal-footer">
-                  <span className="portal-action-text">Entrar al módulo</span>
-                  <div className="portal-arrow-circle">
-                    <ChevronRight size={16} />
-                  </div>
+              <div className="portal-footer">
+                <span className="portal-action-text">Entrar al módulo</span>
+                <div className="portal-arrow-circle">
+                  <ChevronRight size={16} />
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -672,25 +676,22 @@ export default function MainMenu({
         </div>
 
         <div className="menu-category-cards-grid">
-          {categoryShortcuts.map((cat) => {
-            const Icon = cat.icon;
-            return (
-              <button
-                key={cat.id}
-                className="menu-category-btn"
-                onClick={() => {
-                  setSelectedCategory(cat.id);
-                  setActiveView('catalog');
-                }}
-              >
-                <div className="cat-icon-frame" style={{ color: cat.color }}>
-                  <Icon size={20} />
-                </div>
-                <span className="cat-name">{cat.name}</span>
-                <ChevronRight size={14} className="cat-arrow" />
-              </button>
-            );
-          })}
+          {categoryShortcuts.map((cat) => (
+            <button
+              key={cat.id}
+              className="menu-category-btn"
+              onClick={() => {
+                setSelectedCategory(cat.id);
+                setActiveView('catalog');
+              }}
+            >
+              <div className="cat-icon-frame" style={{ color: cat.color }}>
+                <GameIcon name={cat.icon} size={20} color={cat.color} />
+              </div>
+              <span className="cat-name">{cat.name}</span>
+              <ChevronRight size={14} className="cat-arrow" />
+            </button>
+          ))}
         </div>
       </section>
 
@@ -707,7 +708,9 @@ export default function MainMenu({
           {survivalTips.map((tip, idx) => (
             <div key={idx} className="tip-card">
               <div className="tip-header">
-                <span className="tip-icon">{tip.icon}</span>
+                <span className="tip-icon" style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  <GameIcon name={tip.icon} size={22} color="var(--gold-400)" />
+                </span>
                 <h4 className="tip-title">{tip.title}</h4>
               </div>
               <p className="tip-text">{tip.text}</p>

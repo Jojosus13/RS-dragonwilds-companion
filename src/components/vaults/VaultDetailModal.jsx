@@ -1,20 +1,14 @@
 import React from 'react';
 import {
   ArrowLeft,
-  MapPin,
   ExternalLink,
-  Shield,
-  Compass,
-  Skull,
-  Sparkles,
-  Award,
-  Scroll,
   X
 } from 'lucide-react';
 import { POWER_LEVEL_COLORS } from './VaultFilterBar';
 import VaultHazards from './VaultHazards';
 import VaultEnemies from './VaultEnemies';
 import VaultChests from './VaultChests';
+import GameIcon from '../GameIcon';
 
 export default function VaultDetailModal({
   activeVault,
@@ -43,7 +37,7 @@ export default function VaultDetailModal({
             onClick={() => onViewVaultOnMap(activeVault)}
             title="Ver ubicación exacta en el mapa de Ashenfall"
           >
-            <MapPin size={16} />
+            <GameIcon name="position-marker" size={16} />
             <span>Ver en el Mapa</span>
           </button>
           {activeVault.wikiUrl && (
@@ -87,17 +81,17 @@ export default function VaultDetailModal({
                 borderColor: POWER_LEVEL_COLORS[activeVault.powerLevel]?.border || 'rgba(66, 153, 225, 0.4)'
               }}
             >
-              <Shield size={14} />
+              <GameIcon name="shield" size={14} />
               Nivel de Poder: {activeVault.powerLevel}
             </span>
 
             <span className="vault-region-badge">
-              <Compass size={14} />
+              <GameIcon name="treasure-map" size={14} />
               {activeVault.region}
             </span>
 
             <span className="vault-danger-badge">
-              <Skull size={14} />
+              <GameIcon name="skull-crossed-bones" size={14} />
               Peligro: {activeVault.dangerLevel || 'Medio'}
             </span>
           </div>
@@ -138,7 +132,7 @@ export default function VaultDetailModal({
         <div className="vault-section-card">
           <div className="vault-section-header">
             <div className="vault-sec-title-wrap">
-              <Award size={20} color="var(--gold-400)" />
+              <GameIcon name="medal" size={20} color="var(--gold-400)" />
               <h2>Botín Destacado y Recetas (Notable Loot)</h2>
             </div>
           </div>
@@ -147,7 +141,7 @@ export default function VaultDetailModal({
             {activeVault.notableLoot && activeVault.notableLoot.map((lt, idx) => (
               <div key={idx} className="vault-loot-card">
                 <div className="loot-card-icon">
-                  <Sparkles size={20} color="var(--gold-400)" />
+                  <GameIcon name="sparkles" size={20} color="var(--gold-400)" />
                 </div>
                 <div className="loot-card-content">
                   <div className="loot-card-header">
@@ -164,13 +158,13 @@ export default function VaultDetailModal({
           {activeVault.recipes && activeVault.recipes.length > 0 && (
             <div className="vault-recipes-subblock">
               <h4 className="recipes-subtitle">
-                <Scroll size={16} color="#63b3ed" />
+                <GameIcon name="scroll-unfurled" size={16} color="#63b3ed" />
                 <span>Recetas de Forja Aprendibles en Efigies de Dragonkin:</span>
               </h4>
               <div className="recipes-chips-wrap">
                 {activeVault.recipes.map((rc, idx) => (
-                  <div key={idx} className="recipe-chip">
-                    <span className="recipe-dot">✦</span>
+                  <div key={idx} className="recipe-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    <GameIcon name="sparkles" size={12} color="var(--gold-400)" />
                     <span className="recipe-name">{rc.name}</span>
                     {rc.type && <span className="recipe-cat">({rc.type})</span>}
                   </div>
@@ -189,7 +183,7 @@ export default function VaultDetailModal({
         <div className="vault-section-card">
           <div className="vault-section-header">
             <div className="vault-sec-title-wrap">
-              <Sparkles size={20} color="#48bb78" />
+              <GameIcon name="sprout" size={20} color="#48bb78" />
               <h2>Recursos Extraíbles (Resources)</h2>
             </div>
           </div>
@@ -200,7 +194,10 @@ export default function VaultDetailModal({
                 <h4>Yacimientos y Ventilas:</h4>
                 <ul>
                   {activeVault.resources.nodes.map((node, i) => (
-                    <li key={i}>⛏️ {node}</li>
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <GameIcon name="mining" size={14} color="var(--gold-400)" />
+                      <span>{node}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -211,7 +208,10 @@ export default function VaultDetailModal({
                 <h4>Plantas y Hierbas:</h4>
                 <ul>
                   {activeVault.resources.plants.map((plant, i) => (
-                    <li key={i}>🌿 {plant}</li>
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <GameIcon name="herbs-bundle" size={14} color="#48bb78" />
+                      <span>{plant}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -222,7 +222,10 @@ export default function VaultDetailModal({
                 <h4>Objetos Especiales:</h4>
                 <ul>
                   {activeVault.resources.other.map((oth, i) => (
-                    <li key={i}>✦ {oth}</li>
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <GameIcon name="sparkles" size={14} color="var(--gold-400)" />
+                      <span>{oth}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -237,7 +240,7 @@ export default function VaultDetailModal({
           className="btn-fantasy gold btn-large"
           onClick={() => onViewVaultOnMap(activeVault)}
         >
-          <MapPin size={18} />
+          <GameIcon name="position-marker" size={18} />
           <span>Ver Ubicación Exacta en el Mapa de Ashenfall</span>
         </button>
         <button

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Search, X, CheckCircle2, Clock, Circle } from 'lucide-react';
+import { Search, X } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export const DIFFICULTY_COLORS = {
   'Principiante': { bg: 'rgba(72, 187, 120, 0.15)', text: '#48bb78', border: 'rgba(72, 187, 120, 0.3)' },
@@ -86,21 +87,21 @@ export default function QuestFilterBar({
             className={`filter-chip ${statusFilter === 'in_progress' ? 'active' : ''}`}
             onClick={() => onStatusChange('in_progress')}
           >
-            <Clock size={13} color="#63b3ed" />
+            <GameIcon name="sprint" size={13} color="#63b3ed" />
             <span>En Curso ({stats.inProgress})</span>
           </button>
           <button
             className={`filter-chip ${statusFilter === 'completed' ? 'active' : ''}`}
             onClick={() => onStatusChange('completed')}
           >
-            <CheckCircle2 size={13} color="#68d391" />
+            <GameIcon name="check-mark" size={13} color="#68d391" />
             <span>Completadas ({stats.completed})</span>
           </button>
           <button
             className={`filter-chip ${statusFilter === 'pending' ? 'active' : ''}`}
             onClick={() => onStatusChange('pending')}
           >
-            <Circle size={13} color="var(--text-muted)" />
+            <GameIcon name="tied-scroll" size={13} color="var(--text-muted)" />
             <span>Pendientes ({stats.pending})</span>
           </button>
         </div>

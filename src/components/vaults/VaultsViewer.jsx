@@ -1,10 +1,10 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Shield } from 'lucide-react';
 import vaultsData from '../../data/vaults.json';
 import { normalizeText } from '../../utils/searchUtils';
 import VaultFilterBar from './VaultFilterBar';
 import VaultCard from './VaultCard';
 import VaultDetailModal from './VaultDetailModal';
+import GameIcon from '../GameIcon';
 
 export default function VaultsViewer({
   selectedVaultId = null,
@@ -107,7 +107,7 @@ export default function VaultsViewer({
           <div className="vaults-header-banner">
             <div className="vaults-banner-content">
               <div className="vaults-banner-badge">
-                <Shield size={16} />
+                <GameIcon name="shield" size={16} />
                 <span>CÓDICE DRACONIS</span>
               </div>
               <h1 className="vaults-banner-title">Cámaras y Bóvedas Dragonkin</h1>
@@ -183,7 +183,7 @@ export default function VaultsViewer({
 
           {filteredVaults.length === 0 && (
             <div className="vaults-empty-state">
-              <Shield size={48} color="var(--gold-400)" />
+              <GameIcon name="shield" size={48} color="var(--gold-400)" />
               <h3>No se encontraron bóvedas</h3>
               <p>Prueba con otros términos de búsqueda o restablece los filtros de región y nivel.</p>
               <button

@@ -1,21 +1,10 @@
 import React, { useState } from 'react';
 import {
-  Compass,
-  Scroll,
-  Home,
-  Map,
   Menu,
-  Sparkles,
   X,
-  Shield,
-  Zap,
-  UserCheck,
-  Hammer,
-  Flame,
-  BookOpen,
-  Bookmark,
   ChevronRight
 } from 'lucide-react';
+import GameIcon from '../common/GameIcon';
 
 export default function MobileBottomNav({
   activeView,
@@ -47,7 +36,7 @@ export default function MobileBottomNav({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Compass size={19} />
+          <GameIcon name="swap-bag" size={19} />
           <span>Ítems</span>
         </button>
 
@@ -59,7 +48,7 @@ export default function MobileBottomNav({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Scroll size={19} />
+          <GameIcon name="tied-scroll" size={19} />
           <span>Misiones</span>
         </button>
 
@@ -74,7 +63,7 @@ export default function MobileBottomNav({
           title="Menú Principal (Inicio)"
         >
           <div className="center-fab-circle">
-            <Home size={21} className="center-fab-icon" />
+            <GameIcon name="castle" size={21} className="center-fab-icon" />
             <span className="center-fab-label">Inicio</span>
           </div>
         </button>
@@ -87,7 +76,7 @@ export default function MobileBottomNav({
             setIsMoreMenuOpen(false);
           }}
         >
-          <Map size={19} />
+          <GameIcon name="treasure-map" size={19} />
           <span>Mapa</span>
         </button>
 
@@ -137,7 +126,7 @@ export default function MobileBottomNav({
                   color: 'var(--gold-400)'
                 }}
               >
-                <Sparkles size={18} />
+                <GameIcon name="sparkles" size={18} color="var(--gold-400)" />
                 <h3 className="modal-title" style={{ fontSize: '1.1rem' }}>
                   MÁS SECCIONES y GUÍAS
                 </h3>
@@ -182,7 +171,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <Shield size={18} style={{ flexShrink: 0, color: '#63b3ed' }} />
+                  <GameIcon name="shield" size={18} color="#63b3ed" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Bóvedas Dragonkin (Cámaras)
                   </span>
@@ -224,7 +213,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <Zap size={18} style={{ flexShrink: 0, color: '#b794f4' }} />
+                  <GameIcon name="lightning-arc" size={18} color="#b794f4" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Grimorio de Hechizos
                   </span>
@@ -255,7 +244,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <UserCheck size={18} style={{ flexShrink: 0, color: '#48bb78' }} />
+                  <GameIcon name="breastplate" size={18} color="#48bb78" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Simulador de Equipamiento
                   </span>
@@ -286,7 +275,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <Hammer size={18} style={{ flexShrink: 0, color: '#ecc94b' }} />
+                  <GameIcon name="hammer-drop" size={18} color="#ecc94b" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Calculadora de Crafteo
                   </span>
@@ -317,7 +306,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <Flame size={18} style={{ flexShrink: 0, color: '#fc8181' }} />
+                  <GameIcon name="campfire" size={18} color="#fc8181" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Habilidades y Guías
                   </span>
@@ -348,7 +337,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <BookOpen size={18} style={{ flexShrink: 0, color: '#d69e2e' }} />
+                  <GameIcon name="book-cover" size={18} color="#d69e2e" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Códice y Lore de Ashenfall
                   </span>
@@ -379,7 +368,7 @@ export default function MobileBottomNav({
                     minWidth: 0
                   }}
                 >
-                  <Bookmark size={18} style={{ flexShrink: 0, color: 'var(--gold-400)' }} />
+                  <GameIcon name="flat-star" size={18} color="var(--gold-400)" />
                   <span style={{ textAlign: 'left', lineHeight: 1.3 }}>
                     Mis Objetos Favoritos
                   </span>

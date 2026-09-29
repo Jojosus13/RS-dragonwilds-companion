@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hammer } from 'lucide-react';
+import GameIcon from '../../GameIcon';
 
 export default function ItemUsedInSection({ item, onSelectOtherItem }) {
   if (!item || !item.usedIn || item.usedIn.length === 0) return null;
@@ -17,7 +17,7 @@ export default function ItemUsedInSection({ item, onSelectOtherItem }) {
             onClick={() => onSelectOtherItem(use.title)}
             title={`Ver receta de ${use.title}`}
           >
-            <Hammer size={16} color="var(--gold-400)" />
+            <GameIcon name="hammer-drop" size={16} color="var(--gold-400)" />
             <div>
               <strong style={{ color: '#fff', display: 'block', fontSize: '0.9rem' }}>{use.title}</strong>
               <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>

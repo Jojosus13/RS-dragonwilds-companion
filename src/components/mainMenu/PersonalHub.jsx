@@ -1,5 +1,6 @@
 import React from 'react';
-import { Crown, Bookmark, Hammer, Shield, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function PersonalHub({
   favorites = [],
@@ -15,7 +16,7 @@ export default function PersonalHub({
     <section className="menu-personal-hub">
       <div className="personal-hub-header">
         <div className="hub-title">
-          <Crown size={18} color="var(--gold-400)" />
+          <GameIcon name="crown" size={18} color="var(--gold-400)" />
           <span>TU PROGRESO y HERRAMIENTAS ACTIVAS</span>
         </div>
       </div>
@@ -28,7 +29,7 @@ export default function PersonalHub({
           >
             <div className="personal-card-top">
               <div className="personal-badge gold">
-                <Bookmark size={14} />
+                <GameIcon name="flat-star" size={14} color="var(--gold-400)" />
                 <span>Favoritos</span>
               </div>
               <span className="personal-count">{favorites.length}</span>
@@ -53,7 +54,7 @@ export default function PersonalHub({
           >
             <div className="personal-card-top">
               <div className="personal-badge orange">
-                <Hammer size={14} />
+                <GameIcon name="hammer-drop" size={14} color="#ecc94b" />
                 <span>Crafteo</span>
               </div>
               <span className="personal-count">{plannerItems.length}</span>
@@ -78,7 +79,7 @@ export default function PersonalHub({
           >
             <div className="personal-card-top">
               <div className="personal-badge green">
-                <Shield size={14} />
+                <GameIcon name="breastplate" size={14} color="#48bb78" />
                 <span>Equipamiento</span>
               </div>
               <span className="personal-count">{equippedCount}/8</span>

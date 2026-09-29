@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Sparkles } from 'lucide-react';
+import GameIcon from '../../GameIcon';
 
 export default function ItemStatsSection({ item }) {
   if (!item) return null;
@@ -68,7 +68,7 @@ export default function ItemStatsSection({ item }) {
       {item.stats?.specialAction && (
         <div className="recipe-section">
           <h4 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Flame size={16} /> Ataque Especial / Acción
+            <GameIcon name="fire" size={16} /> Ataque Especial / Acción
           </h4>
           <p style={{ color: '#e2e8f0' }}>{item.stats.specialAction}</p>
         </div>
@@ -77,7 +77,7 @@ export default function ItemStatsSection({ item }) {
       {item.stats?.specialEffect && (
         <div className="recipe-section">
           <h4 style={{ fontFamily: 'var(--font-title)', color: '#68d391', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Sparkles size={16} /> Efecto Pasivo / Habilidad
+            <GameIcon name="sparkles" size={16} /> Efecto Pasivo / Habilidad
           </h4>
           <p style={{ color: '#e2e8f0' }}>{item.stats.specialEffect}</p>
         </div>

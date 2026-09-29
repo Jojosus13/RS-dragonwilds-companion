@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass } from 'lucide-react';
+import GameIcon from '../GameIcon';
 import skillsData from '../../data/skills.json';
 import SkillsSection from './SkillsSection';
 import FacilitiesSection from './FacilitiesSection';
@@ -13,7 +13,7 @@ export default function SkillsGuide() {
       {/* Intro Hero */}
       <div style={{ background: 'var(--bg-card)', border: '1px solid var(--gold-border)', borderRadius: '16px', padding: '24px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
-          <Compass size={28} color="var(--gold-400)" />
+          <GameIcon name="treasure-map" size={28} color="var(--gold-400)" />
           <h2 style={{ fontFamily: 'var(--font-decorative)', fontSize: '1.4rem', color: 'var(--gold-300)' }}>
             Guía de Supervivencia y Habilidades en Ashenfall
           </h2>

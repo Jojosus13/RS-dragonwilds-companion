@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function SkillsSection({ skills }) {
   return (
@@ -15,7 +15,7 @@ export default function SkillsSection({ skills }) {
           gap: '8px'
         }}
       >
-        <Sparkles size={20} />
+        <GameIcon name="sparkles" size={20} color="var(--gold-400)" />
         Habilidades de Dragón y Supervivencia ({skills.length})
       </h3>
 
@@ -23,8 +23,8 @@ export default function SkillsSection({ skills }) {
         {skills.map((skill) => (
           <div key={skill.id} className="item-card" style={{ cursor: 'default' }}>
             <div className="card-top">
-              <div className="item-icon-frame" style={{ width: '48px', height: '48px', fontSize: '1.6rem' }}>
-                {skill.icon}
+              <div className="item-icon-frame" style={{ width: '48px', height: '48px' }}>
+                <GameIcon name={skill.icon} size={28} color="var(--gold-400)" />
               </div>
               <div>
                 <h4 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', fontSize: '1.05rem' }}>
@@ -42,9 +42,10 @@ export default function SkillsSection({ skills }) {
               <span style={{ fontSize: '0.75rem', color: 'var(--gold-500)', display: 'block', fontWeight: 'bold' }}>
                 Tomo: {skill.tomes}
               </span>
-              <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '4px' }}>
-                💡 {skill.tips}
-              </p>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px', marginTop: '6px', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <GameIcon name="light-bulb" size={14} color="var(--gold-400)" style={{ marginTop: '2px', flexShrink: 0 }} />
+                <span>{skill.tips}</span>
+              </div>
             </div>
           </div>
         ))}

@@ -16,14 +16,16 @@ import {
 import spellsData from '../data/spells.json';
 import { normalizeText, getWordStems } from '../utils/searchUtils';
 
+import GameIcon from './GameIcon';
+
 const SPELL_CATEGORIES = [
-  { id: 'all', name: 'Todos los Hechizos' },
-  { id: 'Combate', name: '⚔️ Combate y Daño' },
-  { id: 'Encantamiento', name: '✨ Encantamiento de Armas' },
-  { id: 'Transmutación', name: '🧪 Transmutación y Alquimia' },
-  { id: 'Teletransporte', name: '🌀 Teletransporte y Movilidad' },
-  { id: 'Defensa', name: '🛡️ Defensa y Protección' },
-  { id: 'Utilidad', name: '🪴 Utilidad y Recolección' }
+  { id: 'all', name: 'Todos los Hechizos', icon: 'wizard-staff' },
+  { id: 'Combate', name: 'Combate y Daño', icon: 'crossed-swords' },
+  { id: 'Encantamiento', name: 'Encantamiento de Armas', icon: 'sparkles' },
+  { id: 'Transmutación', name: 'Transmutación y Alquimia', icon: 'potion-ball' },
+  { id: 'Teletransporte', name: 'Teletransporte y Movilidad', icon: 'teleport' },
+  { id: 'Defensa', name: 'Defensa y Protección', icon: 'shield' },
+  { id: 'Utilidad', name: 'Utilidad y Recolección', icon: 'spade' }
 ];
 
 export default function SpellsViewer() {
@@ -88,8 +90,10 @@ export default function SpellsViewer() {
               key={cat.id}
               className={`filter-chip ${selectedCategory === cat.id ? 'active' : ''}`}
               onClick={() => setSelectedCategory(cat.id)}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}
             >
-              {cat.name}
+              {cat.icon && <GameIcon name={cat.icon} size={14} />}
+              <span>{cat.name}</span>
             </button>
           ))}
         </div>
@@ -109,7 +113,7 @@ export default function SpellsViewer() {
         borderRadius: 'var(--radius-lg)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <Sparkles size={22} color="#b794f4" />
+          <GameIcon name="sparkles" size={24} color="#b794f4" />
           <div>
             <h3 style={{ fontFamily: 'var(--font-title)', color: '#d6bcfa', fontSize: '1.05rem', margin: 0 }}>
               GRIMORIO ARCANO DE ASHENFALL
@@ -128,7 +132,7 @@ export default function SpellsViewer() {
       {/* Spells Grid */}
       {filteredSpells.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
-          <Zap size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
+          <GameIcon name="lightning-arc" size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
           <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '8px' }}>
             No se encontraron hechizos
           </h3>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hammer } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function FacilitiesSection({ facilities }) {
   return (
@@ -15,7 +15,7 @@ export default function FacilitiesSection({ facilities }) {
           gap: '8px'
         }}
       >
-        <Hammer size={20} />
+        <GameIcon name="hammer-drop" size={20} color="#ecc94b" />
         Estaciones de Fabricación (Facilities)
       </h3>
 
@@ -23,7 +23,9 @@ export default function FacilitiesSection({ facilities }) {
         {facilities.map((fac, idx) => (
           <div key={idx} className="recipe-section" style={{ padding: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-              <span style={{ fontSize: '1.5rem' }}>{fac.icon}</span>
+              <div className="item-icon-frame" style={{ width: '36px', height: '36px', flexShrink: 0 }}>
+                <GameIcon name={fac.icon} size={22} color="var(--gold-400)" />
+              </div>
               <h4 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', fontSize: '1rem' }}>
                 {fac.name}
               </h4>

@@ -34,10 +34,15 @@ import {
 } from 'lucide-react';
 import { ASHENFALL_REGIONS, MAP_MARKERS, PRESET_ROUTES, findLocationsForMaterial } from '../data/mapData';
 import { normalizeText } from '../utils/searchUtils';
+import GameIcon from './common/GameIcon';
+
+const MapTreasureIcon = (props) => (
+  <GameIcon name="treasure-map" size={props.size || 14} style={{ color: props.color, ...props.style }} />
+);
 
 const CATEGORY_META = {
-  all: { label: 'Todos', icon: Compass, color: 'var(--gold-400)' },
-  lodestones: { label: 'Piedras Guía', icon: Compass, color: '#48bb78' },
+  all: { label: 'Todos', icon: MapTreasureIcon, color: 'var(--gold-400)' },
+  lodestones: { label: 'Piedras Guía', icon: MapTreasureIcon, color: '#48bb78' },
   vaults: { label: 'Bóvedas Dragonkin', icon: Shield, color: '#4299e1' },
   quests: { label: 'Misiones', icon: Scroll, color: '#ecc94b' },
   bosses: { label: 'Jefes y Élites', icon: Flame, color: '#e53e3e' },
@@ -476,7 +481,7 @@ export default function InteractiveMap({
   // Helper for marker icon
   const getMarkerIcon = (marker) => {
     switch (marker.category) {
-      case 'lodestones': return <Compass size={14} color="#fff" />;
+      case 'lodestones': return <GameIcon name="treasure-map" size={14} color="#fff" />;
       case 'vaults': return <Shield size={14} color="#fff" />;
       case 'resources': return <Pickaxe size={14} color="#fff" />;
       case 'quests': return <Scroll size={14} color="#fff" />;
@@ -491,7 +496,7 @@ export default function InteractiveMap({
       <div className="map-top-bar">
         <div className="map-title-wrap">
           <div className="map-title-icon">
-            <Compass size={22} color="var(--gold-400)" />
+            <GameIcon name="treasure-map" size={22} color="var(--gold-400)" />
           </div>
           <div>
             <h1 className="map-title">Mapa Interactivo de Ashenfall</h1>
@@ -625,7 +630,9 @@ export default function InteractiveMap({
         {/* Compass Rose (Rosa de los Vientos) */}
         <div className="map-compass-rose">
           <span className="compass-n">N</span>
-          <div className="compass-pointer">✦</div>
+          <div className="compass-pointer">
+            <GameIcon name="compass" size={24} color="var(--gold-400)" />
+          </div>
           <span className="compass-region">ASHENFALL</span>
         </div>
 
@@ -810,7 +817,7 @@ export default function InteractiveMap({
                     textAnchor="middle"
                     className="map-region-tier"
                   >
-                    ★ {reg.tier} · Peligro: {reg.dangerLevel}
+                    Tier {reg.tier} · Peligro: {reg.dangerLevel}
                   </text>
                 </g>
               );
@@ -1017,7 +1024,10 @@ export default function InteractiveMap({
               <strong>Botín Clave y Patrones:</strong>
               <div className="map-poi-loot-chips">
                 {selectedMarker.loot.map((lt, i) => (
-                  <span key={i} className="map-loot-chip">✦ {lt}</span>
+                  <span key={i} className="map-loot-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <GameIcon name="sparkles" size={11} color="var(--gold-400)" />
+                    <span>{lt}</span>
+                  </span>
                 ))}
               </div>
             </div>
@@ -1028,8 +1038,9 @@ export default function InteractiveMap({
               <strong>Materiales Extraíbles:</strong>
               <div className="map-poi-loot-chips">
                 {selectedMarker.materialNames.map((mat, i) => (
-                  <span key={i} className="map-loot-chip" style={{ background: 'rgba(66, 153, 225, 0.2)', color: '#63b3ed' }}>
-                    ⛏️ {mat}
+                  <span key={i} className="map-loot-chip" style={{ background: 'rgba(66, 153, 225, 0.2)', color: '#63b3ed', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <GameIcon name="mining" size={12} color="#63b3ed" />
+                    <span>{mat}</span>
                   </span>
                 ))}
               </div>
@@ -1041,8 +1052,9 @@ export default function InteractiveMap({
               <strong>Recompensas de Combate ({selectedMarker.combatLevel}):</strong>
               <div className="map-poi-loot-chips">
                 {selectedMarker.drops.map((drop, i) => (
-                  <span key={i} className="map-loot-chip" style={{ background: 'rgba(229, 62, 62, 0.2)', color: '#fc8181' }}>
-                    ⚔️ {drop}
+                  <span key={i} className="map-loot-chip" style={{ background: 'rgba(229, 62, 62, 0.2)', color: '#fc8181', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                    <GameIcon name="crossed-swords" size={12} color="#fc8181" />
+                    <span>{drop}</span>
                   </span>
                 ))}
               </div>
@@ -1095,7 +1107,7 @@ export default function InteractiveMap({
               style={{ padding: '8px 12px', fontSize: '0.85rem' }}
               onClick={() => centerOnCoord(selectedMarker.coords)}
             >
-              <Compass size={14} />
+              <GameIcon name="treasure-map" size={14} />
               <span>Centrar</span>
             </button>
           </div>

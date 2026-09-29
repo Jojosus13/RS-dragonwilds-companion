@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function RegionsSection({ regions }) {
   return (
@@ -15,7 +15,7 @@ export default function RegionsSection({ regions }) {
           gap: '8px'
         }}
       >
-        <MapPin size={20} />
+        <GameIcon name="position-marker" size={20} color="#63b3ed" />
         Regiones de Ashenfall y Niveles de Peligro
       </h3>
 

@@ -11,6 +11,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import loreData from '../data/lore.json';
+import GameIcon from './common/GameIcon';
 
 export default function LoreViewer() {
   const [activeChapterId, setActiveChapterId] = useState(loreData.chapters[0].id);
@@ -31,7 +32,7 @@ export default function LoreViewer() {
       }}>
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)', marginBottom: '8px' }}>
-            <Feather size={20} />
+            <GameIcon name="feather" size={20} color="var(--gold-400)" />
             <span style={{ fontFamily: 'var(--font-title)', fontSize: '0.85rem', letterSpacing: '2px', textTransform: 'uppercase' }}>
               CRÓNICAS y TRASFONDO
             </span>
@@ -73,13 +74,20 @@ export default function LoreViewer() {
                   boxShadow: isActive ? '0 0 12px var(--gold-glow)' : 'none'
                 }}
               >
-                <div>
-                  <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.95rem', margin: '0 0 4px 0' }}>
-                    {chap.title}
-                  </h4>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                    {chap.category}
-                  </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  {chap.icon && (
+                    <div style={{ color: isActive ? 'var(--gold-400)' : 'var(--text-muted)' }}>
+                      <GameIcon name={chap.icon} size={20} />
+                    </div>
+                  )}
+                  <div>
+                    <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '0.95rem', margin: '0 0 4px 0' }}>
+                      {chap.title}
+                    </h4>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                      {chap.category}
+                    </span>
+                  </div>
                 </div>
                 <ChevronRight size={16} color={isActive ? 'var(--gold-400)' : 'var(--text-muted)'} />
               </button>
@@ -103,7 +111,7 @@ export default function LoreViewer() {
           <span className="lore-quote-icon">“</span>
           
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)', marginBottom: '8px' }}>
-            <Scroll size={20} />
+            <GameIcon name={activeChapter.icon || 'scroll-unfurled'} size={20} color="var(--gold-400)" />
             <span style={{ fontSize: '0.8rem', fontFamily: 'var(--font-title)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
               {activeChapter.category}
             </span>

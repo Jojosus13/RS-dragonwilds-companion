@@ -1,5 +1,6 @@
 import React from 'react';
 import { Zap } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function LoadoutStatsPanel({ totals }) {
   return (
@@ -21,8 +22,9 @@ export default function LoadoutStatsPanel({ totals }) {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
         <div className="recipe-section" style={{ padding: '14px' }}>
           <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>NIVEL DE PODER PROMEDIO</span>
-          <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--tier-7)', fontFamily: 'var(--font-title)' }}>
-            ★ {totals.avgPower}
+          <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--tier-7)', fontFamily: 'var(--font-title)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <GameIcon name="flat-star" size={18} color="var(--tier-7)" />
+            <span>{totals.avgPower}</span>
           </p>
         </div>
 
@@ -64,9 +66,12 @@ export default function LoadoutStatsPanel({ totals }) {
           border: '1px solid var(--gold-border)'
         }}
       >
-        <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-          💡 <strong>Consejo:</strong> En RuneScape: Dragonwilds, el daño y la resistencia escalan fuertemente con el nivel de poder de los objetos y las ascensiones en la Fragua Mística.
-        </p>
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+          <GameIcon name="light-bulb" size={16} color="var(--gold-400)" style={{ flexShrink: 0, marginTop: '2px' }} />
+          <p style={{ margin: 0 }}>
+            <strong>Consejo:</strong> En RuneScape: Dragonwilds, el daño y la resistencia escalan fuertemente con el nivel de poder de los objetos y las ascensiones en la Fragua Mística.
+          </p>
+        </div>
       </div>
     </div>
   );

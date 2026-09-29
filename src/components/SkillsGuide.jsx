@@ -1,6 +1,6 @@
 import React from 'react';
 import skillsData from '../data/skills.json';
-import { Flame, Hammer, MapPin, Sparkles, BookOpen, Compass, ShieldAlert } from 'lucide-react';
+import GameIcon from './GameIcon';
 
 export default function SkillsGuide() {
   const { skills, facilities, regions } = skillsData;
@@ -10,7 +10,7 @@ export default function SkillsGuide() {
       {/* Intro Hero */}
       <div style={{ background: 'var(--bg-card)', border: '1px solid var(--gold-border)', borderRadius: '16px', padding: '24px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
-          <Compass size={28} color="var(--gold-400)" />
+          <GameIcon name="treasure-map" size={28} color="var(--gold-400)" />
           <h2 style={{ fontFamily: 'var(--font-decorative)', fontSize: '1.4rem', color: 'var(--gold-300)' }}>
             Guía de Supervivencia y Habilidades en Ashenfall
           </h2>
@@ -23,7 +23,7 @@ export default function SkillsGuide() {
       {/* 1. SKILLS SECTION */}
       <div>
         <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1.15rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Sparkles size={20} />
+          <GameIcon name="sparkles" size={20} color="var(--gold-400)" />
           Habilidades de Dragón y Supervivencia (8)
         </h3>
 
@@ -31,8 +31,8 @@ export default function SkillsGuide() {
           {skills.map((skill) => (
             <div key={skill.id} className="item-card" style={{ cursor: 'default' }}>
               <div className="card-top">
-                <div className="item-icon-frame" style={{ width: '48px', height: '48px', fontSize: '1.6rem' }}>
-                  {skill.icon}
+                <div className="item-icon-frame" style={{ width: '48px', height: '48px' }}>
+                  <GameIcon name={skill.icon} size={28} color="var(--gold-400)" />
                 </div>
                 <div>
                   <h4 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', fontSize: '1.05rem' }}>
@@ -50,9 +50,10 @@ export default function SkillsGuide() {
                 <span style={{ fontSize: '0.75rem', color: 'var(--gold-500)', display: 'block', fontWeight: 'bold' }}>
                   Tomo: {skill.tomes}
                 </span>
-                <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '4px' }}>
-                  💡 {skill.tips}
-                </p>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px', marginTop: '6px', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                  <GameIcon name="light-bulb" size={14} color="var(--gold-400)" style={{ marginTop: '2px', flexShrink: 0 }} />
+                  <span>{skill.tips}</span>
+                </div>
               </div>
             </div>
           ))}
@@ -62,7 +63,7 @@ export default function SkillsGuide() {
       {/* 2. FACILITIES y WORKSTATIONS */}
       <div>
         <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1.15rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Hammer size={20} />
+          <GameIcon name="hammer-drop" size={20} color="#ecc94b" />
           Estaciones de Fabricación (Facilities)
         </h3>
 
@@ -70,7 +71,9 @@ export default function SkillsGuide() {
           {facilities.map((fac, idx) => (
             <div key={idx} className="recipe-section" style={{ padding: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <span style={{ fontSize: '1.5rem' }}>{fac.icon}</span>
+                <div className="item-icon-frame" style={{ width: '36px', height: '36px', flexShrink: 0 }}>
+                  <GameIcon name={fac.icon} size={22} color="var(--gold-400)" />
+                </div>
                 <h4 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', fontSize: '1rem' }}>
                   {fac.name}
                 </h4>
@@ -86,7 +89,7 @@ export default function SkillsGuide() {
       {/* 3. REGIONS OF ASHENFALL */}
       <div>
         <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-400)', fontSize: '1.15rem', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <MapPin size={20} />
+          <GameIcon name="position-marker" size={20} color="#63b3ed" />
           Regiones de Ashenfall y Niveles de Peligro
         </h3>
 

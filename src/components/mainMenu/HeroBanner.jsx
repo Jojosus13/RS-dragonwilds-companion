@@ -2,16 +2,12 @@ import React, { useState, useMemo } from 'react';
 import {
   Search,
   X,
-  Compass,
-  Shield,
-  Scroll,
-  Zap,
-  Map,
   ChevronRight,
   ArrowRight
 } from 'lucide-react';
 import { MAP_MARKERS } from '../../data/mapData';
 import vaultsData from '../../data/vaults.json';
+import GameIcon from '../GameIcon';
 
 export default function HeroBanner({
   allItems = [],
@@ -155,7 +151,7 @@ export default function HeroBanner({
                   {searchResults.items.length > 0 && (
                     <div className="menu-results-group">
                       <div className="group-title">
-                        <Compass size={13} /> Objetos y Códice
+                        <GameIcon name="swap-bag" size={13} color="var(--gold-400)" /> Objetos y Códice
                       </div>
                       {searchResults.items.map((item) => (
                         <div
@@ -170,7 +166,7 @@ export default function HeroBanner({
                             {item.image ? (
                               <img src={item.image} alt={item.name} />
                             ) : (
-                              <span>🗡️</span>
+                              <GameIcon name="crossed-swords" size={18} color="var(--gold-400)" />
                             )}
                           </div>
                           <div className="result-details">
@@ -189,7 +185,7 @@ export default function HeroBanner({
                   {searchResults.vaults && searchResults.vaults.length > 0 && (
                     <div className="menu-results-group">
                       <div className="group-title">
-                        <Shield size={13} color="#63b3ed" /> Bóvedas Dragonkin
+                        <GameIcon name="shield" size={13} color="#63b3ed" /> Bóvedas Dragonkin
                       </div>
                       {searchResults.vaults.map((vlt) => (
                         <div
@@ -214,7 +210,7 @@ export default function HeroBanner({
                               justifyContent: 'center'
                             }}
                           >
-                            🛡️
+                            <GameIcon name="shield" size={16} color="#63b3ed" />
                           </div>
                           <div className="result-details">
                             <span className="result-name">{vlt.name || vlt.title}</span>
@@ -232,7 +228,7 @@ export default function HeroBanner({
                   {searchResults.quests.length > 0 && (
                     <div className="menu-results-group">
                       <div className="group-title">
-                        <Scroll size={13} color="var(--gold-400)" /> Misiones (Quests)
+                        <GameIcon name="tied-scroll" size={13} color="var(--gold-400)" /> Misiones (Quests)
                       </div>
                       {searchResults.quests.map((qst) => (
                         <div
@@ -243,7 +239,9 @@ export default function HeroBanner({
                             setSearchQuery('');
                           }}
                         >
-                          <div className="result-icon quest-icon">📜</div>
+                          <div className="result-icon quest-icon">
+                            <GameIcon name="tied-scroll" size={16} color="var(--gold-400)" />
+                          </div>
                           <div className="result-details">
                             <span className="result-name">{qst.name || qst.title}</span>
                             <span className="result-meta">Misión • {qst.startPoint || 'Ashenfall'}</span>
@@ -258,7 +256,7 @@ export default function HeroBanner({
                   {searchResults.spells.length > 0 && (
                     <div className="menu-results-group">
                       <div className="group-title">
-                        <Zap size={13} color="#b794f4" /> Hechizos
+                        <GameIcon name="lightning-arc" size={13} color="#b794f4" /> Hechizos
                       </div>
                       {searchResults.spells.map((spl) => (
                         <div
@@ -269,7 +267,9 @@ export default function HeroBanner({
                             setSearchQuery('');
                           }}
                         >
-                          <div className="result-icon spell-icon">⚡</div>
+                          <div className="result-icon spell-icon">
+                            <GameIcon name="lightning-arc" size={16} color="#b794f4" />
+                          </div>
                           <div className="result-details">
                             <span className="result-name">{spl.name}</span>
                             <span className="result-meta">
@@ -286,7 +286,7 @@ export default function HeroBanner({
                   {searchResults.pois.length > 0 && (
                     <div className="menu-results-group">
                       <div className="group-title">
-                        <Map size={13} color="#63b3ed" /> Lugares en el Mapa
+                        <GameIcon name="treasure-map" size={13} color="#63b3ed" /> Lugares en el Mapa
                       </div>
                       {searchResults.pois.map((poi) => (
                         <div
@@ -297,7 +297,9 @@ export default function HeroBanner({
                             setSearchQuery('');
                           }}
                         >
-                          <div className="result-icon map-icon">📍</div>
+                          <div className="result-icon map-icon">
+                            <GameIcon name="treasure-map" size={16} color="#63b3ed" />
+                          </div>
                           <div className="result-details">
                             <span className="result-name">{poi.title || poi.name}</span>
                             <span className="result-meta">

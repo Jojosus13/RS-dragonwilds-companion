@@ -10,7 +10,8 @@ import {
   HardDrive,
   RefreshCw,
   AlertTriangle,
-  Zap
+  Zap,
+  ArrowRight
 } from 'lucide-react';
 import { dismissUpdateVersion, getApkDirectDownloadUrl } from '../utils/updateChecker';
 import { Capacitor } from '@capacitor/core';
@@ -257,7 +258,7 @@ export default function UpdateModal({
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)' }}>
-              <span>➔</span>
+              <ArrowRight size={18} />
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>

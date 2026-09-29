@@ -7,6 +7,7 @@ import {
   Plus,
   Compass
 } from 'lucide-react';
+import GameIcon from '../GameIcon';
 
 export default function MapMarkerPopup({
   marker,
@@ -73,7 +74,10 @@ export default function MapMarkerPopup({
           <strong>Botín Clave y Patrones:</strong>
           <div className="map-poi-loot-chips">
             {marker.loot.map((lt, i) => (
-              <span key={i} className="map-loot-chip">✦ {lt}</span>
+              <span key={i} className="map-loot-chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                <GameIcon name="sparkles" size={11} color="var(--gold-400)" />
+                <span>{lt}</span>
+              </span>
             ))}
           </div>
         </div>
@@ -84,8 +88,9 @@ export default function MapMarkerPopup({
           <strong>Materiales Extraíbles:</strong>
           <div className="map-poi-loot-chips">
             {marker.materialNames.map((mat, i) => (
-              <span key={i} className="map-loot-chip" style={{ background: 'rgba(66, 153, 225, 0.2)', color: '#63b3ed' }}>
-                ⛏️ {mat}
+              <span key={i} className="map-loot-chip" style={{ background: 'rgba(66, 153, 225, 0.2)', color: '#63b3ed', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                <GameIcon name="mining" size={12} color="#63b3ed" />
+                <span>{mat}</span>
               </span>
             ))}
           </div>
@@ -97,8 +102,9 @@ export default function MapMarkerPopup({
           <strong>Recompensas de Combate ({marker.combatLevel}):</strong>
           <div className="map-poi-loot-chips">
             {marker.drops.map((drop, i) => (
-              <span key={i} className="map-loot-chip" style={{ background: 'rgba(229, 62, 62, 0.2)', color: '#fc8181' }}>
-                ⚔️ {drop}
+              <span key={i} className="map-loot-chip" style={{ background: 'rgba(229, 62, 62, 0.2)', color: '#fc8181', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                <GameIcon name="crossed-swords" size={12} color="#fc8181" />
+                <span>{drop}</span>
               </span>
             ))}
           </div>
@@ -121,7 +127,7 @@ export default function MapMarkerPopup({
             onSelectVault(marker.vaultId || marker.id);
           }}
         >
-          <Shield size={16} />
+          <GameIcon name="shield" size={16} />
           <span>Ver Guía Completa de la Bóveda</span>
           <ChevronRight size={15} />
         </button>
@@ -150,7 +156,7 @@ export default function MapMarkerPopup({
           style={{ padding: '8px 12px', fontSize: '0.85rem' }}
           onClick={() => onCenterCoord(marker.coords)}
         >
-          <Compass size={14} />
+          <GameIcon name="treasure-map" size={14} />
           <span>Centrar</span>
         </button>
       </div>
