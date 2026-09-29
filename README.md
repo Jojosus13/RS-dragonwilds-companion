@@ -1,4 +1,4 @@
-# 🐉 RuneScape: Dragonwilds - Companion App y Códice Interactivo
+# RuneScape: Dragonwilds - Companion App y Códice Interactivo
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -10,45 +10,45 @@ Compendio no oficial, base de datos interactiva y asistente de supervivencia par
 
 ---
 
-## 🌟 Características Principales
+## Características Principales
 
-### 🗺️ 1. Mapa Interactivo de Ashenfall
+### 1. Mapa Interactivo de Ashenfall
 - **Trazador de Rutas Dinámico:** Planifica y mide circuitos de farmeo y exploración con cálculo automático de distancias en kilómetros.
 - **Puntos de Interés Calibrados:** Marcadores geolocalizados de Piedras Guía (*Lodestones*), Bóvedas Dragonkin, Jefes Mundiales y Misiones.
 - **Tarjetas Emergentes con Imágenes Oficiales:** Vista previa con imágenes en local de las mazmorras, botín destacado, materiales y enlace directo a la Wiki oficial.
 - **HUD y Coordenadas:** Sistema de coordenadas cartográficas en tiempo real (escala 1024x1024).
 
-### 🏛️ 2. Cámaras y Bóvedas Dragonkin
+### 2. Cámaras y Bóvedas Dragonkin
 - **Guías Completas de las 12 Bóvedas:** Desglose detallado de *Crasorak Kara*, *Thishepen Kara*, *Vertentis Kara*, *Takla Kara*, *Skeklac Kara*, *Chaktan Kara*, *Kletterbuja Kara*, *Kalistrakthen Kara*, *Vekchenven Kara*, *Skekven Kara*, *Uzzer Kara* y *Manafem Kara*.
 - **Peligros y Trampas Mecánicas:** Explicación y resolución de chorros de fuego, trampas de espinas, miasma marchito y golpes de calor (*Sunscorch*).
 - **Tablas de Enemigos y Jefes:** Cantidades, niveles de combate y estrategias recomendadas.
 - **Guía de Cofres Secretos:** Localización y botines legendarios de cada cofre del tesoro.
 
-### 🎒 3. Catálogo de Ítems y Base de Datos
+### 3. Catálogo de Ítems y Base de Datos
 - **Más de 1,300 objetos:** Armas de combate, armaduras, vestigios y patrones, materiales y minerales, herramientas, runas y consumibles.
 - **Árbol de Crafteo y Recetas:** Visualización de materiales requeridos, estaciones de trabajo y usos de cada ingrediente.
 - **Filtros Avanzados:** Búsqueda rápida fonética/stemming, filtro por categorías y ordenación por Tier/Poder, durabilidad o peso.
 - **Favoritos Persistentes:** Guarda tus ítems clave en almacenamiento local (*localStorage*).
 
-### 🧪 4. Guía de Hechizos y Runas
+### 4. Guía de Hechizos y Runas
 - Catálogo de magias categorizadas por **Combate y Daño**, **Encantamiento de Armas**, **Transmutación y Alquimia**, **Teletransporte y Movilidad**, **Defensa y Protección** y **Utilidad y Recolección**.
 - Desglose de requisitos de nivel y coste exacto en runas elementales.
 
-### 📜 5. Gestor de Misiones y Códice de Lore
+### 5. Gestor de Misiones y Códice de Lore
 - Walkthroughs completos paso a paso de las misiones principales y secundarias de Ashenfall.
 - Códice histórico con capítulos traducidos para sumergirse en el trasfondo de las tierras salvajes.
 
-### 🛠️ 6. Planificador de Crafteo y Simulador de Personaje
+### 6. Planificador de Crafteo y Simulador de Personaje
 - **Calculadora de Materiales:** Agrega múltiples objetos a tu lista y calcula automáticamente el total de recursos necesarios.
 - **Simulador de Equipamiento (*Loadout*):** Equipa armas, cascos, petos, capas y amuletos para calcular las estadísticas defensivas y ofensivas totales de tu personaje.
 
-### 📱 7. Aplicación Web Progresiva (PWA)
+### 7. Aplicación Web Progresiva (PWA)
 - **100% Instalable y Offline:** Funciona sin conexión a internet mediante Service Worker.
 - Botón de instalación integrado para Android, iOS (Safari) y escritorio.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Framework:** [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
 - **Iconografía:** [Lucide React](https://lucide.dev/)
@@ -58,7 +58,7 @@ Compendio no oficial, base de datos interactiva y asistente de supervivencia par
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 ├── public/
@@ -105,7 +105,7 @@ Compendio no oficial, base de datos interactiva y asistente de supervivencia par
 
 ---
 
-## 🚀 Instalación y Ejecución Local
+## Instalación y Ejecución Local
 
 ### Prerrequisitos
 - [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)
@@ -136,6 +136,6 @@ Los archivos optimizados se generarán en la carpeta `dist/`.
 
 ---
 
-## 📜 Licencia
+## Licencia
 
 Este proyecto es de código abierto bajo la licencia [MIT](LICENSE). Todos los derechos de imágenes, nombres y marcas registradas de **RuneScape** y **Dragonwilds** pertenecen a **Jagex Ltd.**
