@@ -1,0 +1,20 @@
+{
+  "appId": "com.dragonwilds.wiki",
+  "appName": "RS Dragonwilds",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "backgroundColor": "#090b0e",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "backgroundColor": "#090b0e"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "backgroundColor": "#090b0e"
+    }
+  }
+}

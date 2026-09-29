@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RS Dragonwilds</string>
+    <string name="title_activity_main">RS Dragonwilds</string>
+    <string name="package_name">com.dragonwilds.wiki</string>
+    <string name="custom_url_scheme">com.dragonwilds.wiki</string>
+</resources>

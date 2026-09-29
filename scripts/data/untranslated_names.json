@@ -1,0 +1,2084 @@
+[
+  {
+    "id": "dirty-water",
+    "name": "Dirty Water",
+    "category": "Pociones & Comida",
+    "desc": "Una fuente de hidratación, contaminada por los residuos de un cataclismo."
+  },
+  {
+    "id": "discordant-residue",
+    "name": "Discordant Residue",
+    "category": "Materiales & Minerales",
+    "desc": "Obtained from creatures in Kuldra's Tower. A core component of vis cloth."
+  },
+  {
+    "id": "dorgeshuun-crossbow",
+    "name": "Dorgeshuun Crossbow",
+    "category": "Armas de Combate",
+    "desc": "The signature weapon of the Dorgeshuun Goblin tribe. It fires Bone bolts and is surprisingly well made!"
+  },
+  {
+    "id": "doric-s-smithing-supplies",
+    "name": "Doric's Smithing Supplies",
+    "category": "Materiales & Minerales",
+    "desc": "A cloth shoulder back{{sic|supposed to be \"bag\""
+  },
+  {
+    "id": "doric-s-superior-smithing-supplies",
+    "name": "Doric's Superior Smithing Supplies",
+    "category": "Materiales & Minerales",
+    "desc": "A cloth shoulder back{{sic|supposed to be bag"
+  },
+  {
+    "id": "draconic-leather",
+    "name": "Draconic Leather",
+    "category": "Materiales & Minerales",
+    "desc": "Un resistente leather hecho de draconic hide, or from tanning hard leather with dragón blood."
+  },
+  {
+    "id": "draconic-leather-scraps",
+    "name": "Draconic Leather Scraps",
+    "category": "Materiales & Minerales",
+    "desc": "Scruffy organic bits and pieces that can be combined to make draconic leather."
+  },
+  {
+    "id": "draconic-staff",
+    "name": "Draconic Staff",
+    "category": "Armas de Combate",
+    "desc": "An ancestral dragonkin staff used by the mages of old."
+  },
+  {
+    "id": "draconic-vis-wax",
+    "name": "Draconic Vis Wax",
+    "category": "Materiales & Minerales",
+    "desc": "Made in a brewing cauldron. Alongside vis fibres, it can be spun into vis cloth on a loom."
+  },
+  {
+    "id": "dragonblight-shield",
+    "name": "Dragonblight Shield",
+    "category": "Armaduras & Ropa",
+    "desc": "The Spirit of Velgar lives on within this shield, corrupting your enemies."
+  },
+  {
+    "id": "dragonbone-dagger",
+    "name": "Dragonbone Dagger",
+    "category": "Armas de Combate",
+    "desc": "A ferocious blade, filled with primal draconic rage."
+  },
+  {
+    "id": "dragoncurse-shield",
+    "name": "Dragoncurse Shield",
+    "category": "Armaduras & Ropa",
+    "desc": "The spirit of Imaru lives on within this shield."
+  },
+  {
+    "id": "dragonfire-shield",
+    "name": "Dragonfire Shield",
+    "category": "Armaduras & Ropa",
+    "desc": "A shield forged in the wake of Fuzan's fall. Its scales still glow with a smoldering heat, as though the dragón's fury refuses to fade."
+  },
+  {
+    "id": "dragonwolf-hide",
+    "name": "Dragonwolf Hide",
+    "category": "Materiales & Minerales",
+    "desc": "Dropped from felled draconic beasts. Can be processed at the tannery."
+  },
+  {
+    "id": "dried-cadavaberries",
+    "name": "Dried Cadavaberries",
+    "category": "Pociones & Comida",
+    "desc": "Probably not poisonous. A neat little snack."
+  },
+  {
+    "id": "dried-dwellberries",
+    "name": "Dried Dwellberries",
+    "category": "Pociones & Comida",
+    "desc": "Sweet and chewy, a great fruity snack."
+  },
+  {
+    "id": "dried-giant-krill",
+    "name": "Dried Giant Krill",
+    "category": "Pociones & Comida",
+    "desc": "Krills hunger with one bite. Grants the Sea Legs perk."
+  },
+  {
+    "id": "dried-peach",
+    "name": "Dried Peach",
+    "category": "Pociones & Comida",
+    "desc": "A tasty dried fruit."
+  },
+  {
+    "id": "dried-redberries",
+    "name": "Dried Redberries",
+    "category": "Pociones & Comida",
+    "desc": "A little sour, but a tasty snack."
+  },
+  {
+    "id": "dried-tea-leaves",
+    "name": "Dried Tea Leaves",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "druid-s-bandosian-amulet",
+    "name": "Druid's Bandosian Amulet",
+    "category": "Armaduras & Ropa",
+    "desc": "A goblin artefact, found on a druid."
+  },
+  {
+    "id": "dubious-meat-pie",
+    "name": "Dubious Meat Pie",
+    "category": "Pociones & Comida",
+    "desc": "Pastry makes everything better."
+  },
+  {
+    "id": "dusty-black-pocket",
+    "name": "Dusty Black Pocket",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of Zamorakian chaps. Perhaps you could learn something from it."
+  },
+  {
+    "id": "dwellberries",
+    "name": "Dwellberries",
+    "category": "Pociones & Comida",
+    "desc": "Some rather pretty blue berries."
+  },
+  {
+    "id": "dwellberry-crunchies",
+    "name": "Dwellberry Crunchies",
+    "category": "Pociones & Comida",
+    "desc": "Yum... smells fruity."
+  },
+  {
+    "id": "dwellberry-crunchies-removed-",
+    "name": "Dwellberry Crunchies (Removed)",
+    "category": "Pociones & Comida",
+    "desc": "Yum... smells fruity."
+  },
+  {
+    "id": "dwellberry-glazed-roast-flank",
+    "name": "Dwellberry Glazed Roast Flank",
+    "category": "Pociones & Comida",
+    "desc": "A delicious flank steak, covered in a fruity dwellbery{{sic|spelled dwellberry"
+  },
+  {
+    "id": "dwellberry-glazed-roast-meat",
+    "name": "Dwellberry Glazed Roast Meat",
+    "category": "Pociones & Comida",
+    "desc": "A juicy piece of roasted meat with a deliciously fruity dwellberry glazing. Scrumptious!"
+  },
+  {
+    "id": "dwellberry-infusion",
+    "name": "Dwellberry Infusion",
+    "category": "Pociones & Comida",
+    "desc": "Una bebida refrescante y afrutada. Excelente para la hidratación en Ashenfall."
+  },
+  {
+    "id": "ectoplasm",
+    "name": "Ectoplasm",
+    "category": "Materiales & Minerales",
+    "desc": "Dropped from aggressive spirits or extracted from wither hearts. Utilizado en la artesanía."
+  },
+  {
+    "id": "egg",
+    "name": "Egg",
+    "category": "Materiales & Minerales",
+    "desc": "A nutritious ingredient."
+  },
+  {
+    "id": "eggs-royale",
+    "name": "Eggs Royale",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining fried egg and fried salmon. Grants the Sea Life perk."
+  },
+  {
+    "id": "elder-curiosities",
+    "name": "Elder Curiosities",
+    "category": "Materiales & Minerales",
+    "desc": "obsidiana curiosities that feel pleasing in the hand. Can be ground and smelted into pure obsidiana."
+  },
+  {
+    "id": "elongated-obsidian-construct",
+    "name": "Elongated Obsidian Construct",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello."
+  },
+  {
+    "id": "enchanted-adamant-bolt",
+    "name": "Enchanted Adamant Bolt",
+    "category": "Armas de Combate",
+    "desc": "adamantita bolts infused with sanguine energy and a ruby tip. Drains some of the archers health to increase the bolts damage."
+  },
+  {
+    "id": "enchanted-blurite-bolts",
+    "name": "Enchanted Blurite Bolts",
+    "category": "Armas de Combate",
+    "desc": "blurita crossbow bolts tipped with enchanted Jade, that have a chance of dealing Earth magic damage and knocking your target down."
+  },
+  {
+    "id": "enchanted-bronze-bolts",
+    "name": "Enchanted Bronze Bolts",
+    "category": "Armas de Combate",
+    "desc": "bronce crossbow bolts tipped with enchanted opal. These have a chance to summon a lightning strike around your target, dealing Air Magic Damage to all nearby enemies."
+  },
+  {
+    "id": "enchanted-iron-bolts",
+    "name": "Enchanted Iron Bolts",
+    "category": "Armas de Combate",
+    "desc": "hierro crossbow bolts tipped with enchanted Jade, that have a chance of dealing Water magic damage and slowing your target."
+  },
+  {
+    "id": "enchanted-mithril-bolts",
+    "name": "Enchanted Mithril Bolts",
+    "category": "Armas de Combate",
+    "desc": "These crossbow bolts offer a chance to create a toxic burst, poisoning all nearby enemies."
+  },
+  {
+    "id": "enchanted-rune-bolt",
+    "name": "Enchanted Rune Bolt",
+    "category": "Armas de Combate",
+    "desc": "runita bolts infused with magical energy and a diamond tip. Their targets rarely appreciate the distinction. Has a chance to pierce through several enemies at once."
+  },
+  {
+    "id": "enchanted-steel-bolts",
+    "name": "Enchanted Steel Bolts",
+    "category": "Armas de Combate",
+    "desc": "acero crossbow bolts tipped with enchanted red topaz. Has a chance to create a necrotic bolt that heals you for a porportion of the damage dealt."
+  },
+  {
+    "id": "evasive-infusion",
+    "name": "Evasive Infusion",
+    "category": "Pociones & Comida",
+    "desc": "A thirst-quenching drink that improves your reflexes."
+  },
+  {
+    "id": "extinguished-blue-remnants",
+    "name": "Extinguished Blue Remnants",
+    "category": "Vestigios & Patrones",
+    "desc": "A long extinguished torch with unique charactersitics{{sic|incorrectly spelled \"characteristics\" from the cache"
+  },
+  {
+    "id": "extinguished-green-remnants",
+    "name": "Extinguished Green Remnants",
+    "category": "Vestigios & Patrones",
+    "desc": "A long extinguished torch with unique charactersitics{{sic|incorrectly spelled \"characteristics\" from the cache"
+  },
+  {
+    "id": "extinguished-purple-remnants",
+    "name": "Extinguished Purple Remnants",
+    "category": "Vestigios & Patrones",
+    "desc": "A long extinguished torch with unique charactersitics{{sic|incorrectly spelled \"characteristics\" from the cache"
+  },
+  {
+    "id": "extinguished-red-remnants",
+    "name": "Extinguished Red Remnants",
+    "category": "Vestigios & Patrones",
+    "desc": "A long extinguished torch with unique charactersitics{{sic|incorrectly spelled \"characteristics\" from the cache"
+  },
+  {
+    "id": "extinguished-yellow-remnants",
+    "name": "Extinguished Yellow Remnants",
+    "category": "Vestigios & Patrones",
+    "desc": "A long extinguished torch with unique charactersitics{{sic|incorrectly spelled \"characteristics\" from the cache"
+  },
+  {
+    "id": "fabric-that-hums-with-you",
+    "name": "Fabric That Hums With You",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of a Zamorakian mage hood. Perhaps you could learn something from it."
+  },
+  {
+    "id": "fallen-hoplite-s-aspis",
+    "name": "Fallen Hoplite's Aspis",
+    "category": "Armaduras & Ropa",
+    "desc": "The shield of an Undead Hoplite."
+  },
+  {
+    "id": "fallen-hoplite-s-chest",
+    "name": "Fallen Hoplite's Chest",
+    "category": "Armaduras & Ropa",
+    "desc": "Melee chest armour once belonging to a long dead Saradomin Hoplite."
+  },
+  {
+    "id": "fallen-hoplite-s-helm",
+    "name": "Fallen Hoplite's Helm",
+    "category": "Armaduras & Ropa",
+    "desc": "A Melee helmet once belonging to a long dead Saradomin Hoplite."
+  },
+  {
+    "id": "fallen-hoplite-s-tassets",
+    "name": "Fallen Hoplite's Tassets",
+    "category": "Armaduras & Ropa",
+    "desc": "Melee leg armour once belonging to a long dead Saradomin Hoplite."
+  },
+  {
+    "id": "fang-arrow",
+    "name": "Fang Arrow",
+    "category": "Armas de Combate",
+    "desc": "Arrows with tips carved from animal fangs."
+  },
+  {
+    "id": "fang-barbed-arrow",
+    "name": "Fang Barbed Arrow",
+    "category": "Armas de Combate",
+    "desc": "Arrows with tips carved from animal fangs."
+  },
+  {
+    "id": "fang-fire-arrow",
+    "name": "Fang Fire Arrow",
+    "category": "Armas de Combate",
+    "desc": "Arrows with tips carved from animal fangs."
+  },
+  {
+    "id": "farmer-s-hat",
+    "name": "Farmer's Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "A delightful piece of headwear, popular with those who toil the land."
+  },
+  {
+    "id": "feather-bait",
+    "name": "Feather Bait",
+    "category": "Herramientas",
+    "desc": "What is it about feathers that fascinates a fish? A great way to bait them. Trout seems the most susceptible. Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "feathered-lure",
+    "name": "Feathered Lure",
+    "category": "Herramientas",
+    "desc": "Entice Salmon with a knotted ball of bird knock-offs. Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "feathers",
+    "name": "Feathers",
+    "category": "Materiales & Minerales",
+    "desc": "Gathered from avian creatures and nests. Feathers are Utilizado para fletch arrows."
+  },
+  {
+    "id": "ferocious-infusion",
+    "name": "Ferocious Infusion",
+    "category": "Pociones & Comida",
+    "desc": "A hydrating drink infused with primal fury."
+  },
+  {
+    "id": "fillet",
+    "name": "Fillet",
+    "category": "Pociones & Comida",
+    "desc": "Roasted bird meat. Tastes like everything tastes."
+  },
+  {
+    "id": "fine-cloth",
+    "name": "Fine Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "Woven from fine thread and gold. Used in weapon and armour artesanía."
+  },
+  {
+    "id": "fine-net",
+    "name": "Fine Net",
+    "category": "Herramientas",
+    "desc": "Made with two fine threads at a artesanía table. An elegant little net."
+  },
+  {
+    "id": "fire-oil",
+    "name": "Fire Oil",
+    "category": "Materiales & Minerales",
+    "desc": "Flammable and volatile, handle with care! Utilizado para fabricar Fire arrows."
+  },
+  {
+    "id": "fish-fry",
+    "name": "Fish Fry",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "flank-steak",
+    "name": "Flank Steak",
+    "category": "Pociones & Comida",
+    "desc": "A thick and juicy steak."
+  },
+  {
+    "id": "fleece",
+    "name": "Fleece",
+    "category": "Materiales & Minerales",
+    "desc": "Raw sheepskin that can be processed into wool."
+  },
+  {
+    "id": "fleet-footed-infusion",
+    "name": "Fleet-Footed Infusion",
+    "category": "Pociones & Comida",
+    "desc": "A thirst-quenching drink that puts a spring in your step."
+  },
+  {
+    "id": "forager-s-sandwich",
+    "name": "Forager's Sandwich",
+    "category": "Pociones & Comida",
+    "desc": "A hunger-reducing snack made with fried cabbages and grilled mushrooms."
+  },
+  {
+    "id": "fortifying-crunchies",
+    "name": "Fortifying Crunchies",
+    "category": "Pociones & Comida",
+    "desc": "PERK - FUNGAL FORTITUDE (300 SEC)Grants RESISTENCE to POISON effectsIt actually smells quite good."
+  },
+  {
+    "id": "fortifying-soup",
+    "name": "Fortifying Soup",
+    "category": "Pociones & Comida",
+    "desc": "PERK - FUNGAL FORTITUDE (300 SEC)A warm vegetable soup, with added mushrooms.Grants RESISTENCE{{sic|supposed to be RESISTANCE"
+  },
+  {
+    "id": "fortifying-stew",
+    "name": "Fortifying Stew",
+    "category": "Pociones & Comida",
+    "desc": "PERK - FUNGAL FORTITUDE (300 SEC)Grants RESISTENCE{{sic|supposed to spell RESISTANCE"
+  },
+  {
+    "id": "fractured-obsidian-construct",
+    "name": "Fractured Obsidian Construct",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "fried-cabbage",
+    "name": "Fried Cabbage",
+    "category": "Pociones & Comida",
+    "desc": "Yum! Maybe I do like cabbage."
+  },
+  {
+    "id": "fried-egg",
+    "name": "Fried Egg",
+    "category": "Pociones & Comida",
+    "desc": "Sunny side up."
+  },
+  {
+    "id": "fried-onions",
+    "name": "Fried Onions",
+    "category": "Pociones & Comida",
+    "desc": "A pungent meal that brings a tear to your eye."
+  },
+  {
+    "id": "fried-salmon",
+    "name": "Fried Salmon",
+    "category": "Pociones & Comida",
+    "desc": "For when you feel like a hungry bear. Grants the Sea Life perk."
+  },
+  {
+    "id": "fried-sardine",
+    "name": "Fried Sardine",
+    "category": "Pociones & Comida",
+    "desc": "Delicious little fishies. Grants the Warding Fish perk.{{sic|The Perk Warding Fish was replaced by the Perk Sea Life."
+  },
+  {
+    "id": "fruit-pie",
+    "name": "Fruit Pie",
+    "category": "Pociones & Comida",
+    "desc": "A fruit party, wrapped in golden pastry."
+  },
+  {
+    "id": "fuel-briquette",
+    "name": "Fuel Briquette",
+    "category": "Materiales & Minerales",
+    "desc": "Produced by burning wood in a kiln, charcoal is a very efficient fuel."
+  },
+  {
+    "id": "fuel-pellet",
+    "name": "Fuel Pellet",
+    "category": "Materiales & Minerales",
+    "desc": "A high-temperature fuel. Needed to smelt more advanced metals."
+  },
+  {
+    "id": "garou-artifact",
+    "name": "Garou Artifact",
+    "category": "Materiales & Minerales",
+    "desc": "An object of garou origin that might hold value with local traders."
+  },
+  {
+    "id": "garou-chit",
+    "name": "Garou Chit",
+    "category": "Materiales & Minerales",
+    "desc": "A local currency favoured by garou traders."
+  },
+  {
+    "id": "garou-highborn-s-cloak",
+    "name": "Garou Highborn's Cloak",
+    "category": "Armaduras & Ropa",
+    "desc": "A cloak worn by garou nobility."
+  },
+  {
+    "id": "garou-weave",
+    "name": "Garou Weave",
+    "category": "Materiales & Minerales",
+    "desc": "A high quality material sold by local garou merchants."
+  },
+  {
+    "id": "ghostspeak-amulet",
+    "name": "Ghostspeak Amulet",
+    "category": "Armaduras & Ropa",
+    "desc": "An amulet you found in a well in Brynmoor."
+  },
+  {
+    "id": "giant-krill-bait",
+    "name": "Giant Krill Bait",
+    "category": "Herramientas",
+    "desc": "If I told you why this bait works, I'd have to krill you. Infernal Eels look alive! Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "gilded-gyrhawk-amulet",
+    "name": "Gilded Gyrhawk Amulet",
+    "category": "Armaduras & Ropa",
+    "desc": "While wearing this amulet, Warped Feathers are consumed to award additional XP while exploring the world. Additionally Incrementa the amount of experience gained from courses."
+  },
+  {
+    "id": "gilded-paladin-chestpiece",
+    "name": "Gilded Paladin Chestpiece",
+    "category": "Armaduras & Ropa",
+    "desc": "An ornate golden chestpiece that serves as a symbol of power, status, and confidence."
+  },
+  {
+    "id": "gilded-paladin-helmet",
+    "name": "Gilded Paladin Helmet",
+    "category": "Armaduras & Ropa",
+    "desc": "Polished to a brilliant shine, this helmet is as impressive as it is eye-catching."
+  },
+  {
+    "id": "gilded-paladin-legs",
+    "name": "Gilded Paladin Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "Golden platelegs for warriors who believe protection should be seen from a distance."
+  },
+  {
+    "id": "glass-decoration",
+    "name": "Glass Decoration",
+    "category": "Materiales & Minerales",
+    "desc": "A delightful ornament that will really tie your home together."
+  },
+  {
+    "id": "glass-owl",
+    "name": "Glass Owl",
+    "category": "Materiales & Minerales",
+    "desc": "A handcrafted owl made of glass. It seems to have great sentimental value to someone."
+  },
+  {
+    "id": "glass-pane",
+    "name": "Glass Pane",
+    "category": "Materiales & Minerales",
+    "desc": "It's transparent that you're going to use this when building."
+  },
+  {
+    "id": "glass-vessel",
+    "name": "Glass Vessel",
+    "category": "Materiales & Minerales",
+    "desc": "A glass item made by glassblowing."
+  },
+  {
+    "id": "glazed-pumpkin-sandwich",
+    "name": "Glazed Pumpkin Sandwich",
+    "category": "Pociones & Comida",
+    "desc": "A warming dish made with roast pumpkin, maple syrup and dried redberry."
+  },
+  {
+    "id": "goblin-swingslash-",
+    "name": "Goblin \"Swingslash\"",
+    "category": "Armas de Combate",
+    "desc": "A surprisingly nasty little axe. Popular with goblin warriors."
+  },
+  {
+    "id": "goblin-war-banner",
+    "name": "Goblin War Banner",
+    "category": "Armaduras & Ropa",
+    "desc": "A cloak reminding us that even gods can be forgotten."
+  },
+  {
+    "id": "gold-leaf",
+    "name": "Gold Leaf",
+    "category": "Materiales & Minerales",
+    "desc": "A thin sheet of brilliant gold, can be utilizado para demonstrating your prowess, potion making or even recycling into gold bars."
+  },
+  {
+    "id": "gourmand-ring",
+    "name": "Gourmand Ring",
+    "category": "Armaduras & Ropa",
+    "desc": "No effect"
+  },
+  {
+    "id": "granite",
+    "name": "Granite",
+    "category": "Materiales & Minerales",
+    "desc": "Una densa piedra utilizada para la construcción y la forja."
+  },
+  {
+    "id": "granite-maul",
+    "name": "Granite Maul",
+    "category": "Armas de Combate",
+    "desc": "The power of this warhammer should not be taken for granite."
+  },
+  {
+    "id": "greater-kalphite-wing",
+    "name": "Greater Kalphite Wing",
+    "category": "Materiales & Minerales",
+    "desc": ""
+  },
+  {
+    "id": "grieving-moonstaff",
+    "name": "Grieving Moonstaff",
+    "category": "Armas de Combate",
+    "desc": "This staff is dedicated to Lougrim, the fallen Garou goddess of the Moon."
+  },
+  {
+    "id": "grilled-mushrooms",
+    "name": "Grilled Mushrooms",
+    "category": "Pociones & Comida",
+    "desc": "A rich and earthy treat."
+  },
+  {
+    "id": "grilled-tomatoes",
+    "name": "Grilled Tomatoes",
+    "category": "Pociones & Comida",
+    "desc": "Fire really brings out the flavour."
+  },
+  {
+    "id": "grilled-trout",
+    "name": "Grilled Trout",
+    "category": "Pociones & Comida",
+    "desc": "Stave off hunger with this tasty bite. Grants the Sea Life perk.{{sic|Grilled Trout does not currently provide the Perk Sea Life."
+  },
+  {
+    "id": "grilled-undead-bass",
+    "name": "Grilled Undead Bass",
+    "category": "Pociones & Comida",
+    "desc": "Undead and makes you unhungry. Grants the Sea Life perk."
+  },
+  {
+    "id": "grim-black-codpiece",
+    "name": "Grim Black Codpiece",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of Zamorakian platelegs. Perhaps you could learn something from it."
+  },
+  {
+    "id": "ground-clay",
+    "name": "Ground Clay",
+    "category": "Materiales & Minerales",
+    "desc": "Pulverised stone, used in building, and as an Herblore ingredient."
+  },
+  {
+    "id": "ground-dragon-tooth",
+    "name": "Ground Dragon Tooth",
+    "category": "Materiales & Minerales",
+    "desc": "The product of grinding dragón teeth. esencial para making draconic vis wax."
+  },
+  {
+    "id": "ground-granite",
+    "name": "Ground Granite",
+    "category": "Materiales & Minerales",
+    "desc": "Pulverised stone, used in building and as an ingredient in herblore."
+  },
+  {
+    "id": "ground-gypsum",
+    "name": "Ground Gypsum",
+    "category": "Materiales & Minerales",
+    "desc": "Ground from gypsum. This reagent seems to reflect ligero and therefore heat."
+  },
+  {
+    "id": "ground-rune-essence",
+    "name": "Ground Rune Essence",
+    "category": "Runas & Magia",
+    "desc": "Made by grinding runita essence. A component of black dragón leather."
+  },
+  {
+    "id": "ground-sandstone",
+    "name": "Ground Sandstone",
+    "category": "Materiales & Minerales",
+    "desc": "Fine sand ground from sandstone. With the proper tools, it can be made into glass in the Furnace."
+  },
+  {
+    "id": "ground-stone",
+    "name": "Ground Stone",
+    "category": "Materiales & Minerales",
+    "desc": "Pulverised stone, used in building, and as an Herblore ingredient."
+  },
+  {
+    "id": "ground-tea-leaves",
+    "name": "Ground Tea Leaves",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "gypsum",
+    "name": "Gypsum",
+    "category": "Materiales & Minerales",
+    "desc": "A crumbly stone unsuitable for building but, once ground, offers unique properties."
+  },
+  {
+    "id": "gypsum-wax",
+    "name": "Gypsum Wax",
+    "category": "Materiales & Minerales",
+    "desc": "A marvel of alchemy that, once applied to equipment, adds durability in extreme conditions."
+  },
+  {
+    "id": "gyrhawk-amulet",
+    "name": "Gyrhawk Amulet",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "hardy-weathered-shell",
+    "name": "Hardy Weathered Shell",
+    "category": "Vestigios & Patrones",
+    "desc": "You can feel it pulling away from you. Perhaps you could learn from it."
+  },
+  {
+    "id": "harmonised-compound",
+    "name": "Harmonised Compound",
+    "category": "Materiales & Minerales",
+    "desc": "hecho de discordant residue in a kiln. Can be combined with runic powder on an advanced spinning wheel."
+  },
+  {
+    "id": "haunch",
+    "name": "Haunch",
+    "category": "Pociones & Comida",
+    "desc": "Roasted game meat. Tender and tasty."
+  },
+  {
+    "id": "hearty-crunchies",
+    "name": "Hearty Crunchies",
+    "category": "Pociones & Comida",
+    "desc": "Yum! Smells delicious!"
+  },
+  {
+    "id": "hearty-fortifying-soup",
+    "name": "Hearty Fortifying Soup",
+    "category": "Pociones & Comida",
+    "desc": "PERK - FUNGAL FORTITUDE (300 SEC)Grants RESISTANCE to POISON effectsA comforting vegetable soup with added mushrooms. Helps prepare you for a grueling day ahead."
+  },
+  {
+    "id": "hearty-soup",
+    "name": "Hearty Soup",
+    "category": "Pociones & Comida",
+    "desc": "A comforting vegetable soup, reminds you of rainy days sat by the fire."
+  },
+  {
+    "id": "hearty-stew",
+    "name": "Hearty Stew",
+    "category": "Pociones & Comida",
+    "desc": "A nice hot stew. A taste of home."
+  },
+  {
+    "id": "herb-baked-trout",
+    "name": "Herb Baked Trout",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining grilled trout and a baked potato. Grants the Sea Life perk.{{sic|Herb Baked Trout does not currently provide the Perk Sea Life."
+  },
+  {
+    "id": "herd-ring",
+    "name": "Herd Ring",
+    "category": "Armaduras & Ropa",
+    "desc": "No effect"
+  },
+  {
+    "id": "hermit-ring",
+    "name": "Hermit Ring",
+    "category": "Armaduras & Ropa",
+    "desc": "No effect"
+  },
+  {
+    "id": "hollow-bark",
+    "name": "Hollow Bark",
+    "category": "Materiales & Minerales",
+    "desc": "Found lying around Fellhollow, around long-dead trees. Used in the artesanía."
+  },
+  {
+    "id": "hunter-stagbow",
+    "name": "Hunter Stagbow",
+    "category": "Armas de Combate",
+    "desc": "With it's{{sic"
+  },
+  {
+    "id": "icthlarian-fetish",
+    "name": "Icthlarian Fetish",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "imaru-s-talon",
+    "name": "Imaru's Talon",
+    "category": "Armas de Combate",
+    "desc": "A Scimitar Forjado a partir de the Visage of Imaru."
+  },
+  {
+    "id": "imbued-granite-maul-head",
+    "name": "Imbued Granite Maul Head",
+    "category": "Materiales & Minerales",
+    "desc": "A massive granite warhammer head. Garou masons imbue their stone weapons with wild anima to make them stronger than metal."
+  },
+  {
+    "id": "imbued-leather-wrappings",
+    "name": "Imbued Leather Wrappings",
+    "category": "Materiales & Minerales",
+    "desc": "Strips of imbued dire wolf leather for the grips of a granite maul. Infused with primal savagery."
+  },
+  {
+    "id": "infernal-fragment",
+    "name": "Infernal Fragment",
+    "category": "Materiales & Minerales",
+    "desc": "Utilizado para fabricar magical equipment. Postie Pete also has a use for them."
+  },
+  {
+    "id": "infinity-cloth",
+    "name": "Infinity Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "Named as such due to the infinite number of colours it features. It's quite garish."
+  },
+  {
+    "id": "infinity-robe-body",
+    "name": "Infinity Robe Body",
+    "category": "Armaduras & Ropa",
+    "desc": "A wizard's robe, infused with endless arcane force."
+  },
+  {
+    "id": "infinity-robe-hat",
+    "name": "Infinity Robe Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "A wizard's hat, infused with boundless magical power."
+  },
+  {
+    "id": "infinity-robe-legs",
+    "name": "Infinity Robe Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "A wizard's hat, infused with boundless magical power."
+  },
+  {
+    "id": "inspiring-amulet-of-attack",
+    "name": "Inspiring Amulet of Attack",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-amulet-of-magic",
+    "name": "Inspiring Amulet of Magic",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-amulet-of-ranged",
+    "name": "Inspiring Amulet of Ranged",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-insignia",
+    "name": "Inspiring Insignia",
+    "category": "Vestigios & Patrones",
+    "desc": "Perhaps you can learn from it{{sic|no full stop"
+  },
+  {
+    "id": "inspiring-ring-of-agility",
+    "name": "Inspiring Ring of Agility",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-artisan",
+    "name": "Inspiring Ring of Artisan",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-construction",
+    "name": "Inspiring Ring of Construction",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-cooking",
+    "name": "Inspiring Ring of Cooking",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-farming",
+    "name": "Inspiring Ring of Farming",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-fishing",
+    "name": "Inspiring Ring of Fishing",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-mining",
+    "name": "Inspiring Ring of Mining",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-runecrafting",
+    "name": "Inspiring Ring of Runecrafting",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "inspiring-ring-of-woodcutting",
+    "name": "Inspiring Ring of Woodcutting",
+    "category": "Armaduras & Ropa",
+    "desc": ""
+  },
+  {
+    "id": "irit",
+    "name": "Irit",
+    "category": "Materiales & Minerales",
+    "desc": "Harvested from Thorny Irit Roots, used in potion making at the brewing cauldron."
+  },
+  {
+    "id": "kalphite-bait",
+    "name": "Kalphite Bait",
+    "category": "Herramientas",
+    "desc": "Kalphite bait. Incrementa the catch chance of fish."
+  },
+  {
+    "id": "kalphite-carapace-chest",
+    "name": "Kalphite Carapace Chest",
+    "category": "Armaduras & Ropa",
+    "desc": "This chest armour is hecho de parts of the kalphites. Its durable but flexible nature makes it excellent for rangers."
+  },
+  {
+    "id": "kalphite-carapace-helmet",
+    "name": "Kalphite Carapace Helmet",
+    "category": "Armaduras & Ropa",
+    "desc": "This helmet is hecho de parts of the kalphites. Its durable but flexible nature makes it excellent for rangers"
+  },
+  {
+    "id": "kalphite-carapace-legs",
+    "name": "Kalphite Carapace Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "This leg armour is hecho de parts of the kalphites. Its durable but flexible nature makes it excellent for rangers."
+  },
+  {
+    "id": "kalphite-ichor",
+    "name": "Kalphite Ichor",
+    "category": "Materiales & Minerales",
+    "desc": "A viscous, sticky fluid. Can be processed into a durable adhesive."
+  },
+  {
+    "id": "kalphite-wing",
+    "name": "Kalphite Wing",
+    "category": "Materiales & Minerales",
+    "desc": ""
+  },
+  {
+    "id": "keris",
+    "name": "Keris",
+    "category": "Armas de Combate",
+    "desc": "This dagger is thin and has a wavy edge to better slide through gaps in armour."
+  },
+  {
+    "id": "kuldra-s-wrath",
+    "name": "Kuldra's Wrath",
+    "category": "Armas de Combate",
+    "desc": "A masterfully crafted wand, infused with the fury of Kuldra - channeling arcane power with terrifying efficiency."
+  },
+  {
+    "id": "kwuarm",
+    "name": "Kwuarm",
+    "category": "Materiales & Minerales",
+    "desc": "A bitter green herb Utilizado para make potions."
+  },
+  {
+    "id": "large-wardstone",
+    "name": "Large Wardstone",
+    "category": "Materiales & Minerales",
+    "desc": "Recharges your armour with a large amount of lifeward."
+  },
+  {
+    "id": "leggings-of-lightness",
+    "name": "Leggings Of Lightness",
+    "category": "Armaduras & Ropa",
+    "desc": "Fabeled leggings that allow you to carry more!"
+  },
+  {
+    "id": "limp-black-lining",
+    "name": "Limp Black Lining",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of a Zamorakian body armour. Perhaps you could learn something from it."
+  },
+  {
+    "id": "lobster-bait",
+    "name": "Lobster Bait",
+    "category": "Herramientas",
+    "desc": "Scraps of lobster meat made into bait to draw in fish. A meal Undead Eels cannot resist. Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "lougrim-s-staff",
+    "name": "Lougrim's Staff",
+    "category": "Armas de Combate",
+    "desc": "The very staff that Lougrim carried to her death within Kuldra's belly."
+  },
+  {
+    "id": "luminite-ore",
+    "name": "Luminite Ore",
+    "category": "Materiales & Minerales",
+    "desc": "Mined from luminite deposits. A catalysing material that can help to make rare metals."
+  },
+  {
+    "id": "lunar-garou-hat",
+    "name": "Lunar Garou Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "A lunar-infused hood designed to complement the garou robes, Suitable for magic users, enhancing curación abilities at night."
+  },
+  {
+    "id": "lunar-garou-robe-legs",
+    "name": "Lunar Garou Robe Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "Lunar-imbued leggings that complete the garou robe set. Suitable for magic users, enhancing curación abilities at night."
+  },
+  {
+    "id": "lunar-garou-robes",
+    "name": "Lunar Garou Robes",
+    "category": "Armaduras & Ropa",
+    "desc": "Robes woven under the ligero of a full moon, imbued with the wild power of the garou. Suitable for magic users, enhancing curación abilities at night."
+  },
+  {
+    "id": "lunate-shawl",
+    "name": "Lunate Shawl",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo útil al examinar sus restos."
+  },
+  {
+    "id": "lunular-wrappings",
+    "name": "Lunular Wrappings",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo útil al examinar sus restos."
+  },
+  {
+    "id": "marrentil",
+    "name": "Marrentil",
+    "category": "Materiales & Minerales",
+    "desc": "A bitter tasting herb used in resistance potions."
+  },
+  {
+    "id": "master-wand",
+    "name": "Master Wand",
+    "category": "Armas de Combate",
+    "desc": "A wand worthy of an accomplished spellcaster. Mastery is not included."
+  },
+  {
+    "id": "master-s-staff",
+    "name": "Master's Staff",
+    "category": "Armas de Combate",
+    "desc": "Un mágico staff fashioned for a master of the mystic arts. It radiates with power."
+  },
+  {
+    "id": "meat-pizza",
+    "name": "Meat Pizza",
+    "category": "Pociones & Comida",
+    "desc": "A pizza with bits of meat on it."
+  },
+  {
+    "id": "meat-sandwich",
+    "name": "Meat Sandwich",
+    "category": "Pociones & Comida",
+    "desc": "A carnivore's favourite, made with flank steak and rat roast."
+  },
+  {
+    "id": "meat-stew",
+    "name": "Meat Stew",
+    "category": "Pociones & Comida",
+    "desc": "Meat and vegetables, the classic combination. A warm and pleasant meal."
+  },
+  {
+    "id": "meat-twist-sandwich",
+    "name": "Meat Twist Sandwich",
+    "category": "Pociones & Comida",
+    "desc": "Meat, meat and more meat. A sandwich with flank steak, rat roast and dried redberries."
+  },
+  {
+    "id": "medium-wardstone",
+    "name": "Medium Wardstone",
+    "category": "Materiales & Minerales",
+    "desc": "Recharges your armour with a moderate amount of lifeward."
+  },
+  {
+    "id": "miner-ring",
+    "name": "Miner Ring",
+    "category": "Armaduras & Ropa",
+    "desc": "No effect"
+  },
+  {
+    "id": "mixed-grill",
+    "name": "Mixed Grill",
+    "category": "Pociones & Comida",
+    "desc": "Why eat just one animal? A carnivore's favourite."
+  },
+  {
+    "id": "mixed-platter",
+    "name": "Mixed Platter",
+    "category": "Pociones & Comida",
+    "desc": "Why eat just one animal? A carnivore's delight!"
+  },
+  {
+    "id": "molten-glass",
+    "name": "Molten Glass",
+    "category": "Materiales & Minerales",
+    "desc": "Hot glass ready to be blown into useful objects."
+  },
+  {
+    "id": "monkfish-bait",
+    "name": "Monkfish Bait",
+    "category": "Herramientas",
+    "desc": "Bait hecho de monkfish tail. Incrementa the catch chance of Desert Sole."
+  },
+  {
+    "id": "monkfish-fillets",
+    "name": "Monkfish Fillets",
+    "category": "Pociones & Comida",
+    "desc": "Tastier than the Piscatoris monkfish, in our humble opinion."
+  },
+  {
+    "id": "monkfish-skewers",
+    "name": "Monkfish Skewers",
+    "category": "Pociones & Comida",
+    "desc": "Tasty monkfish meat, pierced on a skewer for convenient eating."
+  },
+  {
+    "id": "monstrous-fang",
+    "name": "Monstrous Fang",
+    "category": "Materiales & Minerales",
+    "desc": "Large fangs used in creating letal weaponry."
+  },
+  {
+    "id": "moonstone",
+    "name": "Moonstone",
+    "category": "Materiales & Minerales",
+    "desc": "A glittering gemstone, desired by a merchant in the Alcarrid garou settlement."
+  },
+  {
+    "id": "mushroom-kebab",
+    "name": "Mushroom Kebab",
+    "category": "Pociones & Comida",
+    "desc": "A meaty kebab with mushrooms."
+  },
+  {
+    "id": "mystic-cloth",
+    "name": "Mystic Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "Spun from mystic fibre. Magic courses through every thread."
+  },
+  {
+    "id": "mystic-fibres",
+    "name": "Mystic Fibres",
+    "category": "Materiales & Minerales",
+    "desc": "Dropped by Zamorak magi{{sic|supposed to be Mages"
+  },
+  {
+    "id": "mystic-hat",
+    "name": "Mystic Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "A magically resonant hood, perfect for staying warm."
+  },
+  {
+    "id": "mystic-net",
+    "name": "Mystic Net",
+    "category": "Herramientas",
+    "desc": "Made with two mystic threads at a artesanía table. A stunningly well crafted net."
+  },
+  {
+    "id": "mystic-robe-legs",
+    "name": "Mystic Robe Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "Lightweight magical gear for the aspiring sorcerer."
+  },
+  {
+    "id": "mystic-robes",
+    "name": "Mystic Robes",
+    "category": "Armaduras & Ropa",
+    "desc": "The finest magical thread, spun into fabolous mage gear."
+  },
+  {
+    "id": "necromancer-s-crown",
+    "name": "Necromancer's Crown",
+    "category": "Armaduras & Ropa",
+    "desc": "Leggings styled after the ancestral overlords of Ashenfall."
+  },
+  {
+    "id": "necromancer-s-robe-bottom",
+    "name": "Necromancer's Robe Bottom",
+    "category": "Armaduras & Ropa",
+    "desc": "Leggings styled after the ancestral overlords of Ashenfall."
+  },
+  {
+    "id": "necromancer-s-robe-top",
+    "name": "Necromancer's Robe Top",
+    "category": "Armaduras & Ropa",
+    "desc": "Leggings styled after the ancestral overlords of Ashenfall."
+  },
+  {
+    "id": "necromancer-s-staff",
+    "name": "Necromancer's Staff",
+    "category": "Armas de Combate",
+    "desc": "Necromantic essence still emanates from this staff."
+  },
+  {
+    "id": "noxious-draconic-visage",
+    "name": "Noxious Draconic Visage",
+    "category": "Materiales & Minerales",
+    "desc": "The image of a fearsome dragón. Utilizado en la artesanía poderoso equipment."
+  },
+  {
+    "id": "padded-cloth",
+    "name": "Padded Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "A strong and lightweight artesanía material."
+  },
+  {
+    "id": "paladin-platelegs",
+    "name": "Paladin Platelegs",
+    "category": "Armaduras & Ropa",
+    "desc": "Sturdy leg armour worn by the paladins of Saradomin."
+  },
+  {
+    "id": "paladin-s-helm",
+    "name": "Paladin's Helm",
+    "category": "Armaduras & Ropa",
+    "desc": "A metal helm, worn by paladins in service to the church of Saradomin."
+  },
+  {
+    "id": "paladin-s-platebody",
+    "name": "Paladin's Platebody",
+    "category": "Armaduras & Ropa",
+    "desc": "Un pesado chestplate worn by the paladins of Saradomin."
+  },
+  {
+    "id": "peach",
+    "name": "Peach",
+    "category": "Pociones & Comida",
+    "desc": "Tasty fruit."
+  },
+  {
+    "id": "pioneer-s-scarf",
+    "name": "Pioneer's Scarf",
+    "category": "Armaduras & Ropa",
+    "desc": "A scarf worn by Ashenfall's first explorers."
+  },
+  {
+    "id": "plant-cure",
+    "name": "Plant Cure",
+    "category": "Pociones & Comida",
+    "desc": "Utilizado para cure diseased plants and bring them back to a healthy state."
+  },
+  {
+    "id": "plate-of-pure-obsidian",
+    "name": "Plate of Pure Obsidian",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello."
+  },
+  {
+    "id": "poison-ichor",
+    "name": "Poison Ichor",
+    "category": "Materiales & Minerales",
+    "desc": "This stuff looks nasty."
+  },
+  {
+    "id": "poisoned-adamant-arrow",
+    "name": "Poisoned Adamant Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de adamantita, coated in Weapon Poison.."
+  },
+  {
+    "id": "poisoned-bronze-arrow",
+    "name": "Poisoned Bronze Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de bronce coated in Weapon Poison.."
+  },
+  {
+    "id": "poisoned-fang-arrow",
+    "name": "Poisoned Fang Arrow",
+    "category": "Armas de Combate",
+    "desc": "Arrows with tips carved from animal fangs coated in weapon poison."
+  },
+  {
+    "id": "poisoned-iron-arrow",
+    "name": "Poisoned Iron Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de hierro coated in Weapon Poison.."
+  },
+  {
+    "id": "poisoned-mithril-arrow",
+    "name": "Poisoned Mithril Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de mithril, coated in Weapon Poison.."
+  },
+  {
+    "id": "poisoned-rune-arrow",
+    "name": "Poisoned Rune Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de runite coated in poison.."
+  },
+  {
+    "id": "poisoned-steel-arrow",
+    "name": "Poisoned Steel Arrow",
+    "category": "Armas de Combate",
+    "desc": "Flechas con puntas forjadas a partir de acero coated in Weapon Poison.."
+  },
+  {
+    "id": "pristine-armoured-catfish",
+    "name": "Pristine Armoured Catfish",
+    "category": "Pociones & Comida",
+    "desc": "An unusually large Armoured Catfish, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-beltfish",
+    "name": "Pristine Beltfish",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "pristine-desert-sole",
+    "name": "Pristine Desert Sole",
+    "category": "Materiales & Minerales",
+    "desc": ""
+  },
+  {
+    "id": "pristine-herring",
+    "name": "Pristine Herring",
+    "category": "Armaduras & Ropa",
+    "desc": "An unusually large Herring, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-infernal-eel",
+    "name": "Pristine Infernal Eel",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Infernal Eel, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-lobster",
+    "name": "Pristine Lobster",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Lobster, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-monkfish",
+    "name": "Pristine Monkfish",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "pristine-salmon",
+    "name": "Pristine Salmon",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Salmon, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-sardine",
+    "name": "Pristine Sardine",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Sardine, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-trout",
+    "name": "Pristine Trout",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Trout, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-undead-bass",
+    "name": "Pristine Undead Bass",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Undead Bass, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pristine-undead-eel",
+    "name": "Pristine Undead Eel",
+    "category": "Materiales & Minerales",
+    "desc": "An unusually large Undead Eel, worthy of putting it on the wall as trophy or cook it to gain more food."
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "category": "Materiales & Minerales",
+    "desc": "More treat than trick. Can be cooked by itself or used as an ingredient in cocina meals."
+  },
+  {
+    "id": "pumpkin-soup",
+    "name": "Pumpkin Soup",
+    "category": "Pociones & Comida",
+    "desc": "Sweet, yet savory."
+  },
+  {
+    "id": "pumpkin-spice-infusion",
+    "name": "Pumpkin Spice Infusion",
+    "category": "Pociones & Comida",
+    "desc": "A seasonal treat, popular with some."
+  },
+  {
+    "id": "pungent-omelette",
+    "name": "Pungent Omelette",
+    "category": "Pociones & Comida",
+    "desc": "Tastes much better than it's{{sic"
+  },
+  {
+    "id": "purple-torch",
+    "name": "Purple Torch",
+    "category": "Herramientas",
+    "desc": "A trusty lightsource - now in purple."
+  },
+  {
+    "id": "ram-horn",
+    "name": "Ram Horn",
+    "category": "Materiales & Minerales",
+    "desc": "A large horn belonging to an animal. Utilizado en la artesanía."
+  },
+  {
+    "id": "ranger-hat",
+    "name": "Ranger Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "Ranger head gear. Wearing this gives you the urge to rob from the rich to help the poor for some reason."
+  },
+  {
+    "id": "ranger-tights",
+    "name": "Ranger Tights",
+    "category": "Armaduras & Ropa",
+    "desc": "Ranger leg gear that makes you feel both agile and slightly rebellious."
+  },
+  {
+    "id": "ranger-tunic",
+    "name": "Ranger Tunic",
+    "category": "Armaduras & Ropa",
+    "desc": "Ranger armour that's as peligroso as it is dapper!"
+  },
+  {
+    "id": "rat-roast",
+    "name": "Rat Roast",
+    "category": "Pociones & Comida",
+    "desc": "A survivalist's meal. Just pretend it's something else."
+  },
+  {
+    "id": "red-torch",
+    "name": "Red Torch",
+    "category": "Herramientas",
+    "desc": "A trusty lightsource - now in red."
+  },
+  {
+    "id": "redberries",
+    "name": "Redberries",
+    "category": "Pociones & Comida",
+    "desc": "Gathered from bushes, eat them to gain a small amount of sustenance."
+  },
+  {
+    "id": "redberry-crunchies",
+    "name": "Redberry Crunchies",
+    "category": "Pociones & Comida",
+    "desc": "It smells quite fruity."
+  },
+  {
+    "id": "redberry-glazed-roast-flank",
+    "name": "Redberry Glazed Roast Flank",
+    "category": "Pociones & Comida",
+    "desc": "A delicious flank steak, covered in a fruity redberry glaze. Delightfully delicious!"
+  },
+  {
+    "id": "redberry-infusion",
+    "name": "Redberry Infusion",
+    "category": "Pociones & Comida",
+    "desc": "Una bebida refrescante y afrutada. Excelente para la hidratación en Ashenfall."
+  },
+  {
+    "id": "redberry-roast-rat",
+    "name": "Redberry Roast Rat",
+    "category": "Pociones & Comida",
+    "desc": "A juicy piece of roasted meat with a tangy redberry glazing. Tasty!"
+  },
+  {
+    "id": "refined-obsidian",
+    "name": "Refined Obsidian",
+    "category": "Materiales & Minerales",
+    "desc": "An object of pure, refined obsidiana."
+  },
+  {
+    "id": "reinforced-body",
+    "name": "Reinforced Body",
+    "category": "Armaduras & Ropa",
+    "desc": "Un pesado chestplate hecho de Leather and Bone."
+  },
+  {
+    "id": "reinforced-helmet",
+    "name": "Reinforced Helmet",
+    "category": "Armaduras & Ropa",
+    "desc": "Protect your noggin with this basic headgear hecho de leather and bone."
+  },
+  {
+    "id": "reinforced-legs",
+    "name": "Reinforced Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "pesado platelegs hecho de Leather and Bone."
+  },
+  {
+    "id": "relentless-infusion",
+    "name": "Relentless Infusion",
+    "category": "Pociones & Comida",
+    "desc": "A tasty tipple that'll put a quiver in your quiver."
+  },
+  {
+    "id": "roast-dinner",
+    "name": "Roast Dinner",
+    "category": "Pociones & Comida",
+    "desc": "It's not even Sunday."
+  },
+  {
+    "id": "roast-pumpkin",
+    "name": "Roast Pumpkin",
+    "category": "Pociones & Comida",
+    "desc": "A tough but tasty treat."
+  },
+  {
+    "id": "roasted-lobster",
+    "name": "Roasted Lobster",
+    "category": "Pociones & Comida",
+    "desc": "Does wonders for your hunger bar. Grants the Sea Legs perk."
+  },
+  {
+    "id": "rough-cloth",
+    "name": "Rough Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "A versatile textile utilizado para artesanía equipment and furniture. It is woven at a loom from linen thread."
+  },
+  {
+    "id": "sacred-oil",
+    "name": "Sacred Oil",
+    "category": "Materiales & Minerales",
+    "desc": "hecho de combining necrotic bonemeal and ectoplasm. Used as a artesanía component."
+  },
+  {
+    "id": "sandstone",
+    "name": "Sandstone",
+    "category": "Materiales & Minerales",
+    "desc": "A building material; can be ground into sand."
+  },
+  {
+    "id": "saradominist-cloak",
+    "name": "Saradominist Cloak",
+    "category": "Armaduras & Ropa",
+    "desc": "Worn by followers of Saradomin, this cloak reflects a commitment to justice and the ligero of reason."
+  },
+  {
+    "id": "sauteed-sardines",
+    "name": "Sauteed Sardines",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining fried sardine and dried redberry. Grants the Warding Fish perk.{{sic|The Perk Warding Fish was replaced by the Perk Sea Life."
+  },
+  {
+    "id": "sauteed-shrimp",
+    "name": "Sauteed Shrimp",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "scorch-leather",
+    "name": "Scorch Leather",
+    "category": "Materiales & Minerales",
+    "desc": "A ligero yet resilient leather, suited for supervivencia in desert sands."
+  },
+  {
+    "id": "scratchy-sackcloth",
+    "name": "Scratchy Sackcloth",
+    "category": "Vestigios & Patrones",
+    "desc": "A ghostly bundle of scratchy sackcloth. It's unsettling to hold. Still, perhaps you could learn something from it."
+  },
+  {
+    "id": "seared-anchovies",
+    "name": "Seared Anchovies",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "seared-cactus-steak",
+    "name": "Seared Cactus Steak",
+    "category": "Pociones & Comida",
+    "desc": "You'd be surprised at how tasty an eight-ounce cactus, medium-rare can be."
+  },
+  {
+    "id": "selenic-veil",
+    "name": "Selenic Veil",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "serrated-claw",
+    "name": "Serrated Claw",
+    "category": "Vestigios & Patrones",
+    "desc": "A vicious claw once belonging to Imaru, which was Utilizado para try and rip you apart more than a few times. Perhaps you could learn something from it."
+  },
+  {
+    "id": "shadow-body",
+    "name": "Shadow Body",
+    "category": "Armaduras & Ropa",
+    "desc": "Durable armour worn by the Children of Shadows."
+  },
+  {
+    "id": "shadow-chaps",
+    "name": "Shadow Chaps",
+    "category": "Armaduras & Ropa",
+    "desc": "Pliable leg armour worn by the Children of Shadows."
+  },
+  {
+    "id": "shadow-cowl",
+    "name": "Shadow Cowl",
+    "category": "Armaduras & Ropa",
+    "desc": "A ranged headpiece worn by the Children of Shadows."
+  },
+  {
+    "id": "shadowscale-hood",
+    "name": "Shadowscale Hood",
+    "category": "Armaduras & Ropa",
+    "desc": "Ranger Headgear worn by the Skeleton Archer's{{sic|cache accidentally has the apostrophe"
+  },
+  {
+    "id": "shimmerscale-powder",
+    "name": "Shimmerscale Powder",
+    "category": "Materiales & Minerales",
+    "desc": "A shimmering iridescent powder. Its shifting hues are almost hypnotic."
+  },
+  {
+    "id": "shrapnel",
+    "name": "Shrapnel",
+    "category": "Materiales & Minerales",
+    "desc": "A collection of various afilado objects."
+  },
+  {
+    "id": "shrimp-bait",
+    "name": "Shrimp Bait",
+    "category": "Herramientas",
+    "desc": "Scraps of shrimp dressed to be eaten by fish. A Sardines favorite snack. Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "shrimp-omelette",
+    "name": "Shrimp Omelette",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining fried egg and sauté shrimp. Grants the Sea Legs perk."
+  },
+  {
+    "id": "shroud-of-noggin",
+    "name": "Shroud of Noggin",
+    "category": "Vestigios & Patrones",
+    "desc": "A ghostly sackcloth mask. Reduces Wither buildup while worn."
+  },
+  {
+    "id": "sigil-of-a-phoenix",
+    "name": "Sigil of a Phoenix",
+    "category": "Vestigios & Patrones",
+    "desc": "Endlessly burning and reconstituting itself. Perhaps you could learn from it."
+  },
+  {
+    "id": "simply-splendid-feather",
+    "name": "Simply Splendid Feather",
+    "category": "Vestigios & Patrones",
+    "desc": "The ancestral remnants of some sort of armour. Perhaps you could learn something from it."
+  },
+  {
+    "id": "sinister-mechanism",
+    "name": "Sinister Mechanism",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of a Zamorakian weapon. Perhaps you could learn something from it."
+  },
+  {
+    "id": "small-animal-fang",
+    "name": "Small Animal Fang",
+    "category": "Materiales & Minerales",
+    "desc": "afilado little teeth used in weaponry."
+  },
+  {
+    "id": "smoked-herring",
+    "name": "Smoked Herring",
+    "category": "Armaduras & Ropa",
+    "desc": "Nothing beats hunger like a herring. Grants the Warding Fish perk.{{sic|The Perk Warding Fish has been removed from the game."
+  },
+  {
+    "id": "smoked-infernal-eel",
+    "name": "Smoked Infernal Eel",
+    "category": "Pociones & Comida",
+    "desc": "An unusual meal, but a good one. Grants the Warding Fish perk.{{sic|Warding Fish was removed from the game."
+  },
+  {
+    "id": "smouldering-draconic-visage",
+    "name": "Smouldering Draconic Visage",
+    "category": "Armaduras & Ropa",
+    "desc": "The image of a fearsome dragón. Utilizado en la artesanía poderoso equipment."
+  },
+  {
+    "id": "snapdragon",
+    "name": "Snapdragon",
+    "category": "Materiales & Minerales",
+    "desc": "A sweet-smelling herb used in restorative potions."
+  },
+  {
+    "id": "soda-ash",
+    "name": "Soda Ash",
+    "category": "Materiales & Minerales",
+    "desc": "One of the ingredients for making glass, obtained from cocina Swamp Weed."
+  },
+  {
+    "id": "sodden-black-leather",
+    "name": "Sodden Black Leather",
+    "category": "Vestigios & Patrones",
+    "desc": "The remnants of a Zamorakian cowl. Perhaps you could learn something from it."
+  },
+  {
+    "id": "soul-fragment",
+    "name": "Soul Fragment",
+    "category": "Materiales & Minerales",
+    "desc": "Someone may have use for this."
+  },
+  {
+    "id": "spooky-bait",
+    "name": "Spooky Bait",
+    "category": "Herramientas",
+    "desc": "Bait that gives fish the heeby-jeebies, but draws them in anyway. Undead Bass love a jump scare. Incrementa the catch chance of this fish."
+  },
+  {
+    "id": "squeaking-sausage",
+    "name": "Squeaking Sausage",
+    "category": "Pociones & Comida",
+    "desc": "Tail not included."
+  },
+  {
+    "id": "steak",
+    "name": "Steak",
+    "category": "Pociones & Comida",
+    "desc": "A delicious steak. The perfect campfire meal."
+  },
+  {
+    "id": "steak-n-eggs",
+    "name": "Steak 'N' Eggs",
+    "category": "Pociones & Comida",
+    "desc": "A marvelous way, to start your day."
+  },
+  {
+    "id": "steak-sandwich",
+    "name": "Steak Sandwich",
+    "category": "Pociones & Comida",
+    "desc": "A delectable treat made with flank steak, fried onions and grilled mushrooms."
+  },
+  {
+    "id": "steamed-beltfish",
+    "name": "Steamed Beltfish",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "stir-fry",
+    "name": "Stir-Fry",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining dried giant krill, dried redberry{{sic|The description refers to redberries which can also be found by the other two ingredients but the recipe calls for dwellberries."
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "category": "Materiales & Minerales",
+    "desc": "A basic building and artesanía material."
+  },
+  {
+    "id": "stone-block",
+    "name": "Stone Block",
+    "category": "Materiales & Minerales",
+    "desc": "Advanced building material."
+  },
+  {
+    "id": "strong-sweet-tea",
+    "name": "Strong Sweet Tea",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "strong-tea",
+    "name": "Strong Tea",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "stuffed-catfish",
+    "name": "Stuffed Catfish",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "stunted-kalphite-wing",
+    "name": "Stunted Kalphite Wing",
+    "category": "Materiales & Minerales",
+    "desc": ""
+  },
+  {
+    "id": "sun-baked-sole",
+    "name": "Sun Baked Sole",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "sun-bleached-head-wrap",
+    "name": "Sun-Bleached Head Wrap",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "sun-bleached-leggings",
+    "name": "Sun-Bleached Leggings",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "sun-bleached-vest",
+    "name": "Sun-Bleached Vest",
+    "category": "Vestigios & Patrones",
+    "desc": "Quizás puedas aprender algo de ello al examinarlo.{{sic|no full stop"
+  },
+  {
+    "id": "sundering-spiked-slab",
+    "name": "Sundering Spiked Slab",
+    "category": "Vestigios & Patrones",
+    "desc": "Splattered with blood. Perhaps you could learn from it."
+  },
+  {
+    "id": "swabbie-pie",
+    "name": "Swabbie Pie",
+    "category": "Pociones & Comida",
+    "desc": "A pie reserved for the less prestigious members of a ship's crew."
+  },
+  {
+    "id": "sweet-veg-ball",
+    "name": "Sweet Veg Ball",
+    "category": "Pociones & Comida",
+    "desc": "A marvelous amalgamation of sweet and savoury."
+  },
+  {
+    "id": "tea-leaves",
+    "name": "Tea Leaves",
+    "category": "Pociones & Comida",
+    "desc": ""
+  },
+  {
+    "id": "toadflax",
+    "name": "Toadflax",
+    "category": "Materiales & Minerales",
+    "desc": "A spicy tasting herb used in resistance potions."
+  },
+  {
+    "id": "toktz-ket-xil",
+    "name": "TokTz-Ket-Xil",
+    "category": "Armaduras & Ropa",
+    "desc": "A jagged shield of obsidiana, shaped to deflect and punish in equal measure. Its edges are as peligroso as the blows it stops."
+  },
+  {
+    "id": "toktz-mej-tal",
+    "name": "Toktz-Mej-Tal",
+    "category": "Armas de Combate",
+    "desc": "Forjado a partir de volcanic glass, its pointed tip bleeds fire as though the earth itself burns within. The heat never fades."
+  },
+  {
+    "id": "toktz-xil-ak",
+    "name": "Toktz-Xil-Ak",
+    "category": "Armas de Combate",
+    "desc": "A double-pointed sword that is extremely efficient at finding the weak spots in your enemies."
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "category": "Herramientas",
+    "desc": "A trusty ligero source."
+  },
+  {
+    "id": "twilight-lily",
+    "name": "Twilight Lily",
+    "category": "Materiales & Minerales",
+    "desc": "A strange, glowing lily, with magical properties."
+  },
+  {
+    "id": "tzhaar-ket-om",
+    "name": "TzHaar-Ket-Om",
+    "category": "Armas de Combate",
+    "desc": "A massive warhammer of obsidiana hue. Each swing carries the weight of something ancestral."
+  },
+  {
+    "id": "umbral-kebab",
+    "name": "Umbral Kebab",
+    "category": "Pociones & Comida",
+    "desc": "A garou delicacy, ideal for those night-time munchies."
+  },
+  {
+    "id": "undead-bone",
+    "name": "Undead Bone",
+    "category": "Materiales & Minerales",
+    "desc": "Dropped from the restless dead. Use as a artesanía material, or process at a grindstone."
+  },
+  {
+    "id": "undead-delight",
+    "name": "Undead Delight",
+    "category": "Pociones & Comida",
+    "desc": "Made by combining fried grilled undead bass and grilled tomato. Grants the Sea Life perk."
+  },
+  {
+    "id": "undead-meat",
+    "name": "Undead Meat",
+    "category": "Materiales & Minerales",
+    "desc": "Obtained from undead beasts. Can be cooked for ... interesting results."
+  },
+  {
+    "id": "unusual-trout",
+    "name": "Unusual Trout",
+    "category": "Materiales & Minerales",
+    "desc": "This trout has seen things. You almost feel apologetic for catching it."
+  },
+  {
+    "id": "vegan-fryup",
+    "name": "Vegan Fryup",
+    "category": "Pociones & Comida",
+    "desc": "All of the calories, none of the guilt."
+  },
+  {
+    "id": "vegetable-soup",
+    "name": "Vegetable Soup",
+    "category": "Pociones & Comida",
+    "desc": "A tasty soup, good for the soul."
+  },
+  {
+    "id": "victoria-sponge-cake",
+    "name": "Victoria Sponge Cake",
+    "category": "Pociones & Comida",
+    "desc": "A delicious sponge cake, thankfully without the goblin version of frosting."
+  },
+  {
+    "id": "vile-ashes",
+    "name": "Vile Ashes",
+    "category": "Materiales & Minerales",
+    "desc": "Remains of a demonic creature. A artesanía material Utilizado para make demonic oil."
+  },
+  {
+    "id": "vine-root",
+    "name": "Vine Root",
+    "category": "Materiales & Minerales",
+    "desc": "A fibrous root with unique properties."
+  },
+  {
+    "id": "vis-cloth",
+    "name": "Vis Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "Spun on a loom from vis fibres and draconic vis wax. Now it's time to make some mage armour."
+  },
+  {
+    "id": "vis-fibres",
+    "name": "Vis Fibres",
+    "category": "Materiales & Minerales",
+    "desc": "Spun on an advanced spinning wheel. Threads that can be spun into vis cloth on a loom."
+  },
+  {
+    "id": "warped-feathers",
+    "name": "Warped Feathers",
+    "category": "Materiales & Minerales",
+    "desc": "Beautiful feather Utilizado para power the Gyrhawk Amulet, which grants additional experience for exploration."
+  },
+  {
+    "id": "weapon-barbs",
+    "name": "Weapon Barbs",
+    "category": "Materiales & Minerales",
+    "desc": "Pointy! Utilizado para fabricar Barbed Arrows or to coat your equipped melee weapon with barbs that cause Bleed buildup for a short duration."
+  },
+  {
+    "id": "weapon-poison",
+    "name": "Weapon Poison",
+    "category": "Pociones & Comida",
+    "desc": "A vial of Weapon Poison. Utilizado en la artesanía Poison Arrows or to coat your equipped Melee Weapon with Poison for a short time."
+  },
+  {
+    "id": "weeds",
+    "name": "Weeds",
+    "category": "Materiales & Minerales",
+    "desc": "A bunch of weeds."
+  },
+  {
+    "id": "weighted-training-band",
+    "name": "Weighted Training Band",
+    "category": "Vestigios & Patrones",
+    "desc": "You can feel it pulling away from you. Perhaps you could learn from it."
+  },
+  {
+    "id": "wild-archer-body",
+    "name": "Wild Archer Body",
+    "category": "Armaduras & Ropa",
+    "desc": "Durable armour worn by a Wild Knight archer."
+  },
+  {
+    "id": "wild-archer-chaps",
+    "name": "Wild Archer Chaps",
+    "category": "Armaduras & Ropa",
+    "desc": "Durable leg armour worn by a Wild Knight archer."
+  },
+  {
+    "id": "wild-archer-cowl",
+    "name": "Wild Archer Cowl",
+    "category": "Armaduras & Ropa",
+    "desc": "A helmet worn by a Wild Knight archer."
+  },
+  {
+    "id": "wild-pie",
+    "name": "Wild Pie",
+    "category": "Pociones & Comida",
+    "desc": "A triumph of man over nature."
+  },
+  {
+    "id": "wild-scout-s-shortbow",
+    "name": "Wild Scout's Shortbow",
+    "category": "Armas de Combate",
+    "desc": "A bow used by a Wild Knight scout. Maintaining balance, one arrow at a time."
+  },
+  {
+    "id": "wizard-hat",
+    "name": "Wizard Hat",
+    "category": "Armaduras & Ropa",
+    "desc": "A stylish hat, popular with spellcasters."
+  },
+  {
+    "id": "wizard-robe-legs",
+    "name": "Wizard Robe Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "Lightweight magical armour."
+  },
+  {
+    "id": "wizard-robes",
+    "name": "Wizard Robes",
+    "category": "Armaduras & Ropa",
+    "desc": "Lightweight magical armour."
+  },
+  {
+    "id": "wool-cloth",
+    "name": "Wool Cloth",
+    "category": "Materiales & Minerales",
+    "desc": "A strong and lightweight artesanía material."
+  },
+  {
+    "id": "yellow-torch",
+    "name": "Yellow Torch",
+    "category": "Herramientas",
+    "desc": "A trusty lightsource - now in yellow."
+  },
+  {
+    "id": "zamorak-hood",
+    "name": "Zamorak Hood",
+    "category": "Armaduras & Ropa",
+    "desc": "A hood styled after the Zamorakian magi of Dowdun Reach."
+  },
+  {
+    "id": "zamorak-robe-legs",
+    "name": "Zamorak Robe Legs",
+    "category": "Armaduras & Ropa",
+    "desc": "Robe legs styled after the Zamorakian magi of Dowdun Reach."
+  },
+  {
+    "id": "zamorak-robes",
+    "name": "Zamorak Robes",
+    "category": "Armaduras & Ropa",
+    "desc": "Zamorak Robes"
+  },
+  {
+    "id": "zamorak-staff",
+    "name": "Zamorak Staff",
+    "category": "Armas de Combate",
+    "desc": "Standard issue for any mage in Dowdun Reach."
+  }
+]

@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "home-teleport",
+    "englishTitle": "Home Teleport",
+    "title": "Teletransporte a la Base",
+    "name": "Teletransporte a la Base",
+    "category": "Teletransporte",
+    "magicLevel": 1,
+    "runes": [],
+    "effect": "Canaliza un hechizo durante 10 segundos para teletransportarte de regreso a tu campamento base sin coste de runas.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Home%20Teleport",
+    "image": "/spells/home-teleport.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Home_Teleport.png",
+    "imageName": "Home_Teleport.png"
+  },
+  {
+    "id": "windstep",
+    "englishTitle": "Windstep",
+    "title": "Paso del Viento",
+    "name": "Paso del Viento",
+    "category": "Movilidad",
+    "magicLevel": 12,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 3
+      }
+    ],
+    "effect": "Aumenta tu velocidad de movimiento en un 35% durante 15 segundos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Windstep",
+    "image": "/spells/windstep.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Windstep.png",
+    "imageName": "Windstep.png"
+  },
+  {
+    "id": "confuse",
+    "englishTitle": "Confuse",
+    "title": "Confusión",
+    "name": "Confusión",
+    "category": "Maldición de Combate",
+    "magicLevel": 15,
+    "runes": [
+      {
+        "rune": "Runa Mental",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Agua",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 2
+      }
+    ],
+    "effect": "Reduce la precisión de ataque del enemigo objetivo en un 15% durante 30 segundos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Confuse",
+    "image": "/spells/confuse.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Confuse.png",
+    "imageName": "Confuse.png"
+  },
+  {
+    "id": "splinter",
+    "englishTitle": "Splinter",
+    "title": "Astilla Penetrante",
+    "name": "Astilla Penetrante",
+    "category": "Combate",
+    "magicLevel": 18,
+    "runes": [
+      {
+        "rune": "Runa de Tierra",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 3
+      }
+    ],
+    "effect": "Dispara una andanada de afiladas astillas de madera encantada que perforan la armadura enemiga.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Splinter",
+    "image": "/spells/splinter.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Splinter.png",
+    "imageName": "Splinter.png"
+  },
+  {
+    "id": "enchant-weapon-air",
+    "englishTitle": "Enchant Weapon: Air",
+    "title": "Encantar Arma: Aire",
+    "name": "Encantar Arma: Aire",
+    "category": "Encantamiento",
+    "magicLevel": 20,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 6
+      },
+      {
+        "rune": "Runa Cósmica",
+        "qty": 1
+      }
+    ],
+    "effect": "Imbuye tu arma cuerpo a cuerpo o arco con el filo cortante del viento, añadiendo daño de aire adicional.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Enchant%20Weapon%3A%20Air",
+    "image": "/spells/enchant-weapon-air.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Enchant_Weapon-_Air.png",
+    "imageName": "Enchant_Weapon-_Air.png"
+  },
+  {
+    "id": "humidify",
+    "englishTitle": "Humidify",
+    "title": "Humidificar",
+    "name": "Humidificar",
+    "category": "Supervivencia y Agua",
+    "magicLevel": 22,
+    "runes": [
+      {
+        "rune": "Runa de Agua",
+        "qty": 4
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 1
+      }
+    ],
+    "effect": "Llena instantáneamente todos los viales, cubos, cantimploras y regaderas vacías de tu inventario con agua limpia.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Humidify",
+    "image": "/spells/humidify.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Humidify.png",
+    "imageName": "Humidify.png"
+  },
+  {
+    "id": "enchant-weapon-water",
+    "englishTitle": "Enchant Weapon: Water",
+    "title": "Encantar Arma: Agua",
+    "name": "Encantar Arma: Agua",
+    "category": "Encantamiento",
+    "magicLevel": 24,
+    "runes": [
+      {
+        "rune": "Runa de Agua",
+        "qty": 6
+      },
+      {
+        "rune": "Runa Cósmica",
+        "qty": 1
+      }
+    ],
+    "effect": "Imbuye tu arma con la fluidez del agua, ralentizando a los enemigos impactados.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Enchant%20Weapon%3A%20Water",
+    "image": "/spells/enchant-weapon-water.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Enchant_Weapon-_Water.png",
+    "imageName": "Enchant_Weapon-_Water.png"
+  },
+  {
+    "id": "bark-to-bones",
+    "englishTitle": "Bark To Bones",
+    "title": "Corteza a Huesos",
+    "name": "Corteza a Huesos",
+    "category": "Transmutación",
+    "magicLevel": 25,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 1
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 3
+      }
+    ],
+    "effect": "Transmuta troncos y corteza de madera de tu inventario en huesos de animales útiles para abono o altares.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Bark%20To%20Bones",
+    "image": "/spells/bark-to-bones.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Bark_To_Bones.png",
+    "imageName": "Bark_To_Bones.png"
+  },
+  {
+    "id": "windstomp",
+    "englishTitle": "Windstomp",
+    "title": "Pisotón de Viento",
+    "name": "Pisotón de Viento",
+    "category": "Combate y Derribo",
+    "magicLevel": 26,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 3
+      }
+    ],
+    "effect": "Golpea el suelo con fuerza mágica, empujando a los enemigos cercanos y derribándolos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Windstomp",
+    "image": "/spells/windstomp.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Windstomp.png",
+    "imageName": "Windstomp.png"
+  },
+  {
+    "id": "phase-dash",
+    "englishTitle": "Phase Dash",
+    "title": "Impulso de Fase",
+    "name": "Impulso de Fase",
+    "category": "Movilidad y Evasión",
+    "magicLevel": 28,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de la Ley",
+        "qty": 1
+      }
+    ],
+    "effect": "Te teletransporta instantáneamente 10 metros en la dirección en la que miras, atravesando enemigos e invulnerabilidad temporal.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Phase%20Dash",
+    "image": "/spells/phase-dash.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Phase_Dash.png",
+    "imageName": "Phase_Dash.png"
+  },
+  {
+    "id": "enchant-weapon-fire",
+    "englishTitle": "Enchant Weapon: Fire",
+    "title": "Encantar Arma: Fuego",
+    "name": "Encantar Arma: Fuego",
+    "category": "Encantamiento",
+    "magicLevel": 30,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 8
+      },
+      {
+        "rune": "Runa Cósmica",
+        "qty": 1
+      },
+      {
+        "rune": "Runa del Caos",
+        "qty": 1
+      }
+    ],
+    "effect": "Envuelve tu arma en llamas ardientes, causando daño de fuego continuo (quemadura) a los enemigos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Enchant%20Weapon%3A%20Fire",
+    "image": "/spells/enchant-weapon-fire.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Enchant_Weapon-_Fire.png",
+    "imageName": "Enchant_Weapon-_Fire.png"
+  },
+  {
+    "id": "runes-to-rune-essence",
+    "englishTitle": "Runes To Rune Essence",
+    "title": "Runas a Esencia Rúnica",
+    "name": "Runas a Esencia Rúnica",
+    "category": "Transmutación",
+    "magicLevel": 30,
+    "runes": [
+      {
+        "rune": "Runa Cósmica",
+        "qty": 1
+      },
+      {
+        "rune": "Runa Corporal",
+        "qty": 2
+      }
+    ],
+    "effect": "Descompone runas elementales sobrantes en esencia rúnica pura para alimentar altares místicos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Runes%20To%20Rune%20Essence",
+    "image": "/spells/runes-to-rune-essence.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Runes_To_Rune_Essence.png",
+    "imageName": "Runes_To_Rune_Essence.png"
+  },
+  {
+    "id": "surge",
+    "englishTitle": "Surge",
+    "title": "Embate Relámpago (Surge)",
+    "name": "Embate Relámpago (Surge)",
+    "category": "Movilidad y Combate",
+    "magicLevel": 30,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 5
+      },
+      {
+        "rune": "Runa de la Ley",
+        "qty": 1
+      }
+    ],
+    "effect": "Te proyecta hacia adelante a gran velocidad, derribando a cualquier enemigo en tu trayectoria.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Surge",
+    "image": "/spells/surge.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Surge.png",
+    "imageName": "Surge.png"
+  },
+  {
+    "id": "mucksplosion",
+    "englishTitle": "Mucksplosion",
+    "title": "Explosión de Cieno",
+    "name": "Explosión de Cieno",
+    "category": "Combate en Área",
+    "magicLevel": 32,
+    "runes": [
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      },
+      {
+        "rune": "Runa del Caos",
+        "qty": 2
+      }
+    ],
+    "effect": "Hace explotar el fango a tus pies, cubriendo a los enemigos cercanos de alquitrán pegajoso y ralentizándolos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Mucksplosion",
+    "image": "/spells/mucksplosion.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Mucksplosion.png",
+    "imageName": "Mucksplosion.png"
+  },
+  {
+    "id": "trunk-totem",
+    "englishTitle": "Trunk Totem",
+    "title": "Tótem de Tronco",
+    "name": "Tótem de Tronco",
+    "category": "Soporte y Zona",
+    "magicLevel": 34,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 5
+      }
+    ],
+    "effect": "Planta un tótem de madera que emite un aura que regenera la energía de carrera de todos los aliados cercanos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Trunk%20Totem",
+    "image": "/spells/trunk-totem.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Trunk_Totem.png",
+    "imageName": "Trunk_Totem.png"
+  },
+  {
+    "id": "accelerated-veins",
+    "englishTitle": "Accelerated Veins",
+    "title": "Venas Aceleradas",
+    "name": "Venas Aceleradas",
+    "category": "Mejora y Buff",
+    "magicLevel": 35,
+    "runes": [
+      {
+        "rune": "Runa de Sangre",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 4
+      }
+    ],
+    "effect": "Aumenta la velocidad de ataque y la regeneración de resistencia durante 20 segundos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Accelerated%20Veins",
+    "image": "/spells/accelerated-veins.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Accelerated_Veins.png",
+    "imageName": "Accelerated_Veins.png"
+  },
+  {
+    "id": "rapid-growth",
+    "englishTitle": "Rapid Growth",
+    "title": "Crecimiento Rápido",
+    "name": "Crecimiento Rápido",
+    "category": "Agricultura y Naturaleza",
+    "magicLevel": 36,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de Agua",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      }
+    ],
+    "effect": "Acelera el ciclo de crecimiento de los cultivos plantados en un 50% y previene que enfermen.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Rapid%20Growth",
+    "image": "/spells/rapid-growth.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Rapid_Growth.png",
+    "imageName": "Rapid_Growth.png"
+  },
+  {
+    "id": "fishing-frenzy",
+    "englishTitle": "Fishing Frenzy",
+    "title": "Frenesí de Pesca",
+    "name": "Frenesí de Pesca",
+    "category": "Utilidad y Recolección",
+    "magicLevel": 38,
+    "runes": [
+      {
+        "rune": "Runa de Agua",
+        "qty": 8
+      },
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 2
+      }
+    ],
+    "effect": "Atrae bancos de peces rápidamente a la superficie, duplicando la velocidad de pesca durante 1 minuto.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Fishing%20Frenzy",
+    "image": "/spells/fishing-frenzy.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Fishing_Frenzy.png",
+    "imageName": "Fishing_Frenzy.png"
+  },
+  {
+    "id": "magical-mending",
+    "englishTitle": "Magical Mending",
+    "title": "Remiendo Mágico",
+    "name": "Remiendo Mágico",
+    "category": "Reparación y Soporte",
+    "magicLevel": 40,
+    "runes": [
+      {
+        "rune": "Runa Cósmica",
+        "qty": 2
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      },
+      {
+        "rune": "Runa Corporal",
+        "qty": 3
+      }
+    ],
+    "effect": "Restaura un 25% de la durabilidad perdida del arma o armadura equipada sin necesidad de un yunque.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Magical%20Mending",
+    "image": "/spells/magical-mending.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Magical_Mending.png",
+    "imageName": "Magical_Mending.png"
+  },
+  {
+    "id": "summon-stone-spirits",
+    "englishTitle": "Summon Stone Spirits",
+    "title": "Invocar Espíritus de Piedra",
+    "name": "Invocar Espíritus de Piedra",
+    "category": "Minería y Soporte",
+    "magicLevel": 41,
+    "runes": [
+      {
+        "rune": "Runa de Tierra",
+        "qty": 8
+      },
+      {
+        "rune": "Runa Corporal",
+        "qty": 2
+      }
+    ],
+    "effect": "Invoca espíritus menores que duplican las menas obtenidas de cualquier yacimiento de roca.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Summon%20Stone%20Spirits",
+    "image": "/spells/summon-stone-spirits.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Summon_Stone_Spirits.png",
+    "imageName": "Summon_Stone_Spirits.png"
+  },
+  {
+    "id": "afterimage",
+    "englishTitle": "Afterimage",
+    "title": "Imagen Residual",
+    "name": "Imagen Residual",
+    "category": "Evasión y Combate",
+    "magicLevel": 42,
+    "runes": [
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 5
+      }
+    ],
+    "effect": "Crea un clon ilusorio que distrae a los enemigos y te otorga un 50% de probabilidad de esquivar el siguiente ataque.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Afterimage",
+    "image": "/spells/afterimage.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Afterimage.png",
+    "imageName": "Afterimage.png"
+  },
+  {
+    "id": "superheat",
+    "englishTitle": "Superheat",
+    "title": "Supercalentar",
+    "name": "Supercalentar",
+    "category": "Herrería y Forja",
+    "magicLevel": 43,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 1
+      }
+    ],
+    "effect": "Funde instantáneamente menas en barras de metal puras en tu inventario sin necesidad de un horno de fundición.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Superheat",
+    "image": "/spells/superheat.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Superheat.png",
+    "imageName": "Superheat.png"
+  },
+  {
+    "id": "rocksplosion",
+    "englishTitle": "Rocksplosion",
+    "title": "Explosión de Rocas",
+    "name": "Explosión de Rocas",
+    "category": "Minería y Combate",
+    "magicLevel": 44,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      },
+      {
+        "rune": "Runa del Caos",
+        "qty": 2
+      }
+    ],
+    "effect": "Detona una vena minera para extraer todas sus menas al instante y dañar a los enemigos circundantes.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Rocksplosion",
+    "image": "/spells/rocksplosion.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Rocksplosion.png",
+    "imageName": "Rocksplosion.png"
+  },
+  {
+    "id": "bones-to-peaches",
+    "englishTitle": "Bones to Peaches",
+    "title": "Huesos a Melocotones",
+    "name": "Huesos a Melocotones",
+    "category": "Transmutación y Supervivencia",
+    "magicLevel": 45,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Agua",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 4
+      }
+    ],
+    "effect": "Transforma todos los huesos del inventario en deliciosos melocotones que restauran 8 puntos de vida cada uno.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Bones%20to%20Peaches",
+    "image": "/spells/bones-to-peaches.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Bones_to_Peaches.png",
+    "imageName": "Bones_to_Peaches.png"
+  },
+  {
+    "id": "recall",
+    "englishTitle": "Recall",
+    "title": "Retorno Instantáneo",
+    "name": "Retorno Instantáneo",
+    "category": "Teletransporte",
+    "magicLevel": 45,
+    "runes": [
+      {
+        "rune": "Runa de la Ley",
+        "qty": 2
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      }
+    ],
+    "effect": "Te devuelve al último círculo de teletransporte o campamento seguro visitado.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Recall",
+    "image": "/spells/recall.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Recall.png",
+    "imageName": "Recall.png"
+  },
+  {
+    "id": "spectral-arrows",
+    "englishTitle": "Spectral Arrows",
+    "title": "Flechas Espectrales",
+    "name": "Flechas Espectrales",
+    "category": "Encantamiento de Proyectiles",
+    "magicLevel": 46,
+    "runes": [
+      {
+        "rune": "Runa del Alma",
+        "qty": 1
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 8
+      },
+      {
+        "rune": "Runa de la Muerte",
+        "qty": 1
+      }
+    ],
+    "effect": "Carga tu arco con flechas fantasmales que atraviesan la armadura de los enemigos ignorando su defensa.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Spectral%20Arrows",
+    "image": "/spells/spectral-arrows.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Spectral_Arrows.png",
+    "imageName": "Spectral_Arrows.png"
+  },
+  {
+    "id": "fire-spirit",
+    "englishTitle": "Fire Spirit",
+    "title": "Espíritu de Fuego",
+    "name": "Espíritu de Fuego",
+    "category": "Invocación de Combate",
+    "magicLevel": 48,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 10
+      },
+      {
+        "rune": "Runa del Caos",
+        "qty": 3
+      },
+      {
+        "rune": "Runa del Alma",
+        "qty": 1
+      }
+    ],
+    "effect": "Invoca un espíritu ígneo que ataca a los enemigos cercanos con proyectiles de fuego.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Fire%20Spirit",
+    "image": "/spells/fire-spirit.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Fire_Spirit.png",
+    "imageName": "Fire_Spirit.png"
+  },
+  {
+    "id": "uproot",
+    "englishTitle": "Uproot",
+    "title": "Desarraigar",
+    "name": "Desarraigar",
+    "category": "Control de Masas",
+    "magicLevel": 48,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      }
+    ],
+    "effect": "Hace brotar raíces gigantescas del suelo que lanzan a los enemigos por los aires y los aturden.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Uproot",
+    "image": "/spells/uproot.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Uproot.png",
+    "imageName": "Uproot.png"
+  },
+  {
+    "id": "divine-rock",
+    "englishTitle": "Divine Rock",
+    "title": "Roca Divina",
+    "name": "Roca Divina",
+    "category": "Defensa y Protección",
+    "magicLevel": 50,
+    "runes": [
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      },
+      {
+        "rune": "Runa Corporal",
+        "qty": 2
+      }
+    ],
+    "effect": "Invoca una barrera de roca divina que absorbe hasta un 40% de daño físico entrante.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Divine%20Rock",
+    "image": "/spells/divine-rock.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Divine_Rock.png",
+    "imageName": "Divine_Rock.png"
+  },
+  {
+    "id": "snare",
+    "englishTitle": "Snare",
+    "title": "Cepos Arcanos",
+    "name": "Cepos Arcanos",
+    "category": "Control de Masas",
+    "magicLevel": 50,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de Agua",
+        "qty": 4
+      }
+    ],
+    "effect": "Inmoviliza al enemigo en el suelo durante 10 segundos enteros, impidiendo cualquier movimiento.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Snare",
+    "image": "/spells/snare.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Snare.png",
+    "imageName": "Snare.png"
+  },
+  {
+    "id": "infernal-rod",
+    "englishTitle": "Infernal Rod",
+    "title": "Caña Infernal",
+    "name": "Caña Infernal",
+    "category": "Utilidad de Pesca",
+    "magicLevel": 52,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 8
+      },
+      {
+        "rune": "Runa de Muerte",
+        "qty": 1
+      }
+    ],
+    "effect": "Cocina automáticamente cada pez en el mismo instante en que es capturado, otorgando experiencia de cocina.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Infernal%20Rod",
+    "image": "/spells/infernal-rod.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Infernal_Rod.png",
+    "imageName": "Infernal_Rod.png"
+  },
+  {
+    "id": "summon-shelter",
+    "englishTitle": "Summon Shelter",
+    "title": "Invocar Refugio Seguro",
+    "name": "Invocar Refugio Seguro",
+    "category": "Supervivencia",
+    "magicLevel": 54,
+    "runes": [
+      {
+        "rune": "Runa de la Ley",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 8
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      }
+    ],
+    "effect": "Crea una cúpula mística impenetrable durante 30 segundos donde puedes curarte y descansar a salvo de tormentas.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Summon%20Shelter",
+    "image": "/spells/summon-shelter.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Summon_Shelter.png",
+    "imageName": "Summon_Shelter.png"
+  },
+  {
+    "id": "eye-of-oculus",
+    "englishTitle": "Eye of Oculus",
+    "title": "Ojo de Oculus",
+    "name": "Ojo de Oculus",
+    "category": "Místico y Visión",
+    "magicLevel": 55,
+    "runes": [
+      {
+        "rune": "Runa Cósmica",
+        "qty": 3
+      },
+      {
+        "rune": "Runa Mental",
+        "qty": 4
+      }
+    ],
+    "effect": "Otorga visión a través de la niebla de guerra y revela tesoros ocultos en el minimapa.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Eye%20of%20Oculus",
+    "image": "/spells/eye-of-oculus.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Eye_of_Oculus.png",
+    "imageName": "Eye_of_Oculus.png"
+  },
+  {
+    "id": "internal-alchemy",
+    "englishTitle": "Internal Alchemy",
+    "title": "Alquimia Interna",
+    "name": "Alquimia Interna",
+    "category": "Transmutación",
+    "magicLevel": 55,
+    "runes": [
+      {
+        "rune": "Runa de Naturaleza",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Fuego",
+        "qty": 6
+      }
+    ],
+    "effect": "Convierte objetos innecesarios de tu inventario directamente en monedas de oro puras.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Internal%20Alchemy",
+    "image": "/spells/internal-alchemy.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Internal_Alchemy.png",
+    "imageName": "Internal_Alchemy.png"
+  },
+  {
+    "id": "tempest-shield",
+    "englishTitle": "Tempest Shield",
+    "title": "Escudo de la Tempestad",
+    "name": "Escudo de la Tempestad",
+    "category": "Defensa y Reflejo",
+    "magicLevel": 56,
+    "runes": [
+      {
+        "rune": "Runa de Aire",
+        "qty": 10
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de la Ira",
+        "qty": 1
+      }
+    ],
+    "effect": "Genera un vórtice eléctrico que desvía proyectiles enemigos y electrocuta a los atacantes cuerpo a cuerpo.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Tempest%20Shield",
+    "image": "/spells/tempest-shield.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Tempest_Shield.png",
+    "imageName": "Tempest_Shield.png"
+  },
+  {
+    "id": "greater-confuse",
+    "englishTitle": "Greater Confuse",
+    "title": "Confusión Mayor",
+    "name": "Confusión Mayor",
+    "category": "Maldición de Combate",
+    "magicLevel": 58,
+    "runes": [
+      {
+        "rune": "Runa del Caos",
+        "qty": 3
+      },
+      {
+        "rune": "Runa Mental",
+        "qty": 5
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      }
+    ],
+    "effect": "Desorienta gravemente al objetivo, reduciendo su ataque un 30% y provocando que ataque a sus propios aliados.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Greater%20Confuse",
+    "image": "/spells/greater-confuse.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Greater_Confuse.png",
+    "imageName": "Greater_Confuse.png"
+  },
+  {
+    "id": "axtral-projection",
+    "englishTitle": "Axtral Projection",
+    "title": "Proyección Astral",
+    "name": "Proyección Astral",
+    "category": "Místico y Utilidad",
+    "magicLevel": 60,
+    "runes": [
+      {
+        "rune": "Runa Astral",
+        "qty": 4
+      },
+      {
+        "rune": "Runa Cósmica",
+        "qty": 3
+      }
+    ],
+    "effect": "Proyecta tu espíritu hacia adelante para explorar áreas peligrosas o activar mecanismos lejanos.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Axtral%20Projection",
+    "image": "/spells/axtral-projection.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Axtral_Projection.png",
+    "imageName": "Axtral_Projection.png"
+  },
+  {
+    "id": "summon-elemental-spirits",
+    "englishTitle": "Summon Elemental Spirits",
+    "title": "Invocar Espíritus Elementales",
+    "name": "Invocar Espíritus Elementales",
+    "category": "Invocación",
+    "magicLevel": 62,
+    "runes": [
+      {
+        "rune": "Runa de Fuego",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Agua",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 6
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 6
+      }
+    ],
+    "effect": "Invoca cuatro orbes elementales que giran a tu alrededor, disparando ráfagas a los atacantes.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Summon%20Elemental%20Spirits",
+    "image": "/spells/summon-elemental-spirits.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Summon_Elemental_Spirits.png",
+    "imageName": "Summon_Elemental_Spirits.png"
+  },
+  {
+    "id": "fishnado",
+    "englishTitle": "Fishnado",
+    "title": "Torbellino Acuático (Fishnado)",
+    "name": "Torbellino Acuático (Fishnado)",
+    "category": "Combate en Área",
+    "magicLevel": 65,
+    "runes": [
+      {
+        "rune": "Runa de Agua",
+        "qty": 15
+      },
+      {
+        "rune": "Runa de Aire",
+        "qty": 10
+      },
+      {
+        "rune": "Runa de Muerte",
+        "qty": 2
+      }
+    ],
+    "effect": "Desata un vórtice giratorio de agua y proyectiles marinos que arrasa a todos los enemigos en el área.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Fishnado",
+    "image": "/spells/fishnado.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Fishnado.png",
+    "imageName": "Fishnado.png"
+  },
+  {
+    "id": "personal-chest-spell-",
+    "englishTitle": "Personal Chest (spell)",
+    "title": "Cofre Dimensional Personal",
+    "name": "Cofre Dimensional Personal",
+    "category": "Utilidad",
+    "magicLevel": 68,
+    "runes": [
+      {
+        "rune": "Runa de la Ley",
+        "qty": 3
+      },
+      {
+        "rune": "Runa Cósmica",
+        "qty": 3
+      },
+      {
+        "rune": "Runa Astral",
+        "qty": 2
+      }
+    ],
+    "effect": "Abre un portal místico directo a tu baúl de almacenamiento del campamento desde cualquier lugar del mapa.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Personal%20Chest%20(spell)",
+    "image": "/spells/personal-chest-spell-.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Personal_Chest.png",
+    "imageName": "Personal_Chest.png"
+  },
+  {
+    "id": "vengeance",
+    "englishTitle": "Vengeance",
+    "title": "Venganza",
+    "name": "Venganza",
+    "category": "Combate y Retribución",
+    "magicLevel": 70,
+    "runes": [
+      {
+        "rune": "Runa Astral",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de la Muerte",
+        "qty": 2
+      },
+      {
+        "rune": "Runa de Tierra",
+        "qty": 10
+      }
+    ],
+    "effect": "Refleja un 75% del daño del próximo golpe letal que recibas de vuelta al atacante.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Vengeance",
+    "image": "/spells/vengeance.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Vengeance.png",
+    "imageName": "Vengeance.png"
+  },
+  {
+    "id": "ultimate-burst",
+    "englishTitle": "Ultimate Burst",
+    "title": "Ráfaga Definitiva",
+    "name": "Ráfaga Definitiva",
+    "category": "Combate Supremo",
+    "magicLevel": 75,
+    "runes": [
+      {
+        "rune": "Runa de la Ira",
+        "qty": 3
+      },
+      {
+        "rune": "Runa de la Muerte",
+        "qty": 4
+      },
+      {
+        "rune": "Runa de Sangre",
+        "qty": 4
+      }
+    ],
+    "effect": "Desata una devastadora onda expansiva arcana que inflige un daño colosal a todos los enemigos en pantalla.",
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Ultimate%20Burst",
+    "image": "/spells/ultimate-burst.png",
+    "remoteImage": "https://dragonwilds.runescape.wiki/w/Special:Redirect/file/Ultimate_Burst.png",
+    "imageName": "Ultimate_Burst.png"
+  }
+]

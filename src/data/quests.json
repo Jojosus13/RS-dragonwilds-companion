@@ -1,0 +1,1693 @@
+[
+  {
+    "id": "a-melody-remembered",
+    "englishTitle": "A Melody Remembered",
+    "title": "Una Melodía Recordada",
+    "name": "Una Melodía Recordada",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Un joyero en Ghornfell reproduce una melodía inquietante, pero no puede completar su canción.",
+    "startPoint": "Interactúa con una caja de música en un escritorio ubicado en Stormtouched Highlands, al sur de la fortaleza del rey Garou.",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [
+      "Anillo inspirador de Runecrafting (o 1 molde de arcilla, 2 barras de plata, 2 ópalos y 3 fragmentos de bóveda)",
+      "Amuleto de magia (o 1 molde de arcilla, 2 lingotes de oro, 2 lingotes de plata, 4 zafiros y 6 fragmentos de bóveda)",
+      "Banco de joyero (o 12 tablas de roble, 8 de arenisca molida, 2 lingotes de oro, 2 lingotes de plata y 1 núcleo de bóveda)"
+    ],
+    "itemsRecommended": [],
+    "enemies": [
+      "Varios Garou"
+    ],
+    "rewards": [
+      "1x anillo de Ravanna",
+      "Incluye la receta para elaborar más."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Al encontrar la caja de música, ubicada en un edificio en ruinas al sur de la fortaleza del Rey Garou, siguiendo el camino hacia ella, hay una caja de música sobre un escritorio. Al interactuar con él, se le pedirá que le proporcione los siguientes elementos:\n\n• Un anillo inspirador de Runecrafting \n• Posteriormente un amuleto de Magia (no confundir con el inspirador amuleto de Magia).\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/A_Melody_Remembered"
+  },
+  {
+    "id": "a-room-with-a-garou",
+    "englishTitle": "A Room With A Garou",
+    "title": "Una Habitación con un Garou",
+    "name": "Una Habitación con un Garou",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Un garou anciano quiere que construyas una casa de la que su difunta esposa esté orgullosa.",
+    "startPoint": "Habla con Caratacus en la esquina noroeste de Fractured Plains.",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [
+      "Troncos de fresno u otro material de construcción para crear una casa alrededor de Caratacus."
+    ],
+    "itemsRecommended": [
+      "Al menos 20 troncos de ceniza para la construcción básica."
+    ],
+    "enemies": [],
+    "rewards": [
+      "Decoraciones de edificios desbloqueadas:",
+      "Herramientas para colgar",
+      "Ollas en un banco",
+      "Burro"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Carataco lamenta el fallecimiento de su esposa, Cliodhina, que quería vivir en la zona. Te pedirá que le ayudes a construir una casa, ya que no puede hacerlo debido a su ceguera.\n\nPuedes construir la casa como quieras, pero para terminar la misión rápidamente, se recomienda construir 4 paredes y un techo dentro del espacio del piso. Esto requiere un mínimo de 20 registros de cenizas, donde los jugadores pueden crear:\n\n• 4 paredes\n• 1 techo de 45°\n\nUna vez completado, habla con él nuevamente.\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/A_Room_With_A_Garou"
+  },
+  {
+    "id": "animal-magnetism",
+    "englishTitle": "Animal Magnetism",
+    "title": "Magnetismo Animal",
+    "name": "Magnetismo Animal",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Crea el acumulador de Ava",
+    "startPoint": "Habla con Manktongue en la esquina suroeste de Fractured Plains.",
+    "requirements": [
+      "Armaduras y armas decentes."
+    ],
+    "itemsRequired": [
+      "1 barra de hierro",
+      "5 runas de ley"
+    ],
+    "itemsRecommended": [
+      "Poción antiveneno débil para viajar a través del Pantano Bloodblight"
+    ],
+    "enemies": [
+      "No se necesitan enemigos para luchar, pero el área para recolectar estos elementos tendrá:",
+      "ratas pútridas",
+      "garous",
+      "Demonio abisal"
+    ],
+    "rewards": [
+      "El acumulador de Ava y la capacidad de crear más."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Reuniendo los ingredientes",
+        "content": "Para comenzar la misión, habla con Manktongue, quien te informará que encontró un mensaje en una botella en el agua. Leerlo revelará que es un mensaje de Ava con los ingredientes sobre cómo crear su acumulador. Conociendo los ingredientes necesarios, se te pedirá que recuperes cada uno de los siguientes: 1 pollo no-muerto, un manojo de ramitas de no-muerto y un imán, lo que requiere 1 barra de hierro y 5 runas de ley. Si ya tienes las runas de hierro y de ley, llévalas a Pulpknuckle. En la misma cabina de arriba está él, quien creará el imán para ti.\n\nEl pollo no-muerto se encuentra dentro de Stormtouched Highlands, directamente al norte del área de misión. Ingrese a la región, suba la colina y luego busque un nodo de mineral de hierro en la pared. El pollo estará allí (mapa abajo a la derecha). The Twig está ubicado al sur de la entrada a Bloodblight Swamp (mapa en la parte inferior derecha). Hay un árbol de muertos vivientes; Para obtener la ramita, deberás interactuar con ella. \nAdvertencia: Se sabe que un demonio abisal deambula por esta zona. Tenga cuidado.\nUbicación en el mapa del árbol de los no muertos.]]"
+      },
+      {
+        "stepTitle": "terminando",
+        "content": "Después de reunir todos los ingredientes, regresa con Manktongue, quien creará el dispositivo para ti.\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Animal_Magnetism"
+  },
+  {
+    "id": "biohazard",
+    "englishTitle": "Biohazard",
+    "title": "Riesgo Biológico",
+    "name": "Riesgo Biológico",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Investiga la extraña corrupción que afecta a los residentes de Dowdun Reach.",
+    "startPoint": "Habla con Zanik en The Approach o recoge una muestra de esencia corrupta de cuervos corruptos.",
+    "requirements": [
+      "Finalización parcial de la Fortaleza del Caballero Negro (misión) para acceder a Dowdun Reach"
+    ],
+    "itemsRequired": [
+      "10 muestras de esencia corruptas",
+      "sangre de dragón",
+      "Agua impía (recogida durante la misión)",
+      "Lirio crepuscular (recogido durante la misión)"
+    ],
+    "itemsRecommended": [
+      "Flechas o tornillos",
+      "buena armadura"
+    ],
+    "enemies": [
+      "Varios monstruos dentro de Dowdun Reach",
+      "Cuervo corrupto"
+    ],
+    "rewards": [
+      "1x Capa Zamorak (y su receta)",
+      "50x fragmentos infernales",
+      "Puedes recolectarlo intercambiando 10 muestras de esencia corrupta con Putrilius."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "Puedes comenzar esta misión de dos maneras: hablar con Zanik, que está debajo de The Approach, o simplemente recolectar una muestra de esencia corrupta de cualquier cuervo corrupto en Dowdun Reach. De cualquier manera, Zanik te pedirá que recolectes 10 muestras de esencia corrupta de cuervos corruptos esparcidos por la región. Consulte el mapa de la derecha para conocer sus ubicaciones."
+      },
+      {
+        "stepTitle": "Los tres ingredientes",
+        "content": "Una vez que regreses con Zanik con las 10 muestras, ella te pedirá que recolectes tres elementos adicionales: sangre de dragón, agua impía y un lirio crepuscular.\n\n• Sangre de dragón: se puede obtener matando a cualquier dragón en Dowdun Reach, o de un dragón lobo si quieres regresar a Fellhollow y cazar enemigos más fáciles.\n• Lirio crepuscular: se encuentra en El Lago, brillando de color azul frente a un árbol de ánima. El lago está justo al suroeste de Zanik.\n• Agua impía: detrás de La Catedral, cerca de tres acólitos zamorakianos, un mago de Zamorak y dos Caballeros Negros de élite. Busque una estatua con agua fluyendo de sus manos. No necesitas luchar contra ninguno de los enemigos aquí; puedes escabullirte a la fuente al suroeste para recogerlo."
+      },
+      {
+        "stepTitle": "Encontrar la fuente",
+        "content": "Devuélvele los tres elementos a Zanik. Ella te pedirá que localices la fuente de la corrupción.\n\nDirígete a The Nexus y dirígete al Grand Hall. Usa el paso del viento para subir al techo (cuidado con un francotirador del Caballero Negro y un guardián del Caballero Negro) y encontrarás un pollo corrupto llamado Putrilius.\n\nCompleta el diálogo con Putrilio."
+      },
+      {
+        "stepTitle": "Regresando a Zanik",
+        "content": "Vuelve con Zanik y cuéntale lo que encontraste en el techo del Gran Salón. Ella te agradece tu ayuda con la investigación de la corrupción y te recompensa por tus esfuerzos.\n\n¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Biohazard"
+  },
+  {
+    "id": "black-knight-s-fortress",
+    "englishTitle": "Black Knight's Fortress",
+    "title": "La Fortaleza del Caballero Negro",
+    "name": "La Fortaleza del Caballero Negro",
+    "difficulty": "Intermedia",
+    "questType": "Principal",
+    "summary": "Descubre los secretos de Dowdun Reach para desbloquear tu camino hacia Umbral Sands.",
+    "startPoint": "Habla con la Muerte en el Templo Olvidado.",
+    "requirements": [
+      "Cumbres marchitas",
+      "Nivel 41 Cocinar para cocinar savia de arce y convertirla en jarabe de arce, o una tostada de arce de un lugar de recuperación de alimentos (1/24)"
+    ],
+    "itemsRequired": [
+      "Pala de acero o no-muerto",
+      "Pico de acero o mitril",
+      "Hacha de tala de mitril",
+      "Caña de pescar (cualquiera, preferiblemente la más alta disponible)"
+    ],
+    "itemsRecommended": [
+      "buena comida, pociones",
+      "buena armadura"
+    ],
+    "enemies": [
+      "Múltiples caballeros negros",
+      "Mago múltiple de Zamorak",
+      "Múltiples perros del infierno",
+      "Cuatro demonios menores fragmentados (en diferentes ubicaciones)",
+      "demonio menor",
+      "dragón azul",
+      "Titán Caballero Negro"
+    ],
+    "rewards": [
+      "1 paquete de recompensas de la Fortaleza del Caballero Negro",
+      "1x Tomo del Titán",
+      "* +750 XP a Magia, A Distancia y Ataque",
+      "1x ira del titán",
+      "Receta para crear la espada 2h de la ira del Titán"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Parte I: La Fortaleza Oscura...",
+        "content": "Habla con la Muerte en el Templo Olvidado. Él mencionará lo bien que te fue en Fellhollow, pero que hay más que puedes hacer. Un colega suyo te está esperando en Umbral Sands para ayudarlo, pero te indica que hables con Cathan para reunir aliados e investigar. Puedes encontrar a Cathan al este de Fellhollow, cerca de la siniestra puerta de entrada en el sur de Silverthorn Keep.\n\nHabla con Cathan, quien te saluda y te comentará que la aventura nunca termina. Luego irá directo a él y le explicará cómo ha estado investigando la siniestra puerta de entrada y, aunque conduce a alguna fortaleza, está bloqueando el camino a Umbral Sands. Te cuenta que quería explorar el lugar más espeluznante, pero cometió el error de mencionárselo al Viejo Sabio. Sabiendo cómo es, Cathan mencionó cómo murmuró algunas cosas como \"salas de horas de aficionados\" y \"defensas de basura\" antes de salir corriendo por el pasillo. Cathan te informará que, si quieres ir tras él, búscalo en algún tipo de punto central (como un nexo o algo así). Pasa por la puerta abierta y entra por la siniestra puerta (Imagen de la derecha).\n\nNota: Esto reproducirá una pequeña escena de introducción al área.\n\nLuego llegará a The Approach. Atraviesa hacia el sur a través de esta nueva región hasta ingresar al Patio, donde encontrarás al Viejo Sabio."
+      },
+      {
+        "stepTitle": "Parte II: Sombras internas",
+        "content": "Habla con el anciano sabio, quien te mencionará que te resultó más fácil llegar hasta aquí que a ellos y golpear a algunas personas problemáticas. Luego menciona que esperaba cazar otro dragón para reducir las fuerzas de Kuldra, pero se queja de la fortaleza llena de zamorakianos en el camino. A pesar de los molestos problemas en el camino, menciona lo fantástico que es que estés aquí para ayudarlos a moverse nuevamente. Lo preocupante es que menciona cómo el camino está bloqueado por alguien llamado \"el guardián\" y no está seguro de quién o qué puede ser. A pesar de no saber quién o qué es, el Viejo Sabio te dice que Doric está trabajando actualmente para disipar una desagradable barrera mágica más adelante en el Nexus. Luego dice que podría ser una buena idea establecer primero un campamento base aquí.\n\nDespués de establecer un campamento base, sigue el camino que conduce a la fortaleza. Llega a The Nexus y habla con Doric. Una vez que hables con él, te mencionará lo enloquecidos que están los Caballeros Negros y cómo parecen que deberían haber muerto hace mucho tiempo. Menciona que el problema es que están todos atrapados aquí y él tiene todo para abrir la puerta. Por lo que Doric puede decir, todo parece estar conectado a una gran piedra junto a él. Él dice que parece roto y, teorizando sobre una manera de pasar la puerta, tal vez sea necesario arreglarla usando algunas piezas faltantes. Inspecciona la piedra.\n\nEsto revelará un pequeño diálogo de la piedra misma que describe cómo está rota, faltan fragmentos de sí misma y que debes encontrar las piezas que faltan para repararla. Luego te dará autorización para mirar alrededor de la torre del homenaje y acceder a los nodos Nexus repartidos por Dowdun Reach."
+      },
+      {
+        "stepTitle": "Parte III: Caza de fragmentos",
+        "content": "Artículos necesarios: pala, pico, hacha de tala.\n\nDespués de inspeccionar la Piedra de los Sueños, descubrirá que hay trece fragmentos (marcados en su mapa con círculos amarillos) que son necesarios para repararla. Estos fragmentos están dispersos por Dowdun Reach y requieren que interactúes con personajes, objetos del escenario o resuelvas acertijos para adquirirlos. Si bien la mayoría están en la superficie, hay tres que se mantienen bajo tierra. Una vez que hayas recolectado los trece fragmentos, regresa a Dreaming Stone."
+      },
+      {
+        "stepTitle": "Fragmentos subterráneos",
+        "content": "Estos están ubicados bajo tierra y se pueden completar en cualquier orden.\n=====La Cripta (subterránea)=====\n\n=====La Puerta del Demonio (subterránea)=====\n\n=====El lago (subterráneo)====="
+      },
+      {
+        "stepTitle": "Parte IV: Recuerda a los Titanes",
+        "content": "Interactúa con la Piedra de los Sueños. ¡Dirá que está restaurado, pero revelará que era malo! Afirmará que su nombre resonará en tu diminuto cráneo como los ecos dentro de una cueva. La Piedra del Ensueño luego revela que su nombre es Avisk el eterno cuya mente alguna vez había adornado el Aughra, pero mientras intenta esclavizarte y convertirse en su esclavo, parecía aturdida. Esto revelará dos opciones de diálogo (ambas tratan sobre destruir la piedra), pero elige la opción uno. Esto obligará al cristal a reconocer tu lógica y, a su manera, a disculparse por ser demasiado entusiasta y por cómo sucede cuando has estado solo en la psique de los Caballeros Negros durante demasiado tiempo. Luego culpa al Cthonian antes de derribar la barrera.\n\nLuego te advierte que tengas cuidado con Lord Rasmodel (también conocido como el Titán Caballero Negro), ya que tuvo un pequeño percance cuando rompió en pedazos la Piedra del Sueño. Ahora, tiene algo de la Piedra del Sueño, algo de demonio y muchos problemas de ira. Finaliza el diálogo y la Piedra del Sueño quedará completamente reparada.\n\nInteractúa con la barrera recién caída y llegarás a The Bastion. Sube todas las escaleras (ten en cuenta algunos huecos que se pueden recorrer con el viento) hasta llegar a la cima. Entra en el edificio del Bastión y, justo después de pasar una barrera, mata al jefe. Interactúa con la barrera para luchar contra el Titán. Después de derrotarlo, regresa a Dreaming Stone.\n\nNota: Es posible que la barrera no te permita teletransportarte si no has desbloqueado todas las piedras nodales; a excepción de El Bastión."
+      },
+      {
+        "stepTitle": "Parte V: ¡A las Arenas Umbrales!",
+        "content": "Habla con la Piedra de los Sueños/Avsik. Te comentará lo impresionante que fue que hayas matado al Titán y que cuando encuentre un nuevo cuerpo para caminar por el mundo nuevamente, le gustaría que trabajaras con él. Aparte de eso, comenta que la puerta a Umbral Sands no se ha abierto en mucho tiempo, por lo que necesitará tiempo para desbloquearla. También te ruega que tengas paciencia y que mantengas tu martillo, ya que él te ayudará a llegar pronto al desierto. Luego te da una recompensa (léase: soborno) por no destrozarlo con tu martillo.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Black_Knight's_Fortress"
+  },
+  {
+    "id": "brink-of-extinction",
+    "englishTitle": "Brink of Extinction",
+    "title": "Al Borde de la Extinción",
+    "name": "Al Borde de la Extinción",
+    "difficulty": "Maestra",
+    "questType": "Secundaria",
+    "summary": "Ayuda a Zi a convertirse en un verdadero KotHaar.",
+    "startPoint": "Habla con Kot-Haar Zi en The Burning Spire",
+    "requirements": [
+      "Finalización parcial del pequeño ayudante de Icthlarin."
+    ],
+    "itemsRequired": [
+      "3 pescados cinturón crudos",
+      "Filete de nopal"
+    ],
+    "itemsRecommended": [],
+    "enemies": [
+      "KotHaar-Hok-Zi"
+    ],
+    "rewards": [
+      "1x plato de obsidiana pura"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "Habla con Zi en Umbral Sands para comenzar esta misión. KotHaar-Zi está ubicado en The Burning Spire, directamente al sureste de Sinking Pyramid en una isla en forma de L."
+      },
+      {
+        "stepTitle": "Protección contra quemaduras",
+        "content": "KotHaar-Zi te informará que su cuerpo no fue hecho para sobrevivir a Scorch y te pedirá ayuda para adaptarse. Te piden que les lleves 3 pescados cinturón crudos y 1 filete de nopal."
+      },
+      {
+        "stepTitle": "\"¡EL GUANTE DE FUEGO!\"",
+        "content": "Después de regresar a KotHaar-Zi, te informarán sobre cuatro pedestales, esparcidos por el área de Burning Spire: bloques negros gigantes con fuego en la parte superior. Te piden que los toques a los cuatro en cualquier orden y luego regreses con KotHarr-Zi. Se agregará un círculo azul a su mapa, que muestra el área en la que se encuentran los cuatro pedestales. \n\n• Pilar 1: Ubicado al este de la Pirámide Hundida, encima de una gran estructura rocosa.\n• Pilar 2: Ubicado al norte de la Pirámide Hundida, detrás de KotHaar-Zi. \n• Pilar 3: Ubicado al oeste de la Pirámide Hundida.\n• Pilar 4: Ubicado al sur de la Pirámide Hundida, al suroeste de KotHaar-Zi. \n\nDespués de interactuar con los cuatro pilares, regresa con KotHaar-Zi."
+      },
+      {
+        "stepTitle": "Cueva de los Gritos",
+        "content": "Después de hablar con KotHaar-Zi, te dirán que se dirigen a la Cueva de los Gritos, que se encuentra al oeste de la Pirámide Hundido. En la entrada de la Cueva de los Gritos, habrá un portero que te pedirá una contraseña.\n\nDirígete a la entrada de la Cueva de los Gritos, ubicada en la esquina superior izquierda de The Burning Spire, directamente a la derecha del ícono del árbol que se encuentra en el mapa.\n\nHabla con el portero de KotHaar. Elija cualquiera de las tres opciones de diálogo, no importa cuál elija. Después de elegir la tercera opción de diálogo, se le dará un pergamino de numeración KotHaar para tontos. Inspecciona el pergamino en tu inventario de misiones. \n\nHabla con el Bouncer nuevamente y selecciona la opción que dice \"¿Dos triángulos separados por una línea?\".\n\nAhora podrás acceder a la Cueva de los Gritos. El portero te advertirá que KotHaar-Zi ha cambiado y que su núcleo debe forjarse en un nuevo cuerpo, un nuevo cuerpo controlado por Fuzan."
+      },
+      {
+        "stepTitle": "Zi reforjado",
+        "content": "Al entrar a la Cueva de los Gritos, inmediatamente te recibirán dos KotHaar-Xil hostiles y un Zi Reforjado hostil. Derrota a los tres enemigos. Después de que Reforged Zi sea derrotado, el núcleo de Zi aparecerá en el suelo; agárralo y luego sal de la cueva."
+      },
+      {
+        "stepTitle": "Regresar al gorila",
+        "content": "Habla con el portero. Te recompensarán por ayudar con Zi y te recompensarán con el plato de obsidiana pura, que desbloquea la receta para la capa de obsidiana.\n\n¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Brink_of_Extinction"
+  },
+  {
+    "id": "contact-",
+    "englishTitle": "Contact!",
+    "title": "¡Contacto!",
+    "name": "¡Contacto!",
+    "difficulty": "Maestra",
+    "questType": "Secundaria",
+    "summary": "Trabaja con Avisk para encontrar un posible atajo al volcán Fuzan",
+    "startPoint": "Habla con el cristal Avisk en Umbral Sands",
+    "requirements": [
+      "Finalización parcial del pequeño ayudante de Icthlarin."
+    ],
+    "itemsRequired": [
+      "1 pala",
+      "1 pico",
+      "4 fragmentos de bóveda"
+    ],
+    "itemsRecommended": [
+      "Mucha comida/bebida para mantener la sed y el hambre."
+    ],
+    "enemies": [],
+    "rewards": [
+      "Fetiche icthlariano: un vestigio de la creación del cetro del faraón."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Habla con el cristal Avisk en Umbral Sands para comenzar esta misión.\n\nEncuentra guardianes de la bóveda desaparecidos, reúne fragmentos de la hélice de cristal y úsalos juntos para abrir un atajo a Fuzan.\n\nHabla con Vault Guardian Prime en una cueva cercana, te da pistas de que hay 3 restos de hélices de cristal que debes reunir.\n\nEntrada a la cueva Vault Guardian Prime:\n\nGuardián de la bóveda principal:"
+      },
+      {
+        "stepTitle": "Guardián de la bóveda dañado",
+        "content": "Mientras todavía estás en la habitación con Vault Guardian Prime, gira justo enfrente de Vault Guardian Prime, sigue las luces rojas a través de los túneles, una vez que llegues a la gran cueva, los restos del guardián estarán en el lado izquierdo.\n\nEntrada del guardián de la bóveda dañada:\n\nUbicación del guardián de la bóveda dañada:"
+      },
+      {
+        "stepTitle": "Guardián de la bóveda muerta",
+        "content": "Este guardián está en los huevos de kalfita afuera y a la derecha de la entrada de la cueva.\n\nRecibirá un mensaje que le indicará que falta esta hélice y que debe localizar al propietario de las huellas.\n\nHabla con Zanik al este de los calfitos en un campamento oasis y ella te dará la hélice de cristal a cambio de tu ayuda."
+      },
+      {
+        "stepTitle": "Guardián de la bóveda enterrada",
+        "content": "La ubicación del último guardián está dentro de un edificio en ruinas, necesitas una pala para desenterrar al guardián. Si tienes 4 fragmentos de bóveda en tu inventario, puedes reactivarlos y obtener la Helix.\n\nRegresa con el guardián de la bóveda Prime y entrégale los fragmentos de la hélice de cristal. Usa la hélice de cristal para atravesar la barrera mágica. \n\nHabla con Zanik, rompe los cristales de Avisk con un pico, interactúa con cada Vena de la Conciencia y luego habla con Zanik una vez más.\n\n¡Felicidades! Misión completada."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Contact!"
+  },
+  {
+    "id": "cook-s-assistant",
+    "englishTitle": "Cook's Assistant",
+    "title": "El Asistente del Cocinero",
+    "name": "El Asistente del Cocinero",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Ayuda a Slopfinger en Ghornfell a hornear un pastel memorable para Manktongue.",
+    "startPoint": "Habla con Slopfinger en la esquina suroeste de Fractured Plains.",
+    "requirements": [
+      "Habilidad agrícola desbloqueada y trigo recolectado."
+    ],
+    "itemsRequired": [
+      "4 huevos",
+      "7 trigos (Uno es para la vaca)",
+      "1 cubo de leche (se puede conseguir con una vaca fuera del edificio)"
+    ],
+    "itemsRecommended": [
+      "Ingredientes para crear una piedra imán."
+    ],
+    "enemies": [
+      "Pollos para huevos (alternativamente funciona la tala de árboles)",
+      "Duendes por semillas de trigo de sus manadas de duendes."
+    ],
+    "rewards": [
+      "Receta para hornear el bizcocho Victoria"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Recogiendo los ingredientes",
+        "content": "Para comenzar la misión, habla con Slopfinger, ubicado en el área suroeste de Fractured Plains, cerca del límite de Stormtouched Highlands. Hablando con él, te enteras de que está intentando hacer un pastel, pero su asistente, Manktongue, lo ignora, por lo que te pide que lo ayudes a demostrar que puede demostrar su valía como chef. Te pedirá que recojas 4 huevos, 6 trigos y 1 cubo de leche. El balde de leche es el ingrediente más fácil; Hay una vaca justo afuera del edificio dentro de un corral. Interactúa con él y analiza todas las opciones, PERO no lo ordeñes, ya que voluntariamente te dará leche.\n\nPara el resto de los ingredientes, se recomienda que construyas una piedra imán en el área de misiones para que puedas dirigirte a Bramblemead Valley o Temple Woods para recolectar algunos huevos de gallina. Alternativamente, puedes talar árboles y conseguir un nido de pájaro. Es necesario matar duendes para recolectar semillas de trigo o buscar en cofres."
+      },
+      {
+        "stepTitle": "terminando",
+        "content": "Una vez que recojas todos los ingredientes, regresa con Slopfinger y él te pedirá que le hornees el pastel. Después de hornear el pastel, habla con él nuevamente y te pedirá que hables con Manktongue y le muestres el pastel. Habla con Slopfinger por última vez para completar la misión.\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Cook's_Assistant"
+  },
+  {
+    "id": "dog-days",
+    "englishTitle": "Dog Days",
+    "title": "Días de Perros",
+    "name": "Días de Perros",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Investiga a los Garou y sus rituales.",
+    "startPoint": "Habla con Vannaka en el centro de Stormtouched Highlands.",
+    "requirements": [
+      "N / A"
+    ],
+    "itemsRequired": [
+      "2 cuernos de carnero",
+      "3 bulbos de plantas impactantes"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento",
+      "[[Poción antiveneno débil"
+    ],
+    "enemies": [
+      "Múltiples [[Garou (raza)"
+    ],
+    "rewards": [
+      "Capa de noble Garou"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Investiga a los Garou y sus rituales.",
+        "content": "Habla con Vannaka, que se encuentra debajo de un acantilado en la parte oriental de las Tierras Altas (ver imagen). Él te hablará sobre los garou y te pedirá que investigues sus rituales.\n\nVe a la ubicación del libro de historia, debajo del cadáver del wyrm, y léelo. Se recomienda dar la vuelta y acercarse desde el norte, ya que hay menos enemigos. Hay un garou thane al lado del libro, pero mirando en la dirección opuesta, así que puedes escabullirte allí y leer el libro."
+      },
+      {
+        "stepTitle": "Desafiando al Rey",
+        "content": "Después de leer el libro, debes derrotar al Rey Garou y obtener su ficha contaminada. Ve al castillo en el noroeste de las Tierras Altas. Usa Windstep tanto como puedas para evitar tantos enemigos como puedas.\nEn la cima de la colina, en el castillo, debes derrotar al rey, que es un señor, y sus ataques son los mismos. Se sugiere lanzar Paso del Viento sobre los arcos del templo en ruinas del Rey Garou para proteger sus ataques."
+      },
+      {
+        "stepTitle": "Ritual de Purificación",
+        "content": "Vuelve con Vannaka después de obtener la ficha. Él te dirá que la ficha está contaminada y necesita ser purificada. Dirígete al norte hasta la ubicación del Santuario de Lougrim, mata a los druidas garou allí y úsalo. El santuario te dirá que para el ritual necesitas 2 cuernos de carnero y 3 bombillas de choque, así que mata carneros y enredaderas silvestres de lapulis hasta que tengas suficientes materiales. Luego, regresa al santuario y realiza el ritual de purificación para recibir una ficha purificada.\n\nVuelve con Vannaka y habla con él.\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Dog_Days"
+  },
+  {
+    "id": "doric-s-quest",
+    "englishTitle": "Doric's Quest",
+    "title": "La Misión de Doric",
+    "name": "La Misión de Doric",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Doric busca armas raras en Fellhollow.",
+    "startPoint": "Habla con Doric",
+    "requirements": [
+      "Finalización parcial de Withering Heights, para acceder a Fellhollow",
+      "Buscando la salvación"
+    ],
+    "itemsRequired": [
+      "1 arco de guardabosques no-muerto",
+      "1 bastón de nigromante",
+      "1 espada de sombra"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento"
+    ],
+    "enemies": [
+      "Varios enemigos de las Bóvedas Vekchenven Kara y Skekven Kara",
+      "zogres"
+    ],
+    "rewards": [
+      "1 material de herrería de Doric.",
+      "1 Suministros de herrería superiores de Doric.",
+      "1 La receta para hacer el hacha zombie"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Habla con Doric después de completar Buscando salvación. ¡Él te pedirá que recolectes varias armas raras de historias que él cree que se originaron en Fellhollow!"
+      },
+      {
+        "stepTitle": "Arco del guardabosques no-muerto",
+        "content": "Primero pedirá el arco del guardabosques no-muerto, entrará en la bóveda de Skekven Kara y localizará una efigie de dragón.  Una vez que hayas encontrado la receta, elabora el arco y regresa con Doric.\n\nSi ya posee el artículo, no es necesario que lo cree, el artículo se conservará."
+      },
+      {
+        "stepTitle": "Bastón de nigromante",
+        "content": "A continuación, pedirá el bastón del nigromante, que se puede encontrar en una efigie de dragón en Vekchenven Kara. Una vez que hayas encontrado la receta, elabora el bastón y regresa con Doric.\n\nSi ya posee el artículo, no es necesario que lo cree, el artículo se conservará."
+      },
+      {
+        "stepTitle": "Espada de las Sombras",
+        "content": "La búsqueda final será la espada de las sombras, cuya receta se puede encontrar matando a Ulgo the Zogre. La receta es una caída poco común de los zogres, por lo que es posible que tengas que matarlos más de una vez. Están ubicados en una cueva dentro de Emberwood, en el lado este de Silverthorn Keep y en Vekchenven Kara como jefe de la bóveda. Una vez que encuentres la receta, hazla y regresa con Doric.\n\nSi ya posee el artículo, no es necesario que lo cree, el artículo se conservará.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Doric's_Quest"
+  },
+  {
+    "id": "dragon-slayer",
+    "englishTitle": "Dragon Slayer",
+    "title": "El Matadragones",
+    "name": "El Matadragones",
+    "difficulty": "Gran Maestra",
+    "questType": "Principal",
+    "summary": "Reclutado con promesas de gloria, tu primer desafío será derrotar al General Velgar.",
+    "startPoint": "Habla con el anciano sabio en [[Bramblemead Valley",
+    "requirements": [
+      "Pinitos"
+    ],
+    "itemsRequired": [
+      "1 astas",
+      "23 troncos de ceniza",
+      "1 piel de animal áspera",
+      "1 diente de dragón (se necesita un pico de hierro para recolectar)",
+      "1 savia de palo de sangre (se necesita un hacha de hierro para recolectar)",
+      "5 barra de bronce"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento",
+      "Arma a distancia o mágica para matar al ciervo.",
+      "Pociones antiveneno"
+    ],
+    "enemies": [
+      "Múltiples enemigos [[Goblin (raza)#Goblin"
+    ],
+    "rewards": [
+      "Tomo de construcción - Vol 1. (Después de que le pidieran que consiguiera astas)",
+      "Paquetes de recompensas de Dragon Slayer,",
+      "Después de seguir a Cathan hasta Ghornfell, que contiene 3 arcillas, 3 frutos rojos y 3 harralander.",
+      "Fin de la misión: contiene un Tomo del cazador de dragones, un rostro dracónico nocivo y un escudo antidragones."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Parte I: ¡Matar dragones!",
+        "content": "Para comenzar esta misión, habla con el anciano sabio en Bramblemead Village y él te indicará cómo comenzar a cazar al general Velgar. Antes de que puedas empezar a cazar dragones, necesitas un refugio. Él te dirá que construyas un pequeño refugio, con al menos un petate dentro, que tendrás que reclamar. Para poder reclamarlo, debes construir al menos una base, 3 paredes y un techo, y colocar el petate en él. Una vez que termines tu tarea, habla con él nuevamente.\n\nÉl te dirá que uno de los aventureros, el joven Cathan, está desaparecido y necesita ser encontrado. Para ello, lanzará un hechizo localizador, pero para ello necesita unas astas. Caza ciervos en el valle y llévale las astas. Como tienden a huir, necesitas un arma mágica o a distancia para matarlos.\n\nEl hechizo te indicará un castillo cercano dentro del valle, por lo que este será tu próximo destino."
+      },
+      {
+        "stepTitle": "Parte II: Un aventurero perdido...",
+        "content": "Cuando llegues a la Fortaleza de las Llamas Azules, se verá inquietantemente similar al Castillo de Lumbridge, pero con estandartes bandosianos ondeando. Este lugar tendrá muchos duendes, así que lleva algo de comida. Encontrarás el diario de Cathan en la parte superior del castillo junto a un cofre de botín. Lee su diario y aprenderás que debes ir al Pantano de los Susurros para localizar una \"puerta de llama azul\". En este punto, Velgar descenderá a la torre del homenaje, rociará veneno junto a la puerta y luego atacará con sus charcos de veneno. Puedes esperar a que termine su ataque o simplemente salir corriendo del torreón, esquivando los ataques.\n\nViaja a través de la \"puerta de la llama azul\" (la bóveda dragonkin Vertentis Kara) y habla con Spitfoot al final de la bóveda. Detallará el viaje de Cathan, su traición y su deseo de ir a Ghornfell. Lleva esta información al anciano sabio del valle de Bramblemead y él comentará la tonta imprudencia de Cathan. Después de decirte que si está dispuesto a desafiar a los Garou, Cathan debe tener una manera de lidiar con Velgar, te pedirá que te sumerjas en Ghornfell para seguir su rastro.\n\nUna vez que llegue a Fractured Plains (un área de Ghornfell), se le pedirá que visite Velgar's Rise, una torre monumental en el corazón de la región, para obtener información sobre el paradero de Cathan."
+      },
+      {
+        "stepTitle": "Parte III: Los inicios de una leyenda...",
+        "content": "Cuando llegues a Rise, te encontrarás con el fantasma de Cathan. Habla con él y te contará cómo estaba tan seguro de poder derrotar a Velgar (después de comentar lo apestoso que era la muerte). Te dirá que los Garou lo acosaron y lo arrastraron a la torre, manteniéndolo frente a Velgar mientras lo sacrificaban. Luego te dará una receta para hacer un cuerno de desafío que pueda desafiar a Velgar en su torre.\n\nDebes viajar tanto a Bloodblight Swamp como a Stormtouched Highlands para recolectar los materiales para el cuerno.\n• En las Tierras Altas tienes que pasar por el esqueleto que los Garou usan como hogar en la parte occidental y puedes encontrar un cráneo de dragón. Puedes extraer sus dientes con un pico de hierro para obtener el diente de dragón.\n• En el pantano, debes viajar hasta el castillo en el punto más al sur. En el castillo puedes encontrar el árbol de sanguinaria (y algunos Garou), y puedes cosecharlo con un hacha de hierro para recolectar la savia de sanguinaria.\nCombínalos con 5 barras de bronce y podrás crear el cuerno."
+      },
+      {
+        "stepTitle": "Parte IV: Lucha por tu vida",
+        "content": "Cuando tengas el cuerno, toma tu mejor armadura y arma, trae algunas pociones antiveneno y comida y entra en Velgar's Rise. La parte superior de la torre es básicamente un triángulo, con un pedestal en el centro. Cuando coloques el cuerno en el altar de los dragonantes, Velgar llegará a una esquina.\n\nUsará spray venenoso y bombas de charco venenosas o pisoteará ambas piernas, lo que creará picos en tu dirección. Si te acercas al uso cuerpo a cuerpo, él pisoteará una pierna, que está más cerca de ti, y también morderá hacia adelante y golpeará hacia los lados con la cabeza. Todos sus ataques están retrasados, por lo que puedes prepararte y esquivar, y entre cada ataque esperará un poco.\n\nDespués de perder 1/4 de su salud, volará y usará su ataque con bomba de charco venenoso varias veces. Después de eso, aterrizará en otra esquina, la siguiente de la anterior, en el sentido de las agujas del reloj. En la segunda fase, utilizará múltiples ataques uno tras otro, antes de esperar un poco. Los ataques son los mismos que en la fase anterior.\n\nDespués de que su salud se reduzca a la mitad, volverá a volar y su ataque característico se repetirá. Volverá a aterrizar en otro borde, todavía al lado del anterior, en el sentido de las agujas del reloj, y la lucha continúa como antes. Una vez más volará cuando pierda 3/4 de su salud. Aterrizará en el borde original, donde podrá ser atacado nuevamente.\n\nUna vez que Velgar sea derrotado, obtendrás su cabeza. Sal de la torre, habla con el Viejo Sabio (que ha reemplazado al fantasma de Cathan) y dale la cabeza para completar esta misión.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Dragon_Slayer"
+  },
+  {
+    "id": "even-more-restless-ghosts",
+    "englishTitle": "Even More Restless Ghosts",
+    "title": "Aún Más Fantasmas Inquietos",
+    "name": "Aún Más Fantasmas Inquietos",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Ayuda a Zanik a descansar algunos espíritus encontrándolos y completando sus asuntos pendientes.",
+    "startPoint": "Habla con Zanik en Fellhollow.",
+    "requirements": [
+      "Fantasmas inquietos (inicio)",
+      "Withering Heights (finalización parcial; debe desactivar los cuatro santuarios de dioses)"
+    ],
+    "itemsRequired": [
+      "Decoración de arcilla",
+      "equipo de minería de nivel de potencia 4 o superior (es decir, pico de hierro o runas para Rocksplosion)",
+      "Materiales de construcción para cimientos cuadrados, cuatro paredes y un techo (por ejemplo, 36 troncos de fresno)."
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Un arma mágica o a distancia para matar zombis podridos.",
+      "Alimento",
+      "Pociones antiveneno"
+    ],
+    "enemies": [
+      "Múltiples zombis"
+    ],
+    "rewards": [
+      "Receta de ballesta Dorgeshuun."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Comienza la misión hablando con Zanik en Bleakfields Valley.  Está ubicada en las ruinas al este de Cathan, en las tres piedras verticales y al norte de una puerta espectral cercana.\n\nArchivo:ZanikMapLocationEvenMoreRestlesGhosts.png|thumb|Ubicación de Zanik's Fellhollow\nArchivo:ZanikEvenMoreRestlessGhosts.png|none|thumb|Campamento de Zanik"
+      },
+      {
+        "stepTitle": "[[Fantasma azotado por el viento]]",
+        "content": "Nota: Los cuatro Santuarios de Dios deben activarse para desactivar la barrera que rodea la aldea.\n\nEn Emberwood, viaja al pueblo en ruinas que antes estaba rodeado por una barrera mágica. En las afueras del pueblo, cerca del noreste, se encuentran las ruinas de una pequeña casa donde se encuentra el fantasma azotado por el viento. Construye una casa que consta de cimientos cuadrados (debajo del fantasma), cuatro paredes y un techo cerrado alrededor del fantasma azotado por el viento. Habla con el fantasma azotado por el viento nuevamente para completar la sección. La puerta de la casa debe estar cerrada para que se complete.\n\nArchivo:WindsweptGhostLocation.png|left|thumb|Ubicación del mapa fantasma azotado por el viento\nArchivo:WindsweptGhostHouse.png|none|thumb|Se construirá una casa fantasma azotada por el viento a su alrededor"
+      },
+      {
+        "stepTitle": "[[Fantasma recordando]]",
+        "content": "En Hope's Fall, viaja hasta las puertas de las ruinas ubicadas al norte de la aguja del dragón. Habla con el fantasma que recuerda y regala una decoración de arcilla para completar la sección.\n\nArchivo:ReminiscingGhostLocation.png|izquierda|pulgar|Recordando la ubicación del mapa fantasma\nArchivo:Recordando fantasma.jpg|pulgar|Recordando la ubicación del fantasma|ninguno"
+      },
+      {
+        "stepTitle": "[[Fantasma salpicado de pintura]]",
+        "content": "Entre el Lago de las Almas Perdidas y Coalridge Pass, justo al noreste de la zona más oriental del río contaminado, se encuentra el fantasma salpicado de pintura. Habla con el fantasma y te describirá la ubicación del cuaderno de bocetos que se llevó su marido.\n\nArchivo:Ubicación del fantasma salpicado de pintura.png|thumb|Ubicación del fantasma salpicado de pintura\nArchivo:Ubicación del mapa fantasma salpicado de pintura.png|none|thumb|Ubicación del mapa fantasma salpicado de pintura\n\nDirígete hacia el noreste hasta un conjunto de ruinas que se encuentran en la boca de la cueva. Ingrese a la cueva y elimine un grupo de depósitos de granito encima de un nodo de carbón en el lado izquierdo para descubrir un esqueleto y el cuaderno de bocetos. Interactúa con el cuaderno de bocetos y luego vuelve a hablar con el fantasma salpicado de pintura.\n\nArchivo:SketchBookCave.png|thumb|Entrada a la cueva donde se encuentra el Sketchbook\nArchivo:SketchBookCaveMapLocation.png|thumb|Ubicación del mapa de Sketchbook Cave\nArchivo:SketchBookSkeleton.png|thumb|Nodo minero donde se encuentra el esqueleto y el cuaderno de bocetos"
+      },
+      {
+        "stepTitle": "Terminando",
+        "content": "Regresa con Zanik en Bleakfields Valley para finalizar la misión."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Even_More_Restless_Ghosts"
+  },
+  {
+    "id": "first-steps",
+    "englishTitle": "First Steps",
+    "title": "Primeros Pasos en Ashenfall",
+    "name": "Primeros Pasos en Ashenfall",
+    "difficulty": "Principiante",
+    "questType": "Principal",
+    "summary": "Comienza tu aventura.",
+    "startPoint": "Habla con el anciano sabio en el templo, en Temple Woods.",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1 Tomo de creación de runas - Vol 1"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "¡Comienza tu aventura!",
+        "content": "Ve y habla con el anciano sabio en el templo. Él te hablará sobre el dragón y se ofrecerá a enseñarte los conceptos básicos, que puedes aceptar o rechazar. Si lo rechazas, puedes volver a hablar con él en Bramblemead Village para finalizar la misión. Si aceptas el tutorial, te enviará a Doric justo afuera del templo, comenzando con Getting Started."
+      },
+      {
+        "stepTitle": "Antes de Partir...",
+        "content": "Este paso se cubre con más detalle en los siguientes artículos de misiones: Primeros pasos, Ratcatcher y Rune Mysteries.\n\nDoric te enseñará cómo construir estaciones de procesamiento, te presentará el sistema de construcción y luego te enviará a Vannaka. El maestro asesino te enviará a luchar contra las ratas cercanas, te enseñará cómo cocinar tu comida y te ayudará a saber en qué dirección va el extremo puntiagudo antes de enviarte a Zanik. Cuando hables con Zanik, ella te ayudará a aprender el sistema mágico, crear runas para hechizos e incluso desbloquear uno o dos hechizos. Cuando te haya enseñado todo, te enviará con el Viejo Sabio."
+      },
+      {
+        "stepTitle": "Terminando...",
+        "content": "Después de completar la sección anterior, o si te saltaste el tutorial, ve a Bramblemead Village y encuentra al anciano sabio en el primer piso de un edificio en ruinas en el otro extremo del pueblo. Habla con él para conocer el siguiente paso en tu aventura.\n\nFelicidades. ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/First_Steps"
+  },
+  {
+    "id": "getting-started",
+    "englishTitle": "Getting Started",
+    "title": "Comenzando la Aventura",
+    "name": "Comenzando la Aventura",
+    "difficulty": "Principiante",
+    "questType": "Principal",
+    "summary": "Doric quiere enseñarte algunos conceptos básicos de supervivencia.",
+    "startPoint": "Habla con Doric fuera del templo.",
+    "requirements": [
+      "Pinitos"
+    ],
+    "itemsRequired": [
+      "1 agua sucia",
+      "10 troncos de ceniza",
+      "8 piedras"
+    ],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1 sopa de verduras"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Doric quiere enseñarte algunos conceptos básicos de supervivencia.",
+        "content": "Para comenzar la misión, el jugador debe aceptar aprender los conceptos básicos de la misión Primeros pasos.\n\nDespués de aceptarlo, ve y habla con Doric justo afuera del templo. Él te enseñará sobre la importancia del sustento (comida) y la hidratación (bebida). Él te enviará a buscar un poco de agua (y tal vez algunas moras rojas en el camino). Vaya al sur o al norte hasta el estanque, entre al agua y obtenga al menos un agua sucia (tecla de acceso rápido predeterminada: E).\nVuelve con Doric, quien te dirá que debes hervir el agua; de lo contrario, tendrá efectos secundarios (se da a entender que Soulscourge te envenenará si bebes demasiada agua sucia). Luego te dirá que necesitas fabricar un garrote de piedra.\n\nReúne al menos un tronco de fresno o una piedra para abrir el menú de construcción, desde donde podrás construir la mesa de elaboración. Debes reunir 4 troncos de ceniza para hacer la mesa de elaboración, y 6 troncos de ceniza adicionales y 8 piedras para elaborar el garrote de piedra. Los troncos se pueden encontrar alrededor de los árboles y las piedras se pueden encontrar alrededor de las ruinas del templo. Habla con Doric cuando tengas el club. Te enviará a Vannaka para que aprendas a luchar, iniciando Ratcatcher.\n\nFelicidades. ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Getting_Started"
+  },
+  {
+    "id": "goblin-diplomacy",
+    "englishTitle": "Goblin Diplomacy",
+    "title": "Diplomacia de Trasgos",
+    "name": "Diplomacia de Trasgos",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Zanik necesita que detengas una profecía antes de que sea demasiado tarde.",
+    "startPoint": "Habla con Zanik en la cresta del valle de Bramblemead.",
+    "requirements": [
+      "Misterios de runas"
+    ],
+    "itemsRequired": [
+      "A [[Ejes de registro"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas (a distancia o mágicas cuando se lucha contra el druida garou)",
+      "[[Poción antiveneno débil"
+    ],
+    "enemies": [
+      "Múltiples enemigos [[Goblin (raza)#Goblin"
+    ],
+    "rewards": [
+      "Estandarte de guerra de duendes"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "Zanik le dirá al jugador que siente la presencia de una profecía en las Ruinas Outlook al noreste de ella, así como en el Gremio de Aventureros al sur. Ambas áreas están invadidas por duendes, así que asegúrate de estar equipado adecuadamente para afrontar el desafío con pociones de salud, comida y agua.\n\nSe recomienda que coloques una piedra imán en la ubicación de Zanik, ya que tendrás que regresar con Zanik para completar la misión. De esta manera, podrá viajar rápidamente de regreso al lugar."
+      },
+      {
+        "stepTitle": "Amuletos bandosianos",
+        "content": "Puedes elegir buscar primero en las ruinas cercanas o primero en el Gremio de Aventureros. Ambos contienen un relicario que contiene el amuleto bandosiano, pero solo uno puede ser saqueado. El amuleto en el lugar que no revisaste primero termina robado por un druida garou.\n\nEl relicario de las ruinas está escondido en un rincón, mientras que el relicario del gremio está bloqueado por enredaderas espinosas, lo que requiere 20 de corte de madera para cortarlo. El gremio también es más peligroso debido a la cantidad de duendes que lo habitan, por lo que se recomienda obtener el amuleto del relicario de las ruinas. Ambos lugares tienen un duende enjaulado afuera. Bilegut se puede encontrar fuera de Outlook Ruins y Wormelbow se puede encontrar fuera del Gremio de Aventureros. Cuando hables con cualquiera de ellos antes de obtener un amuleto bandosiano, te ofrecerán decirte la ubicación exacta del relicario respectivo a cambio de un filete. Esto es opcional, ya que los relicarios se pueden encontrar sin su ayuda.\n\nA continuación, deberás dirigirte al lugar del que no obtuviste el amuleto bandosiano. Si obtuviste el amuleto de las ruinas, dirígete al gremio, y si obtuviste el amuleto del gremio, dirígete a las ruinas. No necesitas derrotar a todos los duendes allí; simplemente localiza al duende enjaulado y elimina a los duendes que lo rodean. Una vez que el área esté despejada, habla con el duende enjaulado para conocer el paradero del segundo amuleto bandosiano. El duende revelará que un hombre bestia garou se ha llevado el segundo amuleto a una cueva en el Pantano de los Susurros.\n\nAhora debes dirigirte a la cueva en el pantano donde un druida garou guarda el segundo amuleto bandosiano. Sin embargo, el viaje no es del todo sencillo. La cueva está ubicada en el fondo del pantano, así que primero asegúrese de bajar al pantano de manera segura y luego busque la cueva. De lo contrario, correrás por encima de la ubicación de la cueva y no podrás encontrar la entrada. Una vez que hayas localizado la entrada de la cueva, ingresa para encontrar al druida garou. Derrota al druida garou para obtener el segundo amuleto bandosiano. El druida garou es bastante fuerte y puede infligir un potente veneno. Para derrotarlo más fácilmente, usa ataques mágicos a distancia y asegúrate de esquivar sus espinas venenosas."
+      },
+      {
+        "stepTitle": "Regresando a Zanik",
+        "content": "Después de obtener ambos amuletos bandosianos, regresa con Zanik. Ella te agradecerá por traer los dos amuletos y esto completará la misión. Como recompensa, Zanik te dará el estandarte de guerra de los duendes."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Goblin_Diplomacy"
+  },
+  {
+    "id": "granite-mauled",
+    "englishTitle": "Granite Mauled",
+    "title": "Golpe de Granito",
+    "name": "Golpe de Granito",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Descubre los secretos de la Guardia de Ashien.",
+    "startPoint": "Habla con Doric al noreste de Llanuras fracturadas.",
+    "requirements": [
+      "Pinitos"
+    ],
+    "itemsRequired": [
+      "Un espacio en su inventario de misiones.",
+      "5 o más runas de aire para lanzar Windstep o troncos de ceniza para cruzar el puente"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Pociones antiveneno débiles o mejores."
+    ],
+    "enemies": [
+      "Múltiples enemigos [[Goblin (raza)#Goblin"
+    ],
+    "rewards": [
+      "Receta para mazo de granito (66-95 de daño, 4 Combo - Especial: Ariete)",
+      "Cabeza de mazo de granito imbuido: colocada en la sección de elementos de misión del jugador",
+      "Necesitarás crear estos para el mazo de granito:",
+      "Cabeza de mazo de granito imbuido",
+      "Envolturas de cuero impregnadas",
+      "Mango de mazo adornado"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "La misión se puede iniciar hablando con Doric al noreste de Fractured Plains. Doric se encuentra al sur de Ashien's Watch en un mirador con ruinas. También hay un puente roto que conduce al otro lado. Él te dirá que la Guardia de Ashien era donde se encontraban todas las \"reliquias y suministros valiosos\" durante la época del dragón, y que él lo estaba buscando. Pero lo ahuyentaron y ahora quiere tu ayuda."
+      },
+      {
+        "stepTitle": "Skeklac Kara",
+        "content": "Una vez que hayas localizado y activado las cuatro estatuas en Ashien's Watch, ingresa a la bóveda de Skeklac Kara. Asegúrate de llevar formas de antiveneno (comida cocida con resistencia al veneno o algunas pociones antiveneno débiles), ya que hay ratas pútridas y burbujas de gas venenosas que explotan y te envenenan. Asegúrate de comprobar si hay puntos ciegos, ya que las burbujas de gas están en muchos rincones y pueden causar un gran daño al jugador. Al alcanzar la palanca que abre las puertas del corruptor de la bóveda, el corruptor puede causar un gran daño y envenenar además de las ratas pútridas de la zona. Se recomienda utilizar armas a distancia o magia para evitar ser golpeado.\n\nDespués de derrotar al jefe al final, interactúa con la estatua y recibirás un plano. Lleva el plano a Doric para que lo traduzca.\n\n¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Granite_Mauled"
+  },
+  {
+    "id": "growing-pains",
+    "englishTitle": "Growing Pains",
+    "title": "Dolores de Crecimiento",
+    "name": "Dolores de Crecimiento",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Aprende los conceptos básicos de la habilidad Agricultura del Viejo Sabio.",
+    "startPoint": "Crea la regadera de madera o la pala de madera en la interfaz de la mesa de elaboración.",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [
+      "18 troncos de fresno para construir una parcela de cultivo de fresno, una pala de madera y una regadera de madera",
+      "2 hilos gruesos para construir la pala de madera y la regadera de madera",
+      "3 semillas de trigo (adquiridas durante la misión)"
+    ],
+    "itemsRecommended": [
+      "Construir una parcela de cultivo de cenizas cerca de un estanque"
+    ],
+    "enemies": [],
+    "rewards": [
+      "Suministros agrícolas de repuesto, que contienen:",
+      "Cura vegetal",
+      "Tomo de la agricultura - Vol 2",
+      "Agricultura de nivel 3",
+      "La capacidad de hacer que las plantas se curen."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Haz y recibe la regadera de madera o la pala de madera en tu inventario. Esto desencadenará una misión para comenzar a hablar con el anciano sabio en Bramblemead Valley, donde te dará los conceptos básicos de la habilidad de agricultura. Asegúrese de que haya al menos un espacio de inventario disponible para recibir las semillas de trigo."
+      },
+      {
+        "stepTitle": "Construyendo una parcela",
+        "content": "Después de hablar con el anciano sabio, crea una parcela de cultivo de cenizas y excava la parcela mientras empuñas la pala de madera. Excava cinco veces y recibirás al menos tres malezas y 3 experiencias agrícolas. Se recomienda almacenar las malas hierbas dentro de un contenedor de abono para crear abono para futuras parcelas. Después de excavar la parcela de trigo, coloca las semillas de trigo en tu inventario (o equípalas) y haz clic izquierdo en la parcela. Recibirás 5 experiencias agrícolas por plantar semillas de trigo. Después de esparcir las semillas, deberás regar la parcela de trigo en cada etapa equipando una regadera llena. Puedes llenar tu regadera presionando la tecla en un estanque de agua. Riega la parcela de trigo cinco veces hasta que veas una marca de verificación en la parte inferior del icono de riego. Tendrás que esperar medio día en el juego (12 minutos en el lado del cliente) para que el conducto de trigo se convierta en un tallo de trigo. \n\nUna vez que el conducto de trigo se convierta en un tallo de trigo, riegue la parcela cinco veces nuevamente. En cualquier momento durante el proceso, no regar la planta después de seis horas de juego después de la siguiente fase provocará que el conducto de trigo se enferme. No podrás crear una cura vegetal, por lo que tendrás que empezar de nuevo. \n\nDespués de esperar otro día en el juego, el tallo de trigo se convertirá en trigo cosechable. Coseche el trigo antes de volver a hablar con el anciano sabio, y él lo recompensará con un paquete de suministros agrícolas."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Growing_Pains"
+  },
+  {
+    "id": "heartstrings",
+    "englishTitle": "Heartstrings",
+    "title": "Cuerdas del Corazón",
+    "name": "Cuerdas del Corazón",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Canta la canción de recuerdo del bardo {{sic",
+    "startPoint": "Interactúa con la piedra conmemorativa en la cima de la colina en Fractured Plains.",
+    "requirements": [
+      "Empezando"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "[[Poción antiveneno débil"
+    ],
+    "enemies": [
+      "Múltiples [[Garou (raza)"
+    ],
+    "rewards": [
+      "Arco de cristal",
+      "Receta de arco de cristal"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Puedes comenzar esta misión interactuando con una piedra conmemorativa azul brillante que se encuentra junto a un árbol grande y único con hojas azules que se encuentra en la región de Fractured Plains. El árbol está en la cima de donde se encuentra la primera mazmorra de Fractured Plains.  Puedes llegar a la cima lanzando el hechizo Windstep varias veces sobre las rocas a la derecha de la cueva donde accedes a esa mazmorra. Al buscar la primera piedra conmemorativa, los jugadores recibirán una semilla de cristal en su inventario de misiones."
+      },
+      {
+        "stepTitle": "Ubicaciones de piedras conmemorativas",
+        "content": "Se pueden encontrar un total de 7 piedras conmemorativas, todas en dirección este desde la primera. Por lo tanto, todos los puntos de progresión de la misión se encuentran junto a árboles únicos con piedras conmemorativas que se encuentran junto a ellos. Desde el primer árbol, avanza hacia el este para encontrar el siguiente árbol. Como estos árboles están ubicados en el área abierta de Fractured Plains, se recomienda estar preparado para el combate con varios lobos y garou que encontrarás durante la misión.\n\nLlegar al último árbol y cantar la canción completará la misión."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Heartstrings"
+  },
+  {
+    "id": "highlighting-the-problem",
+    "englishTitle": "Highlighting the Problem",
+    "title": "Enfocando el Problema",
+    "name": "Enfocando el Problema",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Explora RuneCrafting{{sic",
+    "startPoint": "Interactúa con la estatua de un mago en el Runecrafting Guild en Bramblemead Valley.",
+    "requirements": [
+      "Pinitos"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento"
+    ],
+    "enemies": [
+      "Múltiples enemigos [[Goblin (raza)#Goblin"
+    ],
+    "rewards": [
+      "Receta para bastón de luz."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "La estatua requiere una contraseña. La contraseña se encuentra en la bóveda de Thishepen Kara, que se encuentra en la base del acantilado cerca del gremio, en una habitación a la que es necesario llegar con Windstep. No es necesario completar toda la bóveda; simplemente puedes buscar la contraseña, que se encuentra en una estatua azul brillante escondida en un camino elevado a tu derecha en una habitación con cuatro ratas gigantes. La contraseña es pthentorok.\n\nAl regresar a la estatua y darle la contraseña, una voz misteriosa hablará con el jugador y le dará un orbe misterioso (sin carga). Luego, el jugador debe interactuar con tres pedestales en las tres torres que rodean la torre principal del gremio. El jugador debe usar Windstep para llegar a la cima de las torres y puede aprovechar los escombros circundantes y otros paisajes.\n\nDespués de interactuar con los tres pedestales, el orbe se convierte en el orbe misterioso (cargado) y el jugador debe regresar a la primera estatua, que luego le dará la receta para el bastón de luz, completando la misión."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Highlighting_the_Problem"
+  },
+  {
+    "id": "icthlarin-s-little-helper",
+    "englishTitle": "Icthlarin's Little Helper",
+    "title": "El Ayudante de Icthlarin",
+    "name": "El Ayudante de Icthlarin",
+    "difficulty": "Maestra",
+    "questType": "Principal",
+    "summary": "Mata al dragón tirano Fuzan y une a los Moon Garou en el camino.",
+    "startPoint": "Ingrese a Umbral Sands usando la puerta a Umbral Sands.",
+    "requirements": [
+      "Fortaleza del Caballero Negro"
+    ],
+    "itemsRequired": [
+      "Pico de mithril o mejor para el mineral de adamantita.",
+      "Hacha de tala inflexible o mejor para obtener recursos.",
+      "Cualquier espada (se recomienda Adamant)",
+      "1x agua limpia",
+      "3x barras inflexibles",
+      "3 de cada uno: carne cruda de granja, fragmentos de concha de calfita y filetes de nopal"
+    ],
+    "itemsRecommended": [
+      "Múltiples alimentos con el beneficio Soul Food.",
+      "Troncos de ceniza para la construcción de refugios temporales.",
+      "Núcleos de bóveda, esencia de runas y piedra para imanes.",
+      "Bebidas que pueden reducir la acumulación de Scorch."
+    ],
+    "enemies": [
+      "Múltiples calfitas",
+      "Múltiples KotHaar",
+      "Múltiples dragones rojos",
+      "Fuzan"
+    ],
+    "rewards": [
+      "1x paquete de recompensas El pequeño ayudante de Icthlarin",
+      "La capacidad de crear un nuevo escudo de obra maestra anti-dragón.",
+      "1x escudo de fuego de dragón",
+      "1x Tomo del volcán",
+      "1x rostro dracónico humeante",
+      "3 paquetes de Garou Lunar",
+      "Acceso completo a la actividad Fight Caves",
+      "Incluyendo la posibilidad de ganar la capa de fuego.",
+      "Acceso completo al Crisol de Pesadilla"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Parte I: Empezando",
+        "content": "Nota: Al interactuar con la puerta de Umbral Sands se reproducirá una pequeña escena de introducción a la región.\n\nDespués de derrotar al Titán Caballero Negro y hablar con Avisk, regresa a The Bastion e interactúa con la puerta de Umbral Sands. Es muy recomendable que lo hagas durante el ciclo nocturno en pleno reposo. Una vez que hayas interactuado con la puerta, llegarás a la subregión Oasis de Alcarrid. Habla con Shangruuh justo cuando llegues para comenzar la misión. \n\nAl llegar al campamento, habla con Ancamairon, quien estará junto a Icthlarin. Icthlarin solicita una de las lentes de espejo que sostienen para poder usar los espejos y romper el sello que bloquea la torre de Fuzan. El garou no confía su objeto sagrado a un extraño, y mucho menos a un semidiós. Por lo tanto, se te pedirá que te ganes la confianza de los Moon Garou, comenzando por el campamento de Alcarrid.\n\nUna vez que aceptes la misión, necesitarás hablar con ciertos NPC para progresar.\n\nHabla con cualquiera de ellos para iniciar las tareas necesarias para convencer al anciano de la tribu Alcarrid."
+      },
+      {
+        "stepTitle": "Comerciante deshonesto",
+        "content": "Artículos requeridos: pico de mitril (o mejor), espacio de inventario.\n\nHabla con Domri, quien te pedirá que ubiques tres piedras lunares que probablemente estén escondidas en el área occidental del desierto debajo de algunos nodos de yeso dentro de áreas rocosas o cuevas. El mapa y la brújula lo dirigirán a las ubicaciones. Asegúrate de revisar cada nodo para encontrar la piedra lunar. Las piedras están en la misma ubicación para cada jugador, estamos tratando de trabajar en un mapa. Una vez que visites las tres ubicaciones, regresa con Domri, quien se sorprenderá de que las piedras lunares sean reales y te recompensará con su confianza y acceso a su tienda.\n\nUbicación superior del mapa de piedra lunar\n\nEntrada con vista al jugador de piedra lunar superior\n\nPiedra lunar superior debajo de este montón de yeso.\n\nVideo corto de piedra lunar media:\n\nVideo corto de piedra lunar inferior:\n\nNota: Al completar misiones de reputación, puedes desbloquear más elementos para intercambiar con él, incluidos vestigios únicos."
+      },
+      {
+        "stepTitle": "El espejo roto",
+        "content": "Elemento(s) requerido(s): 3 barras inflexibles. Si extrae los materiales: un pico de mithril (o mejor), 9 minerales de adamantita y 9 carbón.\n\nHabla con Valas y te comentarán que tu tarea de reparar los espejos les huele a locura. Elogian tu espíritu, pero luego te dicen que los espejos son sagrados para ellos porque la Diosa del Río los colocó allí para recordarles quién debe proteger Umbral Sands.\n\nHabla con Valas nuevamente cuando tengas las barras. Haga clic en la opción 1 para entregar las barras y le dirán que le arreglarán los espejos cuando recoja todas las lentes. Le informarán al mayor de su participación en la realización de ese trabajo y le darán una agradable despedida. También te darán 200 fichas garou por tus problemas."
+      },
+      {
+        "stepTitle": "Garou de trapo y hueso",
+        "content": "Artículo(s) requerido(s): 3 carne cruda de granja, 3 fragmentos de concha de calfita y 3 filetes de nopal\n\nHabla con Lagra, quien quiere que los ayudes con una tarea y te aclara que es un marimacho (o carnicero) y quiere que les lleves tres de los siguientes: carne cruda de granja, fragmentos de concha de kalfita y filetes de nopal. Puedes recolectar la carne cruda de la granja de buitres y cabras cercanas o de tus propios cofres, si tienes alguno. Los fragmentos de caparazón también se pueden encontrar matando kalfitas en el desierto o si ya tienes algunos. En cuanto a los filetes de cactus, solo necesitas cortar uno o dos cactus de conejito con un hacha de registro inflexible (o mejor) o recogerlos de tus cofres.\n\nHabla con Lagra nuevamente cuando tengas los artículos. Elija la opción 1 para entregar las carnes y elogiarán su trabajo diciendo que tiene buen ojo para los tejidos muertos y los exoesqueletos. Te darán su confianza y te darán 200 vales garou por tus problemas.\n\nUna vez que hayas completado las tres tareas anteriores, regresa a Ancamairon. Te mencionará que el clan Alcarrid ahora confía en ti y que el carnicero incluso ha preparado un plato después de ti. \n\nRecompensa: paquete Moon Garou y una nueva montura Magic Carpet. \n\nDespués de completar las tareas del clan Alcarrid, ahora tendrás que navegar a otras zonas del desierto para recoger sus lentes. Puedes ir al clan Manafem en el área sur del desierto (dentro de las Llanuras de Manafem) o al clan Uzzer en el este (dentro de las Dunas de Uzzer) y hablar con sus respectivos ancianos para discutir cómo construir reputación y reclamar las lentes."
+      },
+      {
+        "stepTitle": "Parte II: El problema de Manafem",
+        "content": "Habla con Dúshlánach en el campamento de Manafem. Mencionarán que eres un mal augurio en un mal momento, te llamarán Sin Marca y revelarán que llevan la Marca de Fuzan y que esa marca es una herida que corta profundamente. A partir de esta Marca, poco a poco van perdiendo las ganas de luchar y la cordura, pero sí dicen que su orgullo no se está perdiendo. Dicen que si bien el clan necesita ayuda, se muestran reacios a aceptarla. Esto significa que sus tareas serán algo más difíciles. Al igual que con el clan Alcarrid, hay tres tareas que se deben realizar para adquirir su lente.\n\nNota: Beartach no ofrecerá ninguna misión, pero completar las misiones de reputación aumentará su reputación en un nivel."
+      },
+      {
+        "stepTitle": "Canción de los antiguos",
+        "content": "Artículos necesarios: buenas armas, armaduras, comida y 5 runas aéreas.\n\nHabla con Laguna, que está sentada junto a un lugar de pesca con red. Les gustaría que te aventuraras en la Bóveda ubicada al sur del campamento y escribieras la letra de las canciones, ya que no les gustan los escarabajos y escucharon que los escarabajos residen dentro de la bóveda.\n\nLa bóveda de la que hablaron aparecerá con un círculo verde en tu mapa. Ten en cuenta que esta es una zona de anidación de calfitas, por lo que tendrás que apresurarte hacia la entrada para evitar que te superen en número los calfitas y los KotHaar que acechan en la zona.\n\nEntra por la puerta de la bóveda y dirígete hacia la siguiente plataforma. Tendrás que convocar un bastón de escarabajo y llevártelo contigo, ya que esto evitará que los escarabajos dentro de la mazmorra te hagan daño. Después de convocar al bastón, la primera estatua antigua de garou estará a la derecha. Recoge esto antes de continuar hacia las profundidades de la bóveda. \n\nEstarás en combate en algún momento y el bastón se puede intercambiar para protegerte, lo que te permitirá recuperarlo. En la primera habitación, sigue el camino que conduce a una palanca, tira de ella pero no continúes, ya que al este de la palanca hay una antigua estatua de garou que puedes transcribir. Sigue el camino y dirígete a la siguiente habitación, donde estará ubicada la estatua en la parte superior de una plataforma, y ​​será necesario que Windstep la alcance. Ahora que has adquirido todas las letras, puedes regresar a Laguna en el campamento de Manafem.\n\nNota: Las siguientes dos palancas abrirán el camino hacia una de las Reinas Kalphite. Si estás preparado, puedes ingresar al encuentro para reclamar una recompensa adicional al vencerla, como el vestigio de Keris, la hoja curva corroída.\n\nHabla con Laguna nuevamente y se alegrarán de que los hayas encontrado a todos y quieran tejerlos en una canción. Después de eso, prometen responder por usted ante el Manafem Elder."
+      },
+      {
+        "stepTitle": "Dificultades de escala",
+        "content": "Elemento(s) requerido(s): Buenas armas, armaduras y comida. Habla con Hedric, él te asignará la tarea de buscar a su grupo de exploración perdido. El grupo de exploración estaba rastreando a una criatura que había estado eliminando a su gente uno por uno y te pide que los busques hacia el este y mates a la bestia.\n\nDespués de hablar con Hedric, dirígete hacia el área verde en tu mapa al este del campamento de Manafem. Dentro de esa área, habrá tres pistas, dos exploradores garou muertos y una marca quemada. Descubrirás que el grupo de exploración está muerto y que ni Scorch, ni las tormentas de arena ni Fuzan podrían haberlos creado, sino algo más. Dirígete más al este hasta donde está el círculo verde en tu mapa y encontrarás un dragón rojo. Mátalo y gana el corazón radiante. \n\nRegresa con Hedric y habla con él y le contarás cómo encontraste sus cuerpos y mataste al dragón rojo cercano. Él te agradecerá por encontrar sus cuerpos y, ahora que estás a salvo, enviará a alguien para que vaya a recoger sus cuerpos. Él comentará que el dragón que mataste es insignificante en comparación con Fuzan, espera que sepas lo que estás haciendo y te recomendará a su Anciano. Él te dará 200 fichas garou por tus problemas."
+      },
+      {
+        "stepTitle": "Bestia en la arena",
+        "content": "Elemento(s) requerido(s): 1 agua limpia.\n\nHabla con Manathep y ella te contará cómo Dearg Due mató a su pobre Efina. Ella menciona que Efina fue secuestrada hace tres días y todas las noches, Dearg Due la observa desde el sur de su campamento con un brillo en los ojos y sangre en los labios. Ella te pide que mates al Dearg Due al sur del campamento y traigas el cuerpo de Efina.\n\nDirígete al oeste de la bóveda de la pirámide y localiza al Dearg Due en la tormenta de arena. Síguelo hasta que encuentres a Efina. Habla con ella y te pedirá agua limpia. Dale un poco de agua limpia y te dirá que recuperará las fuerzas mientras te lo agradece. Luego revela que se escapó del campamento de Manafem debido a que la Marca de Fuzan agotó a todos. Luego te pide que le digas a su madre que está a salvo y que está en camino de regreso. El Dearg Due responde aullando, pero tienes la sensación de que se ha levantado una maldición y el Dearg Due es libre de dejar este mundo.\n\nVuelve a hablar con Manathep. Ella alabará a la Diosa del Río con alegría porque su hija está a salvo y piensa que Dearg Due la atrajo fuera del campamento como un truco y dice que Efina no saldría sola. Luego te dará 200 fichas garou por tus problemas.\n\nUna vez que hayas completado estas tareas, habla nuevamente con Dúshlánach.\n\nRecompensa: reputación de nivel 4 con Beartach: la tienda del comerciante, 1 lente de espejo y un paquete Moon Garou."
+      },
+      {
+        "stepTitle": "Parte III: Corazón de Uzzer",
+        "content": "Habla con Gaimbín dentro de las Dunas de Uzzer, quien dudará de tus habilidades y te advertirá que te vayas ya que necesitaban prepararse para el evento de la Marca de Fuzan. Por supuesto, una vez más tendrás la tarea de ganarte la confianza del clan para que el anciano te recompense con la lente del espejo."
+      },
+      {
+        "stepTitle": "El sitio de excavación",
+        "content": "Artículos necesarios: 1 pala de cualquier tipo, buenas armas, armaduras y comida para defenderte de KotHaar.\n\nHabla con Lehran, quien te pedirá que lo ayudes a conocer la verdad sobre sus antepasados ​​y él responderá por ti ante el anciano. Te dice que hay algunas ruinas en el extremo sur, perdidas hace mucho tiempo en la arena, y que los KotHaar le han impedido viajar allí él mismo. Él revela que los Pergaminos Prohibidos están destinados a decir la verdad sobre lo que les sucedió a los Moon Garou hace siglos y no las cosas que les alimentaron sus Ancianos. Él te pide que vayas a desenterrarlos y le traigas los pergaminos, ofreciéndote también compartir las revelaciones contigo, si las hay.\n\nDirígete al área marcada en tu mapa, con tu pala en tu inventario/barra de acceso rápido. Para encontrar los pergaminos, necesitarás ubicar áreas que sean similares a cofres enterrados. Cada Pergamino Prohibido estará en una ruina específica, y dos de ellos estarán escondidos detrás de puertas cerradas. Como habrá KotHaar y cabras en el área, tendrás que luchar contra ellos para poder cavar pacíficamente. Hay cuatro pergaminos que necesitarás encontrar y son los siguientes:\n\n• 'El Cisma'\n• 'Demonio del Sol'\n• 'Reino Antiguo'\n• 'Diosa de la Luna'\n\nUna vez que tengas los cuatro pergaminos, regresa a Lehran. Dale los pergaminos y luego te dará 200 fichas garou y la saga por tus problemas."
+      },
+      {
+        "stepTitle": "Saga del aventurero",
+        "content": "Habla con Laguna y te dirán que están buscando un socio comercial y uno con habilidades de supervivencia en el mercado. Te dirán que hay cuatro agujas rocosas alrededor de la pirámide cerca de este campamento y que cada aguja tiene una estatua. Te pedirán que busques cada estatua y anotes los pasajes inscritos. Cada pasaje, entretejido, formará una saga. Le darán un libro y le recordarán que anote los pasajes en las agujas rocosas.\n\nDirígete hacia el área marcada en tu mapa. Encontrarás imponentes agujas rocosas alrededor de la pirámide y deberás interactuar con ellas. Algunas de estas estatuas están escondidas en cuevas bloqueadas por nodos de arenisca y otras están protegidas por KotHaar o calfitas. Inspecciona cada estatua para ganar una parte de la saga. Una vez que hayas recopilado suficientes piezas de la saga, deberás seguir una dirección que apunte hacia una dirección específica. Dirígete a la aguja con la entrada Nightmare Crucible of Humilitation, y la última estatua antigua de garou contiene la saga completa.\n\nUna vez que tengas la saga completa, regresa a Laguna. Te felicitarán por terminar la saga y disfrutarán actuando en el Día de la Marca de Fuzan, pero por ahora, cantarán alabanzas de tus hazañas al mayor. También comentan que eres libre de desbloquear y explorar las puertas de enlace como mejor te parezca.\n\nNota: Obtendrás un engrama de humillación del Crisol por completar este segmento."
+      },
+      {
+        "stepTitle": "Día de la marca",
+        "content": "Los artículos requieren: Buenas armas, armaduras y comida para defenderte mejor de los enemigos errantes.\n\nHabla con Shangruuh y te preguntará por qué los Uzzer garou tienen que ser tan insoportables. Dice que vino aquí para intercambiar bienes, pero le dijeron que el clan estaba ocupado preparándose para el Día de la Marca. Te pedirá que convenzas a cada miembro del consejo de que abandone la tradición del Día de la Marca.\n\nHabrá tres círculos verdes en tu mapa. Al norte del campamento, necesitarás encontrar a Brialka, el consejero historiador, Chirot, el consejero intermediario, y Alabrais, el consejero científico. Será necesario convencer a cada uno de ellos para que abandone el Día de la Marca. \n\nSiga las opciones de diálogo para que cada concejal asegure su voto. \n\nUna vez que hayas terminado, regresa al campamento y habla con el anciano.\n\nRecompensas: 1 paquete Moon Garou, lentes de espejo y nivel 4 en Iasadair, la tienda del comerciante."
+      },
+      {
+        "stepTitle": "Parte IV: Juicios de Fuzan",
+        "content": "Artículos necesarios: buenas armas, armaduras y comida.\n\nVisita Fuzan/Estrategias para obtener una guía para luchar contra Fuzan.\n\nHabla con Icthlarin y te dirá que hay poco tiempo que perder y que debemos reparar los espejos. Te informa que los ha colocado con cuidado y cree que están dirigidos a la Lente de Fuzan, que es una reliquia dragonante que protege su volcán y potencia su Marca. Esa creencia, dice, será puesta a prueba ahora y reza a Elidnis para que le ayude si se equivoca. Interactúa con cada uno de los espejos para repararlos por completo y crearán un rayo de luz solar concentrada directamente hacia la torre de Fuzan. Aquí es donde podrás ingresar a Fight Caves y avanzar hacia Fuzan.\n\nNota: La actividad a la que ingresarás solo tendrá el modo \"Pruebas de Fuzan\" por defecto. Como esta actividad no es segura, perderás tus artículos y reaparecerás en tu cama.\n\nDirígete hacia The Burning Spire e interactúa con la puerta volcánica en la base del volcán Fuzan. Esto te permitirá ingresar a Fight Caves y deberás interactuar con el podio en el área para comenzar la pelea. Lucha y sobrevive a través de las diez oleadas de la prueba y desbloquearás el camino hacia la Guarida de Fuzan. Interactúa con la puerta de la guarida de Fuzan y podrás luchar contra Fuzan. Derrótalo y obtén su cabeza.\n\nUna vez que consigas su cabeza, regresa con Icthlarin.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Icthlarin's_Little_Helper"
+  },
+  {
+    "id": "letters-for-the-dead",
+    "englishTitle": "Letters for the Dead",
+    "title": "Cartas para los Muertos",
+    "name": "Cartas para los Muertos",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Postie Pete necesita ayuda para encontrar y entregar algunas cartas robadas en Bleakfields Valley en Fellhollow.",
+    "startPoint": "Habla con Postie Pete en el Templo Olvidado.",
+    "requirements": [
+      "Finalización parcial de Withering Heights"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1x buzón: escenario de elaboración para construir.",
+      "Acceso a una actividad en expansión y repetible.",
+      "==Ubicaciones de buzones de correo adicionales=="
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Echando una mano...",
+        "content": "Habla con Postie Pete y selecciona la opción 2 para hablar sobre esta misión. Te preguntará (mientras hace un juego de palabras con huesos) si puedes ayudarlo con algo. Al aceptar su pregunta, Postie Pete mencionará cómo, según los estándares del RPDT, cometió un gran error al extraviar algunas publicaciones. Te dirá que, mientras buscaba en su bolso, alguien se acercó y cogió tres cartas. Este misterioso ladrón huyó a Fellhollow. Luego te dice que, después de echar un vistazo rápido, notó a alguien furtivo cerca de la pequeña casa justo afuera de la entrada a Fellhollow. Luego te pedirá que lo busques."
+      },
+      {
+        "stepTitle": "El franqueo perdido",
+        "content": "Camine ligeramente al noreste de la entrada a Fellhollow (donde encontrará el tercer diario de Ravanna) y encontrará un esqueleto sospechoso sentado en una silla. Habla con él y descubrirás que están animados de manera similar a Postie Pete. Mencionan que están completamente inactivos por el momento y que odian los juegos de palabras, pero te preguntan qué quieres. Tienes las siguientes opciones:\n\nHaga clic en la opción 3, el esqueleto revelará que no han recibido ninguna letra. Esta pequeña revelación accidental te brindará más opciones de diálogo.\n\nA partir de este punto, el esqueleto seguirá iluminándote con gas. Dirán que ya lo habías mencionado antes (No, no lo hiciste) y, así, abrirán nuevas opciones de diálogo. Elija la opción 1 en este nuevo diálogo y el gaslighting continúa. Al elegir la opción 1 una vez más, el esqueleto concederá la pelea y te dará una de las letras. Lleva esta carta a una caja de depósito roja cercana al noroeste del campamento de Vannaka en Bleakfields Valley y entrégala.\n\nAl entregarla, se abrirá un cuadro de diálogo para informarle que cuando publicó la carta, encontró una hoja extraña que parece desvanecerse parcialmente en el reino de los espíritus. Luego te indicará que vas a entrar por una puerta espectral.\n\nNota: Esto hará que el esqueleto sospechoso se convierta en un escenario en el que no se puede interactuar una vez que les consigas la carta. El buzón de envío correspondiente desaparecerá al cerrar el cuadro de diálogo."
+      },
+      {
+        "stepTitle": "El franqueo espectral",
+        "content": "Dirígete directamente al este de la ubicación de Cathan (en las piedras verticales) hacia una antorcha de pared brillante con una cartera de correo colgando. Interactúa con él para adquirir una de las letras que faltan. Esta carta querrá que la entregues en los menhires del valle de Bleakfields. Dirígete inmediatamente hacia la ubicación de Cathan y, antes de subir a verlo, el buzón rojo de depósito de correo estará en el lado izquierdo del sendero. Entrega el envío y aparecerá una opción de diálogo. Le dirá que descubrió una pequeña mancha de pelusa de aspecto fantasmal y que parece lana sin hilar. Esto le pedirá que busque al propietario anterior."
+      },
+      {
+        "stepTitle": "La carta lanuda",
+        "content": "Encuentra una oveja fantasmal llamada \"Shaun\" para recuperar una carta fantasmal. Estará casi directamente al oeste de donde estaba el último buzón de correo. Al recibir la carta, debes llevarla a la Torre de Imaru. Como hay muchos muertos vivientes podridos aquí, deberás tener cuidado.\n\nAl llegar a la Torre de Imaru, habrá otro buzón de correo rojo frente a su torre a la derecha. Cuando entregue la carta que recibió de Shaun, deberá regresar con Postie Pete. Cuando elijas la opción de continuar la misión, Pete te agradecerá entregar las cartas y te presentará al tonto que causó el problema en primer lugar. Resulta que dicho tonto era, de hecho, el hermano de Postie Pete y el empleado junior de RPDT, Parcel Pete. Si bien Parcel Pete quería ayudar, lo estropeó todo. Postie Pete le informará que, gracias a la \"ayuda\" de Parcel Pete, lo puso bajo informe y presentó su PIP. Luego te dará un objeto decorativo que, en el futuro, te permitirá ayudarle a entregar cartas.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Letters_for_the_Dead"
+  },
+  {
+    "id": "mapping-the-sands-i",
+    "englishTitle": "Mapping The Sands I",
+    "title": "Cartografiando las Arenas I",
+    "name": "Cartografiando las Arenas I",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Descubre Moon Sprites en lo alto de lugares altos alrededor del Campamento Alcarrid para mapear Umbral Sands.",
+    "startPoint": "Habla con Anamcara en Umbral Sands",
+    "requirements": [
+      "Finalización parcial del pequeño ayudante de Icthlarin."
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "Capa azul del desierto",
+      "== Requerido para comenzar ==",
+      "Mapeando las arenas II"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Habla con Moon Sprite Shaman - Anamcara en Umbral Sands para comenzar esta misión. Anamcara está situado en el Campamento de Alcarrid, junto al estanque."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Mapping_The_Sands_I"
+  },
+  {
+    "id": "mapping-the-sands-ii",
+    "englishTitle": "Mapping The Sands II",
+    "title": "Cartografiando las Arenas II",
+    "name": "Cartografiando las Arenas II",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Descubre Moon Sprites en lo alto de lugares altos alrededor del Campamento Alcarrid para mapear Umbral Sands.",
+    "startPoint": "Habla con Anamcara en Umbral Sands",
+    "requirements": [
+      "Finalización del mapeo de The Sands I",
+      "Finalización parcial del pequeño ayudante de Icthlarin."
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "receta desbloqueada"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Habla con Moon Sprite Shaman - Anamcara en Umbral Sands para comenzar esta misión. Anamcara está situada en el Campamento de Alcarrid, junto al estanque.\n\nVisite las siguientes 8 ubicaciones que se ven en el mapa de la derecha. \n\nRegresa con Moon Sprite Shaman - Anamcara en el Campamento Alcarrid, al lado del estanque."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Mapping_The_Sands_II"
+  },
+  {
+    "id": "mirror-mirror",
+    "englishTitle": "Mirror, Mirror",
+    "title": "Espejito, Espejito",
+    "name": "Espejito, Espejito",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Ayuda a liberar a una figura misteriosa de su prisión de espejos.",
+    "startPoint": "Habla con el espejo al oeste de Emberwood Village.",
+    "requirements": [
+      "Finalización parcial de Withering Heights para el acceso a Fellhollow."
+    ],
+    "itemsRequired": [
+      "1 barra de plata",
+      "1 hilo fino",
+      "1 aceite sagrado",
+      "6 fragmento de alma",
+      "sangre de dragón"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas."
+    ],
+    "enemies": [
+      "Múltiples muertos vivientes",
+      "O dragones verdes o dragón lobo.",
+      "Múltiples Garou",
+      "Múltiples duendes"
+    ],
+    "rewards": [
+      "1x arco largo de Ulv y la receta posterior"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Un espejo misterioso...",
+        "content": "Para comenzar esta misión, habla con el espejo al oeste de Emberwood Village más allá del dragón verde. Escucharás un audio de llanto cuando te acerques a ellos por primera vez.\n\nSe sorprenderán al ver a una persona viva real en Fellhollow desde su encarcelamiento hace décadas y contar cómo un terrible nigromante los selló dentro del espejo. Si bien este nigromante primero se burló de ellos con el ritual necesario para liberarlos, afirman que es simple de hacer y no debería tomar mucho tiempo. Le pedirán que recolecte los elementos necesarios para comenzar el ritual.\n\nPara el ritual, necesitan un poco de sangre de dragón, una copia de su libro de hechizos que se encuentra en Emberwood Village y un hilo de plata espectral.\n\nNota: Puedes matar al dragón verde cercano o a algunos lobos dragón para obtener la sangre del dragón."
+      },
+      {
+        "stepTitle": "Parte I: Recogida de reactivos",
+        "content": "Para obtener la copia de su libro de hechizos, ve a Emberwood Village (deberás haber pasado este punto en la misión de Withering Heights o reactivar las estatuas en un nuevo mundo) y encontrar el molino de viento destruido. En el interior encontrarás un libro de hechizos desaliñado. Recoge esto ya que lo necesitarás.\n\nPara obtener el hilo de plata espectral, tendrás que buscar el esqueleto de Edna en Dragon's Run. Para encontrarlo, busque una casa de piedra en ruinas cerca de un bosque de sauces y una entrada en ruinas. Su esqueleto estará recostado en una esquina del lado derecho. Interactúa con el esqueleto y el espíritu de Edna te informará que, para hacer el hilo de plata espectral, necesitarás llevarles los siguientes elementos:\n\n• 1 barra de plata\n• 1 hilo fino\n• 1 aceite sagrado\n• 6 fragmentos de alma\n\nUna vez que tengas todos estos elementos, tráelos a Edna. Una vez que le entregues los ingredientes, el esqueleto realizará una serie de gestos que serán demasiado rápidos para que puedas seguirlos con la vista. Después de un momento, el esqueleto te entregará el hilo de plata espectral y volverá a descansar. Una vez hecho esto, regresa al espejo."
+      },
+      {
+        "stepTitle": "Parte II: Las Velas",
+        "content": "Habla con la figura en el espejo una vez más y estará feliz de haber recolectado todos los reactivos. Si bien te los quitarán de las manos, mencionan que puedes presionarlos contra el cristal y te los quitarán. Entregue los reactivos y ellos le comentarán cómo, mientras preparan el ritual por su parte, necesitarán que usted los ate de regreso a su realidad reavivando sus recuerdos. La razón es que, debido a su edad, tienen demasiados recuerdos y necesitan guardar algunos de ellos de forma segura. Dejaron algunos de sus recuerdos como velas conmemorativas dentro de cada región que visitaron y, por cada vela encendida, regresará un recuerdo para ayudar a anclarlos en la realidad. La figura te dará un pequeño pedazo de su alma para ayudar a encender estas velas conmemorativas y, una vez que se encienda cada vela, regresará.\n\nAquí es donde deberás visitar cada región de Ashenfall para encender las velas. En su mapa, las áreas de velas se resaltarán en azul. Aquí está la lista de la ubicación de cada vela dentro de las regiones:\n\n• Fellhollow: Justo al lado del espejo.\n• Ghornfell:\n    • Llanuras fracturadas: Junto a un pequeño lago al sur-sureste de Velgar's Rise. El lago contendrá esencia rúnica flotante.\n    • Tierras Altas Tocadas por la Tormenta: Un poco al noreste del castillo garou, al borde de un acantilado. Será a lo largo del borde del territorio.\n    • Pantano Bloodblight: al oeste del campamento garou que conduce hacia el árbol Bloodwood.\n• Brynmoor:\n    • Pantano de los Susurros: Junto a un árbol de pantano gigante en la tercera isla más occidental desde la bóveda.\n    • Valle de Bramblemead: al sur de la bóveda de Crasorak Kara, encima del acantilado y detrás de las rocas.\n\nCon la vela del último recuerdo encendida, regresa al espejo."
+      },
+      {
+        "stepTitle": "Parte III: Un viaje de una semana",
+        "content": "Habla con la figura en el espejo y te informará que comenzará el ritual, pero que su libertad tardará aproximadamente una semana. Si bien puedes esperar a ver qué sucede, te informan que no es necesario que te quedes tanto tiempo. Has hecho todo lo necesario para ayudarlos a liberarlos de su prisión reflexiva y darte una recompensa por tu ayuda.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Mirror%2C_Mirror"
+  },
+  {
+    "id": "ratcatcher",
+    "englishTitle": "Ratcatcher",
+    "title": "El Cazador de Ratas",
+    "name": "El Cazador de Ratas",
+    "difficulty": "Intermedia",
+    "questType": "Principal",
+    "summary": "Vannaka quiere enseñarte los conceptos básicos de la caza, la lucha y la cocina.",
+    "startPoint": "Habla con Vannaka al sur del molino de viento.",
+    "requirements": [
+      "Empezando"
+    ],
+    "itemsRequired": [
+      "4 carne de rata cruda",
+      "6 troncos de ceniza",
+      "4 piedras"
+    ],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1 hacha de tala de piedra",
+      "1 daga de piedra"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Ve y habla con Vannaka, que está directamente al noreste de Doric, al sur del molino de viento. Él te dirá que necesitas comida para poder seguir luchando, por lo que necesitas conseguir algo de carne de rata.\n\nVe al norte hasta el molino de viento y mata 4 ratas gigantes para conseguir 4 carnes de rata crudas. Reúne 4 troncos de fresno y 4 piedras para hacer una fogata, y algunos troncos más para alimentarla. Cocine la carne en la fogata para obtener 2 asados ​​de rata.\n\nLlévale las ratas asadas a Vannaka. Te enviará a Zanik para aprender sobre magia, iniciando Rune Mysteries.\n\nFelicidades. ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Ratcatcher"
+  },
+  {
+    "id": "regicide",
+    "englishTitle": "Regicide",
+    "title": "Regicidio",
+    "name": "Regicidio",
+    "difficulty": "Maestra",
+    "questType": "Principal",
+    "summary": "Lleva la lucha a Kuldra y acaba con esto de una vez por todas.",
+    "startPoint": "Interactúa con la Puerta del Dragón al norte de las Llanuras Fracturadas.",
+    "requirements": [
+      "El pequeño ayudante de Icthlarin"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Hacha de registro inflexible o mejor",
+      "Runa o mejor Hacha de tala (para los árboles mágicos)",
+      "Adamant o mejor pico",
+      "Armadura y armas de nivel de potencia 7 o mejor.",
+      "Pociones antiveneno para las zonas envenenadas.",
+      "Alimentos y bebidas",
+      "Té fuerte para largos períodos de incursión."
+    ],
+    "enemies": [
+      "Múltiples zombis",
+      "Múltiples Garou Berserkers",
+      "Múltiples cazadores Garou",
+      "Garou Thanes",
+      "Múltiples guerreros duendes",
+      "Múltiples arqueros duendes",
+      "Duendes matones",
+      "Múltiples guerreros esqueléticos",
+      "Múltiples arqueros esqueléticos",
+      "Múltiples ratas pútridas",
+      "Reyes de la plaga",
+      "Rey Rata",
+      "Demonio abisal",
+      "dragones negros",
+      "kuldra"
+    ],
+    "rewards": [
+      "1 paquete de recompensas de regicidio",
+      "1x Escudo de cometa de dragón",
+      "1x Capa de cazador de dragones",
+      "1 paquete de recompensas de Queenslayer",
+      "Acceso completo a la incursión de Scorned Wilderness, incluido el Santuario de Kuldra.",
+      "Cada vez que completes una carrera, te verás obligado a comenzar de nuevo en Dragontail Vines.",
+      "Bastón de Lougrim",
+      "==== Recompensas/actividades adicionales ====",
+      "Después de la misión, los jugadores pueden llevar el bastón de Lougrim a Umbral Sands y hablar con Ancamairon, el anciano de Alcarrid, para recibir la recompensa de los muebles del Santuario Conmemorativo de Lougrim."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Parte I: La puerta se abre",
+        "content": "Para comenzar esta misión, los jugadores deben haber completado El pequeño ayudante de Icthlarin. Después de eso, regresa a Fractured Plains y dirígete al noroeste de Velgar's Rise. Pronto te encontrarás con una Puerta del Dragón que te llevará al Desierto Despreciado. Interactúa con la puerta y te dirá que la sangre de los cuatro sella la puerta. Luego te dirá que el señor de los cielos ha caído, Xikotal fue asesinado por Kuldra, la crueldad de Velgar ya no infecta la tierra, Imaru finalmente descansa en paz y las llamas de Fuzan se han extinguido. Elige la opción de viajar al Desierto Despreciado.\n\nNota: Esto reproducirá el avance narrativo de Scorned Wilderness.\n\nUna vez que pasas la puerta, comienza el viaje. Habla con Zilyana en Descanso de Rasthin. Ella explica que Saradomin la envió allí para hacer frente a la amenaza, pero necesita tu ayuda, ya que acercarse a la guarida de Kuldra la debilita. Zilyiana menciona que la ubicación en la que te encuentras es una base perfecta, se recomienda que construyas una nueva base aquí para que puedas regresar después de usar un punto de control, descansar, navegar, etc. Después de haber establecido una base aquí, habla con Zilyana para continuar hasta la primera ubicación.\n\nHabla con Zilyana y comienza la incursión; serás transportado a Dragontail Vines. \n\nNota: Para obtener una guía de estrategia, consulte Scorned Wilderness. Tendrás que borrar la incursión para poder completar la misión."
+      },
+      {
+        "stepTitle": "Parte II: Muerte de una reina",
+        "content": "Después de derrotar a Kuldra, Zilyana te transportará de regreso al Descanso de Rasthin, donde te informará que debido al velo, sus acciones pasarán desapercibidas por ahora. Eres recompensado por tu ayuda.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Regicide"
+  },
+  {
+    "id": "restless-ghosts",
+    "englishTitle": "Restless Ghosts",
+    "title": "Fantasmas Inquietos",
+    "name": "Fantasmas Inquietos",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "Deja descansar los espíritus de los miembros de la expedición perdidos.",
+    "startPoint": "Interactuar con el pozo en ruinas en el [[Valle de Bramblemead",
+    "requirements": [
+      "Tutorial Primeros Pasos",
+      "20 Tala de madera para cortar la vid espinosa"
+    ],
+    "itemsRequired": [
+      "5 runas de aire para lanzar Windstep o recursos para construir sobre un gran espacio",
+      "Cualquier [[Ejes de registro"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "comida y agua",
+      "Unos cuantos champiñones asados ​​para resistir el veneno mientras navegas por Whispering Swamp"
+    ],
+    "enemies": [
+      "Múltiples enemigos [[Goblin (raza)#Goblin"
+    ],
+    "rewards": [
+      "Capacidad para hablar con fantasmas (requiere finalización parcial)",
+      "1 paquete de recompensas de Restless Ghosts que contiene:",
+      "1x Tomo de cocina - Vol 1.",
+      "1x Tomo de tala de madera - Vol 1.",
+      "1x Tomo del artesano - Vol 1.",
+      "1x Tomo de minería - Vol 1.",
+      "== Requerido para comenzar ==",
+      "Es necesario iniciar esta misión para iniciar las siguientes misiones:",
+      "Fantasmas aún más inquietos"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": ".]]\nEn la aldea en ruinas al noroeste del Viejo Sabio, localiza e interactúa con el pozo en ruinas para recibir el amuleto de la habla fantasma.  (Nota: el amuleto va a la pestaña de elementos de misión de tu inventario en lugar de a tu inventario básico). A continuación, habla con cuatro fantasmas en todo Bramblemead Valley y Whispering Swamp.  Los fantasmas sólo son visibles desde el atardecer hasta el amanecer.\n\n• El espíritu de Warren está ubicado en una casa en ruinas en la esquina suroeste del pueblo en ruinas.\n\n• El espíritu de Lazina está ubicado en una casa rota al sureste del molino de viento en Temple Woods y está a lo largo del sendero para caminar.\n• El espíritu de Finn se encuentra dentro de una cueva bloqueada por enredaderas espinosas al sureste del Viejo Sabio.  Lanza Windstep para llegar al borde de la cueva y luego usa un hacha de registro para destruir las espinas que bloquean la entrada.\n• El espíritu de Kay está ubicado en una casa en ruinas en Whispering Swamp a lo largo de la frontera con Bramblemead Valley. \n\nDespués de encontrarte con los cuatro fantasmas, viaja al Santuario del Recuerdo ubicado afuera en la esquina suroeste de la iglesia, donde los jugadores aparecen por primera vez.  El santuario es un gran florero de piedra encima de una escultura de piedra.  Interactúa con la estatua y selecciona cada opción para \"recordar\" los cuatro fantasmas.\n\nMisión completada."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Restless_Ghosts"
+  },
+  {
+    "id": "rune-mysteries",
+    "englishTitle": "Rune Mysteries",
+    "title": "Misterios Rúnicos",
+    "name": "Misterios Rúnicos",
+    "difficulty": "Principiante",
+    "questType": "Principal",
+    "summary": "Zanik quiere que aprendas los conceptos básicos de la elaboración de runas.",
+    "startPoint": "Habla con Zanik al este de Vannaka.",
+    "requirements": [
+      "Cazador de ratas"
+    ],
+    "itemsRequired": [
+      "50 troncos de ceniza",
+      "12 piedras",
+      "10 esencias rúnicas"
+    ],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1 pico de piedra",
+      "50 runas de aire",
+      "50 runas astrales",
+      "1 Tomo de xilografía - Vol 1."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Zanik quiere que aprendas los conceptos básicos de la elaboración de runas.",
+        "content": "Dirígete hacia el este desde Vannaka hasta la carretera para llegar a Zanik y hablar con ella.\n\nElla te hablará sobre la magia y te enviará a recoger algunos troncos. Reúne 50 troncos de ceniza y luego habla con ella nuevamente."
+      },
+      {
+        "stepTitle": "elaboración de runas",
+        "content": "Zanik te contará sobre la Proyección Axtral y cómo puedes crear runas. Obtendrás un pico de piedra, con eso, extraes un poco de esencia rúnica de los géiseres de esencia rúnica. Puedes extraer las rocas del suelo alrededor de los géiseres usando armas mágicas o a distancia para derribarlos. Reúne 12 piedras y 4 esencias rúnicas y construye un altar de runas, que se puede encontrar en el menú Construcción, en la pestaña Elaboración.\n\nA continuación, crea algunas runas aéreas y astrales.\n\nVuelve con Zanik y habla con ella. Ella te enviará con el Viejo Sabio para comenzar la misión Protegerse del peligro.\n\n¡Felicitaciones, misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Rune_Mysteries"
+  },
+  {
+    "id": "seeking-salvation",
+    "englishTitle": "Seeking Salvation",
+    "title": "Buscando la Salvación",
+    "name": "Buscando la Salvación",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Encuentra las estatuas para poder entrar a la bóveda y descubrir los secretos que se esconden en su interior.",
+    "startPoint": "Habla con Doric al este del Lago de las Almas Perdidas, dentro de una cueva.",
+    "requirements": [
+      "Finalización parcial de Withering Heights, para acceder a Fellhollow"
+    ],
+    "itemsRequired": [
+      "5 runas de aire para lanzar Windstep o recursos para construir cimientos y escaleras hacia ciertas estatuas",
+      "Pico de hierro o mejor",
+      "Antorcha o el hechizo Espíritu de Fuego (si está demasiado oscuro o en una cueva)"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "comida y agua"
+    ],
+    "enemies": [
+      "Zombis (pueden aparecer fuera de la bóveda)",
+      "Esqueletos",
+      "[[Dragón lobo"
+    ],
+    "rewards": [
+      "1 ungüento de cristal",
+      "Esto también desbloquea la opción permanente de comprar más cristales de Death's Exchange por 25 fragmentos de alma cada uno.",
+      "La receta para elaborar un amuleto ungüento.",
+      "== Requerido para completar ==",
+      "Esta misión es necesaria para completar las siguientes misiones:",
+      "La búsqueda de Doric",
+      "Categoría:Misiones"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "La misión puede comenzar hablando con Doric al este del Lago de las Almas Perdidas, dentro de una cueva en ruinas cerca de la entrada a la bóveda de Skekven Kara. Él te informará que la puerta de la bóveda está sellada por magia y requiere que la abras. Para desbloquearlo, busca cuatro estatuas de dragonantes; actívelos para desbloquear la puerta.\n1. Una estatua está ubicada afuera de la entrada de la cueva, antes de ingresar a la cueva.\n1. Se puede encontrar una estatua al suroeste de Doric, detrás del pilar gigante. Si está demasiado oscuro, saque su linterna para obtener una mejor iluminación.\n1. Uno está ubicado en la cima del pilar, directamente al oeste de Doric. Necesitarás el hechizo Windstep o construir algunos cimientos y/o escaleras.\n1. La última estatua se encuentra al noroeste de Doric; habrá algo de podredumbre. Utilice Windstep o construya algunas escaleras en el lugar. Habrá una pared agrietada; Necesitarás un pico para romperlo.\n\nArchivo:BuscandoEstatuaSalvación1.png\nArchivo:BuscandoEstatuaDeSalvación2.png\nArchivo:BuscandoEstatuadeSalvación3.png\nArchivo:BuscandoEstatuadeSalvación4.png\nArchivo:BuscandoSalvaciónEstatua4 2.png"
+      },
+      {
+        "stepTitle": "Skekven Kara",
+        "content": "Una vez que haya localizado y activado las cuatro estatuas, podrá ingresar a la bóveda de Skekven Kara. Asegúrate de llevar mucha comida y bebida cocinada (como agua limpia o infusiones) ya que dentro hay múltiples enemigos. \n\nDentro de la bóveda de Skekven Kara, dirígete a la sala de entrada hasta la escalera central. En el segundo nivel más alto de las escaleras, se puede llegar a una abertura en la pared al sur de la escalera usando Windstep. En esta caverna, interactúa con la estatua del dragón para aprender los secretos, que Doric puede traducir."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Seeking_Salvation"
+  },
+  {
+    "id": "shrimp-catcher",
+    "englishTitle": "Shrimp Catcher",
+    "title": "El Pescador de Camarones",
+    "name": "El Pescador de Camarones",
+    "difficulty": "Principiante",
+    "questType": "Secundaria",
+    "summary": "El Viejo Sabio tiene algunos consejos sobre cómo crecer como pescador aficionado.",
+    "startPoint": "Habla con el anciano sabio en Bramblemead Valley después de crear una red de pesca.",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [
+      "2 hilos gruesos para la red gruesa.",
+      "1 troncos de ceniza",
+      "1 hilo grueso",
+      "1 sardina cruda"
+    ],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "1x Tomo de pesca - Vol 1",
+      "3x cebo de plumas"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Para comenzar esta misión, crea una red tosca en la mesa de elaboración. Esto activará la misión para que hables con el anciano sabio en Bramblemead Valley. Habla con él y elige la opción 2. Esto le hará comentar cómo te hiciste una herramienta muy útil (comentando sobre la red) y recordará en su muy lejana juventud cómo pasó incontables horas atrapando algo en un estanque local con una red y cómo los dueños no estaban contentos. Luego dice cómo puedes encontrar un buen lugar para relajarte y pasar las aburridas horas de luz del día entre aventuras y desafiarte a ti mismo para encontrar ese pez prístino. Continúa diciendo que no había comido un buen pescado en mucho tiempo y te pide que le pesques una sardina en las aguas de Brynmoor, pero te dice que necesitarás usar una caña de pescar para pescar una y fabricar un cebo para ayudarte.\n\nNota: Esto iniciará el siguiente objetivo, que es capturar una sardina cruda.\n\nLuego comienza a decirte que puedes hervirlos, asarlos, guisarlos y preparar muchas comidas deliciosas con ellos. También dice que si encuentras unos realmente bonitos, puedes exhibirlos. Después de esto, se le presentarán cuatro opciones para hablar sobre la pesca."
+      },
+      {
+        "stepTitle": "¡Se fue a pescar!",
+        "content": "Artículo(s) requerido(s): Cualquier red de pesca, Caña de fresno.\n\nPara llegar a las sardinas, necesitarás conseguir algunos niveles de pesca.\n\nDirígete a cualquier lugar de pesca con red cercano y párate dentro de él mientras empuñas tu red para comenzar a pescar camarones crudos y desbloquearás el cebo para camarones. Sigue capturando camarones usando tu red hasta llegar al nivel 3, donde desbloquearás la capacidad de crear cañas de pescar. Ve a tu mesa de trabajo y usa 1 tronco de fresno y 1 hilo grueso para hacer una varilla de fresno, luego con los camarones que has capturado, crea un cebo para camarones (cada camarón da 1 cebo).\n\nUna vez que tenga su caña de pescar y su cebo, diríjase a un lugar cercano para pescar con caña y pesque allí.\n\nA diferencia de la pesca con red, necesitarás equipar tanto tu caña de pescar como el cebo para comenzar a pescar con caña. Mantenga presionado el botón de lanzamiento (LMB por defecto) y suéltelo para comenzar a pescar, pero es posible perder el punto si lanza demasiado débil o demasiado fuerte. Una vez que hayas lanzado con éxito al lugar de pesca, necesitarás usar los botones de ametrallamiento hacia la izquierda/derecha (botones A y D respectivamente) para cansar al pez. Aparecerá una barra encima de la parte inferior central de la pantalla que desaparecerá gradualmente. Si la barra permanece azul, comenzarás a cansar al pez, pero si está roja, eso significa que el pez es más fuerte y al pescarlo consumirá mayores cantidades de resistencia. Cuando el pez esté cansado, aparecerá una opción para pescarlo.\n\nCuando la barra esté vacía, habrás pescado un pez. Puede ser una sardina o una trucha.\n\nNota: La pesca consumirá tu resistencia rápidamente. Si no recoge el pez rápidamente antes de agotar su resistencia, el pez se escapará.\n\nUna vez que hayas atrapado tu sardina, regresa con el Viejo Sabio."
+      },
+      {
+        "stepTitle": "¡De vuelta a la rutina!",
+        "content": "Al traerle la sardina que has pescado, el Viejo Sabio te comentará cómo has pescado una maravillosa y deliciosa sardina y cómo te trae viejos recuerdos. Antes de cocinar la sardina como solía hacerlo su abuelo, te recompensa por el trabajo bien hecho.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Shrimp_Catcher"
+  },
+  {
+    "id": "statues-of-saradomin",
+    "englishTitle": "Statues of Saradomin",
+    "title": "Estatuas de Saradomin",
+    "name": "Estatuas de Saradomin",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Misión en Ashenfall: Estatuas de Saradomin.",
+    "startPoint": "Ashenfall / PNJ local",
+    "requirements": [
+      "Sin requisitos previos especiales"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "Puntos de Misión y Exp en Habilidades"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "La actividad requiere que el jugador encuentre tres estatuas de Saradomin e inserte piedras preciosas en ellas:\n\n1. Pantano de los Susurros: La estatua está en la esquina noroeste del pantano. La estatua requiere que se inserte un ópalo a cambio del emblema de ópalo.\n1. Llanuras fracturadas: La estatua está en la parte central de las llanuras, al este de la torre y al oeste de un lago, en la parte inferior de un pequeño acantilado. La estatua requiere que se inserte un jade a cambio del emblema de jade.\n1. Tierras Altas Tocadas por la Tormenta: La estatua se encuentra en la parte noreste de las Tierras Altas, a lo largo del borde del acantilado. La estatua requiere que se inserte un zafiro a cambio del emblema de zafiro.\n\nUna vez que hayas recogido todos los emblemas, regresa a la estatua para recibir una capa saradominista."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Statues_of_Saradomin"
+  },
+  {
+    "id": "the-great-body-robbery",
+    "englishTitle": "The Great Body Robbery",
+    "title": "El Gran Robo de Cuerpos",
+    "name": "El Gran Robo de Cuerpos",
+    "difficulty": "Maestra",
+    "questType": "Secundaria",
+    "summary": "Ayudar al Dr. Fenkenstrain a adquirir un nuevo cuerpo. ¡POR LA CIENCIA!",
+    "startPoint": "Habla con el Doctor Fenkenstrain en Bloodblight Swamp.",
+    "requirements": [
+      "Finalización parcial o total de Dragon Slayer."
+    ],
+    "itemsRequired": [
+      "Bronce o mejor Espada.",
+      "1x de cada: poción antiveneno débil, poción de ataque enfocado débil, poción de leñador débil"
+    ],
+    "itemsRecommended": [
+      "Pociones antiveneno débiles o mejores para atravesar el pantano Bloodblight.",
+      "Buenas armaduras y comida."
+    ],
+    "enemies": [],
+    "rewards": [
+      "1x brazo zombie",
+      "Receta para construir un pararrayos"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Para comenzar esta misión, habla con el Doctor Fenkenstrain en Bloodblight Swamp. Estará en su torre al lado del campamento garou alrededor del árbol de madera de sangre y en el mismo piso que la urna sanguínea.\n\nCuando empieces a hablar con él, te comentará que lo llamaron loco y eso se lo demostrará. Después de un minuto, finalmente te notará y te preguntará quién eres. Elegir cualquier opción hará que a él no le importe quién eres y te pregunte si puedes ayudarlo con algo. Quiere que vayas a recoger algunos brazos, piernas y ese tipo de cosas de las tumbas que hay alrededor del pantano. Esto te llevará a recolectar tres elementos: brazos, piernas y torso.\n\nLocaliza tumbas junto a sus lápidas en Bloodblight Swamp y usa tu pala cerca de ellas para desenterrar un ataúd. Interactúa con el ataúd para recoger las piezas.\n\n• Torso Humano: Cerca del demonio abisal. En el centro de tres árboles.\n• Piernas de Duende: Al norte del ataúd del torso. Entre dos árboles.\n• Garou Arms: cerca de la entrada norte del Pantano Bloodblight.\n\nUna vez que tenga todos los artículos, regrese al médico. Habla con él y hará un juego de palabras tonto sobre tu inusual colección de partes del cuerpo antes de pedirte que las coloques en la mesa de examen. Interactúe con la mesa de exploración cercana y hable con el médico una vez más. Te pedirá que examines las piezas y luego te pedirá que le traigas una poción antiveneno débil, una poción de ataque enfocado débil y una poción de leñador débil. Recoge las pociones y regresa con el médico.\n\nUsa las pociones (después de hablar nuevamente con el médico), y él te dirá que el cuerpo necesita rayos y te dará un vial vacío. Necesitarás que te caiga un rayo para llenar el vial.\n\nPuedes esperar a que se produzca una tormenta eléctrica en casi cualquiera de las regiones o dirigirte a Stormtouched Highlands y esperar a que te caiga un rayo. Una vez que tengas el Lightning-in-a-bottle, regresa al médico.\n\nHabla con él nuevamente y te pedirá que coloques su cabeza sobre el cuerpo incompleto en la mesa de examen. Interactúa con el cuerpo para colocar la cabeza del médico sobre él y luego usa la iluminación en una botella en el pilón cercano. Una vez que interactúes con el pilón cercano, la cabeza del médico en el cuerpo se intercambiará con la cabeza del pollo cercano.\n\nHabla con el médico del cuerpo del pollo para saber que calculó mal. Luego te dará tu recompensa para distraerte mientras resuelve su complicada situación.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/The_Great_Body_Robbery"
+  },
+  {
+    "id": "the-wild-hunt",
+    "englishTitle": "The Wild Hunt",
+    "title": "La Caza Salvaje",
+    "name": "La Caza Salvaje",
+    "difficulty": "Maestra",
+    "questType": "Secundaria",
+    "summary": "Ayuda a Vannaka a salvaguardar los espíritus de la naturaleza de Fellhollow, cazándolos en los bosques de sauces y recogiendo sus corazones.",
+    "startPoint": "Habla con Vannaka",
+    "requirements": [
+      "Finalización parcial de Withering Heights, para acceder a Fellhollow"
+    ],
+    "itemsRequired": [
+      "Tres corazones primordiales"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento"
+    ],
+    "enemies": [
+      "Tres espíritus de la naturaleza"
+    ],
+    "rewards": [
+      "Acceso a una montura de terrorbird (presiona la tecla ALT)",
+      "50x fragmentos de alma (para cualquier corazón extra que tengas)",
+      "== Requerido para completar ==",
+      "Esta misión es necesaria para completar las siguientes misiones:",
+      "Cosas que explotan en la noche"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Para comenzar esta búsqueda, habla con Vannaka, quien se puede encontrar al oeste de la ubicación de Cathan en la región de Fellhollow en Bleakfields Valley. Él te explicará cómo los espíritus de la naturaleza están desapareciendo debido a la naturaleza de esta región y te pedirá que encuentres espíritus de la naturaleza y los derrotes para recolectar sus corazones primordiales. Estos espíritus solo se pueden encontrar en los bosques de sauces en el área occidental de Fellhollow o sus alrededores y se verán como pájaros terroristas de color blanco brillante.\n\nSi no estás dispuesto a buscarlos por todas partes, puedes encontrar uno cerca del área noroeste del círculo de druidas en el área de Emberwood, uno en el área de Dragon's Run y ​​otro en la sección sur de Witchwillow Range.\n\nUna vez que tengas los tres corazones, regresa con Vannaka, quien usará un antiguo ritual garou anterior al reinado de Kuldra para imbuirte de la esencia de estos espíritus.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/The_Wild_Hunt"
+  },
+  {
+    "id": "things-that-go-boom-in-the-night",
+    "englishTitle": "Things That Go Boom In The Night",
+    "title": "Cosas que Hacen ¡Boom! en la Noche",
+    "name": "Cosas que Hacen ¡Boom! en la Noche",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Reúne cráneos de Chinchompa espectral para que Vannaka pueda ayudar a que la tierra sane.",
+    "startPoint": "Habla con Vannaka",
+    "requirements": [
+      "Finalización parcial de Withering Heights, para acceder a Fellhollow",
+      "Finalización de La caza salvaje"
+    ],
+    "itemsRequired": [
+      "Diez cráneos de chinchompa espectrales"
+    ],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento"
+    ],
+    "enemies": [
+      "Diez chinchompas espectrales"
+    ],
+    "rewards": [
+      "1x capa de chinchompa espectral.",
+      "== Requerido para completar ==",
+      "Esta misión es necesaria para completar las siguientes misiones:"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Para comenzar esta búsqueda, habla con Vannaka, quien se puede encontrar al oeste de la ubicación de Cathan en la región de Fellhollow en Bleakfields Valley. Al igual que The Wild Hunt, te explicará cómo los espíritus de la zona continúan atormentados y te pedirá que busques diez chinchompas espectrales y le lleves diez de sus cráneos. Debes atacarlos y/o matarlos lo más rápido que puedas o desaparecerán. Están ubicados al otro lado de Fellhollow, dentro de áreas boscosas y arboledas (como los espíritus de la naturaleza).\n\nLa mejor ubicación para encontrarlos cerca de Vannaka es;\n\n• Círculo de druidas de South Emberwood. \n• Bosque de sauces de Witchwillow Range.\n\nDebería haber suficiente para matar y recolectar sus cráneos. Pero si te perdiste uno o algunos, tardan hasta 10 días en el juego en aparecer, por lo que otras ubicaciones sí;\n\n• En otro bosque de sauces al norte de Hope's Fall.\n• Al oeste del campamento de Doric, donde está la primera estatua antes de entrar a la cueva. \n    • Otro está más al oeste, cerca de la orilla del Lago de las Almas Perdidas.\n• En el bosque sureste de Silverthorn Keep\n• En otro bosquecillo de sauces en Silverthorn Keep.\n• La parte más oriental de Silverthorn Keep, donde se encuentra un estanque de purificación cuando se dirige hacia la fortaleza.\n\nUna vez que tengas las diez calaveras, él te lo agradecerá, creyendo que con tu ayuda Fellhollow podrá volver a encontrar la paz.\n\n¡Felicidades! ¡Misión completa!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Things_That_Go_Boom_In_The_Night"
+  },
+  {
+    "id": "wanted-",
+    "englishTitle": "Wanted!",
+    "title": "¡Se Busca!",
+    "name": "¡Se Busca!",
+    "difficulty": "Maestra",
+    "questType": "Secundaria",
+    "summary": "Caza a los domadores de bestias",
+    "startPoint": "Habla con Vannaka en Dowdun Reach.",
+    "requirements": [
+      "Finalización parcial de la Fortaleza del Caballero Negro."
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Armadura y armas apropiadas para el nivel",
+      "Alimento"
+    ],
+    "enemies": [
+      "Flamento de invocador + Delrom",
+      "Maestro de perros Rexiton + Fido, Gnasher, Lurch, Rufus y Tiny",
+      "Rat Master Skrexis + Boggs, Rizado, Entrometido, [[Parche (Hellrat)"
+    ],
+    "rewards": [
+      "Vestigio de joyería corroído, necesario para crear el símbolo impío."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "Habla con Vannaka, a quien puedes encontrar junto a la tienda frente a la biblioteca poco después de ingresar a Dowdun Reach. Explica que tres Caballeros Negros (el Maestro de las Ratas, el Maestro de los Sabuesos y el Invocador) han obtenido control sobre diferentes criaturas demoníacas y te pide que recuperes sus diarios de entrenamiento.\n\nVannaka puede proporcionar información sobre cada uno de los tres domadores de bestias si lo solicita. Los tres objetivos se pueden abordar en cualquier orden. Cada uno es un encuentro de combate genuino con múltiples enemigos, así que ven preparado."
+      },
+      {
+        "stepTitle": "El maestro de las ratas",
+        "content": "Dirígete hacia el suroeste desde Vannaka hasta The Menagerie; Tendrás que cruzar la Biblioteca y derrotar al dragón azul menor que custodia la entrada a The Menagerie antes de continuar. El Maestro Rata Skrexis se puede encontrar en una repisa al final del camino inferior, rodeado por sus ratas infernales. Alguna vez fue un caballero solitario con terribles hábitos de higiene que atraía alimañas dondequiera que iba; la corrupción solo ha profundizado ese vínculo.\n\nDerrótalo a él y a su manada de ratas infernales. Una vez que el área esté despejada, busque su diario sobre una roca directamente detrás de donde estaba parado, a la izquierda de la estatua. Interactúa con él para leer o tomar algunas páginas."
+      },
+      {
+        "stepTitle": "El maestro de perros",
+        "content": "Dirígete a The Garrison y desciende a los pisos inferiores del edificio delantero. Philius Rexiton, el maestro de perros, era un noble que amaba a los perros antes de que se apoderara de la corrupción. Ahora comanda una manada entera de perros del infierno en las mazmorras de abajo.\n\nEsta es una pelea muy concurrida: tendrás que lidiar con Rexiton y toda su manada a la vez. Intenta controlar a los perros del infierno mientras mantienes presión sobre el propio Maestro de perros. Después de derrotarlos, el diario está en la perrera central, sobre la mesa."
+      },
+      {
+        "stepTitle": "El invocador",
+        "content": "Dirígete hacia el sur desde Vannaka hasta la Catedral y desciende a las criptas de abajo. Sus habitaciones están inmediatamente adyacentes a The Lake, que es la piedra nodal más cercana. Lester Flament, el Invocador, deambula por aquí con Delrom, su demonio inquietantemente leal. Se decía que Flament era odioso e impopular incluso entre los Caballeros Negros.\n\nDelrom golpea fuerte, así que no subestimes esta pelea. Una vez que el Invocador sea derrotado, toma su diario del pedestal en la pared trasera, debajo de la gárgola demoníaca."
+      },
+      {
+        "stepTitle": "Regresando a Vannaka",
+        "content": "Con los tres diarios en la mano, regresa a Vannaka. Examina con entusiasmo los diarios, esperando encontrar ritos oscuros y hechizos siniestros, sólo para descubrir que el secreto de los domadores de bestias era tratar a las criaturas con amabilidad.\n\nVannaka te entrega una baratija para ayudarte a lidiar con criaturas demoníacas y te comenta que no hay tiempo para un enfoque más amigable."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Wanted!"
+  },
+  {
+    "id": "warding-off-danger",
+    "englishTitle": "Warding Off Danger",
+    "title": "Alejando el Peligro",
+    "name": "Alejando el Peligro",
+    "difficulty": "Intermedia",
+    "questType": "Principal",
+    "summary": "El Viejo Sabio quiere enseñarte sobre Lifewards y cómo recargarlos.",
+    "startPoint": "Habla con el anciano sabio, ubicado al noreste de las ruinas del valle de Bramblemead.",
+    "requirements": [
+      "Misterios de runas"
+    ],
+    "itemsRequired": [
+      "13 piedras",
+      "9 esencias rúnicas"
+    ],
+    "itemsRecommended": [],
+    "enemies": [],
+    "rewards": [
+      "2 piedras de guarda pequeñas",
+      "==Requerido para completar==",
+      "Esta misión es necesaria para completar las siguientes misiones:",
+      "Asesino de dragones"
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Introducción y comienzo",
+        "content": "Habla con el Viejo Sabio; él quiere enseñarte sobre las salvavidas y cómo recargarlas. Primero, necesitarás crear un altar de runas, que requerirá 12 piedras y 4 esencias de runas. Después de construir el altar, crea una pequeña piedra de guarda con 5 esencias rúnicas y una piedra. Se recomienda hacer más (y posiblemente una piedra de protección de nivel superior) para la próxima misión, Dragon Slayer.\n\nDespués de hacer la pequeña piedra de guarda, llévasela al Viejo Sabio para completar esta misión."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Warding_Off_Danger"
+  },
+  {
+    "id": "what-remains-is-written",
+    "englishTitle": "What Remains is Written",
+    "title": "Lo que Queda Está Escrito",
+    "name": "Lo que Queda Está Escrito",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Encuentra el conocimiento robado y devuélvelo a su dueño. Estoy seguro de que no pasará nada malo por eso.",
+    "startPoint": "Habla con Abraxus El Eterno en Coalridge Pass.",
+    "requirements": [
+      "Finalización parcial de Withering Heights para el acceso a Fellhollow.",
+      "Finalización parcial de Restless Ghosts para el amuleto."
+    ],
+    "itemsRequired": [
+      "corona de nigromante",
+      "Top de túnica de nigromante",
+      "Parte inferior de la túnica de nigromante",
+      "Comida buena",
+      "Amuleto de habla fantasma"
+    ],
+    "itemsRecommended": [],
+    "enemies": [
+      "Múltiples juramentados",
+      "Múltiples arqueros esqueleto",
+      "Múltiples guerreros esqueleto",
+      "Razlem, el trastornado",
+      "ulgo el zogre",
+      "Escama de plaga"
+    ],
+    "rewards": [
+      "1 objeto de baratija de anillo de Abraxus y desbloqueo de receta."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "¡Saqueado!",
+        "content": "Habla con Abraxus The Eternal en Coalridge Pass, justo al norte de la bifurcación de la carretera, mientras llevas el equipo completo de nigromante. Supondrá, al menos por tu ropa, que eres un aprendiz suyo y necesitará tu ayuda. Se presentará con bastante arrogancia cuando estés en presencia de \"Abraxus El Eterno, maestro de la nigromancia, guardián de secretos, tanto ocultos como arcanos\" y te informará que los lugareños han saqueado su biblioteca y que sus tomos más preciados se han extendido por las subregiones orientales. Te pide que los encuentres y los traigas de vuelta, pero no que leas ninguno de ellos. Afirma que tu mente es demasiado joven y demasiado limitada para contener los terribles secretos que contiene."
+      },
+      {
+        "stepTitle": "Búsqueda de conocimiento pt. I: Tomos antiguos",
+        "content": "Para encontrar todos los libros que necesitas para regresar a Abraxus, deberás buscar en cada rincón de la región de Silverthorn Keep. Aquí hay algunos libros que puedes encontrar:\n\n• El orgullo del Avérnico\n    • Ubicado en el segundo nivel de Silverthorn Keep junto a una escena de tiro con arco.\n• La importancia del caos\n    • Ubicado justo al noroeste de la siniestra puerta de entrada. Se encuentra en una pequeña pendiente en el lado sur de una pequeña torre en medio de las ruinas de una entrada (que se puede ver en el mapa). Está en el extremo suroeste de las ruinas.\n• Fundamentos etéreos, una introducción primordial\n    • Ubicado al otro lado del puente de piedra en Silverthorn Keep, donde encontrarás el fragmento de maldición. Hay un dragón verde engendrado justo al lado de esto.\n• La ira de Baba Potterington\n    • Ubicado en una casa de piedra derrumbada cerca de un bosque natural al norte del 'sil' de Silverthorn Keep en el mapa.\n• Leonardo el Atado\n    • Ubicado al noroeste de la siniestra entrada dentro de las ruinas que sirven como área de transición entre las áreas del Lago de las Almas Perdidas y Silverthorn Keep. El libro está en la parte superior del lado occidental de la puerta, sobre un pedestal. Habrá hoplitas esqueléticos y arqueros en esta zona.\n\nUna vez que tengas todos los libros, regresa y habla con Abraxus."
+      },
+      {
+        "stepTitle": "Caza del conocimiento pt. II: Los pergaminos secretos",
+        "content": "Ponte el equipo de nigromante y habla con Abraxus. Le emocionará ver que has recuperado sus libros y espera que no los hayas echado un vistazo, pero hay más por descubrir. Menciona cómo le quitaron tres de sus pergaminos y cómo debes recuperarlos. Él dirá que Blightscale, un dragón verde, le quitó el primer pergamino, y que debes aprender de su arrogancia. El segundo pergamino lo tomó Ulgo, un zogre, que se puede encontrar cerca. El último en encontrarlo se lo llevó un rival suyo llamado Razlem, el Trastornado.\n\n• Eventide: un nuevo engendro\n    • Derrota a Razlem, el trastornado. Deambula por una pequeña ruina directamente al este de la siniestra puerta de entrada. Encontrarás el pergamino encima de un escritorio cerca de él.\n• Coclear Malificarum\n    • Derrota a Ulgo el zogre en Coalridge Pass. Estará justo al lado del cofre en su tesoro. Ulgo está justo al norte de la etiqueta \"Coalridge Pass\" en el mapa.\n• La unión de Ib\n    • Derrota a Blightscale. Blightscale es un dragón verde ubicado en el lado sur de los acantilados que conducen a Silverthorn Keep, al noreste de la siniestra puerta. Inmediatamente pasa por unos sauces y un pequeño conjunto de ruinas. Hay una puerta espectral en el pequeño claro donde se encuentra. El pergamino se encuentra cerca de algunos huesos en el claro.\n\nUna vez que tengas todos los pergaminos, ponte el equipo de nigromante y habla con Abraxus. Él te felicitará por tus esfuerzos y te dirá que te has ganado su respeto, que nadie se ha ganado durante siglos. Luego comentará que no es tan tonto como para creer que usted sólo podrá ser recompensado con su respeto, ya que le dará algo que puede resultarle útil. Luego se excusa para enviar una piedra a un viejo amigo suyo y espera que la acepte, para poder perseguirlo por un tiempo, ya que está cansado de la vista.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/What_Remains_is_Written"
+  },
+  {
+    "id": "what-s-theirs-is-mine-",
+    "englishTitle": "What's Theirs is Mine!",
+    "title": "¡Lo Suyo es Mío!",
+    "name": "¡Lo Suyo es Mío!",
+    "difficulty": "Intermedia",
+    "questType": "Secundaria",
+    "summary": "Ayuda a Doric a localizar al mago que robó su recuerdo desbloqueando portales alrededor de Dowdun Reach.",
+    "startPoint": "Habla con Doric en The Nexus en Dowdun Reach.",
+    "requirements": [
+      "Finalización parcial de la Fortaleza del Caballero Negro."
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Armadura y armas apropiadas para el nivel",
+      "Alimento"
+    ],
+    "enemies": [
+      "2 demonios menores fragmentados (en The Demon Gate)",
+      "Guerreros Caballeros Negros, guardianes Caballeros Negros y [[Mago de Zamorak"
+    ],
+    "rewards": [
+      "1x receta para el bastón de Zamorak",
+      "1x paquete de recompensas del portal (por activar todas las piedras de nodo):",
+      "1x Tomo del artesano - Vol 2.",
+      "1x Tomo de construcción - Vol 2.",
+      "1x Tomo de Magia - Vol 2.",
+      "1x Tomo de minería - Vol 2."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Empezando",
+        "content": "Habla con Doric en The Nexus. Explica que un mago vestido de rojo irrumpió en él y le robó un pequeño perro de bronce en un llavero, un recuerdo hecho por su hijo, Boric, y una de sus posesiones más preciadas. El mago huyó a través de uno de los portales cercanos, y Doric vislumbró brevemente los bancos y los objetos religiosos antes de que el ladrón desapareciera.\n\nDoric te pide que persigas al mago a través de los portales y recuperes su recuerdo. Señala que seguir el rastro también debería ayudarte a activar los nodos esparcidos por Dowdun Reach, abriendo rutas de viaje rápido a través de la fortaleza.\n\nLos tres lugares se pueden visitar en cualquier orden. Cada uno está en territorio hostil, así que ven preparado."
+      },
+      {
+        "stepTitle": "La Catedral",
+        "content": "Dirígete a la región de la Catedral en Dowdun Keep. La piedra nodal aquí se encuentra en el ala noroeste del edificio y no se puede llegar a ella desde el interior: ingrese a la catedral y gire a la derecha, luego siga el pasillo exterior que rodea el costado. Busque una sección donde faltan los parapetos y use Windstep para llegar al borde superior donde se encuentran la piedra nodal y las notas.\n\nLas notas garabateadas en una mesa cercana son divagaciones incoherentes sobre la naturaleza de la magia del portal: el mago estaba estudiando cómo las piedras nodales de la torre del homenaje funcionan sin runas, extrayendo poder de la Piedra del Ensueño.\n\nNo hay señales del mago en sí, pero la piedra nodal cercana crepita con energía persistente. Actívalo y regresa con Doric.\n\nDe vuelta en The Nexus, Doric informa que simplemente extrañaste al mago: el mago vestido de rojo pasó corriendo junto a él nuevamente, agitando un gran bastón puntiagudo \"sin temor a sacarle los ojos a nadie\". Esta vez el portal mostraba cadenas, celdas y caballeros con aspecto enojado. Quizás una guarnición."
+      },
+      {
+        "stepTitle": "La guarnición",
+        "content": "Dirígete a The Garrison y dirígete al edificio con cuatro torretas en la cara norte de la fortaleza. En el interior, busca los esquemas del mago colocados encima de una caja cerca de la piedra nodal, en el primer piso. Estas notas describen alguna forma de magia basada en las emociones: un intento de extraer energía del sufrimiento y canalizarla hacia una fuente de gran dolor.\n\nDe nuevo, no hay ningún mago a la vista. Activa la piedra nodal y regresa con Doric.\n\nDoric te cuenta que el mago pasó corriendo junto a él una vez más, y esta vez el portal mostraba luces brillantes, agua y rocas, una especie de siniestra puerta demoníaca."
+      },
+      {
+        "stepTitle": "La puerta del demonio",
+        "content": "Viaja a The Demon Gate, el área subterránea debajo de Dowdun Keep. Este es el único lugar donde enfrentarás una pelea adecuada: recorre el área hasta el otro extremo, pasando por dos demonios menores fragmentados que custodian una arena.\n\nAl otro lado, encontrarás el cuerpo del mago Zamorak. Las heridas son recientes: túnicas chamuscadas y marcas de garras en el torso. Independientemente de lo que estuviera tratando de lograr con su magia de portal y sus esquemas de drenaje de emociones, los demonios lo alcanzaron primero.\n\nRegistra el cuerpo. No hay señales del recuerdo de Doric, pero sí encuentras algún tipo de esquema arrugado. Tómalo y regresa con Doric."
+      },
+      {
+        "stepTitle": "Volviendo a dórico",
+        "content": "Habla con Doric en The Nexus. En un momento de tímida honestidad, admite que el mago nunca robó el perro de bronce; cuando el mago lo golpeó, el recuerdo se cayó de su bolsillo y rodó detrás de una roca. Toda la persecución fue una búsqueda inútil.\n\nSintiéndose culpable, Doric examina el esquema que recuperaste del mago muerto. Lo identifica como un diseño para una especie de bastón siniestro y, a modo de disculpa, te enseña cómo elaborarlo: el bastón de Zamorak.\n\nTambién menciona que parece que sería bastante útil tener las piedras de nodo en pleno funcionamiento y sugiere que actives el resto de ellas alrededor de Dowdun Reach para obtener una recompensa adicional."
+      },
+      {
+        "stepTitle": "Bonificación: activar todas las piedras nodales",
+        "content": "Si activas las nueve piedras nodales en Dowdun Reach y regresas con Doric, él te felicitará y luego se quejará de que los aventureros siempre esperan una recompensa. Le entrega un paquete de recompensas del portal que contiene tomos de experiencias de Artesano, Construcción, Magia y Minería de nivel 2."
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/What's_Theirs_is_Mine!"
+  },
+  {
+    "id": "withering-heights",
+    "englishTitle": "Withering Heights",
+    "title": "Las Alturas Marchitas",
+    "name": "Las Alturas Marchitas",
+    "difficulty": "Gran Maestra",
+    "questType": "Principal",
+    "summary": "Pon fin al horror de Fellhollow derrotando a Imaru, el devorador de almas.",
+    "startPoint": "Habla con el anciano sabio cerca de la Guardia de Ashien.",
+    "requirements": [
+      "Asesino de dragones"
+    ],
+    "itemsRequired": [],
+    "itemsRecommended": [
+      "Buenas armaduras y armas.",
+      "Alimento"
+    ],
+    "enemies": [
+      "Múltiples zombis podridos",
+      "Múltiples zombis",
+      "Múltiples esqueletos",
+      "Múltiples dragones verdes",
+      "Imaru, el devorador de almas"
+    ],
+    "rewards": [
+      "Paquete de recompensas de Cumbres Marchitas",
+      "Tomo de lo eterno",
+      "Rostro dracónico no-muerto",
+      "Escudo maldición del dragón",
+      "Acceso a un nuevo tipo de receta maestra: el escudo de la maldición del dragón."
+    ],
+    "walkthrough": [
+      {
+        "stepTitle": "Parte I: El lado omnipresente...",
+        "content": "Para comenzar esta misión, habla con el anciano sabio cerca de Ashien's Watch. Él te explicará que había estado estudiando una puerta misteriosa con una especie de extrañas runas nigrománticas y te dirá la contraseña para pasar la puerta.\n\nUsa la opción 1 después de hablar con el Viejo Sabio, para abrir la puerta y llegarás al Templo Olvidado. Como ya hay una piedra imán aquí, no necesitarás gastar tus propios materiales para hacerla. Sube las escaleras y dirígete al templo para hablar con la Muerte, quien te informará sobre Imaru y la situación general en Fellhollow. Luego seguirás el lado derecho (tu derecha) hacia un lugar donde podrás hablar con Postie Pete sobre cómo ingresar a Fellhollow, pero antes de hacerlo, la Muerte dirá una cosa más. Esto, inevitablemente, te presentará su tienda, donde puedes comprar (usando fragmentos de alma) artículos raros exclusivos que no se pueden adquirir a través de vestigios ni del juego normal.\n\nNota: Habrá una pequeña escena de introducción que se reproducirá cuando ingreses por primera vez a Fellhollow."
+      },
+      {
+        "stepTitle": "Parte II: Deshilachando el alma hasta romperla...",
+        "content": "A continuación, habla con Postie Pete. Luego te explicará que, para llegar a Fellhollow, debes cruzar un río de agua marchita. A medida que cruces el agua, desarrollarás Wither y sentirás que tu alma se rompe. Justo antes de cruzar por completo, entrarás en el estado de ruptura del alma y podrás usar la puerta espectral cercana. Entra por esta puerta y llegarás a una de las regiones que componen Fellhollow: Bleakfields Valley. Tan pronto como llegues, debes encontrar rápidamente una fuente (marcada en tu brújula con balizas azules visibles) para purificar tu alma, ya que Imaru habrá sentido tu llegada a sus dominios. Cuanto más tiempo estés en este estado, más peligro correrás, ya que las almas atormentadas (humanas, lobos, etc.) comenzarán a aparecer con niveles de poder crecientes.\n\nPara este caso de llegada, siga rápidamente el camino y llegará a una de esas fuentes. Tendrás que golpear los enredos espectrales hasta que desaparezcan para poder purificar tu alma.\n\nUna vez que llegues a este lugar, busca a Cathan. Estará cerca en un acantilado, flotando junto a tres tablas de piedra con extrañas marcas.\n\nNota: Después de llegar a Fellhollow por primera vez (es decir, acceder al templo y atravesar el alma a través de la puerta espectral), se te otorgará acceso permanente a Fellhollow en todos los mundos."
+      },
+      {
+        "stepTitle": "Parte III: Rompiendo el sello",
+        "content": "Habla con Cathan para descubrir qué más hacer a continuación, que es reunir fragmentos de maldición. Sólo hay tres que debes recolectar:\n• Fragmento de maldición (pena)\n• Fragmento de maldición (ira)\n• Fragmento de maldición (desesperación)\n\nUna vez que hayas adquirido los tres fragmentos de la maldición, podrás acceder a la Torre de Imaru en el centro de Hope's Fall.\n====Fragmento de maldición (pena) - Emberwood==== \nPara obtener este fragmento, necesitarás interactuar con cuatro pilares que están cerca para disipar una barrera divina. Necesitarás encontrar los santuarios correspondientes (que pueden activarse en cualquier orden) para disiparlo.\n\nUna vez que todos los altares estén activados, la barrera se disipará, lo que te permitirá ingresar a Emberwood Village y obtener el fragmento de maldición (pena).\n\nNota: Si comienzas un mundo nuevo, independientemente de qué tan lejos hayas completado la misión o la hayas completado por completo, necesitarás reactivar todas las estatuas para disipar la barrera.\n=====Santuario de Guthix=====\n• Altar de Guthix: Derrota a un dragón verde (se puede localizar de forma segura con ataques a distancia, debe estar al menos a 150 m de distancia para evitar que el dragón ataque) e interactúa con él. Estará dentro de un círculo de druidas hacia el oeste.\nNota: El altar de Guthix no permitirá la interacción hasta que el dragón verde haya sido derrotado.\n=====Santuario de Saradomin=====\n• Altar de Saradomin: un poco al noreste, lo encontrarás encima de una roca solitaria dentro de un pequeño lago. Primero deberás reparar este altar encontrando el símbolo de Saradomin abajo (en el agua) e interactuar con él nuevamente.\n=====Santuario de Armadyl=====\n• Altar de Armadyl: Un poco al este de donde derrotaste al dragón verde, en una pequeña isla en el río, hay tres fantasmas que han cometido una grave injusticia. Debes encontrar al perpetrador y resolver el crimen para poder activar este altar.\n    • Elija las siguientes opciones:\n    • 3 - Hubo un asesinato en masa.\n    • 2 - Porque les pareció gracioso.\n    • 3 - El fantasma risueño\n    • 3 - Les pareció demasiado divertido. Coincidiendo con el motivo. (La opción sobre el clima también funciona)\n=====Santuario de Zamorak=====\n• Altar de Zamorak: tendrás que entrar a un templo cercano a través del techo y saltar al templo para interactuar con el altar. Hay una palanca cerca para abrir la puerta del templo y poder salir libremente.\n\n====Fragmento de maldición (rabia) - Lago de las almas perdidas==== \nPara obtener este fragmento, debes aventurarte en la bóveda de Vekchenven Kara que se encuentra debajo de una cascada. Tendrás que derrotar a un zogre al final de la mazmorra para poder acceder a este fragmento. Una vez que derrotes al zogre, podrás obtener el fragmento de maldición (ira).\n\n====Fragmento de maldición (desesperación) - Silverthorn Keep==== \nPara obtener este fragmento, deberás aventurarte en la propia torre del homenaje. Habrá muchos zombis podridos, arqueros esqueléticos, guerreros podridos, merodeadores podridos y zombis en el camino a medida que te diriges hacia el fragmento, pero habrá un dragón verde frente a él. Interactúa con el sello maldito y obtendrás el fragmento maldito (desesperación)."
+      },
+      {
+        "stepTitle": "Parte IV: El fin de Imaru...",
+        "content": "Elemento(s) requerido(s): fragmento de maldición (ira), fragmento de maldición (dolor), fragmento de maldición (desesperación).\n\nArtículos recomendados: comida, equipo de nivel de potencia 5 y pociones.\n\nEntra en la torre dentro de Hope's Fall e interactúa con el sello en la guarida de Imaru. Luego se te pedirá que ingreses a su guarida disipando la maldición y, al elegir la opción 1, podrás ingresar a su guarida. Al entrar en su guarida, habrá cuatro estanques purificadores, manchas de podredumbre marchita y una atmósfera de muerte y descomposición. Imaru saldrá del río cercano frente a ti y podrás luchar contra ella. Tenga cuidado, ya que este jefe entrará y saldrá del estado de ruptura del alma e intentará curarse a sí mismo devorando almas.\n\nUna vez que ella sea derrotada, obtendrás la cabeza de Imaru. Asegúrate de tener un espacio de inventario libre para completar la misión. Ahora regresarás con la Muerte, quien exclamará que Imaru está muerto y que has hecho bien en lidiar con un problema potencial que él no quería enfrentar. Entrégale la cabeza de Imaru y completarás la misión.\n\n¡Felicidades! ¡Misión completada!"
+      }
+    ],
+    "wikiUrl": "https://dragonwilds.runescape.wiki/w/Withering_Heights"
+  }
+]

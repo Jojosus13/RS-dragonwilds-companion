@@ -1,0 +1,44 @@
+{
+  "overview": {
+    "title": "El Reino de Ashenfall y el Marchitamiento",
+    "subtitle": "La Era de las Sombras y el Resurgir de los Dragones",
+    "intro": "Ashenfall, en otro tiempo un reino próspero de caballeros, magos y artesanos enanos, fue devastado por el evento conocido como el Marchitamiento (The Withering). Una plaga mística de corrupción consumió la tierra, marchitando los bosques, secando los ríos y despertando a horrores antiguos que yacían en las profundidades de la tierra."
+  },
+  "chapters": [
+    {
+      "id": "withering",
+      "title": "🌑 El Marchitamiento (The Withering)",
+      "category": "Eventos Históricos",
+      "summary": "El cataclismo que quebró el equilibrio del mundo.",
+      "content": "Nadie sabe con certeza qué desencadenó el Marchitamiento, aunque los sabios de la Torre de los Magos afirman que se debió a una fractura en el plano astral provocada por la extracción desmedida de ánima rúnica.\n        \nEn cuestión de días, las brumas púrpura y el fuego sombrío se extendieron desde el cráter central. Los árboles se retorcieron en madera marchita (Blightwood), el agua pura se transformó en fango contaminado y las criaturas del bosque mutaron en bestias feroces. Los vivos que sucumbieron a la plaga no hallaron descanso, levantándose como guerreros no-muertos que custodian las ruinas de las fortalezas caídas."
+    },
+    {
+      "id": "imaru",
+      "title": "🐉 Imaru, la Dragona Primordial",
+      "category": "Criaturas Legendarias",
+      "summary": "La reina de las bestias dracónicas y señora del fuego eterno.",
+      "content": "En la cúspide del volcán de Ashenfall mora Imaru, la dragona anciana cuyo aliento forjó las primeras vetas de obsidiana del mundo.\n        \nA diferencia de los dragones menores, Imaru posee una inteligencia arcana milenaria. Durante el Marchitamiento, consumió las almas de los héroes caídos para aumentar su propio poder. Los cazadores y aventureros que osan adentrarse en su territorio buscan sus escamas y metal de dragón para forjar el legendario equipamiento de Nivel 8 y 9 (Masterwork)."
+    },
+    {
+      "id": "regions",
+      "title": "🗺️ Las 5 Grandes Regiones de Ashenfall",
+      "category": "Geografía y Exploración",
+      "summary": "Guía territorial de los biomas y peligros del reino.",
+      "content": "El reino se divide en cinco zonas con diferentes niveles de peligro, recursos y climas:\n\n1. **Valle de Bramblemead (Nivel 1-3)**: Prados verdes y colinas donde los supervivientes han establecido sus primeros campamentos. Abundancia de madera de roble, pesca de río y minerales básicos de bronce y hierro.\n2. **Pantano de Brynmoor (Nivel 4-5)**: Tierras pantanosas sumergidas en niebla perpetua. Hogar de trasgos, hongos de sombrero amargo y vestigios de la orden de nigromantes de Abraxus.\n3. **Ciénaga de Sangre / Bloodblight Swamp (Nivel 6-7)**: La zona de mayor concentración de la plaga. Los árboles de Blightwood sangran savia roja y los demonios abisales acechan entre las aguas oscuras.\n4. **Arenas Umbrías / Umbral Sands (Nivel 6-8)**: Un desierto abrasador castigado por tormentas de arena de energía cósmica. Oculta pirámides enterradas, tumbas de faraones y cactus con agua purificadora.\n5. **Alturas Marchitas / Withering Heights (Nivel 8-9)**: El territorio volcánico de alta montaña donde el suelo arde con magma de obsidiana y las hordas dracónicas defienden los núcleos de ascensión."
+    },
+    {
+      "id": "factions",
+      "title": "🛡️ Facciones, Caballeros y Sectas",
+      "category": "Facciones",
+      "summary": "Las fuerzas políticas y místicas que luchan por el control.",
+      "content": "• **Los Caballeros Blancos de Falador**: Paladines devotos del dios Saradomin que buscan purificar la tierra y restablecer el orden y la justicia mediante armaduras bendecidas.\n• **Los Caballeros Negros**: Una orden militar despiadada que opera desde su inexpugnable fortaleza en las montañas, utilizando metal negro y alquimia oscura para dominar a los supervivientes.\n• **Los Nigromantes de Fellhollow**: Discípulos del nigromante Abraxus que experimentan con harina de hueso necrótica y polvo de tumba para esclavizar a los no-muertos.\n• **Los TzHaar**: La milenaria raza de criaturas de lava que habitan en la ciudad subterránea de obsidiana, maestros en el forjado de armas pesadas de piedra volcánica."
+    },
+    {
+      "id": "magic-runes",
+      "title": "✨ El Secreto del Ánima y las Runas",
+      "category": "Magia Arcana",
+      "summary": "Cómo los magos canalizan las fuerzas elementales del cosmos.",
+      "content": "La magia en Dragonwilds no proviene de la energía propia del mago, sino de la habilidad de canalizar el ánima universal a través de piedras rúnicas consagradas en altares místicos.\n        \nAl combinar runas elementales (Aire, Agua, Tierra, Fuego) con runas catalizadoras (Cósmica, Astral, Caos, Muerte, Sangre, Alma, Ira), los aventureros pueden desde alterar la materia y curar heridas graves hasta desatar cataclismos de fuego y teletransportarse a través de continentes enteros."
+    }
+  ]
+}

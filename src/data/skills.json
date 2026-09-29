@@ -1,0 +1,135 @@
+{
+  "skills": [
+    {
+      "id": "attack",
+      "name": "Ataque",
+      "category": "Combate",
+      "icon": "⚔️",
+      "description": "Incrementa la precisión en combate cuerpo a cuerpo y desbloquea armamento de alto nivel, desde Bronce hasta el rango Masterwork.",
+      "tomes": "Tomo de Habilidad (Ataque)",
+      "tips": "Sube tu nivel de Ataque derrotando criaturas peligrosas por todo Ashenfall y desbloqueando ventajas de combate."
+    },
+    {
+      "id": "artisan",
+      "name": "Artesanía",
+      "category": "Crafteo",
+      "icon": "🔨",
+      "description": "Fabrica armas, armaduras pesadas, herramientas y estructuras en el Banco del Herrero y las Estaciones de Artesanía.",
+      "tomes": "Tomo de Habilidad (Artesanía)",
+      "tips": "Funde barras de metal, curte cueros y forja armamento poderoso para aumentar tus probabilidades de supervivencia."
+    },
+    {
+      "id": "cooking",
+      "name": "Cocina",
+      "category": "Supervivencia",
+      "icon": "🍲",
+      "description": "Prepara estofados nutritivos, caldos, pasteles y raciones para restaurar el Sustento, la Salud y la Energía.",
+      "tomes": "Tomo de Habilidad (Cocina)",
+      "tips": "Los alimentos cocinados de alto nivel proporcionan regeneración de salud continua y resistencia contra climas extremos."
+    },
+    {
+      "id": "magic",
+      "name": "Magia",
+      "category": "Combate",
+      "icon": "🔮",
+      "description": "Canaliza energías místicas para lanzar hechizos elementales, invocar protecciones y empuñar bastones y varitas.",
+      "tomes": "Tomo de Habilidad (Magia)",
+      "tips": "Combina runas forjadas en altares o encontradas en ruinas Dragonkin para desatar conjuros devastadores."
+    },
+    {
+      "id": "mining",
+      "name": "Minería",
+      "category": "Recolección",
+      "icon": "⛏️",
+      "description": "Extrae menas de cobre, estaño, hierro, carbón, mithril, adamantita y runita de los yacimientos rocosos.",
+      "tomes": "Tomo de Habilidad (Minería)",
+      "tips": "Usa picos de mayor nivel para picar vetas más duras y conseguir golpes críticos en los nodos de recursos."
+    },
+    {
+      "id": "ranged",
+      "name": "A Distancia",
+      "category": "Combate",
+      "icon": "🏹",
+      "description": "Ataca a los enemigos desde lejos con arcos cortos, arcos largos y ballestas usando flechas y pernos especializados.",
+      "tomes": "Tomo de Habilidad (A Distancia)",
+      "tips": "Fabrica flechas dentadas, de fuego o envenenadas para explotar las debilidades enemigas desde distancias seguras."
+    },
+    {
+      "id": "runecrafting",
+      "name": "Creación de Runas",
+      "category": "Crafteo",
+      "icon": "✨",
+      "description": "Imbuye esencia pura en runas mágicas (Aire, Agua, Tierra, Fuego, Mente, Cuerpo, Caos, Naturaleza, Muerte, Sangre, Astral).",
+      "tomes": "Tomo de Habilidad (Creación de Runas)",
+      "tips": "Localiza altares ocultos por todo Ashenfall para canalizar energías rúnicas de combate y utilidad."
+    },
+    {
+      "id": "woodcutting",
+      "name": "Tala de Madera",
+      "category": "Recolección",
+      "icon": "🪓",
+      "description": "Tala árboles en Ashenfall para recolectar troncos, cortezas y savia: Normal, Roble, Sauce, Arce, Tejo, Magia y Blightwood.",
+      "tomes": "Tomo de Habilidad (Tala de Madera)",
+      "tips": "Lleva hachas de tala mejoradas en tu cinturón de herramientas para cortar maderas nobles con menos golpes."
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Banco del Herrero",
+      "icon": "⚒️",
+      "description": "Yunque principal y mesa de forja para armas de metal, herramientas y armaduras de placas pesadas."
+    },
+    {
+      "name": "Fragua Mística",
+      "icon": "🔥",
+      "description": "Forja de infusión utilizada para ascender equipo Masterwork con Núcleos de Ascensión hasta Nivel de Poder 9."
+    },
+    {
+      "name": "Hoguera y Olla de Cocina",
+      "icon": "🍲",
+      "description": "Cocina de supervivencia para asar carnes, preparar tés de hierbas y hervir estofados reconstituyentes."
+    },
+    {
+      "name": "Tenería y Telar",
+      "icon": "🧵",
+      "description": "Estación de trabajo para curtir cueros de dragón, pieles de animales y tejer telas en túnicas y armaduras de arquero."
+    },
+    {
+      "name": "Mesa del Alquimista",
+      "icon": "🧪",
+      "description": "Mesa de destilación para elaborar pociones, antiponzoñas, antifuego y elixires potentes a partir de hierbas e ingredientes secundarios."
+    },
+    {
+      "name": "Mesa de Flechería",
+      "icon": "🎯",
+      "description": "Puesto de artesanía para tallar arcos con madera, preparar brazos de ballesta y emplumar flechas con puntas especiales."
+    }
+  ],
+  "regions": [
+    {
+      "name": "Brynmoor",
+      "danger": "Bajo (Nivel 1-3)",
+      "description": "Las tierras altas iniciales de Ashenfall. Ricas en cobre, robles y caza básica de supervivencia."
+    },
+    {
+      "name": "Ghornfell",
+      "danger": "Medio (Nivel 3-5)",
+      "description": "Ricos riscos y bosques densos repletos de yacimientos de hierro y fieras salvajes agresivas."
+    },
+    {
+      "name": "Fellhollow",
+      "danger": "Alto (Nivel 5-7)",
+      "description": "Barrancos oscuros y ruinas ancestrales donde residen vetas de mithril, adamantita y entidades malditas."
+    },
+    {
+      "name": "Dowdun Reach",
+      "danger": "Muy Alto (Nivel 7-8)",
+      "description": "Naturaleza salvaje cubierta de niebla perpetua, poblada por dragones ancianos y vestigios Masterwork."
+    },
+    {
+      "name": "Arenas Umbrías (Umbral Sands)",
+      "danger": "Extremo (Nivel 8-9)",
+      "description": "Páramos desérticos abrasadores con reliquias Dragonkin, horrores abisales y fuentes del poder de Ascensión."
+    }
+  ]
+}
