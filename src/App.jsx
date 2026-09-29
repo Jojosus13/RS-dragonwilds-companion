@@ -17,7 +17,10 @@ import SpellsViewer from './components/SpellsViewer';
 import LoreViewer from './components/LoreViewer';
 import InteractiveMap from './components/InteractiveMap';
 import PWAInstallPrompt from './components/PWAInstallPrompt';
+import UpdateModal from './components/UpdateModal';
 import { findLocationForQuest, findLocationsForMaterial, findLocationForVault } from './data/mapData';
+import { APP_VERSION } from './utils/version';
+import { fetchLatestRelease, isUpdateDismissed, recordLastCheckTime } from './utils/updateChecker';
 
 export default function App() {
   const [activeView, setActiveView] = useState('home'); // home, catalog, quests, vaults, spells, lore, map, loadout, planner, skills, favorites
@@ -27,6 +30,58 @@ export default function App() {
   const [isInstallModalOpen, setIsInstallModalOpen] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [mapFocusTarget, setMapFocusTarget] = useState(null);
+
+  // Update Checker State
+  const [updateInfo, setUpdateInfo] = useState(null);
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
+  const [isCheckingUpdate, setIsCheckingUpdate] = useState(false);
+  const [updateCheckMessage, setUpdateCheckMessage] = useState(null);
+
+  // Auto-check for updates on app launch (with slight delay)
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      try {
+        const result = await fetchLatestRelease();
+        if (result.success) {
+          setUpdateInfo(result);
+          if (result.hasUpdate && !isUpdateDismissed(result.latestVersion)) {
+            setIsUpdateModalOpen(true);
+          }
+        }
+        recordLastCheckTime();
+      } catch (err) {
+        // Silent error on background check
+      }
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Manual check triggered by user
+  const handleCheckForUpdates = async () => {
+    setIsCheckingUpdate(true);
+    setUpdateCheckMessage(null);
+    try {
+      const result = await fetchLatestRelease({ timeout: 8000 });
+      setIsCheckingUpdate(false);
+      if (result.success) {
+        setUpdateInfo(result);
+        if (result.hasUpdate) {
+          setIsUpdateModalOpen(true);
+        } else {
+          setUpdateCheckMessage(`¡Estás al día! La versión v${APP_VERSION} es la más reciente.`);
+          setTimeout(() => setUpdateCheckMessage(null), 4500);
+        }
+      } else {
+        setUpdateCheckMessage(result.error || 'No se pudo verificar la actualización.');
+        setTimeout(() => setUpdateCheckMessage(null), 4500);
+      }
+    } catch {
+      setIsCheckingUpdate(false);
+      setUpdateCheckMessage('No se pudo conectar para buscar actualizaciones.');
+      setTimeout(() => setUpdateCheckMessage(null), 4500);
+    }
+  };
 
   // Jump to map from Quest
   const handleViewQuestOnMap = (quest) => {
@@ -280,6 +335,11 @@ export default function App() {
               quests={questsData}
               spells={spellsData}
               onViewQuestOnMap={handleViewQuestOnMap}
+              onCheckForUpdates={handleCheckForUpdates}
+              isCheckingUpdate={isCheckingUpdate}
+              updateInfo={updateInfo}
+              updateCheckMessage={updateCheckMessage}
+              onOpenUpdateModal={() => setIsUpdateModalOpen(true)}
             />
           )}
 
@@ -385,6 +445,13 @@ export default function App() {
         onClose={() => setIsInstallModalOpen(false)}
         deferredPrompt={deferredPrompt}
         onInstallClick={handleInstallPWA}
+      />
+
+      {/* App Auto-Update Modal */}
+      <UpdateModal
+        isOpen={isUpdateModalOpen}
+        onClose={() => setIsUpdateModalOpen(false)}
+        updateInfo={updateInfo}
       />
     </div>
   );
