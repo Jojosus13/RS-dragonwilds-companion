@@ -36,17 +36,26 @@ export default function UpdateModal({
     releaseUrl
   } = updateInfo;
 
-  const handleDownload = async () => {
-    setIsDownloading(true);
+  const handleDownload = () => {
+    const targetUrl = apkDownloadUrl || releaseUrl;
+    if (!targetUrl) return;
+
+    // Marcar version como descargada para evitar bucles si la app se reinicia durante la instalacion
+    dismissUpdateVersion(latestVersion);
+    if (onDismiss) onDismiss();
+    onClose();
+
     try {
-      const finalUrl = await getApkDirectDownloadUrl(assetApiUrl, apkDownloadUrl);
-      if (finalUrl) {
-        window.open(finalUrl, '_system');
-      }
+      const link = document.createElement('a');
+      link.href = targetUrl;
+      link.setAttribute('download', apkFileName || 'RS-Dragonwilds.apk');
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } catch {
-      window.open(apkDownloadUrl, '_system');
-    } finally {
-      setIsDownloading(false);
+      window.location.href = targetUrl;
     }
   };
 
@@ -268,10 +277,9 @@ export default function UpdateModal({
               className="btn-fantasy gold" 
               style={{ fontSize: '0.9rem', padding: '8px 18px', display: 'flex', alignItems: 'center', gap: '6px' }}
               onClick={handleDownload}
-              disabled={isDownloading}
             >
-              <Download size={16} className={isDownloading ? 'spin-animation' : ''} />
-              <span>{isDownloading ? 'Preparando Descarga...' : (hasDirectApk ? 'Descargar e Instalar APK' : 'Obtener Actualización')}</span>
+              <Download size={16} />
+              <span>{hasDirectApk ? 'Descargar e Instalar APK' : 'Obtener Actualizacion'}</span>
             </button>
           </div>
         </div>
