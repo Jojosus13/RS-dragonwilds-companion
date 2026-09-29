@@ -2293,11 +2293,13 @@ select:focus,
   position: absolute;
   top: 0;
   left: 0;
+  overflow: visible;
   transition: transform 0.05s linear;
 }
 
 .ashenfall-svg-map {
   display: block;
+  overflow: visible !important;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
 }
 

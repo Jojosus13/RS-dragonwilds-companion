@@ -644,6 +644,7 @@ export default function InteractiveMap({
             height="1024"
             viewBox="0 0 1024 1024"
             className="ashenfall-svg-map"
+            style={{ overflow: 'visible' }}
           >
             <defs>
               {/* Parchment y Terrain Gradients */}

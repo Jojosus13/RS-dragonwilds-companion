@@ -4,17 +4,16 @@ const https = require('https');
 
 const GITHUB_OWNER = 'Jojosus13';
 const GITHUB_REPO = 'RS-dragonwilds-companion';
-const TAG_NAME = 'v1.0.3';
-const RELEASE_NAME = 'Dragonwilds Companion v1.0.3 - Correccion de Bucle y Mejoras';
-const RELEASE_BODY = `## Novedades y Correcciones en v1.0.3
+const TAG_NAME = 'v1.0.4';
+const RELEASE_NAME = 'Dragonwilds Companion v1.0.4 - Correccion de Mapa y Visibilidad';
+const RELEASE_BODY = `## Novedades y Correcciones en v1.0.4
 
-- Correccion del bucle de reinicio al actualizar la aplicacion.
-- Cierre y descarte automatico del aviso de actualizacion al iniciar la descarga.
-- Descarga e instalacion directa optimizada para Android.
-- Ocultacion del boton de instalacion PWA en modo nativo.
+- Correccion del corte de texto y overflow en marcadores y waypoints del mapa interactivo.
+- Boton de buscar actualizaciones visible unicamente en la aplicacion instalable de Android.
+- Prevencion de bucles en reinicios y optimizacion del flujo de descarga.
 `;
 
-const APK_PATH = path.resolve(__dirname, '../dist-apk/RS-Dragonwilds-v1.0.3.apk');
+const APK_PATH = path.resolve(__dirname, '../dist-apk/RS-Dragonwilds-v1.0.4.apk');
 
 async function main() {
   const token = process.argv[2] || process.env.GITHUB_TOKEN;
@@ -30,7 +29,7 @@ async function main() {
   }
 
   const apkStats = fs.statSync(APK_PATH);
-  console.log(`[INFO] APK encontrado: RS-Dragonwilds-v1.0.3.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`[INFO] APK encontrado: RS-Dragonwilds-v1.0.4.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
   console.log(`[INFO] Creando Release ${TAG_NAME} en GitHub (${GITHUB_OWNER}/${GITHUB_REPO})...\n`);
 
   // 1. Crear la Release
@@ -77,7 +76,7 @@ async function main() {
   console.log(`[INFO] Subiendo archivo APK a los assets de la release...`);
 
   // 2. Subir el APK como asset
-  const uploadUrl = releaseJson.upload_url.replace(/\{(\?name,label)?\}/, '') + `?name=RS-Dragonwilds-v1.0.3.apk`;
+  const uploadUrl = releaseJson.upload_url.replace(/\{(\?name,label)?\}/, '') + `?name=RS-Dragonwilds-v1.0.4.apk`;
   const urlObj = new URL(uploadUrl);
 
   const fileStream = fs.createReadStream(APK_PATH);

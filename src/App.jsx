@@ -21,8 +21,17 @@ import UpdateModal from './components/UpdateModal';
 import { findLocationForQuest, findLocationsForMaterial, findLocationForVault } from './data/mapData';
 import { APP_VERSION } from './utils/version';
 import { fetchLatestRelease, isUpdateDismissed, recordLastCheckTime } from './utils/updateChecker';
+import { Capacitor } from '@capacitor/core';
 
 export default function App() {
+  const isNativeApp = typeof window !== 'undefined' && (
+    Capacitor.isNativePlatform() || 
+    window.Capacitor?.isNativePlatform?.() || 
+    (window.Capacitor && window.Capacitor.getPlatform() !== 'web') ||
+    window.location.protocol === 'capacitor:' ||
+    (window.location.protocol === 'https:' && window.location.hostname === 'localhost')
+  );
+
   const [activeView, setActiveView] = useState('home'); // home, catalog, quests, vaults, spells, lore, map, loadout, planner, skills, favorites
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedVaultId, setSelectedVaultId] = useState(null);
@@ -37,8 +46,10 @@ export default function App() {
   const [isCheckingUpdate, setIsCheckingUpdate] = useState(false);
   const [updateCheckMessage, setUpdateCheckMessage] = useState(null);
 
-  // Auto-check for updates on app launch (with slight delay)
+  // Auto-check for updates on app launch only in native APK
   useEffect(() => {
+    if (!isNativeApp) return;
+
     const timer = setTimeout(async () => {
       try {
         const result = await fetchLatestRelease();
@@ -55,7 +66,7 @@ export default function App() {
     }, 2500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isNativeApp]);
 
   // Manual check triggered by user
   const handleCheckForUpdates = async () => {
