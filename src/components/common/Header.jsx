@@ -12,7 +12,9 @@ export default function Header({
   const isNative = typeof window !== 'undefined' && (
     Capacitor.isNativePlatform() || 
     window.Capacitor?.isNativePlatform?.() || 
-    (window.Capacitor && window.Capacitor.getPlatform() !== 'web')
+    (window.Capacitor && window.Capacitor.getPlatform() !== 'web') ||
+    window.location.protocol === 'capacitor:' ||
+    (window.location.protocol === 'https:' && window.location.hostname === 'localhost')
   );
 
   const [isInstalled, setIsInstalled] = useState(() => {
@@ -26,6 +28,11 @@ export default function Header({
   });
 
   useEffect(() => {
+    if (isNative) {
+      setIsInstalled(true);
+      return;
+    }
+
     const matchMedia = window.matchMedia('(display-mode: standalone)');
     const handleChange = (e) => setIsInstalled(e.matches);
     try {

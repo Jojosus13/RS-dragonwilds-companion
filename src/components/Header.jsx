@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Sparkles, Download, Bookmark } from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
 
 export default function Header({ 
   activeView, 
@@ -8,8 +9,17 @@ export default function Header({
   plannerCount, 
   onOpenInstallModal 
 }) {
+  const isNative = typeof window !== 'undefined' && (
+    Capacitor.isNativePlatform() || 
+    window.Capacitor?.isNativePlatform?.() || 
+    (window.Capacitor && window.Capacitor.getPlatform() !== 'web') ||
+    window.location.protocol === 'capacitor:' ||
+    (window.location.protocol === 'https:' && window.location.hostname === 'localhost')
+  );
+
   const [isInstalled, setIsInstalled] = useState(() => {
     if (typeof window === 'undefined') return false;
+    if (isNative) return true;
     return (
       window.matchMedia('(display-mode: standalone)').matches ||
       window.navigator.standalone === true ||
@@ -18,6 +28,11 @@ export default function Header({
   });
 
   useEffect(() => {
+    if (isNative) {
+      setIsInstalled(true);
+      return;
+    }
+
     const matchMedia = window.matchMedia('(display-mode: standalone)');
     const handleChange = (e) => setIsInstalled(e.matches);
     try {
@@ -39,7 +54,7 @@ export default function Header({
       }
       window.removeEventListener('appinstalled', handleAppInstalled);
     };
-  }, []);
+  }, [isNative]);
 
   return (
     <header className="site-header">
