@@ -4,16 +4,16 @@ const https = require('https');
 
 const GITHUB_OWNER = 'Jojosus13';
 const GITHUB_REPO = 'RS-dragonwilds-companion';
-const TAG_NAME = 'v1.0.1';
-const RELEASE_NAME = 'Dragonwilds Companion v1.0.1 - Corrección PWA';
-const RELEASE_BODY = `## 🚀 Novedades y Mejoras en v1.0.1
+const TAG_NAME = 'v1.0.2';
+const RELEASE_NAME = 'Dragonwilds Companion v1.0.2 - Actualizacion y Mejoras';
+const RELEASE_BODY = `## Novedades y Correcciones en v1.0.2
 
-- 📱 **Ocultado el botón de instalación PWA** cuando la app se ejecuta desde el APK nativo de Android.
-- 🔄 **Sistema de autoactualización integrado**: Detección automática de nuevas versiones y descarga de APK con un clic.
-- 🗺️ **Rendimiento optimizado** en mapas, códice y bóvedas.
+- Correccion del boton de instalacion PWA en la aplicacion nativa de Android.
+- Integracion del sistema de comprobacion y descarga de actualizaciones en repositorio privado.
+- Optimizacion general de rendimiento en mapas, codice y bovedas.
 `;
 
-const APK_PATH = path.resolve(__dirname, '../dist-apk/RS-Dragonwilds-v1.0.1.apk');
+const APK_PATH = path.resolve(__dirname, '../dist-apk/RS-Dragonwilds-v1.0.2.apk');
 
 async function main() {
   const token = process.argv[2] || process.env.GITHUB_TOKEN;
@@ -24,13 +24,13 @@ async function main() {
   }
 
   if (!fs.existsSync(APK_PATH)) {
-    console.error(`ERROR: No se encontró el archivo APK en ${APK_PATH}`);
+    console.error(`ERROR: No se encontro el archivo APK en ${APK_PATH}`);
     process.exit(1);
   }
 
   const apkStats = fs.statSync(APK_PATH);
-  console.log(`\n📦 APK encontrado: RS-Dragonwilds-v1.0.1.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
-  console.log(`🚀 Creando Release ${TAG_NAME} en GitHub (${GITHUB_OWNER}/${GITHUB_REPO})...\n`);
+  console.log(`[INFO] APK encontrado: RS-Dragonwilds-v1.0.2.apk (${(apkStats.size / (1024 * 1024)).toFixed(2)} MB)`);
+  console.log(`[INFO] Creando Release ${TAG_NAME} en GitHub (${GITHUB_OWNER}/${GITHUB_REPO})...\n`);
 
   // 1. Crear la Release
   const releaseData = JSON.stringify({
@@ -67,16 +67,16 @@ async function main() {
   });
 
   if (releaseRes.statusCode !== 201) {
-    console.error(`❌ Error al crear release (HTTP ${releaseRes.statusCode}):`, releaseRes.body);
+    console.error(`[ERROR] Error al crear release (HTTP ${releaseRes.statusCode}):`, releaseRes.body);
     process.exit(1);
   }
 
   const releaseJson = JSON.parse(releaseRes.body);
-  console.log(`✅ Release creada con éxito: ${releaseJson.html_url}`);
-  console.log(`📤 Subiendo archivo APK a los assets de la release...`);
+  console.log(`[OK] Release creada con exito: ${releaseJson.html_url}`);
+  console.log(`[INFO] Subiendo archivo APK a los assets de la release...`);
 
   // 2. Subir el APK como asset
-  const uploadUrl = releaseJson.upload_url.replace(/\{(\?name,label)?\}/, '') + `?name=RS-Dragonwilds-v1.0.1.apk`;
+  const uploadUrl = releaseJson.upload_url.replace(/\{(\?name,label)?\}/, '') + `?name=RS-Dragonwilds-v1.0.2.apk`;
   const urlObj = new URL(uploadUrl);
 
   const fileStream = fs.createReadStream(APK_PATH);
@@ -105,14 +105,14 @@ async function main() {
   });
 
   if (uploadRes.statusCode !== 201) {
-    console.error(`❌ Error al subir APK (HTTP ${uploadRes.statusCode}):`, uploadRes.body);
+    console.error(`[ERROR] Error al subir APK (HTTP ${uploadRes.statusCode}):`, uploadRes.body);
     process.exit(1);
   }
 
   const assetJson = JSON.parse(uploadRes.body);
-  console.log(`\n🎉 ¡RELEASE Y APK PUBLICADOS CON ÉXITO!`);
-  console.log(`🔗 Release URL: ${releaseJson.html_url}`);
-  console.log(`📥 Direct APK Download: ${assetJson.browser_download_url}`);
+  console.log(`\n[EXITO] Release y APK publicados correctamente.`);
+  console.log(`Release URL: ${releaseJson.html_url}`);
+  console.log(`Direct APK Download: ${assetJson.browser_download_url}`);
 }
 
 main().catch(err => {
