@@ -1,4 +1,4 @@
-import { APP_VERSION, GITHUB_REPO_OWNER, GITHUB_REPO_NAME } from './version';
+import { APP_VERSION, GITHUB_REPO_OWNER, GITHUB_REPO_NAME, GITHUB_READ_TOKEN } from './version';
 
 const DISMISSED_UPDATE_KEY = 'rs_dw_dismissed_update_version';
 const LAST_CHECK_KEY = 'rs_dw_last_update_check';
@@ -47,21 +47,53 @@ function formatBytes(bytes) {
 }
 
 /**
+ * Obtiene la URL de descarga directa prefirmada para repositorios privados
+ */
+export async function getApkDirectDownloadUrl(assetApiUrl, fallbackUrl) {
+  if (!assetApiUrl) return fallbackUrl;
+  try {
+    const headers = {
+      'Accept': 'application/octet-stream'
+    };
+    if (GITHUB_READ_TOKEN) {
+      headers['Authorization'] = `Bearer ${GITHUB_READ_TOKEN}`;
+    }
+
+    const response = await fetch(assetApiUrl, {
+      method: 'GET',
+      headers
+    });
+
+    if (response.ok || response.status === 200) {
+      return response.url || fallbackUrl;
+    }
+    return fallbackUrl;
+  } catch {
+    return fallbackUrl;
+  }
+}
+
+/**
  * Consulta la API de GitHub Releases para obtener la última versión publicada
  */
 export async function fetchLatestRelease(options = {}) {
-  const { timeout = 7000, repoOwner = GITHUB_REPO_OWNER, repoName = GITHUB_REPO_NAME } = options;
+  const { timeout = 8000, repoOwner = GITHUB_REPO_OWNER, repoName = GITHUB_REPO_NAME } = options;
   const url = `https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`;
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
 
   try {
+    const headers = {
+      'Accept': 'application/vnd.github.v3+json',
+    };
+    if (GITHUB_READ_TOKEN) {
+      headers['Authorization'] = `Bearer ${GITHUB_READ_TOKEN}`;
+    }
+
     const response = await fetch(url, {
       method: 'GET',
-      headers: {
-        'Accept': 'application/vnd.github.v3+json',
-      },
+      headers,
       signal: controller.signal
     });
 
@@ -98,6 +130,7 @@ export async function fetchLatestRelease(options = {}) {
       ? data.assets.find(asset => asset.name && asset.name.toLowerCase().endsWith('.apk'))
       : null;
 
+    const assetApiUrl = apkAsset?.url || null;
     const apkDownloadUrl = apkAsset?.browser_download_url || data.html_url;
     const apkFileName = apkAsset?.name || 'RS-Dragonwilds.apk';
     const apkFileSize = apkAsset ? formatBytes(apkAsset.size) : '';
@@ -116,6 +149,7 @@ export async function fetchLatestRelease(options = {}) {
         day: 'numeric'
       }) : '',
       releaseUrl: data.html_url,
+      assetApiUrl,
       apkDownloadUrl,
       apkFileName,
       apkFileSize,

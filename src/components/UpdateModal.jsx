@@ -10,7 +10,7 @@ import {
   Calendar,
   HardDrive
 } from 'lucide-react';
-import { dismissUpdateVersion } from '../utils/updateChecker';
+import { dismissUpdateVersion, getApkDirectDownloadUrl } from '../utils/updateChecker';
 
 export default function UpdateModal({ 
   isOpen, 
@@ -18,6 +18,8 @@ export default function UpdateModal({
   updateInfo,
   onDismiss 
 }) {
+  const [isDownloading, setIsDownloading] = React.useState(false);
+
   if (!isOpen || !updateInfo) return null;
 
   const {
@@ -26,6 +28,7 @@ export default function UpdateModal({
     releaseName,
     releaseNotes,
     publishedAt,
+    assetApiUrl,
     apkDownloadUrl,
     apkFileName,
     apkFileSize,
@@ -33,9 +36,17 @@ export default function UpdateModal({
     releaseUrl
   } = updateInfo;
 
-  const handleDownload = () => {
-    if (apkDownloadUrl) {
+  const handleDownload = async () => {
+    setIsDownloading(true);
+    try {
+      const finalUrl = await getApkDirectDownloadUrl(assetApiUrl, apkDownloadUrl);
+      if (finalUrl) {
+        window.open(finalUrl, '_system');
+      }
+    } catch {
       window.open(apkDownloadUrl, '_system');
+    } finally {
+      setIsDownloading(false);
     }
   };
 
@@ -257,9 +268,10 @@ export default function UpdateModal({
               className="btn-fantasy gold" 
               style={{ fontSize: '0.9rem', padding: '8px 18px', display: 'flex', alignItems: 'center', gap: '6px' }}
               onClick={handleDownload}
+              disabled={isDownloading}
             >
-              <Download size={16} />
-              <span>{hasDirectApk ? 'Descargar e Instalar APK' : 'Obtener Actualización'}</span>
+              <Download size={16} className={isDownloading ? 'spin-animation' : ''} />
+              <span>{isDownloading ? 'Preparando Descarga...' : (hasDirectApk ? 'Descargar e Instalar APK' : 'Obtener Actualización')}</span>
             </button>
           </div>
         </div>
