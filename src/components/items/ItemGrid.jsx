@@ -1,21 +1,18 @@
 import React from 'react';
 import { Flame, ChevronDown } from 'lucide-react';
-import ItemCard from '../common/ItemCard';
+import ItemCard from '../itemCard/ItemCard';
 
 export default function ItemGrid({
-  items,
-  visibleCount,
+  visibleItems,
+  totalFilteredCount,
   onLoadMore,
-  totalItems,
   onSelectItem,
   favorites,
   onToggleFavorite,
   plannerItems,
   onTogglePlanner
 }) {
-  const visibleItems = items.slice(0, visibleCount);
-
-  if (items.length === 0) {
+  if (totalFilteredCount === 0) {
     return (
       <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
         <Flame size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
@@ -23,7 +20,7 @@ export default function ItemGrid({
           No se encontraron objetos
         </h3>
         <p style={{ color: 'var(--text-secondary)', maxWidth: '400px', margin: '0 auto' }}>
-          Intenta cambiar los términos de búsqueda o los filtros de tipo para ver más resultados.
+          Intenta cambiar los términos de búsqueda o los separadores de tipo para ver más resultados.
         </p>
       </div>
     );
@@ -45,9 +42,10 @@ export default function ItemGrid({
         ))}
       </div>
 
-      {visibleItems.length < items.length && (
+      {/* Load More Button */}
+      {visibleItems.length < totalFilteredCount && (
         <div style={{ textAlign: 'center', marginTop: '30px' }}>
-          <button
+          <button 
             className="btn-fantasy gold"
             style={{ padding: '12px 30px', fontSize: '0.95rem' }}
             onClick={onLoadMore}

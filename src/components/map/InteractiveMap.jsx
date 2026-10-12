@@ -1,62 +1,45 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
-import {
-  Compass,
-  MapPin,
-  Search,
-  X,
-  Navigation as NavIcon,
-  Shield,
-  Scroll,
-  Flame
-} from 'lucide-react';
-import { ASHENFALL_REGIONS, MAP_MARKERS, findLocationsForMaterial } from '../../data/mapData';
-import { normalizeText } from '../../utils/searchUtils';
-import MapControls from './MapControls';
-import MapSidebar from './MapSidebar';
-import MapMarkerPopup from './MapMarkerPopup';
-import MapCoordinatesHUD from './MapCoordinatesHUD';
-import CustomMarkerModal from './CustomMarkerModal';
-import GameIcon from '../GameIcon';
+import { MAP_MARKERS, findLocationsForMaterial } from '../../data/mapData';
+import { STORAGE_KEYS } from './mapConstants';
+import { 
+  calculateRouteStats, 
+  filterVisibleMarkers, 
+  calculateCategoryCounts 
+} from './mapUtils';
+import MapTopBar from './MapTopBar';
+import MapCategoryBar from './MapCategoryBar';
+import MapHudControls from './MapHudControls';
+import MapTerrainSvg from './MapTerrainSvg';
+import MapPoiDetailCard from './MapPoiDetailCard';
+import MapRouteDrawer from './MapRouteDrawer';
 
-const MapTreasureIcon = (props) => (
-  <GameIcon name="treasure-map" size={props.size || 14} style={{ color: props.color, ...props.style }} />
-);
-
-const CATEGORY_META = {
-  all: { label: 'Todos', icon: MapTreasureIcon, color: 'var(--gold-400)' },
-  lodestones: { label: 'Piedras Guía', icon: MapTreasureIcon, color: '#48bb78' },
-  vaults: { label: 'Bóvedas Dragonkin', icon: Shield, color: '#4299e1' },
-  quests: { label: 'Misiones', icon: Scroll, color: '#ecc94b' },
-  bosses: { label: 'Jefes y Élites', icon: Flame, color: '#e53e3e' },
-  custom: { label: 'Mis Marcadores', icon: MapPin, color: '#ed8936' }
-};
-
-export default function InteractiveMap({
-  focusTarget = null,
-  onClearFocus = () => { },
-  onSelectQuest = () => { },
-  onSelectItem = () => { },
-  onSelectVault = () => { }
+export default function InteractiveMap({ 
+  focusTarget = null, 
+  onClearFocus = () => {},
+  onSelectQuest = () => {},
+  onSelectItem = () => {},
+  onSelectVault = () => {}
 }) {
   // Map Viewport Transformations
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: -100, y: -50 });
   const [isDragging, setIsDragging] = useState(false);
-  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [cursorCoords, setCursorCoords] = useState({ x: 500, y: 500 });
-
-  // Filtering, Search y Layer View
+  
+  // Filtering, Search & Layer View
   const [mapLayerType, setMapLayerType] = useState('satellite'); // 'satellite' | 'cartographic'
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [isRouteDrawerOpen, setIsRouteDrawerOpen] = useState(false);
   const [isAddingCustomPin, setIsAddingCustomPin] = useState(false);
+  const [customPinName, setCustomPinName] = useState('');
+  const [routeTitleInput, setRouteTitleInput] = useState('');
 
   // Custom User Saved Markers (localStorage)
   const [customMarkers, setCustomMarkers] = useState(() => {
     try {
-      const saved = localStorage.getItem('rs_dw_custom_map_markers');
+      const saved = localStorage.getItem(STORAGE_KEYS.CUSTOM_MARKERS);
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -65,79 +48,75 @@ export default function InteractiveMap({
 
   useEffect(() => {
     try {
-      localStorage.setItem('rs_dw_custom_map_markers', JSON.stringify(customMarkers));
-    } catch { }
+      localStorage.setItem(STORAGE_KEYS.CUSTOM_MARKERS, JSON.stringify(customMarkers));
+    } catch {}
   }, [customMarkers]);
 
   // Active Waypoints Route (localStorage)
   const [activeWaypoints, setActiveWaypoints] = useState(() => {
     try {
-      const saved = localStorage.getItem('rs_dw_active_route_waypoints');
+      const saved = localStorage.getItem(STORAGE_KEYS.ACTIVE_WAYPOINTS);
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
     }
   });
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.ACTIVE_WAYPOINTS, JSON.stringify(activeWaypoints));
+    } catch {}
+  }, [activeWaypoints]);
+
+  // Checked/Completed Waypoints (localStorage)
   const [checkedWaypoints, setCheckedWaypoints] = useState(() => {
     try {
-      const saved = localStorage.getItem('rs_dw_checked_waypoints');
+      const saved = localStorage.getItem(STORAGE_KEYS.CHECKED_WAYPOINTS);
       return saved ? JSON.parse(saved) : {};
     } catch {
       return {};
     }
   });
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.CHECKED_WAYPOINTS, JSON.stringify(checkedWaypoints));
+    } catch {}
+  }, [checkedWaypoints]);
+
+  // User Saved Routes Library (localStorage)
   const [savedRoutes, setSavedRoutes] = useState(() => {
     try {
-      const saved = localStorage.getItem('rs_dw_saved_routes');
+      const saved = localStorage.getItem(STORAGE_KEYS.SAVED_ROUTES);
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
     }
   });
 
-  const [routeTitleInput, setRouteTitleInput] = useState('');
-  const [customPinName, setCustomPinName] = useState('');
-  const [customPinColor, setCustomPinColor] = useState('#ed8936');
-  const [customPinNote, setCustomPinNote] = useState('');
-  const [pendingPinCoords, setPendingPinCoords] = useState(null);
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.SAVED_ROUTES, JSON.stringify(savedRoutes));
+    } catch {}
+  }, [savedRoutes]);
 
   const mapContainerRef = useRef(null);
   const mapSvgRef = useRef(null);
 
-  useEffect(() => {
-    try {
-      localStorage.setItem('rs_dw_active_route_waypoints', JSON.stringify(activeWaypoints));
-    } catch { }
-  }, [activeWaypoints]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('rs_dw_checked_waypoints', JSON.stringify(checkedWaypoints));
-    } catch { }
-  }, [checkedWaypoints]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem('rs_dw_saved_routes', JSON.stringify(savedRoutes));
-    } catch { }
-  }, [savedRoutes]);
-
-  // Handle Focus Target from External Navigation
+  // Handle Focus Target from External Navigation (Quest, Material, Vault)
   useEffect(() => {
     if (!focusTarget) return;
 
     if (focusTarget.coords) {
       const targetX = focusTarget.coords.x;
       const targetY = focusTarget.coords.y;
-
+      
       const containerWidth = mapContainerRef.current ? mapContainerRef.current.clientWidth : 800;
       const containerHeight = mapContainerRef.current ? mapContainerRef.current.clientHeight : 600;
-
+      
       const newPanX = containerWidth / 2 - targetX * 1.5;
       const newPanY = containerHeight / 2 - targetY * 1.5;
-
+      
       setZoom(1.5);
       setPan({ x: newPanX, y: newPanY });
 
@@ -164,17 +143,17 @@ export default function InteractiveMap({
     } else if (focusTarget.materialName) {
       const nodes = findLocationsForMaterial(focusTarget.materialName);
       if (nodes.length > 0) {
-        setSelectedCategory('all');
+        setSelectedCategory('resources');
         setSearchQuery(focusTarget.materialName);
-
+        
         const first = nodes[0];
         const containerWidth = mapContainerRef.current ? mapContainerRef.current.clientWidth : 800;
         const containerHeight = mapContainerRef.current ? mapContainerRef.current.clientHeight : 600;
-
+        
         setZoom(1.35);
-        setPan({
-          x: containerWidth / 2 - first.coords.x * 1.35,
-          y: containerHeight / 2 - first.coords.y * 1.35
+        setPan({ 
+          x: containerWidth / 2 - first.coords.x * 1.35, 
+          y: containerHeight / 2 - first.coords.y * 1.35 
         });
         setSelectedMarker(first);
 
@@ -192,222 +171,227 @@ export default function InteractiveMap({
     }
   }, [focusTarget]);
 
+  // Combine static markers and custom markers
   const allMarkers = useMemo(() => {
     return [...MAP_MARKERS, ...customMarkers];
   }, [customMarkers]);
 
+  // Filtered markers based on category and search
   const visibleMarkers = useMemo(() => {
-    return allMarkers.filter((m) => {
-      if (selectedCategory !== 'all') {
-        if (selectedCategory === 'custom' && !m.isCustom) return false;
-        if (selectedCategory !== 'custom' && m.category !== selectedCategory) return false;
-      }
-
-      if (searchQuery.trim()) {
-        const normQ = normalizeText(searchQuery);
-        const searchTarget = normalizeText(
-          `${m.title} ${m.region || ''} ${m.description || ''} ${m.materialNames?.join(' ') || ''} ${m.drops?.join(' ') || ''}`
-        );
-        if (!searchTarget.includes(normQ)) return false;
-      }
-
-      return true;
-    });
+    return filterVisibleMarkers(allMarkers, selectedCategory, searchQuery);
   }, [allMarkers, selectedCategory, searchQuery]);
 
+  // Route statistics
   const routeStats = useMemo(() => {
-    if (activeWaypoints.length < 2) {
-      return { totalDistMeters: 0, totalDistKm: '0.0', estMinutes: 0, stops: activeWaypoints.length };
-    }
-
-    let totalPixels = 0;
-    for (let i = 0; i < activeWaypoints.length - 1; i++) {
-      const p1 = activeWaypoints[i].coords;
-      const p2 = activeWaypoints[i + 1].coords;
-      const dist = Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
-      totalPixels += dist;
-    }
-
-    const meters = Math.round(totalPixels * 4.2);
-    const km = (meters / 1000).toFixed(1);
-    const minutes = Math.max(1, Math.round(meters / 260));
-
-    return { totalDistMeters: meters, totalDistKm: km, estMinutes: minutes, stops: activeWaypoints.length };
+    return calculateRouteStats(activeWaypoints);
   }, [activeWaypoints]);
 
+  // Category counts
   const categoryCounts = useMemo(() => {
-    const counts = { all: allMarkers.length, lodestones: 0, vaults: 0, quests: 0, bosses: 0, custom: customMarkers.length };
-    allMarkers.forEach((m) => {
-      if (counts[m.category] !== undefined) counts[m.category]++;
-    });
-    return counts;
+    return calculateCategoryCounts(allMarkers, customMarkers, MAP_MARKERS);
   }, [allMarkers, customMarkers]);
 
-  const centerOnCoord = (coords) => {
-    const containerWidth = mapContainerRef.current ? mapContainerRef.current.clientWidth : 800;
-    const containerHeight = mapContainerRef.current ? mapContainerRef.current.clientHeight : 600;
+  const isPointerDownRef = useRef(false);
+  const dragStartPosRef = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
+  const rafIdRef = useRef(null);
+  const pendingPanRef = useRef(null);
 
-    setZoom(1.6);
-    setPan({
-      x: containerWidth / 2 - coords.x * 1.6,
-      y: containerHeight / 2 - coords.y * 1.6
-    });
+  // High-performance pan updater synchronized with display refresh rate (rAF)
+  const updatePan = (newPan) => {
+    pendingPanRef.current = newPan;
+    if (!rafIdRef.current) {
+      rafIdRef.current = requestAnimationFrame(() => {
+        if (pendingPanRef.current) {
+          setPan(pendingPanRef.current);
+          pendingPanRef.current = null;
+        }
+        rafIdRef.current = null;
+      });
+    }
   };
 
+  useEffect(() => {
+    // Safety global mouseup listener so dragging never sticks outside container
+    const handleGlobalMouseUp = () => {
+      if (isPointerDownRef.current) {
+        isPointerDownRef.current = false;
+        setTimeout(() => setIsDragging(false), 40);
+      }
+    };
+    window.addEventListener('mouseup', handleGlobalMouseUp);
+    return () => {
+      window.removeEventListener('mouseup', handleGlobalMouseUp);
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+      }
+    };
+  }, []);
+
+  // Pan and Drag Handlers
   const handleMouseDown = (e) => {
     if (e.button !== 0) return;
-    setIsDragging(true);
-    setDragStart({ x: e.clientX - pan.x, y: e.clientY - pan.y });
+    isPointerDownRef.current = true;
+    dragStartPosRef.current = {
+      x: e.clientX,
+      y: e.clientY,
+      panX: pan.x,
+      panY: pan.y
+    };
+    setIsDragging(false);
   };
 
   const handleMouseMove = (e) => {
-    if (isDragging) {
-      setPan({
-        x: e.clientX - dragStart.x,
-        y: e.clientY - dragStart.y
-      });
+    // Only query getBoundingClientRect and update HUD coords when NOT dragging to prevent layout thrashing
+    if (!isPointerDownRef.current) {
+      if (mapSvgRef.current) {
+        const rect = mapSvgRef.current.getBoundingClientRect();
+        if (rect.width > 0 && rect.height > 0) {
+          const rawX = ((e.clientX - rect.left) / rect.width) * 1024;
+          const rawY = ((e.clientY - rect.top) / rect.height) * 1024;
+          const clampedX = Math.max(0, Math.min(1024, Math.round(rawX)));
+          const clampedY = Math.max(0, Math.min(1024, Math.round(rawY)));
+          setCursorCoords({ x: clampedX, y: clampedY });
+        }
+      }
+      return;
     }
 
-    if (mapContainerRef.current) {
-      const rect = mapContainerRef.current.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-      const mapX = Math.round((mouseX - pan.x) / zoom);
-      const mapY = Math.round((mouseY - pan.y) / zoom);
-      setCursorCoords({
-        x: Math.max(0, Math.min(1024, mapX)),
-        y: Math.max(0, Math.min(1024, mapY))
-      });
+    const dx = e.clientX - dragStartPosRef.current.x;
+    const dy = e.clientY - dragStartPosRef.current.y;
+
+    if (!isDragging && Math.hypot(dx, dy) > 5) {
+      setIsDragging(true);
     }
+
+    updatePan({
+      x: dragStartPosRef.current.panX + dx,
+      y: dragStartPosRef.current.panY + dy
+    });
   };
 
-  const handleMouseUp = () => setIsDragging(false);
-
-  const handleWheel = (e) => {
-    e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.15 : 0.85;
-    const newZoom = Math.min(3.5, Math.max(0.6, zoom * zoomFactor));
-
-    if (mapContainerRef.current) {
-      const rect = mapContainerRef.current.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-
-      const newPanX = mouseX - (mouseX - pan.x) * (newZoom / zoom);
-      const newPanY = mouseY - (mouseY - pan.y) * (newZoom / zoom);
-
-      setZoom(newZoom);
-      setPan({ x: newPanX, y: newPanY });
-    }
+  const handleMouseUp = () => {
+    isPointerDownRef.current = false;
+    setTimeout(() => {
+      setIsDragging(false);
+    }, 40);
   };
+
+  // Touch Handlers for Mobile
+  const touchStartRef = useRef({ dist: 0, pan: { x: 0, y: 0 }, touch: { x: 0, y: 0 } });
 
   const handleTouchStart = (e) => {
     if (e.touches.length === 1) {
-      setIsDragging(true);
-      setDragStart({ x: e.touches[0].clientX - pan.x, y: e.touches[0].clientY - pan.y });
+      touchStartRef.current.touch = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      touchStartRef.current.pan = { ...pan };
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchStartRef.current.dist = Math.hypot(dx, dy);
     }
   };
 
   const handleTouchMove = (e) => {
-    if (isDragging && e.touches.length === 1) {
-      setPan({
-        x: e.touches[0].clientX - dragStart.x,
-        y: e.touches[0].clientY - dragStart.y
+    if (e.touches.length === 1) {
+      const dx = e.touches[0].clientX - touchStartRef.current.touch.x;
+      const dy = e.touches[0].clientY - touchStartRef.current.touch.y;
+      updatePan({
+        x: touchStartRef.current.pan.x + dx,
+        y: touchStartRef.current.pan.y + dy
       });
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const newDist = Math.hypot(dx, dy);
+      const ratio = newDist / (touchStartRef.current.dist || newDist);
+      
+      setZoom((prev) => Math.min(3.5, Math.max(0.6, prev * ratio)));
+      touchStartRef.current.dist = newDist;
     }
   };
 
-  const handleResetView = () => {
-    const containerWidth = mapContainerRef.current ? mapContainerRef.current.clientWidth : 800;
-    const containerHeight = mapContainerRef.current ? mapContainerRef.current.clientHeight : 600;
-    setZoom(1);
-    setPan({
-      x: (containerWidth - 1024) / 2,
-      y: (containerHeight - 1024) / 2
-    });
-  };
+  // Wheel Zoom (registered as non-passive to allow e.preventDefault without console warnings)
+  useEffect(() => {
+    const container = mapContainerRef.current;
+    if (!container) return;
 
-  const handleToggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      mapContainerRef.current?.requestFullscreen().catch(() => { });
-    } else {
-      document.exitFullscreen().catch(() => { });
-    }
-  };
-
-  const handleMapClick = (e) => {
-    if (isAddingCustomPin) {
-      const rect = mapContainerRef.current.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-      const mapX = Math.round((mouseX - pan.x) / zoom);
-      const mapY = Math.round((mouseY - pan.y) / zoom);
-
-      setPendingPinCoords({ x: mapX, y: mapY });
-      setIsAddingCustomPin(false);
-    }
-  };
-
-  const handleSaveCustomPin = () => {
-    if (!customPinName.trim() || !pendingPinCoords) return;
-
-    const newPin = {
-      id: `custom-${Date.now()}`,
-      title: customPinName.trim(),
-      coords: pendingPinCoords,
-      description: customPinNote.trim() || 'Marcador personalizado del aventurero.',
-      category: 'custom',
-      color: customPinColor,
-      isCustom: true
+    const handleWheel = (e) => {
+      e.preventDefault();
+      const zoomFactor = e.deltaY < 0 ? 1.15 : 0.88;
+      setZoom((prev) => Math.min(3.5, Math.max(0.6, prev * zoomFactor)));
     };
 
-    setCustomMarkers((prev) => [...prev, newPin]);
-    setSelectedMarker(newPin);
-    setPendingPinCoords(null);
-    setCustomPinName('');
-    setCustomPinNote('');
+    container.addEventListener('wheel', handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
+
+  // Map Click (Custom Pin Placement)
+  const handleMapClick = (e) => {
+    if (isDragging) return;
+
+    if (mapSvgRef.current) {
+      const rect = mapSvgRef.current.getBoundingClientRect();
+      const clickX = Math.round(((e.clientX - rect.left) / rect.width) * 1024);
+      const clickY = Math.round(((e.clientY - rect.top) / rect.height) * 1024);
+
+      if (isAddingCustomPin) {
+        const newPin = {
+          id: `custom-${Date.now()}`,
+          title: customPinName.trim() || `Marcador #${customMarkers.length + 1}`,
+          category: 'custom',
+          coords: { x: clickX, y: clickY },
+          region: 'Marcador Personal',
+          description: 'Punto de interés personalizado creado por el jugador.',
+          icon: 'MapPin',
+          color: '#ed8936',
+          isCustom: true
+        };
+        setCustomMarkers((prev) => [...prev, newPin]);
+        setIsAddingCustomPin(false);
+        setCustomPinName('');
+        setSelectedMarker(newPin);
+      }
+    }
   };
 
-  const handleAddWaypoint = (wp) => {
-    setActiveWaypoints((prev) => [...prev, wp]);
+  // Waypoints actions
+  const handleAddWaypoint = (marker) => {
+    setActiveWaypoints((prev) => [
+      ...prev,
+      {
+        id: `wp-${Date.now()}`,
+        title: marker.title,
+        coords: marker.coords,
+        note: marker.description
+      }
+    ]);
     setIsRouteDrawerOpen(true);
-  };
-
-  const handleToggleCheckedWaypoint = (wpId) => {
-    setCheckedWaypoints((prev) => ({ ...prev, [wpId]: !prev[wpId] }));
-  };
-
-  const handleMoveWaypoint = (index, direction) => {
-    const newIndex = direction === 'up' ? index - 1 : index + 1;
-    if (newIndex < 0 || newIndex >= activeWaypoints.length) return;
-    const items = [...activeWaypoints];
-    const [moved] = items.splice(index, 1);
-    items.splice(newIndex, 0, moved);
-    setActiveWaypoints(items);
   };
 
   const handleRemoveWaypoint = (index) => {
     setActiveWaypoints((prev) => prev.filter((_, i) => i !== index));
   };
 
-  const handleLoadPresetRoute = (preset) => {
-    setActiveWaypoints(preset.waypoints);
-    setCheckedWaypoints({});
-    setIsRouteDrawerOpen(true);
-    if (preset.waypoints.length > 0) {
-      centerOnCoord(preset.waypoints[0].coords);
-    }
+  const handleMoveWaypoint = (index, direction) => {
+    if (direction === 'up' && index === 0) return;
+    if (direction === 'down' && index === activeWaypoints.length - 1) return;
+    
+    setActiveWaypoints((prev) => {
+      const copy = [...prev];
+      const targetIdx = direction === 'up' ? index - 1 : index + 1;
+      const temp = copy[index];
+      copy[index] = copy[targetIdx];
+      copy[targetIdx] = temp;
+      return copy;
+    });
   };
 
-  const handleSaveCurrentRoute = () => {
-    if (!routeTitleInput.trim()) return;
-    const newRoute = {
-      id: `saved-route-${Date.now()}`,
-      title: routeTitleInput.trim(),
-      waypoints: [...activeWaypoints]
-    };
-    setSavedRoutes((prev) => [...prev, newRoute]);
-    setRouteTitleInput('');
+  const handleToggleCheckedWaypoint = (wpId) => {
+    setCheckedWaypoints((prev) => ({
+      ...prev,
+      [wpId]: !prev[wpId]
+    }));
   };
 
   const handleClearRoute = () => {
@@ -415,315 +399,133 @@ export default function InteractiveMap({
     setCheckedWaypoints({});
   };
 
+  const handleLoadPresetRoute = (preset) => {
+    setActiveWaypoints(preset.waypoints);
+    setCheckedWaypoints({});
+    setIsRouteDrawerOpen(true);
+  };
+
+  const handleSaveCurrentRoute = () => {
+    if (!routeTitleInput.trim() || activeWaypoints.length === 0) return;
+    const newSaved = {
+      id: `saved-${Date.now()}`,
+      title: routeTitleInput.trim(),
+      waypoints: activeWaypoints,
+      date: new Date().toLocaleDateString('es-ES')
+    };
+    setSavedRoutes((prev) => [...prev, newSaved]);
+    setRouteTitleInput('');
+  };
+
+  const centerOnCoord = (coords) => {
+    if (!mapContainerRef.current) return;
+    const width = mapContainerRef.current.clientWidth;
+    const height = mapContainerRef.current.clientHeight;
+    setPan({
+      x: width / 2 - coords.x * zoom,
+      y: height / 2 - coords.y * zoom
+    });
+  };
+
+  const handleResetView = () => {
+    setZoom(1);
+    if (mapContainerRef.current) {
+      const width = mapContainerRef.current.clientWidth;
+      const height = mapContainerRef.current.clientHeight;
+      setPan({ x: width / 2 - 500, y: height / 2 - 500 });
+    } else {
+      setPan({ x: -100, y: -50 });
+    }
+  };
+
   return (
-    <div className="interactive-map-root">
-      {/* Top Header Bar with Search y Route Toggle */}
-      <div className="map-top-bar">
-        <div className="map-title-wrap">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <GameIcon name="treasure-map" size={22} color="var(--gold-400)" />
-            <h2 className="map-title">Mapa Interactivo de Ashenfall</h2>
-          </div>
-          <span className="map-subtitle">Continente Ancestral de Dragonwilds</span>
-        </div>
-
-        <div className="map-actions-wrap">
-          <div className="map-search-box">
-            <Search size={16} className="map-search-icon" />
-            <input
-              type="text"
-              placeholder="Buscar recurso, misión, bóveda o jefe..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="map-search-input"
-            />
-            {searchQuery && (
-              <button className="map-search-clear" onClick={() => setSearchQuery('')}>
-                <X size={14} />
-              </button>
-            )}
-          </div>
-
-          <button
-            className={`btn-fantasy map-route-toggle-btn ${activeWaypoints.length > 0 ? 'gold' : ''}`}
-            onClick={() => setIsRouteDrawerOpen((prev) => !prev)}
-          >
-            <NavIcon size={16} />
-            <span>Ruta ({activeWaypoints.length})</span>
-            {activeWaypoints.length > 0 && (
-              <span className="badge" style={{ background: '#48bb78', color: '#000', fontWeight: 'bold' }}>
-                {routeStats.totalDistKm} km
-              </span>
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Sidebar y Route Drawer */}
-      <MapSidebar
+    <div className="map-view-container">
+      {/* Top Header & Search Bar */}
+      <MapTopBar
         searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        selectedCategory={selectedCategory}
-        onCategoryChange={setSelectedCategory}
-        categoryMeta={CATEGORY_META}
-        categoryCounts={categoryCounts}
+        setSearchQuery={setSearchQuery}
         isRouteDrawerOpen={isRouteDrawerOpen}
-        onToggleRouteDrawer={() => setIsRouteDrawerOpen((prev) => !prev)}
-        activeWaypoints={activeWaypoints}
-        checkedWaypoints={checkedWaypoints}
-        routeStats={routeStats}
-        onToggleCheckedWaypoint={handleToggleCheckedWaypoint}
-        onCenterCoord={centerOnCoord}
-        onMoveWaypoint={handleMoveWaypoint}
-        onRemoveWaypoint={handleRemoveWaypoint}
-        onLoadPresetRoute={handleLoadPresetRoute}
-        routeTitleInput={routeTitleInput}
-        onRouteTitleInputChange={setRouteTitleInput}
-        onSaveCurrentRoute={handleSaveCurrentRoute}
-        onClearRoute={handleClearRoute}
+        setIsRouteDrawerOpen={setIsRouteDrawerOpen}
+        activeWaypointsCount={activeWaypoints.length}
+        routeKm={routeStats.totalDistKm}
+      />
+
+      {/* Category Filter Pills */}
+      <MapCategoryBar
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        categoryCounts={categoryCounts}
       />
 
       {/* Main Interactive Map Viewport */}
-      <div
-        className="map-canvas-wrapper"
+      <div 
+        className="map-canvas-wrapper" 
         ref={mapContainerRef}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
-        onWheel={handleWheel}
         style={{ cursor: isDragging ? 'grabbing' : (isAddingCustomPin ? 'crosshair' : 'grab') }}
       >
-        <MapCoordinatesHUD cursorCoords={cursorCoords} zoom={zoom} />
-
-        <MapControls
-          zoom={zoom}
-          onZoomIn={() => setZoom((prev) => Math.min(3.5, prev * 1.25))}
-          onZoomOut={() => setZoom((prev) => Math.max(0.6, prev * 0.8))}
-          onResetView={handleResetView}
-          onToggleFullscreen={handleToggleFullscreen}
-          mapLayerType={mapLayerType}
-          onToggleLayer={() => setMapLayerType((prev) => prev === 'satellite' ? 'cartographic' : 'satellite')}
+        {/* Floating Map HUD & Controls */}
+        <MapHudControls
+          cursorCoords={cursorCoords}
           isAddingCustomPin={isAddingCustomPin}
-          onToggleAddCustomPin={() => setIsAddingCustomPin((prev) => !prev)}
-          isRouteDrawerOpen={isRouteDrawerOpen}
-          onToggleRouteDrawer={() => setIsRouteDrawerOpen((prev) => !prev)}
-          activeWaypointsCount={activeWaypoints.length}
+          setIsAddingCustomPin={setIsAddingCustomPin}
+          zoom={zoom}
+          setZoom={setZoom}
+          onResetView={handleResetView}
+          mapLayerType={mapLayerType}
+          setMapLayerType={setMapLayerType}
         />
 
-        {/* Compass Rose */}
-        <div className="map-compass-rose">
-          <span className="compass-n">N</span>
-          <div className="compass-pointer">
-            <GameIcon name="compass" size={24} color="var(--gold-400)" />
-          </div>
-          <span className="compass-region">ASHENFALL</span>
-        </div>
-
-        {/* Map SVG Layer */}
-        <div
+        {/* Map SVG & Terrain Vector Renderer */}
+        <div 
           className="map-transform-layer"
           style={{
-            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+            transform: `translate3d(${pan.x}px, ${pan.y}px, 0) scale(${zoom})`,
             transformOrigin: '0 0'
           }}
           onClick={handleMapClick}
         >
-          <svg
-            ref={mapSvgRef}
-            width="1024"
-            height="1024"
-            viewBox="0 0 1024 1024"
-            className="ashenfall-svg-map"
-            style={{ overflow: 'visible' }}
-          >
-            <defs>
-              <radialGradient id="oceanGrad" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#0b111a" />
-                <stop offset="100%" stopColor="#06090e" />
-              </radialGradient>
-              <pattern id="coordGrid" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255, 255, 255, 0.05)" strokeWidth="1" />
-              </pattern>
-            </defs>
-
-            {/* MAP BASE LAYER */}
-            {mapLayerType === 'satellite' ? (
-              <g className="wiki-tiles-layer">
-                <rect width="1024" height="1024" fill="#080c12" />
-                <image
-                  href="/map/ashenfall-full.jpg"
-                  x="0"
-                  y="0"
-                  width="1024"
-                  height="1024"
-                  preserveAspectRatio="none"
-                />
-                <rect width="1024" height="1024" fill="url(#coordGrid)" opacity="0.35" pointerEvents="none" />
-              </g>
-            ) : (
-              <g className="cartographic-layer">
-                <rect width="1024" height="1024" fill="url(#oceanGrad)" />
-                <rect width="1024" height="1024" fill="url(#coordGrid)" />
-                <path
-                  d="M 180 140 Q 350 80, 560 90 Q 780 100, 890 190 Q 960 300, 920 480 Q 940 660, 860 780 Q 720 900, 480 890 Q 260 880, 160 760 Q 80 620, 90 440 Q 100 260, 180 140 Z"
-                  fill="#141923"
-                  stroke="var(--gold-border)"
-                  strokeWidth="3"
-                  className="landmass-outline"
-                />
-              </g>
-            )}
-
-            {/* Region Labels */}
-            {ASHENFALL_REGIONS.map((reg) => {
-              const centerX = reg.bounds.x + reg.bounds.width / 2;
-              const centerY = reg.bounds.y + reg.bounds.height / 2;
-              const lines = reg.lines || [reg.name.toUpperCase()];
-              const isMultiLine = lines.length > 1;
-
-              return (
-                <g key={reg.id} className="map-region-label-group">
-                  <text
-                    x={centerX}
-                    y={isMultiLine ? centerY - (lines.length - 1) * 7 : centerY}
-                    textAnchor="middle"
-                    className="map-region-label"
-                  >
-                    {lines.map((line, lineIdx) => (
-                      <tspan key={lineIdx} x={centerX} dy={lineIdx === 0 ? 0 : 15}>
-                        {line}
-                      </tspan>
-                    ))}
-                  </text>
-                  <text
-                    x={centerX}
-                    y={isMultiLine ? centerY + 15 * lines.length - 2 : centerY + 18}
-                    textAnchor="middle"
-                    className="map-region-tier"
-                  >
-                    Tier {reg.tier} · Peligro: {reg.dangerLevel}
-                  </text>
-                </g>
-              );
-            })}
-
-            {/* Route Connector Lines */}
-            {activeWaypoints.length > 1 && (
-              <g className="route-polyline-group">
-                <polyline
-                  points={activeWaypoints.map((wp) => `${wp.coords.x},${wp.coords.y}`).join(' ')}
-                  fill="none"
-                  stroke="#ecc94b"
-                  strokeWidth="5"
-                  strokeOpacity="0.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  points={activeWaypoints.map((wp) => `${wp.coords.x},${wp.coords.y}`).join(' ')}
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="2.5"
-                  strokeDasharray="8 6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="animated-route-line"
-                />
-              </g>
-            )}
-
-            {/* POI Markers */}
-            {visibleMarkers.map((marker) => {
-              const isSelected = selectedMarker?.id === marker.id;
-              const isWaypoint = activeWaypoints.some((wp) => wp.coords.x === marker.coords.x && wp.coords.y === marker.coords.y);
-              const waypointIndex = activeWaypoints.findIndex((wp) => wp.coords.x === marker.coords.x && wp.coords.y === marker.coords.y);
-
-              return (
-                <g
-                  key={marker.id}
-                  transform={`translate(${marker.coords.x}, ${marker.coords.y})`}
-                  className={`map-marker-pin-group ${isSelected ? 'selected' : ''}`}
-                  style={{ pointerEvents: 'auto', cursor: 'pointer' }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    setSelectedMarker(marker);
-                  }}
-                >
-                  {isSelected && (
-                    <circle
-                      r="22"
-                      fill="none"
-                      stroke={marker.color || 'var(--gold-400)'}
-                      strokeWidth="2"
-                      className="marker-pulse-ring"
-                    />
-                  )}
-
-                  <circle
-                    r="12"
-                    fill={marker.color || '#48bb78'}
-                    stroke="#fff"
-                    strokeWidth="1.5"
-                    className="map-marker-circle"
-                  />
-
-                  {isWaypoint ? (
-                    <text
-                      y="4"
-                      textAnchor="middle"
-                      fill="#000"
-                      fontSize="11"
-                      fontWeight="bold"
-                      fontFamily="var(--font-sans)"
-                      pointerEvents="none"
-                    >
-                      {waypointIndex + 1}
-                    </text>
-                  ) : (
-                    <circle r="4" fill="#0b111a" pointerEvents="none" />
-                  )}
-
-                  <text
-                    y="-16"
-                    textAnchor="middle"
-                    className="marker-label-text"
-                    pointerEvents="none"
-                  >
-                    {marker.title}
-                  </text>
-                </g>
-              );
-            })}
-          </svg>
+          <MapTerrainSvg
+            mapSvgRef={mapSvgRef}
+            mapLayerType={mapLayerType}
+            visibleMarkers={visibleMarkers}
+            selectedMarker={selectedMarker}
+            setSelectedMarker={setSelectedMarker}
+            activeWaypoints={activeWaypoints}
+            checkedWaypoints={checkedWaypoints}
+          />
         </div>
       </div>
 
-      {/* Selected Marker Popup */}
-      {selectedMarker && (
-        <MapMarkerPopup
-          marker={selectedMarker}
-          onClose={() => setSelectedMarker(null)}
-          onAddWaypoint={handleAddWaypoint}
-          onCenterCoord={centerOnCoord}
-          onSelectVault={onSelectVault}
-        />
-      )}
+      {/* Selected Marker Detail Card */}
+      <MapPoiDetailCard
+        marker={selectedMarker}
+        onClose={() => setSelectedMarker(null)}
+        onSelectVault={onSelectVault}
+        onAddWaypoint={handleAddWaypoint}
+        onCenter={centerOnCoord}
+      />
 
-      {/* Custom Marker Creation Modal */}
-      <CustomMarkerModal
-        isOpen={!!pendingPinCoords}
-        onClose={() => setPendingPinCoords(null)}
-        coords={pendingPinCoords || { x: 0, y: 0 }}
-        pinName={customPinName}
-        onPinNameChange={setCustomPinName}
-        pinColor={customPinColor}
-        onPinColorChange={setCustomPinColor}
-        pinNote={customPinNote}
-        onPinNoteChange={setCustomPinNote}
-        onSave={handleSaveCustomPin}
+      {/* Route Planner Drawer */}
+      <MapRouteDrawer
+        isOpen={isRouteDrawerOpen}
+        onClose={() => setIsRouteDrawerOpen(false)}
+        activeWaypoints={activeWaypoints}
+        checkedWaypoints={checkedWaypoints}
+        routeStats={routeStats}
+        routeTitleInput={routeTitleInput}
+        setRouteTitleInput={setRouteTitleInput}
+        onToggleCheck={handleToggleCheckedWaypoint}
+        onMoveWaypoint={handleMoveWaypoint}
+        onRemoveWaypoint={handleRemoveWaypoint}
+        onClearRoute={handleClearRoute}
+        onLoadPresetRoute={handleLoadPresetRoute}
+        onSaveCurrentRoute={handleSaveCurrentRoute}
+        onCenterCoord={centerOnCoord}
       />
     </div>
   );

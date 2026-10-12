@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import spellsData from '../../data/spells.json';
 import { normalizeText, getWordStems } from '../../utils/searchUtils';
 import SpellFilterBar from './SpellFilterBar';
+import SpellsBanner from './SpellsBanner';
 import SpellCard from './SpellCard';
 import SpellDetailModal from './SpellDetailModal';
 import GameIcon from '../GameIcon';
@@ -52,7 +53,7 @@ export default function SpellsViewer() {
 
   return (
     <div className="spells-viewer-container">
-      {/* Filters */}
+      {/* Barra de Filtros y Búsqueda */}
       <SpellFilterBar
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
@@ -61,39 +62,13 @@ export default function SpellsViewer() {
         categories={SPELL_CATEGORIES}
       />
 
-      {/* Overview Banner */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '12px',
-          padding: '14px 20px',
-          marginBottom: '20px',
-          background: 'rgba(128, 90, 213, 0.1)',
-          border: '1px solid rgba(159, 122, 234, 0.3)',
-          borderRadius: 'var(--radius-lg)'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <GameIcon name="sparkles" size={24} color="#b794f4" />
-          <div>
-            <h3 style={{ fontFamily: 'var(--font-title)', color: '#d6bcfa', fontSize: '1.05rem', margin: 0 }}>
-              GRIMORIO ARCANO DE ASHENFALL
-            </h3>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-              Canalización de runas elementales y magia de combate
-            </span>
-          </div>
-        </div>
+      {/* Banner Informativo del Grimorio */}
+      <SpellsBanner
+        filteredCount={filteredSpells.length}
+        totalCount={spellsData.length}
+      />
 
-        <div style={{ color: 'var(--gold-400)', fontFamily: 'var(--font-title)', fontSize: '0.85rem' }}>
-          Mostrando <strong>{filteredSpells.length}</strong> de <strong>{spellsData.length}</strong> hechizos
-        </div>
-      </div>
-
-      {/* Spells Grid */}
+      {/* Rejilla de Hechizos o Estado Vacío */}
       {filteredSpells.length === 0 ? (
         <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
           <GameIcon name="lightning-arc" size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
@@ -105,7 +80,7 @@ export default function SpellsViewer() {
           </p>
         </div>
       ) : (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
+        <div className="spells-grid">
           {filteredSpells.map((spell) => (
             <SpellCard
               key={spell.id}
@@ -116,7 +91,7 @@ export default function SpellsViewer() {
         </div>
       )}
 
-      {/* Spell Detail Modal */}
+      {/* Modal de Detalle del Hechizo */}
       {selectedSpellModal && (
         <SpellDetailModal
           spell={selectedSpellModal}

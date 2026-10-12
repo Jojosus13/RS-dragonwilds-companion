@@ -20,7 +20,7 @@ export default function SpellCard({ spell, onSelect }) {
     >
       {/* Header: Icon, Name y Magic Level Badge */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0, flex: 1 }}>
           <div className="item-icon-frame" style={{ width: '42px', height: '42px', flexShrink: 0, padding: '3px' }}>
             <img
               src={spell.image}
@@ -36,11 +36,11 @@ export default function SpellCard({ spell, onSelect }) {
               }}
             />
           </div>
-          <div>
-            <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '1.02rem', color: 'var(--text-primary)', margin: 0 }}>
+          <div style={{ minWidth: 0 }}>
+            <h4 style={{ fontFamily: 'var(--font-title)', fontSize: '1.02rem', color: 'var(--text-primary)', margin: 0, wordBreak: 'break-word' }}>
               {spell.name}
             </h4>
-            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               {spell.englishTitle}
             </span>
           </div>

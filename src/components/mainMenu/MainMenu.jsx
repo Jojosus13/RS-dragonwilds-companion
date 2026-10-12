@@ -5,6 +5,7 @@ import PersonalHub from './PersonalHub';
 import PortalsGrid from './PortalsGrid';
 import CategoryExplorer from './CategoryExplorer';
 import SurvivalTips from './SurvivalTips';
+import MenuFooter from './MenuFooter';
 
 export default function MainMenu({
   setActiveView,
@@ -16,7 +17,13 @@ export default function MainMenu({
   loadout = {},
   allItems = [],
   quests = [],
-  spells = []
+  spells = [],
+  onViewQuestOnMap,
+  onCheckForUpdates = () => {},
+  isCheckingUpdate = false,
+  updateInfo = null,
+  updateCheckMessage = null,
+  onOpenUpdateModal = () => {}
 }) {
   const equippedCount = Object.keys(loadout).filter((k) => !!loadout[k]).length;
 
@@ -68,18 +75,14 @@ export default function MainMenu({
       {/* Survival Guide y Tips */}
       <SurvivalTips />
 
-      {/* Footer Info */}
-      <footer className="menu-footer">
-        <div className="menu-footer-content">
-          <img src="/icon.svg" alt="Dragonwilds Logo" className="footer-logo" />
-          <div>
-            <p className="footer-title">RuneScape: Dragonwilds Companion App</p>
-            <p className="footer-sub">
-              Compendio no oficial y base de datos interactiva. Diseñado para jugadores de PC, Móvil y Tablet.
-            </p>
-          </div>
-        </div>
-      </footer>
+      {/* Footer Info & App Updates */}
+      <MenuFooter
+        onCheckForUpdates={onCheckForUpdates}
+        isCheckingUpdate={isCheckingUpdate}
+        updateInfo={updateInfo}
+        updateCheckMessage={updateCheckMessage}
+        onOpenUpdateModal={onOpenUpdateModal}
+      />
     </div>
   );
 }

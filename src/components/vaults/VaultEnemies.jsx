@@ -45,7 +45,7 @@ export default function VaultEnemies({ enemies, powerLevel }) {
         </div>
       )}
 
-      {/* Soulrifted / Spiritual Realm Enemies */}
+      {/* Soulrifted / Spiritual Realm Enemies (if applicable, e.g. Vekchenven Kara) */}
       {enemies.soulrifted && enemies.soulrifted.length > 0 && (
         <div className="vault-subtable-block">
           <div className="subtable-banner">

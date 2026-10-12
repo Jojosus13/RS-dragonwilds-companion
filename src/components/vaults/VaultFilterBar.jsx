@@ -1,41 +1,30 @@
 import React from 'react';
 import { Search, X } from 'lucide-react';
-import GameIcon from '../GameIcon';
-
-export const POWER_LEVEL_COLORS = {
-  2: { label: 'Nivel 2', bg: 'rgba(72, 187, 120, 0.15)', text: '#48bb78', border: 'rgba(72, 187, 120, 0.35)' },
-  3: { label: 'Nivel 3', bg: 'rgba(66, 153, 225, 0.15)', text: '#4299e1', border: 'rgba(66, 153, 225, 0.35)' },
-  4: { label: 'Nivel 4', bg: 'rgba(237, 137, 54, 0.15)', text: '#ed8936', border: 'rgba(237, 137, 54, 0.35)' },
-  5: { label: 'Nivel 5', bg: 'rgba(159, 122, 234, 0.15)', text: '#9f7aea', border: 'rgba(159, 122, 234, 0.35)' },
-  7: { label: 'Nivel 7 (Élite)', bg: 'rgba(245, 101, 101, 0.2)', text: '#fc8181', border: 'rgba(245, 101, 101, 0.4)' }
-};
 
 export default function VaultFilterBar({
   searchQuery,
-  onSearchChange,
+  setSearchQuery,
   regionFilter,
-  onRegionChange,
+  setRegionFilter,
   levelFilter,
-  onLevelChange,
-  regionsList,
-  totalResults
+  setLevelFilter
 }) {
   return (
-    <div className="search-filter-section">
+    <div className="vaults-filters-bar">
       {/* Search Input */}
-      <div className="search-input-wrapper">
+      <div className="vaults-search-input-wrap">
         <Search size={18} className="search-icon" />
         <input
           type="text"
-          placeholder="Buscar por nombre, botín, trampas, región..."
+          className="vaults-search-input"
+          placeholder="Buscar bóveda por nombre, región, botín (ej. Látigo Abisal, Escudo Anti-dragón, Vekchenven)..."
           value={searchQuery}
-          onChange={(e) => onSearchChange(e.target.value)}
-          className="search-input"
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         {searchQuery && (
           <button
             className="search-clear-btn"
-            onClick={() => onSearchChange('')}
+            onClick={() => setSearchQuery('')}
             title="Limpiar búsqueda"
           >
             <X size={16} />
@@ -43,48 +32,42 @@ export default function VaultFilterBar({
         )}
       </div>
 
-      {/* Selects Row */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <GameIcon name="treasure-map" size={14} color="var(--gold-400)" />
-            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
-              REGIÓN:
-            </span>
-            <select
-              value={regionFilter}
-              onChange={(e) => onRegionChange(e.target.value)}
-              className="select-fantasy"
-            >
-              <option value="all">Todas las Regiones</option>
-              {regionsList.map((reg) => (
-                <option key={reg} value={reg}>{reg}</option>
-              ))}
-            </select>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <GameIcon name="shield" size={14} color="#63b3ed" />
-            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
-              PODER:
-            </span>
-            <select
-              value={levelFilter}
-              onChange={(e) => onLevelChange(e.target.value)}
-              className="select-fantasy"
-            >
-              <option value="all">Todos los Niveles</option>
-              <option value="2">Nivel de Poder 2</option>
-              <option value="3">Nivel de Poder 3</option>
-              <option value="4">Nivel de Poder 4</option>
-              <option value="5">Nivel de Poder 5</option>
-              <option value="7">Nivel de Poder 7 (Élite)</option>
-            </select>
-          </div>
+      {/* Quick Filters */}
+      <div className="vaults-filter-controls">
+        {/* Region Filter */}
+        <div className="filter-select-wrap">
+          <label>Región:</label>
+          <select
+            className="custom-select vaults-filter-select"
+            value={regionFilter}
+            onChange={(e) => setRegionFilter(e.target.value)}
+          >
+            <option value="all">Todas las Regiones</option>
+            <option value="Brynmoor">Brynmoor y Bosque del Templo</option>
+            <option value="Whispering">Pantano Susurrante</option>
+            <option value="Fractured">Llanura Quebrada (Fractured Plains)</option>
+            <option value="Bloodblight">Pantano Malasangre (Bloodblight)</option>
+            <option value="Stormtouched">Tierras Altas (Highlands)</option>
+            <option value="Fellhollow">Fellhollow y Lago de las Almas</option>
+            <option value="Umbral">Arenas Sombrías (Umbral Sands)</option>
+          </select>
         </div>
 
-        <div style={{ color: 'var(--gold-400)', fontFamily: 'var(--font-title)', fontSize: '0.82rem' }}>
-          <strong>{totalResults}</strong> Bóvedas
+        {/* Level Filter */}
+        <div className="filter-select-wrap">
+          <label>Nivel:</label>
+          <select
+            className="custom-select vaults-filter-select"
+            value={levelFilter}
+            onChange={(e) => setLevelFilter(e.target.value)}
+          >
+            <option value="all">Todos los Niveles</option>
+            <option value="2">Nivel 2 (Básico / Starter)</option>
+            <option value="3">Nivel 3 (Intermedio)</option>
+            <option value="4">Nivel 4 (Avanzado)</option>
+            <option value="5">Nivel 5 (Maestro / Fellhollow)</option>
+            <option value="7">Nivel 7 (Élite / Arenas Sombrías)</option>
+          </select>
         </div>
       </div>
     </div>

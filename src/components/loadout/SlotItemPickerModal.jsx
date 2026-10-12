@@ -1,6 +1,7 @@
 import React from 'react';
-import { X, Search, Flame } from 'lucide-react';
+import { X, Search } from 'lucide-react';
 import GameIcon from '../GameIcon';
+import CandidateItemRow from './CandidateItemRow';
 
 export default function SlotItemPickerModal({
   activeSlotConfig,
@@ -144,7 +145,7 @@ export default function SlotItemPickerModal({
         <div className="modal-body" style={{ maxHeight: '55vh', padding: '16px' }}>
           {slotCandidates.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '30px' }}>
-              <Flame size={32} color="var(--gold-500)" style={{ margin: '0 auto 10px' }} />
+              <GameIcon name="fire" size={32} color="var(--gold-500)" style={{ margin: '0 auto 10px' }} />
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
                 No se encontraron objetos con los filtros seleccionados.
               </p>
@@ -152,59 +153,11 @@ export default function SlotItemPickerModal({
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               {slotCandidates.map((cand) => (
-                <div
+                <CandidateItemRow
                   key={cand.id}
-                  className="craft-item-row"
-                  style={{ cursor: 'pointer', transition: 'all 0.2s' }}
-                  onClick={() => onEquipItem(activeSlotConfig.id, cand)}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0, flex: 1 }}>
-                    <div className="item-icon-frame" style={{ width: '40px', height: '40px' }}>
-                      <img
-                        src={cand.image}
-                        alt={cand.name}
-                        className="item-icon-img"
-                        referrerPolicy="no-referrer"
-                        style={{ width: '30px', height: '30px' }}
-                      />
-                    </div>
-                    <div style={{ minWidth: 0, flex: 1 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        <h4
-                          style={{
-                            color: '#fff',
-                            fontFamily: 'var(--font-title)',
-                            fontSize: '0.95rem',
-                            whiteSpace: 'nowrap',
-                            overflow: 'hidden',
-                            textOverflow: 'ellipsis'
-                          }}
-                        >
-                          {cand.name}
-                        </h4>
-                        {cand.powerLevel && (
-                          <span className="power-level-crest tier-7" style={{ fontSize: '0.68rem', padding: '1px 6px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
-                            <GameIcon name="flat-star" size={9} />
-                            <span>{cand.powerLevel}</span>
-                          </span>
-                        )}
-                      </div>
-                      <span style={{ fontSize: '0.75rem', color: 'var(--gold-400)', display: 'block' }}>
-                        {cand.stats?.baseDamage
-                          ? `Daño: ${cand.stats.baseDamage}`
-                          : cand.stats?.armourRating
-                          ? `Defensa: +${cand.stats.armourRating}`
-                          : cand.itemType}
-                        {cand.stats?.damageType ? ` (${cand.stats.damageType})` : ''}
-                        {cand.stats?.durability ? ` · Dur: ${cand.stats.durability}` : ''}
-                      </span>
-                    </div>
-                  </div>
-
-                  <button className="btn-fantasy gold" style={{ padding: '6px 14px', fontSize: '0.8rem', flexShrink: 0 }}>
-                    Equipar
-                  </button>
-                </div>
+                  item={cand}
+                  onEquip={(item) => onEquipItem(activeSlotConfig.id, item)}
+                />
               ))}
             </div>
           )}

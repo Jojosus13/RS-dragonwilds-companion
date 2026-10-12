@@ -126,6 +126,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  min-width: 0;
 }
 
 @media (min-width: 900px) {
@@ -133,6 +134,8 @@ body {
     padding: 24px;
     padding-bottom: 60px;
     margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-width: 0;
   }
 }
 
@@ -1435,6 +1438,40 @@ select:focus,
   }
 }
 
+/* Spells Viewer & Grid */
+.spells-viewer-container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.spells-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .spells-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Quests Grid */
+.quests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .quests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Medieval Item Card */
 .item-card {
   background: var(--bg-card);
@@ -1673,6 +1710,7 @@ select:focus,
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .modal-close-btn {
@@ -1727,6 +1765,8 @@ select:focus,
   scrollbar-width: none;
   -ms-overflow-style: none;
   gap: 4px;
+  flex-shrink: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-tabs::-webkit-scrollbar {
@@ -1746,6 +1786,9 @@ select:focus,
   transition: all 0.2s;
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .modal-tab-btn:hover {
@@ -1764,6 +1807,8 @@ select:focus,
   display: flex;
   flex-direction: column;
   gap: 18px;
+  flex: 1;
+  min-height: 0;
 }
 
 /* Modal Footer & Actions */
@@ -2028,6 +2073,7 @@ select:focus,
 
   .modal-header {
     padding: 12px 14px;
+    flex-shrink: 0;
   }
 
   .modal-title {
@@ -2037,16 +2083,20 @@ select:focus,
   .modal-tabs {
     padding: 0 8px;
     gap: 4px;
+    flex-shrink: 0;
   }
 
   .modal-tab-btn {
     padding: 10px 10px;
     font-size: 0.78rem;
+    flex-shrink: 0;
   }
 
   .modal-body {
     padding: 14px 14px;
     gap: 14px;
+    flex: 1;
+    min-height: 0;
   }
 
   .modal-footer {
@@ -2294,13 +2344,12 @@ select:focus,
   top: 0;
   left: 0;
   overflow: visible;
-  transition: transform 0.05s linear;
+  will-change: transform;
 }
 
 .ashenfall-svg-map {
   display: block;
   overflow: visible !important;
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
 }
 
 .landmass-outline {
