@@ -27,26 +27,18 @@ const APK_PATH = path.resolve(__dirname, `../dist-apk/RS-Dragonwilds-v${APP_VERS
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const ZIP_PATH = path.resolve(__dirname, `../dist-zip/RS-Dragonwilds-bundle-v${APP_VERSION}.zip`);
 
+const { execSync } = require('child_process');
+
 function zipDistDirectory(sourceDir, outPath) {
-  return new Promise((resolve, reject) => {
-    const dir = path.dirname(outPath);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
+  const dir = path.dirname(outPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
 
-    const output = fs.createWriteStream(outPath);
-    const archive = archiver('zip', { zlib: { level: 9 } });
-
-    output.on('close', () => {
-      console.log(`[OK] Paquete OTA comprimido (${(archive.pointer() / (1024 * 1024)).toFixed(2)} MB): ${outPath}`);
-      resolve();
-    });
-
-    archive.on('error', (err) => reject(err));
-    archive.pipe(output);
-    archive.directory(sourceDir, false);
-    archive.finalize();
-  });
+  console.log(`[INFO] Comprimiendo ${sourceDir} con PowerShell Compress-Archive...`);
+  execSync(`powershell -Command "Compress-Archive -Path '${sourceDir}\\*' -DestinationPath '${outPath}' -Force"`, { stdio: 'inherit' });
+  const stats = fs.statSync(outPath);
+  console.log(`[OK] Paquete OTA comprimido (${(stats.size / (1024 * 1024)).toFixed(2)} MB): ${outPath}`);
 }
 
 async function uploadAsset(uploadUrlBase, filePath, assetName, contentType, token) {
