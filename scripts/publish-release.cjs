@@ -14,13 +14,13 @@ try {
 const GITHUB_OWNER = 'Jojosus13';
 const GITHUB_REPO = 'RS-dragonwilds-companion';
 const TAG_NAME = `v${APP_VERSION}`;
-const RELEASE_NAME = `Dragonwilds Companion v${APP_VERSION} - Iconos RPG y Optimizaciones`;
+const RELEASE_NAME = `Dragonwilds Companion v${APP_VERSION} - Refactorizacion Modular y Optimizaciones`;
 const RELEASE_BODY = `## Novedades y Mejoras en v${APP_VERSION}
 
-- **Iconos RPG Mejorados**: Integración del nuevo icono \`swap-bag\` para la sección de Objetos, Códice y catálogo de ítems.
-- **Rosa de los Vientos y Mapa**: Se unificaron los accesos y visualizadores del mapa con \`treasure-map\`, y se añadió la brújula náutica a la Rosa de los Vientos flotante de Ashenfall.
-- **Actualizaciones OTA en Caliente**: Descarga y aplicación de actualizaciones en segundo plano con reinicio instantáneo sin reinstalar el APK.
-- Optimizaciones de rendimiento y navegación fluida.
+- Refactorizacion Modular Integral: Arquitectura desacoplada en modulos limpios y reutilizables (ItemCard, ItemModal, Catalogo, Forja, Bovedas, Hechizos, Lore y Mapa), eliminando componentes redundantes y mejorando la mantenibilidad.
+- Rendimiento del Mapa Interactivo: Optimizacion del arrastre y desplazamiento mediante aceleracion de hardware y sincronizacion por cuadros de animacion, eliminando tirones y mejorando la fluidez del paneo.
+- Correccion de Cuadriculas y Desbordamiento: Ajuste del visor de hechizos y misiones con cuadriculas fluidas adaptativas y correccion del contenedor principal en vistas con barra lateral activa.
+- Empaquetado y Actualizaciones OTA: Paquete de actualizacion en caliente optimizado para distribucion directa sin reinstalacion.
 `;
 
 const APK_PATH = path.resolve(__dirname, `../dist-apk/RS-Dragonwilds-v${APP_VERSION}.apk`);
