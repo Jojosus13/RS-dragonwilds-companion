@@ -143,13 +143,33 @@ async function main() {
     req.end();
   });
 
-  if (releaseRes.statusCode !== 201) {
+  let releaseJson;
+  if (releaseRes.statusCode === 201) {
+    releaseJson = JSON.parse(releaseRes.body);
+    console.log(`[OK] Release creada con exito: ${releaseJson.html_url}`);
+  } else if (releaseRes.statusCode === 422) {
+    console.log(`[INFO] La release ya existe, obteniendo datos de ${TAG_NAME}...`);
+    const getRes = await new Promise((resolve, reject) => {
+      https.get({
+        hostname: 'api.github.com',
+        path: `/repos/${GITHUB_OWNER}/${GITHUB_REPO}/releases/tags/${TAG_NAME}`,
+        headers: {
+          'User-Agent': 'Node-Release-Publisher',
+          'Authorization': `Bearer ${token.trim()}`,
+          'Accept': 'application/vnd.github.v3+json'
+        }
+      }, res => {
+        let body = '';
+        res.on('data', chunk => body += chunk);
+        res.on('end', () => resolve({ statusCode: res.statusCode, body }));
+      }).on('error', reject);
+    });
+    releaseJson = JSON.parse(getRes.body);
+    console.log(`[OK] Release existente encontrada: ${releaseJson.html_url}`);
+  } else {
     console.error(`[ERROR] Error al crear release (HTTP ${releaseRes.statusCode}):`, releaseRes.body);
     process.exit(1);
   }
-
-  const releaseJson = JSON.parse(releaseRes.body);
-  console.log(`[OK] Release creada con exito: ${releaseJson.html_url}`);
 
   // 4. Subir paquete OTA ZIP
   console.log(`[INFO] Subiendo paquete OTA ZIP...`);
