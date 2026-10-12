@@ -1,3 +1,4 @@
+import { Capacitor, CapacitorHttp } from '@capacitor/core';
 import { APP_VERSION, GITHUB_REPO_OWNER, GITHUB_REPO_NAME, GITHUB_READ_TOKEN } from './version';
 
 const DISMISSED_UPDATE_KEY = 'rs_dw_dismissed_update_version';
@@ -47,30 +48,52 @@ function formatBytes(bytes) {
 }
 
 /**
- * Obtiene la URL de descarga directa prefirmada para repositorios privados
+ * Obtiene la URL de descarga directa prefirmada de S3 resolviendo la redirección 302
+ * de manera nativa mediante CapacitorHttp sin sufrir bloqueos CORS en el WebView.
  */
 export async function getApkDirectDownloadUrl(assetApiUrl, fallbackUrl) {
-  if (!assetApiUrl) return fallbackUrl;
-  try {
-    const headers = {
-      'Accept': 'application/octet-stream'
-    };
-    if (GITHUB_READ_TOKEN) {
-      headers['Authorization'] = `Bearer ${GITHUB_READ_TOKEN}`;
+  const isNative = typeof window !== 'undefined' && Capacitor.isNativePlatform && Capacitor.isNativePlatform();
+
+  if (isNative) {
+    // 1. Intentar resolver redirección desde la URL del Asset API
+    if (assetApiUrl) {
+      try {
+        const headers = { 'Accept': 'application/octet-stream' };
+        if (GITHUB_READ_TOKEN) {
+          headers['Authorization'] = `Bearer ${GITHUB_READ_TOKEN}`;
+        }
+        const res = await CapacitorHttp.get({
+          url: assetApiUrl,
+          headers,
+          disableRedirects: true
+        });
+        const location = res.headers?.Location || res.headers?.location;
+        if (location && typeof location === 'string') {
+          return location;
+        }
+      } catch (err) {
+        console.warn('[UpdateChecker] Fallo al resolver assetApiUrl con CapacitorHttp:', err);
+      }
     }
 
-    const response = await fetch(assetApiUrl, {
-      method: 'GET',
-      headers
-    });
-
-    if (response.ok || response.status === 200) {
-      return response.url || fallbackUrl;
+    // 2. Intentar resolver redirección desde fallbackUrl (browser_download_url)
+    if (fallbackUrl) {
+      try {
+        const res = await CapacitorHttp.get({
+          url: fallbackUrl,
+          disableRedirects: true
+        });
+        const location = res.headers?.Location || res.headers?.location;
+        if (location && typeof location === 'string') {
+          return location;
+        }
+      } catch (err) {
+        console.warn('[UpdateChecker] Fallo al resolver fallbackUrl con CapacitorHttp:', err);
+      }
     }
-    return fallbackUrl;
-  } catch {
-    return fallbackUrl;
   }
+
+  return fallbackUrl;
 }
 
 /**

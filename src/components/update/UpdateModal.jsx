@@ -120,16 +120,9 @@ export default function UpdateModal({
     onClose();
 
     try {
-      const link = document.createElement('a');
-      link.href = targetUrl;
-      link.setAttribute('download', apkFileName || 'RS-Dragonwilds.apk');
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
     } catch {
-      window.location.href = targetUrl;
+      window.location.assign(targetUrl);
     }
   };
 
@@ -189,6 +182,8 @@ export default function UpdateModal({
           hasOtaZip={hasOtaZip}
           zipDownloadUrl={zipDownloadUrl}
           hasDirectApk={hasDirectApk}
+          apkDownloadUrl={apkDownloadUrl}
+          apkFileName={apkFileName}
           releaseUrl={releaseUrl}
           onDismissLater={handleDismissLater}
           onOtaUpdate={handleOtaUpdate}

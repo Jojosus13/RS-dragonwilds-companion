@@ -7,6 +7,8 @@ export default function UpdateFooter({
   hasOtaZip,
   zipDownloadUrl,
   hasDirectApk,
+  apkDownloadUrl,
+  apkFileName,
   releaseUrl,
   onDismissLater,
   onOtaUpdate,
@@ -59,14 +61,20 @@ export default function UpdateFooter({
                 <span>{status === 'error' ? 'Reintentar Actualización' : 'Actualizar en Caliente'}</span>
               </button>
             ) : (
-              <button 
+              <a 
+                href={apkDownloadUrl || releaseUrl}
+                download={apkFileName || 'RS-Dragonwilds.apk'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-fantasy gold" 
-                style={{ fontSize: '0.9rem', padding: '8px 18px', display: 'flex', alignItems: 'center', gap: '6px' }}
-                onClick={isNative && hasOtaZip ? onOtaUpdate : onManualApkDownload}
+                style={{ fontSize: '0.9rem', padding: '8px 18px', display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }}
+                onClick={() => {
+                  if (onDismissLater) onDismissLater();
+                }}
               >
                 <Download size={16} />
                 <span>{hasDirectApk ? 'Descargar e Instalar APK' : 'Obtener Actualización'}</span>
-              </button>
+              </a>
             )}
           </div>
         </>
