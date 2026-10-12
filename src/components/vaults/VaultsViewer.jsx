@@ -1,16 +1,26 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { ArrowLeft } from 'lucide-react';
+import GameIcon from '../GameIcon';
 import vaultsData from '../../data/vaults.json';
 import { normalizeText } from '../../utils/searchUtils';
+
+import VaultsHeroBanner from './VaultsHeroBanner';
 import VaultFilterBar from './VaultFilterBar';
 import VaultCard from './VaultCard';
-import VaultDetailModal from './VaultDetailModal';
-import GameIcon from '../GameIcon';
+import VaultDetailTopBar from './VaultDetailTopBar';
+import VaultHeroCard from './VaultHeroCard';
+import VaultHazards from './VaultHazards';
+import VaultEnemies from './VaultEnemies';
+import VaultLoot from './VaultLoot';
+import VaultChests from './VaultChests';
+import VaultResources from './VaultResources';
+import VaultLightbox from './VaultLightbox';
 
 export default function VaultsViewer({
   selectedVaultId = null,
-  onSelectVault = () => { },
-  onViewVaultOnMap = () => { },
-  onSelectItem = () => { }
+  onSelectVault = () => {},
+  onViewVaultOnMap = () => {},
+  onSelectItem = () => {}
 }) {
   const [activeVaultId, setActiveVaultId] = useState(selectedVaultId);
   const [searchQuery, setSearchQuery] = useState('');
@@ -31,16 +41,6 @@ export default function VaultsViewer({
     return vaultsData.find((v) => v.id === activeVaultId) || null;
   }, [activeVaultId]);
 
-  // Unique regions list for filter dropdown
-  const regionsList = useMemo(() => {
-    const set = new Set();
-    vaultsData.forEach((v) => {
-      const mainReg = v.region.split(' (')[0];
-      set.add(mainReg);
-    });
-    return Array.from(set);
-  }, []);
-
   // Filtered list of vaults
   const filteredVaults = useMemo(() => {
     return vaultsData.filter((vault) => {
@@ -58,8 +58,8 @@ export default function VaultsViewer({
         const titleNorm = normalizeText(vault.title);
         const regionNorm = normalizeText(vault.region);
         const summaryNorm = normalizeText(vault.summary);
-        const lootNorm = normalizeText((vault.notableLoot || []).map(l => l.name).join(' '));
-        const recipesNorm = normalizeText((vault.recipes || []).map(r => r.name).join(' '));
+        const lootNorm = normalizeText((vault.notableLoot || []).map((l) => l.name).join(' '));
+        const recipesNorm = normalizeText((vault.recipes || []).map((r) => r.name).join(' '));
 
         const matches = titleNorm.includes(q) ||
           regionNorm.includes(q) ||
@@ -72,18 +72,24 @@ export default function VaultsViewer({
     });
   }, [searchQuery, regionFilter, levelFilter]);
 
-  // Total chests count
+  // Total chests
   const totalChestsCount = useMemo(() => {
     return vaultsData.reduce((acc, v) => acc + (v.chests?.length || 0), 0);
   }, []);
 
-  const handleCloseDetail = () => {
+  const handleBackToIndex = () => {
     setActiveVaultId(null);
     onSelectVault(null);
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
-  const handleResetFilters = () => {
+  const handleSelectVaultCard = (vaultId) => {
+    setActiveVaultId(vaultId);
+    onSelectVault(vaultId);
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
+  const handleClearFilters = () => {
     setSearchQuery('');
     setRegionFilter('all');
     setLevelFilter('all');
@@ -93,63 +99,76 @@ export default function VaultsViewer({
     <div className="vaults-viewer-container">
       {/* Detail View of Selected Vault */}
       {activeVault ? (
-        <VaultDetailModal
-          activeVault={activeVault}
-          onClose={handleCloseDetail}
-          onViewVaultOnMap={onViewVaultOnMap}
-          zoomImage={zoomImage}
-          setZoomImage={setZoomImage}
-        />
+        <div className="vault-detail-view fade-in">
+          {/* Top Sticky Navigation Bar */}
+          <VaultDetailTopBar
+            onBack={handleBackToIndex}
+            onViewVaultOnMap={onViewVaultOnMap}
+            activeVault={activeVault}
+          />
+
+          {/* Main Vault Hero / Infobox Header */}
+          <VaultHeroCard activeVault={activeVault} />
+
+          {/* Section 1: Hazards y Traps */}
+          <VaultHazards hazards={activeVault.hazards} />
+
+          {/* Section 2: Enemies */}
+          <VaultEnemies
+            enemies={activeVault.enemies}
+            powerLevel={activeVault.powerLevel}
+          />
+
+          {/* Section 3: Notable Loot y Recipes */}
+          <VaultLoot
+            notableLoot={activeVault.notableLoot}
+            recipes={activeVault.recipes}
+          />
+
+          {/* Section 4: Chests Guide */}
+          <VaultChests
+            chests={activeVault.chests}
+            onZoomImage={setZoomImage}
+          />
+
+          {/* Section 5: Resources */}
+          <VaultResources resources={activeVault.resources} />
+
+          {/* Bottom Action Bar */}
+          <div className="vault-detail-bottom-actions">
+            <button
+              className="btn-fantasy gold btn-large"
+              onClick={() => onViewVaultOnMap(activeVault)}
+            >
+              <GameIcon name="position-marker" size={18} />
+              <span>Ver Ubicación Exacta en el Mapa de Ashenfall</span>
+            </button>
+            <button
+              className="btn-fantasy btn-large"
+              onClick={handleBackToIndex}
+            >
+              <ArrowLeft size={18} />
+              <span>Volver a la Lista de Bóvedas</span>
+            </button>
+          </div>
+        </div>
       ) : (
         /* Overview / Catalog Grid of All 12 Vaults */
         <div className="vaults-catalog-view fade-in">
           {/* Header Banner */}
-          <div className="vaults-header-banner">
-            <div className="vaults-banner-content">
-              <div className="vaults-banner-badge">
-                <GameIcon name="shield" size={16} />
-                <span>CÓDICE DRACONIS</span>
-              </div>
-              <h1 className="vaults-banner-title">Cámaras y Bóvedas Dragonkin</h1>
-              <p className="vaults-banner-subtitle">
-                Explora las 12 bóvedas ancestrales de Ashenfall. Guías completas con localización de cofres ilustrados, resolución de trampas, vestigios legendarios, recetas de forja y núcleos de tecnología perdida.
-              </p>
+          <VaultsHeroBanner
+            totalVaults={vaultsData.length}
+            totalChestsCount={totalChestsCount}
+          />
 
-              {/* Stats Bar */}
-              <div className="vaults-stats-bar">
-                <div className="vault-stat-item">
-                  <span className="stat-val">{vaultsData.length}</span>
-                  <span className="stat-lbl">Bóvedas Registradas</span>
-                </div>
-                <div className="vault-stat-divider" />
-                <div className="vault-stat-item">
-                  <span className="stat-val">{totalChestsCount}+</span>
-                  <span className="stat-lbl">Cofres y Secretos</span>
-                </div>
-                <div className="vault-stat-divider" />
-                <div className="vault-stat-item">
-                  <span className="stat-val">36</span>
-                  <span className="stat-lbl">Núcleos de Bóveda</span>
-                </div>
-                <div className="vault-stat-divider" />
-                <div className="vault-stat-item">
-                  <span className="stat-val">10+</span>
-                  <span className="stat-lbl">Recetas y Vestigios</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Filter Bar */}
+          {/* Filter and Search Bar */}
           <VaultFilterBar
             searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
+            setSearchQuery={setSearchQuery}
             regionFilter={regionFilter}
-            onRegionChange={setRegionFilter}
+            setRegionFilter={setRegionFilter}
             levelFilter={levelFilter}
-            onLevelChange={setLevelFilter}
-            regionsList={regionsList}
-            totalResults={filteredVaults.length}
+            setLevelFilter={setLevelFilter}
           />
 
           {/* Results Count Banner */}
@@ -158,7 +177,7 @@ export default function VaultsViewer({
             {(searchQuery || regionFilter !== 'all' || levelFilter !== 'all') && (
               <button
                 className="btn-text-gold"
-                onClick={handleResetFilters}
+                onClick={handleClearFilters}
               >
                 Limpiar Filtros
               </button>
@@ -171,16 +190,13 @@ export default function VaultsViewer({
               <VaultCard
                 key={vault.id}
                 vault={vault}
-                onSelectVault={(id) => {
-                  setActiveVaultId(id);
-                  onSelectVault(id);
-                  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-                }}
+                onSelectVault={handleSelectVaultCard}
                 onViewVaultOnMap={onViewVaultOnMap}
               />
             ))}
           </div>
 
+          {/* Empty State */}
           {filteredVaults.length === 0 && (
             <div className="vaults-empty-state">
               <GameIcon name="shield" size={48} color="var(--gold-400)" />
@@ -188,7 +204,7 @@ export default function VaultsViewer({
               <p>Prueba con otros términos de búsqueda o restablece los filtros de región y nivel.</p>
               <button
                 className="btn-fantasy gold"
-                onClick={handleResetFilters}
+                onClick={handleClearFilters}
               >
                 Restablecer Filtros
               </button>
@@ -196,6 +212,12 @@ export default function VaultsViewer({
           )}
         </div>
       )}
+
+      {/* Fullscreen Image Lightbox Modal for Chests */}
+      <VaultLightbox
+        zoomImage={zoomImage}
+        onClose={() => setZoomImage(null)}
+      />
     </div>
   );
 }

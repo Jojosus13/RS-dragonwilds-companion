@@ -1,7 +1,7 @@
 import React from 'react';
-import { Shield, Layers, Compass, ChevronRight, MapPin } from 'lucide-react';
-import { POWER_LEVEL_COLORS } from './VaultFilterBar';
+import { ChevronRight } from 'lucide-react';
 import GameIcon from '../GameIcon';
+import { POWER_LEVEL_COLORS } from './vaultsConstants';
 
 export default function VaultCard({
   vault,

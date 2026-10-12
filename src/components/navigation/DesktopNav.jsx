@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import GameIcon from '../GameIcon';
+import CategorySubmenu from './CategorySubmenu';
 
 export default function DesktopNav({
   activeView,
@@ -28,7 +29,7 @@ export default function DesktopNav({
     <aside className="sidebar">
       <div className="nav-section-title">Contenido y Crónicas</div>
 
-      {/* Explorador de Ítems with Collapsible Category Dropdown */}
+      {/* Explorador de Ítems con selector colapsable */}
       <div className="nav-group">
         <div className="nav-item-expandable">
           <button
@@ -60,29 +61,17 @@ export default function DesktopNav({
           </button>
         </div>
 
-        {/* Collapsible Sub-menu for Categories */}
         {isItemsDropdownOpen && (
-          <div className="nav-submenu">
-            {categories.map((cat) => {
-              const count = categoryCounts[cat.id] || 0;
-              const isSelected = activeView === 'catalog' && selectedCategory === cat.id;
-
-              return (
-                <button
-                  key={cat.id}
-                  className={`nav-subitem ${isSelected ? 'active' : ''}`}
-                  onClick={() => {
-                    setActiveView('catalog');
-                    setSelectedCategory(cat.id);
-                  }}
-                >
-                  <GameIcon name={cat.icon} size={15} color={isSelected ? 'var(--gold-300)' : cat.color} />
-                  <span className="subitem-name">{cat.name}</span>
-                  <span className="badge">{count}</span>
-                </button>
-              );
-            })}
-          </div>
+          <CategorySubmenu
+            categories={categories}
+            categoryCounts={categoryCounts}
+            activeView={activeView}
+            selectedCategory={selectedCategory}
+            onSelectCategory={(catId) => {
+              setActiveView('catalog');
+              setSelectedCategory(catId);
+            }}
+          />
         )}
       </div>
 
@@ -95,7 +84,7 @@ export default function DesktopNav({
         <span className="badge">{questCount}</span>
       </button>
 
-      {/* Bóvedas Dragonkin Nav Item */}
+      {/* Bóvedas Dragonkin */}
       <button
         className={`nav-item ${activeView === 'vaults' ? 'active' : ''}`}
         onClick={() => setActiveView('vaults')}

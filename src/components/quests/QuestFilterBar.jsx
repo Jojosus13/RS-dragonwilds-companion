@@ -1,108 +1,133 @@
 import React from 'react';
-import { Search, X } from 'lucide-react';
-import GameIcon from '../GameIcon';
-
-export const DIFFICULTY_COLORS = {
-  'Principiante': { bg: 'rgba(72, 187, 120, 0.15)', text: '#48bb78', border: 'rgba(72, 187, 120, 0.3)' },
-  'Intermedia': { bg: 'rgba(66, 153, 225, 0.15)', text: '#4299e1', border: 'rgba(66, 153, 225, 0.3)' },
-  'Maestra': { bg: 'rgba(159, 122, 234, 0.15)', text: '#9f7aea', border: 'rgba(159, 122, 234, 0.3)' },
-  'Gran Maestra': { bg: 'rgba(237, 137, 54, 0.15)', text: '#ed8936', border: 'rgba(237, 137, 54, 0.3)' }
-};
+import { Search, X, CheckCircle2, Clock } from 'lucide-react';
 
 export default function QuestFilterBar({
   searchQuery,
-  onSearchChange,
+  setSearchQuery,
   selectedDifficulty,
-  onDifficultyChange,
+  setSelectedDifficulty,
   selectedType,
-  onTypeChange,
+  setSelectedType,
   statusFilter,
-  onStatusChange,
-  stats
+  setStatusFilter,
+  completedCount,
+  inProgressCount
 }) {
   return (
     <div className="search-filter-section">
-      {/* Search Input with standard design classes */}
+      {/* Search Bar */}
       <div className="search-input-wrapper">
         <Search size={18} className="search-icon" />
-        <input
+        <input 
           type="text"
-          placeholder="Buscar misiones por nombre, PNJ, lugar, requisitos o recompensas..."
-          value={searchQuery}
-          onChange={(e) => onSearchChange(e.target.value)}
           className="search-input"
+          placeholder="Buscar misión o guía (ej: Dragon Slayer, Acumulador de Ava, Fortaleza, Caratacus...)"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         {searchQuery && (
-          <button className="search-clear-btn" onClick={() => onSearchChange('')} title="Limpiar búsqueda">
+          <button className="search-clear-btn" onClick={() => setSearchQuery('')}>
             <X size={16} />
           </button>
         )}
       </div>
 
-      {/* Selects Row y Status Filter Chips */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
-              DIFICULTAD:
-            </span>
-            <select
-              value={selectedDifficulty}
-              onChange={(e) => onDifficultyChange(e.target.value)}
-              className="select-fantasy"
-            >
-              <option value="all">Todas las Dificultades</option>
-              <option value="Principiante">Principiante</option>
-              <option value="Intermedia">Intermedia</option>
-              <option value="Maestra">Maestra</option>
-              <option value="Gran Maestra">Gran Maestra</option>
-            </select>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)' }}>
-              TIPO:
-            </span>
-            <select
-              value={selectedType}
-              onChange={(e) => onTypeChange(e.target.value)}
-              className="select-fantasy"
-            >
-              <option value="all">Todas las Categorías</option>
-              <option value="Principal">Misión Principal</option>
-              <option value="Secundaria">Misión Secundaria</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Status Filter Chips */}
-        <div className="subcategories-bar" style={{ margin: 0, paddingBottom: 0 }}>
+      {/* Filter Controls Row */}
+      <div className="filters-row" style={{ flexWrap: 'wrap', gap: '12px' }}>
+        {/* Difficulty Chips */}
+        <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-title)', color: 'var(--text-muted)' }}>
+            DIFICULTAD:
+          </span>
           <button
-            className={`filter-chip ${statusFilter === 'all' ? 'active' : ''}`}
-            onClick={() => onStatusChange('all')}
+            className={`filter-chip ${selectedDifficulty === 'all' ? 'active' : ''}`}
+            onClick={() => setSelectedDifficulty('all')}
           >
-            Todas ({stats.total})
+            Todas
           </button>
           <button
-            className={`filter-chip ${statusFilter === 'in_progress' ? 'active' : ''}`}
-            onClick={() => onStatusChange('in_progress')}
+            className={`filter-chip ${selectedDifficulty === 'Principiante' ? 'active' : ''}`}
+            style={{ color: '#48bb78' }}
+            onClick={() => setSelectedDifficulty('Principiante')}
           >
-            <GameIcon name="sprint" size={13} color="#63b3ed" />
-            <span>En Curso ({stats.inProgress})</span>
+            Principiante
+          </button>
+          <button
+            className={`filter-chip ${selectedDifficulty === 'Intermedia' ? 'active' : ''}`}
+            style={{ color: '#4299e1' }}
+            onClick={() => setSelectedDifficulty('Intermedia')}
+          >
+            Intermedia
+          </button>
+          <button
+            className={`filter-chip ${selectedDifficulty === 'Maestra' ? 'active' : ''}`}
+            style={{ color: '#9f7aea' }}
+            onClick={() => setSelectedDifficulty('Maestra')}
+          >
+            Maestra
+          </button>
+          <button
+            className={`filter-chip ${selectedDifficulty === 'Gran Maestra' ? 'active' : ''}`}
+            style={{ color: '#ed8936' }}
+            onClick={() => setSelectedDifficulty('Gran Maestra')}
+          >
+            Gran Maestra
+          </button>
+        </div>
+
+        {/* Type Filter */}
+        <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-title)', color: 'var(--text-muted)' }}>
+            TIPO:
+          </span>
+          <button
+            className={`filter-chip ${selectedType === 'all' ? 'active' : ''}`}
+            onClick={() => setSelectedType('all')}
+          >
+            Todos
+          </button>
+          <button
+            className={`filter-chip ${selectedType === 'Principal' ? 'active' : ''}`}
+            style={{ color: 'var(--gold-400)' }}
+            onClick={() => setSelectedType('Principal')}
+          >
+            Principales
+          </button>
+          <button
+            className={`filter-chip ${selectedType === 'Secundaria' ? 'active' : ''}`}
+            style={{ color: '#a0aec0' }}
+            onClick={() => setSelectedType('Secundaria')}
+          >
+            Secundarias
+          </button>
+        </div>
+
+        {/* Status Filter */}
+        <div style={{ display: 'flex', gap: '6px', alignItems: 'center', marginLeft: 'auto', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-title)', color: 'var(--text-muted)' }}>
+            ESTADO:
+          </span>
+          <button
+            className={`filter-chip ${statusFilter === 'all' ? 'active' : ''}`}
+            onClick={() => setStatusFilter('all')}
+          >
+            Todos
           </button>
           <button
             className={`filter-chip ${statusFilter === 'completed' ? 'active' : ''}`}
-            onClick={() => onStatusChange('completed')}
+            style={{ color: 'var(--gold-400)' }}
+            onClick={() => setStatusFilter('completed')}
           >
-            <GameIcon name="check-mark" size={13} color="#68d391" />
-            <span>Completadas ({stats.completed})</span>
+            <CheckCircle2 size={12} />
+            Completadas ({completedCount})
           </button>
           <button
-            className={`filter-chip ${statusFilter === 'pending' ? 'active' : ''}`}
-            onClick={() => onStatusChange('pending')}
+            className={`filter-chip ${statusFilter === 'in_progress' ? 'active' : ''}`}
+            style={{ color: '#4299e1' }}
+            onClick={() => setStatusFilter('in_progress')}
           >
-            <GameIcon name="tied-scroll" size={13} color="var(--text-muted)" />
-            <span>Pendientes ({stats.pending})</span>
+            <Clock size={12} />
+            En Curso ({inProgressCount})
           </button>
         </div>
       </div>

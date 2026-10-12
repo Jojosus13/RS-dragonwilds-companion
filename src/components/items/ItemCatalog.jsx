@@ -1,24 +1,17 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import {
-  ArrowLeft,
-  ArrowUpDown,
-  ChevronRight,
-  Search,
-  X
-} from 'lucide-react';
-import FloatingSearchDropdown from '../common/FloatingSearchDropdown';
-import ItemFilterBar, { CATEGORY_DEFINITIONS, SUBCATEGORIES_CONFIG } from './ItemFilterBar';
-import ItemSortControls from './ItemSortControls';
+import { CATEGORY_DEFINITIONS, SUBCATEGORIES_CONFIG } from './categoryConfig';
+import CategoryHub from './CategoryHub';
+import CatalogNavBar from './CatalogNavBar';
+import CatalogFilters from './CatalogFilters';
+import CatalogResultsHeader from './CatalogResultsHeader';
 import ItemGrid from './ItemGrid';
-import { scoreItemSearch, normalizeText } from '../../utils/searchUtils';
-import GameIcon from '../GameIcon';
 
-export default function ItemCatalog({
-  items,
-  selectedCategory,
+export default function ItemCatalog({ 
+  items, 
+  selectedCategory, 
   setSelectedCategory,
-  onSelectItem,
-  favorites,
+  onSelectItem, 
+  favorites, 
   onToggleFavorite,
   plannerItems,
   onTogglePlanner
@@ -27,11 +20,12 @@ export default function ItemCatalog({
   const [isFloatingOpen, setIsFloatingOpen] = useState(false);
   const searchWrapperRef = useRef(null);
   const [selectedSubtype, setSelectedSubtype] = useState('all');
-  const [selectedPowerTier, setSelectedPowerTier] = useState('all');
+  const [selectedPowerTier, setSelectedPowerTier] = useState('all'); // all, t1-3, t4-6, t7, t8-9
   const [selectedDamageType, setSelectedDamageType] = useState('all');
   const [sortBy, setSortBy] = useState('name-asc');
   const [displayCount, setDisplayCount] = useState(48);
 
+  // Close floating dropdown on click outside or Escape key
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (searchWrapperRef.current && !searchWrapperRef.current.contains(e.target)) {
@@ -51,6 +45,7 @@ export default function ItemCatalog({
     };
   }, []);
 
+  // Calculate counts per category
   const categoryCounts = useMemo(() => {
     const counts = { All: items.length };
     items.forEach((it) => {
@@ -59,6 +54,7 @@ export default function ItemCatalog({
     return counts;
   }, [items]);
 
+  // Reset subtype and display count when category changes
   useEffect(() => {
     setSelectedSubtype('all');
     setDisplayCount(48);
@@ -66,50 +62,73 @@ export default function ItemCatalog({
 
   const activeSubtypes = selectedCategory ? SUBCATEGORIES_CONFIG[selectedCategory] || null : null;
   const currentCategoryConfig = CATEGORY_DEFINITIONS.find((c) => c.id === selectedCategory);
+  const currentCategoryIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? 'swap-bag' : 'sparkles');
 
+  // Global floating search results across all items
   const floatingSearchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
+    const q = searchQuery.toLowerCase().trim();
 
-    return items
-      .map((it) => ({ it, score: scoreItemSearch(it, searchQuery) }))
-      .filter((r) => r.score > 0)
-      .sort((a, b) => b.score - a.score || (b.it.powerLevel || 0) - (a.it.powerLevel || 0) || a.it.name.localeCompare(b.it.name))
-      .map((r) => r.it);
+    const matches = items.filter((it) => {
+      if (it.name.toLowerCase().includes(q)) return true;
+      if (it.itemType && it.itemType.toLowerCase().includes(q)) return true;
+      if (it.category && it.category.toLowerCase().includes(q)) return true;
+      if (it.description && it.description.toLowerCase().includes(q)) return true;
+      if (it.stats?.damageType && it.stats.damageType.toLowerCase().includes(q)) return true;
+      if (it.recipe?.facility && it.recipe.facility.toLowerCase().includes(q)) return true;
+      if (it.recipe?.materials?.some((m) => m.item.toLowerCase().includes(q))) return true;
+      return false;
+    });
+
+    return matches.sort((a, b) => {
+      const aStarts = a.name.toLowerCase().startsWith(q);
+      const bStarts = b.name.toLowerCase().startsWith(q);
+      if (aStarts && !bStarts) return -1;
+      if (!aStarts && bStarts) return 1;
+      return (b.powerLevel || 0) - (a.powerLevel || 0) || a.name.localeCompare(b.name);
+    });
   }, [items, searchQuery]);
 
+  // Filter items for current category view
   const filteredItems = useMemo(() => {
     let result = items;
 
+    // Category filter
     if (selectedCategory && selectedCategory !== 'All') {
       result = result.filter((it) => it.category === selectedCategory);
     }
 
+    // Subtype filter
     if (selectedSubtype !== 'all' && activeSubtypes) {
       const currentSub = activeSubtypes.find((s) => s.id === selectedSubtype);
       if (currentSub?.keywords) {
         result = result.filter((item) => {
-          const combined = normalizeText(`${item.title || ''} ${item.name || ''} ${item.itemType || ''} ${item.category || ''}`);
-          return currentSub.keywords.some((kw) => combined.includes(normalizeText(kw)));
+          const combined = `${item.title || item.name} ${item.itemType || ''} ${item.category || ''}`.toLowerCase();
+          return currentSub.keywords.some((kw) => combined.includes(kw));
         });
       }
     }
 
-    let searchScores = null;
+    // Search query filter (matches name, description, itemType, recipe facility, materials)
     if (searchQuery.trim()) {
-      searchScores = new Map();
-      result = result.filter((item) => {
-        const sc = scoreItemSearch(item, searchQuery);
-        if (sc > 0) {
-          searchScores.set(item.id || item.name, sc);
-          return true;
-        }
+      const q = searchQuery.toLowerCase().trim();
+      result = result.filter((it) => {
+        if (it.name.toLowerCase().includes(q)) return true;
+        if (it.itemType && it.itemType.toLowerCase().includes(q)) return true;
+        if (it.description && it.description.toLowerCase().includes(q)) return true;
+        if (it.stats?.damageType && it.stats.damageType.toLowerCase().includes(q)) return true;
+        if (it.stats?.specialAction && it.stats.specialAction.toLowerCase().includes(q)) return true;
+        if (it.recipe?.facility && it.recipe.facility.toLowerCase().includes(q)) return true;
+        if (it.recipe?.materials?.some((m) => m.item.toLowerCase().includes(q))) return true;
         return false;
       });
     }
 
+    // Power Tier filter
     if (selectedPowerTier !== 'all') {
-      result = result.filter((item) => {
-        const pw = item.powerLevel || 0;
+      result = result.filter((it) => {
+        const pw = it.powerLevel;
+        if (!pw) return false;
         if (selectedPowerTier === 't1-3') return pw >= 1 && pw <= 3;
         if (selectedPowerTier === 't4-6') return pw >= 4 && pw <= 6;
         if (selectedPowerTier === 't7') return pw === 7;
@@ -118,237 +137,106 @@ export default function ItemCatalog({
       });
     }
 
+    // Damage type filter
     if (selectedDamageType !== 'all') {
-      result = result.filter((item) => item.stats?.damageType?.toLowerCase().includes(selectedDamageType.toLowerCase()));
+      result = result.filter(
+        (it) => it.stats?.damageType && it.stats.damageType.toLowerCase() === selectedDamageType.toLowerCase()
+      );
     }
 
+    // Sorting
     result = [...result].sort((a, b) => {
-      if (searchScores && sortBy === 'relevance') {
-        const scA = searchScores.get(a.id || a.name) || 0;
-        const scB = searchScores.get(b.id || b.name) || 0;
-        if (scB !== scA) return scB - scA;
-      }
       if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
       if (sortBy === 'name-desc') return b.name.localeCompare(a.name);
       if (sortBy === 'power-desc') return (b.powerLevel || 0) - (a.powerLevel || 0);
       if (sortBy === 'power-asc') return (a.powerLevel || 0) - (b.powerLevel || 0);
-      if (sortBy === 'damage-desc') return (b.stats?.baseDamage || 0) - (a.stats?.baseDamage || 0);
+      if (sortBy === 'durability-desc') return (b.stats?.durability || 0) - (a.stats?.durability || 0);
+      if (sortBy === 'weight-asc') return (a.weight || 999) - (b.weight || 999);
       return 0;
     });
 
     return result;
   }, [items, selectedCategory, selectedSubtype, activeSubtypes, searchQuery, selectedPowerTier, selectedDamageType, sortBy]);
 
-  // CATEGORY HUB VIEW
+  const visibleItems = filteredItems.slice(0, displayCount);
+
+  // CATEGORY HUB VIEW (When no category is selected)
   if (!selectedCategory) {
     return (
-      <div className="category-hub-container">
-        <div className="category-hub-header">
-          <div className="hub-header-badge">
-            <Sparkles size={16} color="var(--gold-400)" />
-            <span>ARMERÍA y CATÁLOGO</span>
-          </div>
-          <h1 className="category-hub-title">Tipos de Objetos</h1>
-          <p className="category-hub-subtitle">
-            Selecciona una categoría de objetos o usa el buscador general para explorar los 1,104 objetos de Dragonwilds.
-          </p>
-
-          <div className="search-input-wrapper hub-search" ref={searchWrapperRef}>
-            <Search size={18} className="search-icon" />
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Buscar cualquier objeto (ej: Abyssal, Dragón, Poción)..."
-              value={searchQuery}
-              onFocus={() => {
-                if (searchQuery.trim()) setIsFloatingOpen(true);
-              }}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setIsFloatingOpen(true);
-              }}
-            />
-            {searchQuery && (
-              <button
-                className="search-clear-btn"
-                onClick={() => {
-                  setSearchQuery('');
-                  setIsFloatingOpen(false);
-                }}
-              >
-                <X size={16} />
-              </button>
-            )}
-
-            <FloatingSearchDropdown
-              results={floatingSearchResults.slice(0, 25)}
-              totalMatches={floatingSearchResults.length}
-              searchQuery={searchQuery}
-              isOpen={isFloatingOpen && searchQuery.trim().length > 0}
-              onSelectItem={onSelectItem}
-              onViewAllInCatalog={() => {
-                setSelectedCategory('All');
-                setIsFloatingOpen(false);
-              }}
-              favorites={favorites}
-              onToggleFavorite={onToggleFavorite}
-              plannerItems={plannerItems}
-              onTogglePlanner={onTogglePlanner}
-              onClose={() => setIsFloatingOpen(false)}
-            />
-          </div>
-        </div>
-
-        <div className="category-hub-grid">
-          {CATEGORY_DEFINITIONS.map((cat) => {
-            const count = categoryCounts[cat.id] || 0;
-
-            return (
-              <div
-                key={cat.id}
-                className="category-hub-card"
-                onClick={() => {
-                  setSelectedCategory(cat.id);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                style={{
-                  '--cat-color': cat.color,
-                  '--cat-bg': cat.accentBg,
-                  '--cat-border': cat.accentBorder
-                }}
-              >
-                <div className="category-card-top">
-                  <div className="category-icon-box">
-                    <GameIcon name={cat.icon} size={24} color={cat.color} />
-                  </div>
-                  <span className="category-count-pill">{count} ítems</span>
-                </div>
-
-                <div className="category-card-body">
-                  <h3 className="category-card-name">{cat.name}</h3>
-                  <p className="category-card-desc">{cat.subtitle}</p>
-                </div>
-
-                <div className="category-card-footer">
-                  <div className="category-tags">
-                    {cat.tags.map((tag, idx) => (
-                      <span key={idx} className="category-tag-chip">{tag}</span>
-                    ))}
-                  </div>
-                  <div className="category-arrow-btn">
-                    <span>Explorar</span>
-                    <ChevronRight size={15} />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    );
-  }
-
-  const currentCategoryIcon = currentCategoryConfig?.icon || (selectedCategory === 'All' ? 'swap-bag' : 'sparkles');
-
-  return (
-    <div className="item-catalog-container">
-      {/* Category Navigation Bar */}
-      <div className="category-nav-bar">
-        <button
-          className="btn-fantasy category-back-btn"
-          onClick={() => {
-            setSelectedCategory(null);
-            setSearchQuery('');
-            setIsFloatingOpen(false);
-          }}
-          title="Volver a Tipos de Objetos"
-        >
-          <ArrowLeft size={16} />
-          <span>Tipos de Objetos</span>
-        </button>
-
-        <div className="category-nav-info">
-          <div
-            className="category-nav-icon-badge"
-            style={{
-              color: currentCategoryConfig?.color || 'var(--gold-400)',
-              background: currentCategoryConfig?.accentBg || 'rgba(212, 175, 55, 0.12)',
-              borderColor: currentCategoryConfig?.accentBorder || 'rgba(212, 175, 55, 0.3)'
-            }}
-          >
-            <GameIcon name={currentCategoryIcon} size={20} />
-          </div>
-          <div>
-            <h2 className="category-nav-title">{currentCategoryConfig?.name || selectedCategory}</h2>
-            <span className="category-nav-count">
-              {filteredItems.length} objetos disponibles
-            </span>
-          </div>
-        </div>
-      </div>
-
-      {/* Filter Category y Subtypes */}
-      <ItemFilterBar
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-        selectedSubtype={selectedSubtype}
-        onSelectSubtype={setSelectedSubtype}
-        categoryCounts={categoryCounts}
-      />
-
-      {/* Sort y Search Controls */}
-      <ItemSortControls
+      <CategoryHub
         searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
+        setSearchQuery={setSearchQuery}
         isFloatingOpen={isFloatingOpen}
         setIsFloatingOpen={setIsFloatingOpen}
         floatingSearchResults={floatingSearchResults}
         searchWrapperRef={searchWrapperRef}
         onSelectItem={onSelectItem}
-        onViewAllInCatalog={() => setSelectedCategory('All')}
+        setSelectedCategory={setSelectedCategory}
         favorites={favorites}
         onToggleFavorite={onToggleFavorite}
         plannerItems={plannerItems}
         onTogglePlanner={onTogglePlanner}
-        selectedPowerTier={selectedPowerTier}
-        onPowerTierChange={setSelectedPowerTier}
-        selectedDamageType={selectedDamageType}
-        onDamageTypeChange={setSelectedDamageType}
-        sortBy={sortBy}
-        onSortChange={setSortBy}
-        totalResults={filteredItems.length}
+        categoryCounts={categoryCounts}
+      />
+    );
+  }
+
+  const isFiltered = Boolean(
+    selectedCategory !== 'All' || 
+    selectedSubtype !== 'all' || 
+    selectedPowerTier !== 'all' || 
+    searchQuery
+  );
+
+  const handleClearFilters = () => {
+    setSelectedCategory('All');
+    setSelectedSubtype('all');
+    setSelectedPowerTier('all');
+    setSelectedDamageType('all');
+    setSearchQuery('');
+  };
+
+  return (
+    <div className="item-catalog-container">
+      {/* Category Navigation Bar (Back Button y Category Title) */}
+      <CatalogNavBar
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        setSearchQuery={setSearchQuery}
+        setIsFloatingOpen={setIsFloatingOpen}
+        currentCategoryConfig={currentCategoryConfig}
+        currentCategoryIcon={currentCategoryIcon}
+        searchQuery={searchQuery}
+        filteredCount={filteredItems.length}
       />
 
-      {/* Results Count y Scope */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-          Mostrando <strong style={{ color: 'var(--gold-400)' }}>{Math.min(displayCount, filteredItems.length)}</strong> de{' '}
-          <strong style={{ color: '#fff' }}>{filteredItems.length}</strong> ítems encontrados
-        </p>
+      {/* Search y Filter Header */}
+      <CatalogFilters
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        setDisplayCount={setDisplayCount}
+        activeSubtypes={activeSubtypes}
+        selectedSubtype={selectedSubtype}
+        setSelectedSubtype={setSelectedSubtype}
+        selectedPowerTier={selectedPowerTier}
+        setSelectedPowerTier={setSelectedPowerTier}
+        sortBy={sortBy}
+        setSortBy={setSortBy}
+      />
 
-        {(selectedCategory !== 'All' || selectedSubtype !== 'all' || selectedPowerTier !== 'all' || searchQuery) && (
-          <button
-            className="btn-fantasy"
-            style={{ padding: '4px 10px', fontSize: '0.75rem' }}
-            onClick={() => {
-              setSelectedCategory('All');
-              setSelectedSubtype('all');
-              setSelectedPowerTier('all');
-              setSelectedDamageType('all');
-              setSearchQuery('');
-            }}
-          >
-            Limpiar Filtros
-          </button>
-        )}
-      </div>
+      {/* Results Count y Current Scope */}
+      <CatalogResultsHeader
+        visibleCount={visibleItems.length}
+        totalCount={filteredItems.length}
+        isFiltered={isFiltered}
+        onClearFilters={handleClearFilters}
+      />
 
       {/* Grid of Items */}
       <ItemGrid
-        items={filteredItems}
-        visibleCount={displayCount}
+        visibleItems={visibleItems}
+        totalFilteredCount={filteredItems.length}
         onLoadMore={() => setDisplayCount((prev) => prev + 48)}
-        totalItems={filteredItems.length}
         onSelectItem={onSelectItem}
         favorites={favorites}
         onToggleFavorite={onToggleFavorite}

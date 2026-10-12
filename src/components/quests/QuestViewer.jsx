@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { Scroll } from 'lucide-react';
 import questsData from '../../data/quests.json';
 import { normalizeText, getWordStems } from '../../utils/searchUtils';
+
 import QuestFilterBar from './QuestFilterBar';
+import QuestProgressBanner from './QuestProgressBanner';
 import QuestCard from './QuestCard';
 import QuestDetailModal from './QuestDetailModal';
-import GameIcon from '../GameIcon';
 
 export default function QuestViewer({ onViewQuestOnMap }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,6 +14,7 @@ export default function QuestViewer({ onViewQuestOnMap }) {
   const [selectedType, setSelectedType] = useState('all'); // all, Principal, Secundaria
   const [statusFilter, setStatusFilter] = useState('all'); // all, completed, in_progress, pending
   const [selectedQuestModal, setSelectedQuestModal] = useState(null);
+  const [activeModalTab, setActiveModalTab] = useState('guide'); // guide, requirements, enemies, rewards
 
   // Persistent Quest Status in localStorage
   const [questStatusMap, setQuestStatusMap] = useState(() => {
@@ -36,13 +39,13 @@ export default function QuestViewer({ onViewQuestOnMap }) {
   useEffect(() => {
     try {
       localStorage.setItem('rs_dw_quest_progress', JSON.stringify(questStatusMap));
-    } catch { }
+    } catch {}
   }, [questStatusMap]);
 
   useEffect(() => {
     try {
       localStorage.setItem('rs_dw_quest_checked_steps', JSON.stringify(checkedStepsMap));
-    } catch { }
+    } catch {}
   }, [checkedStepsMap]);
 
   const toggleQuestStatus = (questId, currentStatus) => {
@@ -70,12 +73,17 @@ export default function QuestViewer({ onViewQuestOnMap }) {
   // Filtered Quests with smart Spanish search
   const filteredQuests = useMemo(() => {
     return questsData.filter((q) => {
+      // Difficulty
       if (selectedDifficulty !== 'all' && q.difficulty !== selectedDifficulty) return false;
+
+      // Type
       if (selectedType !== 'all' && q.questType !== selectedType) return false;
 
+      // Status
       const status = questStatusMap[q.id] || 'pending';
       if (statusFilter !== 'all' && status !== statusFilter) return false;
 
+      // Search
       if (searchQuery.trim()) {
         const normQ = normalizeText(searchQuery);
         const qTokens = normQ.split(/\s+/).filter(Boolean);
@@ -90,150 +98,72 @@ export default function QuestViewer({ onViewQuestOnMap }) {
 
         if (!matchesAll) return false;
       }
+
       return true;
     });
-  }, [searchQuery, selectedDifficulty, selectedType, statusFilter, questStatusMap]);
+  }, [selectedDifficulty, selectedType, statusFilter, searchQuery, questStatusMap]);
 
-  // Overall Quest Statistics
-  const stats = useMemo(() => {
-    const total = questsData.length;
-    let completed = 0;
-    let inProgress = 0;
+  // Completed count
+  const completedCount = useMemo(() => {
+    return Object.values(questStatusMap).filter((s) => s === 'completed').length;
+  }, [questStatusMap]);
 
-    questsData.forEach((q) => {
-      const st = questStatusMap[q.id];
-      if (st === 'completed') completed++;
-      else if (st === 'in_progress') inProgress++;
-    });
-
-    const pending = total - completed - inProgress;
-    const percent = Math.round((completed / total) * 100);
-
-    return { total, completed, inProgress, pending, percent };
+  const inProgressCount = useMemo(() => {
+    return Object.values(questStatusMap).filter((s) => s === 'in_progress').length;
   }, [questStatusMap]);
 
   return (
-    <div className="quest-viewer-container" style={{ padding: '0', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      {/* Header Banner y Stats */}
-      <div
-        style={{
-          padding: '24px',
-          background: 'linear-gradient(135deg, rgba(20,25,35,0.95) 0%, rgba(30,22,15,0.85) 100%)',
-          border: '1px solid var(--gold-border)',
-          borderRadius: 'var(--radius-xl)',
-          boxShadow: 'var(--shadow-md)',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '20px'
-        }}
-      >
-        <div style={{ maxWidth: '650px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--gold-400)', marginBottom: '6px' }}>
-            <GameIcon name="tied-scroll" size={20} color="var(--gold-400)" />
-            <span style={{ fontSize: '0.8rem', fontFamily: 'var(--font-title)', letterSpacing: '2px', fontWeight: 700, textTransform: 'uppercase' }}>
-              DIARIO DE AVENTURAS
-            </span>
-          </div>
-          <h1 style={{ fontFamily: 'var(--font-decorative)', fontSize: '1.8rem', color: 'var(--gold-300)', margin: '0 0 6px 0', letterSpacing: '0.5px' }}>
-            Misiones de Dragonwilds
-          </h1>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', margin: 0, lineHeight: 1.5 }}>
-            Guías detalladas paso a paso en español, requisitos, enemigos y registro de progreso persistente.
-          </p>
-        </div>
-
-        {/* Progress Card */}
-        <div
-          style={{
-            minWidth: '240px',
-            flex: '1 1 240px',
-            maxWidth: '320px',
-            background: 'rgba(10, 13, 18, 0.85)',
-            border: '1px solid var(--gold-border)',
-            borderRadius: 'var(--radius-lg)',
-            padding: '16px 20px',
-            boxShadow: 'var(--shadow-sm)'
-          }}
-        >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontFamily: 'var(--font-title)', fontWeight: 700, letterSpacing: '1px' }}>
-              PROGRESO TOTAL
-            </span>
-            <span style={{ fontSize: '1.3rem', fontFamily: 'var(--font-title)', color: stats.percent === 100 ? '#68d391' : 'var(--gold-300)', fontWeight: 800 }}>
-              {stats.percent}%
-            </span>
-          </div>
-
-          {/* Progress Bar with glowing gradient fill */}
-          <div style={{ width: '100%', height: '8px', background: 'rgba(0,0,0,0.6)', borderRadius: '4px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)' }}>
-            <div
-              style={{
-                width: `${stats.percent}%`,
-                height: '100%',
-                background: stats.percent === 100 ? 'linear-gradient(90deg, #48bb78 0%, #38a169 100%)' : 'var(--gold-gradient)',
-                borderRadius: '4px',
-                transition: 'width 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
-                boxShadow: '0 0 8px var(--gold-glow)'
-              }}
-            />
-          </div>
-
-          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '8px', fontFamily: 'var(--font-title)' }}>
-            <span><strong style={{ color: '#68d391' }}>{stats.completed}</strong> de {stats.total} Completadas</span>
-            <span><strong style={{ color: '#63b3ed' }}>{stats.inProgress}</strong> En curso</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Filter Controls Bar */}
+    <div className="quest-viewer-container">
+      {/* Sticky Header with Search y Filters */}
       <QuestFilterBar
         searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
+        setSearchQuery={setSearchQuery}
         selectedDifficulty={selectedDifficulty}
-        onDifficultyChange={setSelectedDifficulty}
+        setSelectedDifficulty={setSelectedDifficulty}
         selectedType={selectedType}
-        onTypeChange={setSelectedType}
+        setSelectedType={setSelectedType}
         statusFilter={statusFilter}
-        onStatusChange={setStatusFilter}
-        stats={stats}
+        setStatusFilter={setStatusFilter}
+        completedCount={completedCount}
+        inProgressCount={inProgressCount}
       />
 
-      {/* Quests Grid */}
+      {/* Overview Tracker Banner */}
+      <QuestProgressBanner
+        completedCount={completedCount}
+        totalQuests={questsData.length}
+      />
+
+      {/* Quest Cards Grid */}
       {filteredQuests.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '50px 20px', background: 'rgba(0,0,0,0.2)', borderRadius: '12px', border: '1px dashed var(--gold-border)' }}>
-          <GameIcon name="scroll-unfurled" size={36} color="var(--gold-400)" style={{ margin: '0 auto 12px auto' }} />
-          <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '6px' }}>
+        <div style={{ textAlign: 'center', padding: '60px 20px', background: 'var(--bg-card)', borderRadius: '16px', border: '1px solid var(--gold-border)' }}>
+          <Scroll size={48} color="var(--gold-500)" style={{ margin: '0 auto 16px' }} />
+          <h3 style={{ fontFamily: 'var(--font-title)', color: 'var(--gold-300)', marginBottom: '8px' }}>
             No se encontraron misiones
           </h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', maxWidth: '400px', margin: '0 auto 14px auto' }}>
-            No hay misiones que coincidan con los filtros o término de búsqueda seleccionado.
+          <p style={{ color: 'var(--text-secondary)', maxWidth: '400px', margin: '0 auto' }}>
+            Intenta cambiar los términos de búsqueda o los filtros de dificultad y tipo.
           </p>
-          <button
-            className="btn-fantasy"
-            onClick={() => {
-              setSearchQuery('');
-              setSelectedDifficulty('all');
-              setSelectedType('all');
-              setStatusFilter('all');
-            }}
-          >
-            Restablecer Filtros
-          </button>
         </div>
       ) : (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '16px' }}>
-          {filteredQuests.map((quest) => (
-            <QuestCard
-              key={quest.id}
-              quest={quest}
-              status={questStatusMap[quest.id] || 'pending'}
-              onToggleStatus={toggleQuestStatus}
-              onOpenModal={(q) => setSelectedQuestModal(q)}
-              onViewQuestOnMap={onViewQuestOnMap}
-            />
-          ))}
+        <div className="quests-grid">
+          {filteredQuests.map((quest) => {
+            const status = questStatusMap[quest.id] || 'pending';
+
+            return (
+              <QuestCard
+                key={quest.id}
+                quest={quest}
+                status={status}
+                onToggleStatus={toggleQuestStatus}
+                onOpenGuide={() => {
+                  setSelectedQuestModal(quest);
+                  setActiveModalTab('guide');
+                }}
+                onViewOnMap={() => onViewQuestOnMap && onViewQuestOnMap(quest)}
+              />
+            );
+          })}
         </div>
       )}
 
@@ -241,12 +171,20 @@ export default function QuestViewer({ onViewQuestOnMap }) {
       {selectedQuestModal && (
         <QuestDetailModal
           quest={selectedQuestModal}
+          activeTab={activeModalTab}
+          setActiveTab={setActiveModalTab}
           onClose={() => setSelectedQuestModal(null)}
-          questStatus={questStatusMap[selectedQuestModal.id] || 'pending'}
-          onToggleStatus={toggleQuestStatus}
+          isCompleted={questStatusMap[selectedQuestModal.id] === 'completed'}
+          onToggleStatus={() => {
+            toggleQuestStatus(selectedQuestModal.id, questStatusMap[selectedQuestModal.id]);
+          }}
           checkedStepsMap={checkedStepsMap}
           onToggleStep={toggleStepChecked}
-          onViewQuestOnMap={onViewQuestOnMap}
+          onViewOnMap={() => {
+            const quest = selectedQuestModal;
+            setSelectedQuestModal(null);
+            onViewQuestOnMap && onViewQuestOnMap(quest);
+          }}
         />
       )}
     </div>
