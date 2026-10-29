@@ -40,6 +40,7 @@ export default function UpdateModal({
     zipDownloadUrl,
     zipAssetApiUrl,
     zipFileSize,
+    zipChecksum,
     assetApiUrl,
     apkDownloadUrl,
     apkFileName,
@@ -75,7 +76,8 @@ export default function UpdateModal({
       // Descargar paquete
       const bundle = await CapacitorUpdater.download({
         url: targetZipUrl,
-        version: String(latestVersion)
+        version: String(latestVersion),
+        ...(zipChecksum ? { checksum: zipChecksum } : {})
       });
 
       if (!bundle || !bundle.id) {

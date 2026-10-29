@@ -51,6 +51,24 @@ export default function UpdateFooter({
               </a>
             )}
 
+            {status === 'error' && (
+              <a 
+                href={apkDownloadUrl || releaseUrl} 
+                download={apkFileName || 'RS-Dragonwilds.apk'} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-fantasy" 
+                style={{ fontSize: '0.85rem', padding: '8px 12px', display: 'flex', alignItems: 'center', gap: '5px', textDecoration: 'none' }}
+                title="Descargar instalador APK directo"
+                onClick={() => {
+                  if (onDismissLater) onDismissLater();
+                }}
+              >
+                <Download size={14} />
+                <span>Descargar APK</span>
+              </a>
+            )}
+
             {isNative && (hasOtaZip || zipDownloadUrl) ? (
               <button 
                 className="btn-fantasy gold" 

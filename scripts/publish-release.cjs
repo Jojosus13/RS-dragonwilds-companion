@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const crypto = require('crypto');
 // archiver not needed (using native PowerShell Compress-Archive)
 
 // Leer version dinamica desde src/utils/version.js si es posible
@@ -98,6 +99,10 @@ async function main() {
   console.log(`[INFO] Comprimiendo paquete OTA desde ${DIST_DIR}...`);
   await zipDistDirectory(DIST_DIR, ZIP_PATH);
 
+  const zipChecksum = crypto.createHash('sha256').update(fs.readFileSync(ZIP_PATH)).digest('hex');
+  console.log(`[INFO] Checksum SHA-256 del bundle OTA: ${zipChecksum}`);
+  const finalReleaseBody = `${RELEASE_BODY}\n<!-- OTA_CHECKSUM: ${zipChecksum} -->\n- Verificacion de Integridad OTA: SHA-256 \`${zipChecksum}\`\n`;
+
   // 2. Comprobar si existe APK
   const hasApk = fs.existsSync(APK_PATH);
   if (hasApk) {
@@ -114,7 +119,7 @@ async function main() {
     tag_name: TAG_NAME,
     target_commitish: 'main',
     name: RELEASE_NAME,
-    body: RELEASE_BODY,
+    body: finalReleaseBody,
     draft: false,
     prerelease: false
   });

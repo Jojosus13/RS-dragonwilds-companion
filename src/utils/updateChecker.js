@@ -167,6 +167,9 @@ export async function fetchLatestRelease(options = {}) {
     const apkFileName = apkAsset?.name || 'RS-Dragonwilds.apk';
     const apkFileSize = apkAsset ? formatBytes(apkAsset.size) : '';
 
+    const checksumMatch = typeof data.body === 'string' ? data.body.match(/OTA_CHECKSUM:\s*([a-f0-9]{64})/i) : null;
+    const zipChecksum = checksumMatch ? checksumMatch[1].toLowerCase() : null;
+
     return {
       success: true,
       hasUpdate: isNewer,
@@ -186,6 +189,7 @@ export async function fetchLatestRelease(options = {}) {
       zipAssetApiUrl,
       zipFileName,
       zipFileSize,
+      zipChecksum,
       assetApiUrl,
       apkDownloadUrl,
       apkFileName,
