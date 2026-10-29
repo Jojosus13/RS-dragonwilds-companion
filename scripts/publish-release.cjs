@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const archiver = require('archiver');
+// archiver not needed (using native PowerShell Compress-Archive)
 
 // Leer version dinamica desde src/utils/version.js si es posible
 let APP_VERSION = '1.0.5';
@@ -14,13 +14,13 @@ try {
 const GITHUB_OWNER = 'Jojosus13';
 const GITHUB_REPO = 'RS-dragonwilds-companion';
 const TAG_NAME = `v${APP_VERSION}`;
-const RELEASE_NAME = `Dragonwilds Companion v${APP_VERSION} - Refactorizacion Modular y Optimizaciones`;
+const RELEASE_NAME = `Dragonwilds Companion v${APP_VERSION} - CapacitorHttp S3 OTA & Agentic Release`;
 const RELEASE_BODY = `## Novedades y Mejoras en v${APP_VERSION}
 
-- Refactorizacion Modular Integral: Arquitectura desacoplada en modulos limpios y reutilizables (ItemCard, ItemModal, Catalogo, Forja, Bovedas, Hechizos, Lore y Mapa), eliminando componentes redundantes y mejorando la mantenibilidad.
-- Rendimiento del Mapa Interactivo: Optimizacion del arrastre y desplazamiento mediante aceleracion de hardware y sincronizacion por cuadros de animacion, eliminando tirones y mejorando la fluidez del paneo.
-- Correccion de Cuadriculas y Desbordamiento: Ajuste del visor de hechizos y misiones con cuadriculas fluidas adaptativas y correccion del contenedor principal en vistas con barra lateral activa.
-- Empaquetado y Actualizaciones OTA: Paquete de actualizacion en caliente optimizado para distribucion directa sin reinstalacion.
+- Actualizaciones OTA Robustas (CapacitorHttp): Resolucion nativa de redirecciones 302 hacia almacenamiento S3 de GitHub, garantizando descarga fluida de paquetes en caliente.
+- Opciones de Descarga Web: Enlace directo alternativo en el modal de actualizacion para descarga manual directa del APK.
+- Publicacion Resiliente de Releases: Gestion automatica de releases existentes y reemplazo seguro de artefactos binarios.
+- Integracion Multi-Agente: Configuracion completa de agentes especializados (dw-*) y directrices de desarrollo modular.
 `;
 
 const APK_PATH = path.resolve(__dirname, `../dist-apk/RS-Dragonwilds-v${APP_VERSION}.apk`);
