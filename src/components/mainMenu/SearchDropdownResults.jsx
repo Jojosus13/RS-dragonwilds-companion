@@ -3,6 +3,7 @@ import { ChevronRight, ArrowRight } from 'lucide-react';
 import GameIcon from '../GameIcon';
 
 export default function SearchDropdownResults({
+  isOpen = true,
   searchQuery,
   searchResults,
   onSelectItem,
@@ -11,7 +12,7 @@ export default function SearchDropdownResults({
   setSelectedCategory,
   onClose
 }) {
-  if (!searchQuery.trim()) return null;
+  if (!isOpen || !searchQuery.trim()) return null;
 
   return (
     <div className="menu-search-dropdown-results">

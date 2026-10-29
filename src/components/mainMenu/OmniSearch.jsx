@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { MAP_MARKERS } from '../../data/mapData';
 import vaultsData from '../../data/vaults.json';
@@ -15,6 +15,34 @@ export default function OmniSearch({
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const wrapperRef = useRef(null);
+
+  // Close dropdown on outside click or Escape key
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false);
+        setIsSearchFocused(false);
+      }
+    }
+
+    function handleKeyDown(event) {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   // Omnisearch across Items, Quests, Spells, Vaults, and Map POIs
   const searchResults = useMemo(() => {
@@ -84,24 +112,29 @@ export default function OmniSearch({
   }, [searchQuery, allItems, quests, spells]);
 
   return (
-    <div className="menu-search-wrapper">
+    <div className="menu-search-wrapper" ref={wrapperRef}>
       <div className={`menu-search-bar ${isSearchFocused ? 'focused' : ''}`}>
         <Search size={20} className="menu-search-icon" />
         <input
           type="text"
           placeholder="Busca armas, armaduras, misiones, hechizos, lugares..."
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          onFocus={() => setIsSearchFocused(true)}
-          onBlur={() => {
-            // Delay to allow clicking result items
-            setTimeout(() => setIsSearchFocused(false), 200);
+          onChange={(e) => {
+            setSearchQuery(e.target.value);
+            setIsOpen(true);
+          }}
+          onFocus={() => {
+            setIsSearchFocused(true);
+            if (searchQuery.trim()) setIsOpen(true);
           }}
         />
         {searchQuery && (
           <button
             className="menu-search-clear"
-            onClick={() => setSearchQuery('')}
+            onClick={() => {
+              setSearchQuery('');
+              setIsOpen(false);
+            }}
             title="Borrar búsqueda"
           >
             <X size={16} />
@@ -110,13 +143,17 @@ export default function OmniSearch({
       </div>
 
       <SearchDropdownResults
+        isOpen={isOpen}
         searchQuery={searchQuery}
         searchResults={searchResults}
         onSelectItem={onSelectItem}
         onSelectVault={onSelectVault}
         setActiveView={setActiveView}
         setSelectedCategory={setSelectedCategory}
-        onClose={() => setSearchQuery('')}
+        onClose={() => {
+          setSearchQuery('');
+          setIsOpen(false);
+        }}
       />
     </div>
   );

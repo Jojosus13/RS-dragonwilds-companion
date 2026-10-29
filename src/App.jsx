@@ -10,6 +10,7 @@ import ItemCatalog from './components/items/ItemCatalog';
 import ItemModal from './components/itemModal/ItemModal';
 import CraftingPlanner from './components/crafting/CraftingPlanner';
 import LoadoutBuilder from './components/loadout/LoadoutBuilder';
+import { getSlotForItem } from './components/loadout/slotsConfig';
 import SkillsGuide from './components/skills/SkillsGuide';
 import QuestViewer from './components/quests/QuestViewer';
 import VaultsViewer from './components/vaults/VaultsViewer';
@@ -291,17 +292,11 @@ export default function App() {
 
   // Equip item directly from modal
   const handleEquipFromModal = (item) => {
-    const type = (item.itemType || '').toLowerCase();
-    const cat = (item.category || '').toLowerCase();
-
-    let targetSlot = 'mainhand';
-    if (type.includes('shield')) targetSlot = 'offhand';
-    else if (type.includes('helmet') || type.includes('hat') || type.includes('coif')) targetSlot = 'head';
-    else if (type.includes('platebody') || type.includes('body') || type.includes('robe') || type.includes('tunic')) targetSlot = 'body';
-    else if (type.includes('legs') || type.includes('chaps') || type.includes('leggings')) targetSlot = 'legs';
-    else if (type.includes('cape')) targetSlot = 'cape';
-    else if (type.includes('amulet') || type.includes('necklace')) targetSlot = 'neck';
-    else if (type.includes('ring')) targetSlot = 'ring';
+    let targetSlot = getSlotForItem(item);
+    if (!targetSlot) return;
+    if (targetSlot === 'consumable1' && loadout.consumable1 && !loadout.consumable2) {
+      targetSlot = 'consumable2';
+    }
 
     handleEquipSlot(targetSlot, item);
     setActiveView('loadout');

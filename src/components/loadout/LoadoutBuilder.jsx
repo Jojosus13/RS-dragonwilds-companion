@@ -3,7 +3,7 @@ import { Trash2 } from 'lucide-react';
 import EquipmentDoll from './EquipmentDoll';
 import LoadoutStatsPanel from './LoadoutStatsPanel';
 import SlotItemPickerModal from './SlotItemPickerModal';
-import { SLOTS_CONFIG } from './slotsConfig';
+import { SLOTS_CONFIG, isItemForSlot } from './slotsConfig';
 
 export { SLOTS_CONFIG };
 
@@ -59,18 +59,16 @@ export default function LoadoutBuilder({
   const slotCandidates = useMemo(() => {
     if (!activeSlotConfig) return [];
 
-    let candidates = allItems.filter((item) => {
-      const combined = `${item.title} ${item.name} ${item.itemType} ${item.category}`.toLowerCase();
-      return activeSlotConfig.typeFilter.some((f) => combined.includes(f));
-    });
+    let candidates = allItems.filter((item) => isItemForSlot(item, activeSlotConfig.id));
 
     // Subtype filter
     if (modalSubtype !== 'all' && activeSlotConfig.subtypes) {
       const currentSub = activeSlotConfig.subtypes.find((s) => s.id === modalSubtype);
       if (currentSub?.keywords) {
+        const pattern = new RegExp(`\\b(${currentSub.keywords.join('|')})`, 'i');
         candidates = candidates.filter((item) => {
-          const combined = `${item.title} ${item.name} ${item.itemType} ${item.category}`.toLowerCase();
-          return currentSub.keywords.some((kw) => combined.includes(kw));
+          const combined = `${item.title} ${item.name} ${item.englishTitle || ''} ${item.itemType} ${item.category}`;
+          return pattern.test(combined);
         });
       }
     }

@@ -2998,13 +2998,21 @@ select:focus,
 /* Hero Banner */
 .menu-hero-banner {
   position: relative;
+  z-index: 30;
   background: linear-gradient(135deg, rgba(20, 26, 38, 0.95) 0%, rgba(10, 13, 18, 0.98) 100%);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-xl);
   padding: 48px 32px 36px;
-  overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 232, 158, 0.15);
   text-align: center;
+}
+
+.menu-hero-glow-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
 }
 
 .menu-hero-glow-orb {
@@ -3166,7 +3174,7 @@ select:focus,
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(16px);
   z-index: 100;
-  max-height: 480px;
+  max-height: min(480px, 65vh);
   overflow-y: auto;
   text-align: left;
 }

@@ -41,9 +41,9 @@ export const SLOTS_CONFIG = [
     typeFilter: ['platebody', 'chainbody', 'body', 'robe top', 'robe', 'tunic', 'cuirass', 'coraza', 'cota', 'peto', 'túnica'],
     subtypes: [
       { id: 'all', name: 'Todos los Torsos' },
-      { id: 'heavy', name: 'Corazas de Metal', icon: 'shield', keywords: ['platebody', 'knight', 'coraza', 'cota de malla', 'placas'] },
-      { id: 'ranged', name: 'Cueros de Dragón', icon: 'bow-arrow', keywords: ['dragonhide body', 'tunic', 'leather', 'cuero', 'peto', 'dragón'] },
-      { id: 'magic', name: 'Ropajes Mágicos', icon: 'wizard-staff', keywords: ['robe', 'ancestral', 'apprentice', 'túnica', 'mágico', 'mago', 'hábito'] }
+      { id: 'heavy', name: 'Corazas de Metal', icon: 'shield', keywords: ['platebody', 'knight', 'coraza', 'cota', 'placas'] },
+      { id: 'ranged', name: 'Cueros de Dragón', icon: 'bow-arrow', keywords: ['dragonhide', 'tunic', 'leather', 'cuero', 'peto', 'dragón'] },
+      { id: 'magic', name: 'Ropajes Mágicos', icon: 'wizard-staff', keywords: ['robe', 'ancestral', 'apprentice', 'túnica', 'ropaje', 'mágico', 'mago', 'hábito'] }
     ]
   },
   {
@@ -69,7 +69,7 @@ export const SLOTS_CONFIG = [
     typeFilter: ['shield', 'kiteshield', 'buckler', 'defender', 'escudo', 'broquel', 'defensor', 'áspis'],
     subtypes: [
       { id: 'all', name: 'Todos los Escudos' },
-      { id: 'metal', name: 'Escudos de Metal', icon: 'shield', keywords: ['shield', 'kiteshield', 'escudo', 'lágrima', 'cuadrado'] },
+      { id: 'metal', name: 'Escudos de Metal', icon: 'shield', keywords: ['shield', 'kiteshield', 'escudo', 'lágrima', 'cuadrado', 'hierro', 'bronce', 'acero', 'mithril', 'adamantita', 'runita'] },
       { id: 'dragon', name: 'Anti-Dragón y Especiales', icon: 'dragon-head', keywords: ['anti-dragon', 'dragonfire', 'dragón', 'fuego', 'espiritual'] }
     ]
   },
@@ -80,9 +80,9 @@ export const SLOTS_CONFIG = [
     typeFilter: ['platelegs', 'plateskirt', 'legs', 'chaps', 'leggings', 'robe legs', 'robe bottom', 'perneras', 'pantalones', 'falda', 'faldón', 'quijote'],
     subtypes: [
       { id: 'all', name: 'Todas las Perneras' },
-      { id: 'heavy', name: 'Perneras de Placas', icon: 'shield', keywords: ['platelegs', 'knight', 'perneras', 'placas', 'quijote'] },
-      { id: 'ranged', name: 'Pantalones de Cazador', icon: 'bow-arrow', keywords: ['chaps', 'leggings', 'pantalones', 'cuero', 'dragón'] },
-      { id: 'magic', name: 'Faldas Mágicas', icon: 'wizard-staff', keywords: ['robe legs', 'ancestral', 'apprentice', 'falda', 'mágico', 'mago', 'túnica'] }
+      { id: 'heavy', name: 'Perneras de Placas', icon: 'shield', keywords: ['platelegs', 'plateskirt', 'knight', 'perneras', 'placas', 'quijote'] },
+      { id: 'ranged', name: 'Pantalones de Cazador', icon: 'bow-arrow', keywords: ['chaps', 'leggings', 'pantalones', 'cuero', 'dragón', 'mallas', 'tights'] },
+      { id: 'magic', name: 'Faldas Mágicas', icon: 'wizard-staff', keywords: ['robe', 'ancestral', 'apprentice', 'falda', 'mágico', 'mago'] }
     ]
   },
   {
@@ -101,8 +101,8 @@ export const SLOTS_CONFIG = [
     typeFilter: ['potion', 'food', 'consumable', 'stew', 'broth', 'pie', 'potato', 'fish', 'poción', 'elixir', 'brebaje', 'comida', 'estofado', 'pastel', 'patata', 'pescado', 'carne'],
     subtypes: [
       { id: 'all', name: 'Todos los Consumibles' },
-      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir', 'poción', 'antifuego', 'antiponzoña', 'brebaje', 'infusión'] },
-      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish', 'estofado', 'pastel', 'patata', 'carne', 'pescado', 'asado', 'brasa'] }
+      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir', 'poción', 'antifuego', 'antiponzoña', 'brebaje', 'infusión', 'infusion', 'tea', 'té', 'brew', 'bebida'] },
+      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish', 'estofado', 'pastel', 'patata', 'carne', 'pescado', 'asado', 'brasa', 'caldo', 'arenque', 'sustento', 'chuleta', 'filete', 'salteada'] }
     ]
   },
   {
@@ -112,8 +112,104 @@ export const SLOTS_CONFIG = [
     typeFilter: ['potion', 'food', 'consumable', 'stew', 'broth', 'pie', 'potato', 'fish', 'poción', 'elixir', 'brebaje', 'comida', 'estofado', 'pastel', 'patata', 'pescado', 'carne'],
     subtypes: [
       { id: 'all', name: 'Todos los Consumibles' },
-      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir', 'poción', 'antifuego', 'antiponzoña', 'brebaje', 'infusión'] },
-      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish', 'estofado', 'pastel', 'patata', 'carne', 'pescado', 'asado', 'brasa'] }
+      { id: 'potions', name: 'Pociones y Elixires', icon: 'potion-ball', keywords: ['potion', 'antifire', 'antipoison', 'elixir', 'poción', 'antifuego', 'antiponzoña', 'brebaje', 'infusión', 'infusion', 'tea', 'té', 'brew', 'bebida'] },
+      { id: 'food', name: 'Comidas y Estofados', icon: 'cooking-pot', keywords: ['stew', 'broth', 'pie', 'potato', 'food', 'seared', 'compote', 'fish', 'estofado', 'pastel', 'patata', 'carne', 'pescado', 'asado', 'brasa', 'caldo', 'arenque', 'sustento', 'chuleta', 'filete', 'salteada'] }
     ]
   }
 ];
+
+/**
+ * Determina si un objeto del juego es realmente una pieza de equipamiento o consumible de combate.
+ * Filtra vestigios, materiales básicos, chatarra, ingredientes crudos, semillas, runas y monturas.
+ */
+export function isEquipableItem(it) {
+  if (!it) return false;
+  if (it.category === 'Vestigios y Patrones' || it.itemType === 'Vestigio Antiguo') return false;
+  if (it.title && it.title.includes('(Vestigio)') && (!it.stats || (!it.stats.baseDamage && !it.stats.armourRating))) return false;
+  if (it.title && (it.title.startsWith('MONTURA:') || it.title.startsWith('MOUNT:'))) return false;
+  if (it.category === 'Materiales y Minerales' || it.category === 'Runas y Magia') return false;
+  if (['Ingrediente Crudo', 'Semilla de Cultivo', 'Componente de Forja', 'Material Básico', 'Material Procesado', 'Recurso', 'Tomo de Aprendizaje'].includes(it.itemType)) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * Devuelve la ranura (slotId) adecuada para equipar un objeto dado, o null si no es equipable.
+ */
+export function getSlotForItem(it) {
+  if (!isEquipableItem(it)) return null;
+
+  const t = `${it.title || ''} ${it.englishTitle || ''}`.toLowerCase();
+  const cat = it.category || '';
+  const itemType = it.itemType || '';
+
+  // Consumibles: Pociones y Comida cocinada / bebidas
+  if (cat === 'Pociones y Comida' || itemType === 'Comida / Sustento') {
+    const validConsumableTypes = ['Poción / Brebaje', 'Bebida / Hidratación', 'Comida / Sustento', 'Consumible', 'Pociones y Consumibles'];
+    if (!validConsumableTypes.includes(itemType)) return null;
+    if (it.title && (it.title.includes('Semillas') || it.title.includes('Tomo') || it.title.includes('Joyería Corroída'))) return null;
+    return 'consumable1';
+  }
+
+  // Armas de Combate y herramientas de tala/minería empuñables
+  if (cat === 'Armas de Combate') return 'mainhand';
+  if (cat === 'Herramientas') {
+    if (it.stats && (it.stats.attackStyle || (it.stats.baseDamage && String(it.stats.baseDamage).trim() !== ''))) {
+      return 'mainhand';
+    }
+    return null;
+  }
+
+  // Todo el resto de armaduras y prendas
+  if (cat !== 'Armaduras y Ropa') return null;
+
+  // Cabeza (cascos, yelmos, sombreros, capuchas, tiaras, coronas, caperuzas)
+  if (/\b(casco|yelmo|sombrero|capucha|tiara|corona|caperuza|coif|helmet|helm|hat|hood|crown)\b/i.test(t) || t.includes('bolsa de noggin') || t.includes('bag of noggin')) {
+    return 'head';
+  }
+
+  // Escudo / Offhand
+  if (/\b(escudo|broquel|defensor|áspis|shield|kiteshield|buckler|defender)\b/i.test(t)) {
+    return 'offhand';
+  }
+
+  // Cuello / Amuletos / Bufandas
+  if (/\b(amuleto|amulet|collar|necklace|pendant|choker|bufanda|scarf)\b/i.test(t)) {
+    return 'neck';
+  }
+
+  // Capa / Acumulador / Manto / Estandarte
+  if (/\b(capa|manto|acumulador|cape|cloak|accumulator)\b/i.test(t) || t.includes('estandarte de guerra') || t.includes('war banner')) {
+    return 'cape';
+  }
+
+  // Piernas (perneras, pantalones, faldas, quijotes, mallas)
+  if (/\b(perneras|pantalones|falda|faldón|quijote|mallas|platelegs|plateskirt|legs|chaps|leggings|tights)\b/i.test(t) || /\brobe bottoms?\b/i.test(t)) {
+    return 'legs';
+  }
+
+  // Torso / Pecho (corazas, cotas, petos, túnicas, ropajes)
+  if (/\b(coraza|cota|peto|platebody|chainbody|cuirass|body|torso|túnica|túnicas|ropaje|ropajes|robe|robes)\b/i.test(t)) {
+    return 'body';
+  }
+
+  // Anillos
+  if (/\b(anillo|ring)\b/i.test(t)) {
+    return 'ring';
+  }
+
+  return null;
+}
+
+/**
+ * Comprueba si un objeto corresponde a una ranura específica del simulador.
+ */
+export function isItemForSlot(it, slotId) {
+  const slot = getSlotForItem(it);
+  if (!slot) return false;
+  if (slotId === 'consumable1' || slotId === 'consumable2') {
+    return slot === 'consumable1';
+  }
+  return slot === slotId;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plus, Check, ExternalLink } from 'lucide-react';
 import GameIcon from '../GameIcon';
+import { isEquipableItem } from '../loadout/slotsConfig';
 
 export default function ItemModalFooter({
   item,
@@ -11,15 +12,7 @@ export default function ItemModalFooter({
   onEquipItem,
   onViewItemOnMap
 }) {
-  const canEquip = (
-    item.category === 'Armas de Combate' ||
-    item.category === 'Armaduras y Ropa' ||
-    item.category === 'Weapons' ||
-    item.category === 'Armour' ||
-    item.category === 'Herramientas' ||
-    item.slot ||
-    (item.stats && Object.keys(item.stats).length > 0)
-  );
+  const canEquip = isEquipableItem(item);
 
   return (
     <div style={{ padding: '16px 20px', borderTop: '1px solid var(--gold-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(10,13,18,0.92)', flexWrap: 'wrap', gap: '10px' }}>

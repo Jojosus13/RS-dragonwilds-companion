@@ -627,7 +627,7 @@
       },
       {
         "id": "poisoned-adamant-arrow",
-        "title": "Poisoned Adamant Arrow",
+        "title": "Flecha de Adamantita Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -2779,7 +2779,7 @@
     "usedIn": [
       {
         "id": "stamina-potion",
-        "title": "Poción de Resistencia",
+        "title": "Poción de Resistencia (Stamina)",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -3316,7 +3316,7 @@
       },
       {
         "id": "medium-wardstone",
-        "title": "Medium Wardstone",
+        "title": "Piedra Guardiana Mediana",
         "category": "Materiales y Minerales",
         "quantityNeeded": 2,
         "facility": "Mesa de Artesanía",
@@ -3436,7 +3436,7 @@
       },
       {
         "id": "plant-cure",
-        "title": "Plant Cure",
+        "title": "Cura para Plantas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -3444,7 +3444,7 @@
       },
       {
         "id": "reinforced-helmet",
-        "title": "Reinforced Helmet",
+        "title": "Casco Reforzado",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Mesa de Artesanía",
@@ -3452,7 +3452,7 @@
       },
       {
         "id": "reinforced-body",
-        "title": "Reinforced Body",
+        "title": "Peto Reforzado",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Mesa de Artesanía",
@@ -3460,7 +3460,7 @@
       },
       {
         "id": "reinforced-legs",
-        "title": "Reinforced Legs",
+        "title": "Perneras Reforzadas",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Mesa de Artesanía",
@@ -3564,7 +3564,7 @@
     "usedIn": [
       {
         "id": "relentless-infusion",
-        "title": "Relentless Infusion",
+        "title": "Infusión Implacable",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -4536,7 +4536,7 @@
       },
       {
         "id": "purple-torch",
-        "title": "Purple Torch",
+        "title": "Antorcha Morada",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -4544,7 +4544,7 @@
       },
       {
         "id": "red-torch",
-        "title": "Red Torch",
+        "title": "Antorcha Roja",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -4600,7 +4600,7 @@
       },
       {
         "id": "torch",
-        "title": "Torch",
+        "title": "Antorcha",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -4616,7 +4616,7 @@
       },
       {
         "id": "wooden-training-sword",
-        "title": "Espada de Madera de Entrenamiento",
+        "title": "Espada de Entrenamiento de Madera",
         "category": "Armas de Combate",
         "quantityNeeded": 14,
         "facility": "Mesa de Artesanía",
@@ -4656,7 +4656,7 @@
       },
       {
         "id": "yellow-torch",
-        "title": "Yellow Torch",
+        "title": "Antorcha Amarilla",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -4931,7 +4931,7 @@
     "usedIn": [
       {
         "id": "enchanted-blurite-bolts",
-        "title": "Pernos de Blurite Encantados",
+        "title": "Pernos de Blurita Encantados",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Mesa de Flechería",
@@ -5114,7 +5114,7 @@
       },
       {
         "id": "stamina-potion",
-        "title": "Poción de Resistencia",
+        "title": "Poción de Resistencia (Stamina)",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -5331,7 +5331,7 @@
       },
       {
         "id": "herb-baked-trout",
-        "title": "Herb Baked Trucha Cocinada",
+        "title": "Trucha Horneada con Hierbas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -5339,7 +5339,7 @@
       },
       {
         "id": "pumpkin-soup",
-        "title": "Calabaza Soup",
+        "title": "Sopa de Calabaza",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -5347,7 +5347,7 @@
       },
       {
         "id": "roast-dinner",
-        "title": "Roast Dinner",
+        "title": "Cena Asada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -5355,7 +5355,7 @@
       },
       {
         "id": "sweet-veg-ball",
-        "title": "Sweet Veg Ball",
+        "title": "Albóndiga Vegetal Dulce",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -5363,7 +5363,7 @@
       },
       {
         "id": "swabbie-pie",
-        "title": "Swabbie Pie",
+        "title": "Pastel de Marinero",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -5379,7 +5379,7 @@
       },
       {
         "id": "vegetable-soup",
-        "title": "Vegetable Soup",
+        "title": "Sopa de Verduras",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -5387,7 +5387,7 @@
       },
       {
         "id": "vegan-fryup",
-        "title": "Vegan Fryup",
+        "title": "Fritura Vegana",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -5584,7 +5584,7 @@
           "englishItem": "Grilled Tomatoes"
         },
         {
-          "item": "Steak",
+          "item": "Filete",
           "quantity": 1,
           "englishItem": "Steak"
         },
@@ -5685,7 +5685,7 @@
       "skillxp": 15,
       "materials": [
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 2,
           "englishItem": "Redberries"
         },
@@ -5797,7 +5797,7 @@
       },
       {
         "id": "fortifying-stew",
-        "title": "Fortifying Estofado Rústico",
+        "title": "Estofado Rústico Fortificante",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -6121,7 +6121,7 @@
       },
       {
         "id": "rune-platebody",
-        "title": "Coraza de Placas Rúnica",
+        "title": "Coraza de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -6129,7 +6129,7 @@
       },
       {
         "id": "rune-platelegs",
-        "title": "Perneras de Placas Rúnico",
+        "title": "Perneras de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -6137,7 +6137,7 @@
       },
       {
         "id": "rune-mace",
-        "title": "Maza Rúnico",
+        "title": "Maza de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -6145,7 +6145,7 @@
       },
       {
         "id": "rune-pickaxe",
-        "title": "Pico de Minería Rúnico",
+        "title": "Pico de Runita",
         "category": "Herramientas",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -6169,7 +6169,7 @@
       },
       {
         "id": "rune-sword",
-        "title": "Espada Rúnica",
+        "title": "Espada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 5,
         "facility": "Banco del Herrero",
@@ -6177,7 +6177,7 @@
       },
       {
         "id": "rune-scimitar",
-        "title": "Cimitarra Rúnica",
+        "title": "Cimitarra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 5,
         "facility": "Banco del Herrero",
@@ -6201,7 +6201,7 @@
       },
       {
         "id": "rune-warhammer",
-        "title": "Martillo de Guerra Rúnico",
+        "title": "Martillo de Guerra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Banco del Herrero",
@@ -6426,7 +6426,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Diezmar (sin marco|ancho=25x25 50)",
+      "specialAction": "Diezmar",
       "specialEffect": "* Mayor DAÑO * Mayor costo de energía"
     },
     "recipe": {
@@ -6773,7 +6773,7 @@
       },
       {
         "id": "black-sword",
-        "title": "Espada Negroa",
+        "title": "Espada Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Banco del Herrero",
@@ -6781,7 +6781,7 @@
       },
       {
         "id": "black-greataxe",
-        "title": "Gran Hacha de Guerra Negroa",
+        "title": "Gran Hacha de Guerra Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Banco del Herrero",
@@ -6789,7 +6789,7 @@
       },
       {
         "id": "black-crossbow-limbs",
-        "title": "Palas de Ballesta Negroa",
+        "title": "Palas de Ballesta Negras",
         "category": "Materiales y Minerales",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -6805,7 +6805,7 @@
       },
       {
         "id": "shadow-cowl",
-        "title": "Shadow Cowl",
+        "title": "Capucha Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -6813,7 +6813,7 @@
       },
       {
         "id": "shadow-body",
-        "title": "Shadow Body",
+        "title": "Peto Sombrío",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -6821,7 +6821,7 @@
       },
       {
         "id": "shadow-chaps",
-        "title": "Shadow Chaps",
+        "title": "Perneras Sombrías",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -6837,7 +6837,7 @@
       },
       {
         "id": "zamorak-staff",
-        "title": "Zamorak Staff",
+        "title": "Báculo de Zamorak",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Fragua Mística",
@@ -6845,7 +6845,7 @@
       },
       {
         "id": "zamorak-hood",
-        "title": "Zamorak Hood",
+        "title": "Capucha de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -6853,7 +6853,7 @@
       },
       {
         "id": "zamorak-robes",
-        "title": "Zamorak Robes",
+        "title": "Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -6861,7 +6861,7 @@
       },
       {
         "id": "zamorak-robe-legs",
-        "title": "Zamorak Robe Legs",
+        "title": "Falda de Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -7013,7 +7013,7 @@
       "combo": 5,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Barcaza (sin marco|ancho=25x25 25)",
+      "specialAction": "Barcaza",
       "specialEffect": "DAÑO aumentado contra MAGOS"
     },
     "recipe": {
@@ -7147,7 +7147,7 @@
       },
       {
         "id": "iron-pickaxe",
-        "title": "Pico de Minería de Hierro",
+        "title": "Pico de Hierro",
         "category": "Herramientas",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -7716,7 +7716,7 @@
       },
       {
         "id": "shadow-cowl",
-        "title": "Shadow Cowl",
+        "title": "Capucha Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -7724,7 +7724,7 @@
       },
       {
         "id": "shadow-body",
-        "title": "Shadow Body",
+        "title": "Peto Sombrío",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -7732,7 +7732,7 @@
       },
       {
         "id": "shadow-chaps",
-        "title": "Shadow Chaps",
+        "title": "Perneras Sombrías",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -8316,7 +8316,7 @@
     "usedIn": [
       {
         "id": "enchanted-blurite-bolts",
-        "title": "Pernos de Blurite Encantados",
+        "title": "Pernos de Blurita Encantados",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -8557,7 +8557,7 @@
     "category": "Armas de Combate",
     "description": "Un arma hecha de hueso primitiva, perfecta para romper otros huesos.",
     "weight": 4.5,
-    "repairCost": "1 animal bone",
+    "repairCost": "1 hueso de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -8662,7 +8662,7 @@
     "category": "Armas de Combate",
     "description": "Un arma siniestra, elaborada a partir de huesos de criaturas caídas.",
     "weight": 5,
-    "repairCost": "1 small animal fang",
+    "repairCost": "1 colmillo de animal pequeño",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -8715,7 +8715,7 @@
     "category": "Herramientas",
     "description": "Una herramienta básica de minería hecha de duro hueso animal. Ya es bastante difícil extraer depósitos de cobre y estaño.",
     "weight": 5,
-    "repairCost": "1 animal bone",
+    "repairCost": "1 hueso de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -8779,7 +8779,7 @@
       "combo": null,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Lluvia Lunar (sin marco|ancho=25x25 50)",
+      "specialAction": "Lluvia Lunar",
       "specialEffect": "* LLUVIA LUNAR: Invoca un BARRAJE DE flechas que caen como lluvia y causan DAÑO sobre el ÁREA OBJETIVO, con la posibilidad de generar un ORBE DE AGUA. *BENDICIÓN DE ELIDINIS: flechas reparten DAÑOS POR AGUA. Las muertes con flechas de agua tienen la posibilidad de soltar ORBES DE AGUA que brindan salud REGEN cuando se recogen. *PUREZA DE LA LUNA: No se pueden usar flechas de veneno, SANGRADO y FUEGO."
     },
     "recipe": {
@@ -8877,7 +8877,7 @@
     "usedIn": [
       {
         "id": "stuffed-catfish",
-        "title": "Stuffed Catfish",
+        "title": "Pez Gato Relleno",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9050,7 +9050,7 @@
       },
       {
         "id": "glazed-pumpkin-sandwich",
-        "title": "Glazed Calabaza Sandwich",
+        "title": "Sándwich de Calabaza Glaseada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9066,7 +9066,7 @@
       },
       {
         "id": "meat-pizza",
-        "title": "Meat Pizza",
+        "title": "Pizza de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9074,7 +9074,7 @@
       },
       {
         "id": "meat-sandwich",
-        "title": "Meat Sandwich",
+        "title": "Sándwich de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9082,7 +9082,7 @@
       },
       {
         "id": "meat-twist-sandwich",
-        "title": "Meat Twist Sandwich",
+        "title": "Sándwich Enrollado de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9090,7 +9090,7 @@
       },
       {
         "id": "mushroom-kebab",
-        "title": "Mushroom Kebab",
+        "title": "Kebab de Champiñones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9098,7 +9098,7 @@
       },
       {
         "id": "steak-sandwich",
-        "title": "Steak Sandwich",
+        "title": "Sándwich de Bistec",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9106,7 +9106,7 @@
       },
       {
         "id": "swabbie-pie",
-        "title": "Swabbie Pie",
+        "title": "Pastel de Marinero",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9114,7 +9114,7 @@
       },
       {
         "id": "umbral-kebab",
-        "title": "Kebab Umbrío/a",
+        "title": "Kebab Umbrío",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -9200,7 +9200,7 @@
       },
       {
         "id": "poisoned-bronze-arrow",
-        "title": "Poisoned Bronze Arrow",
+        "title": "Flecha de Bronce Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -11685,7 +11685,7 @@
       "skillxp": 10,
       "materials": [
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         }
@@ -12316,7 +12316,7 @@
     "usedIn": [
       {
         "id": "seared-cactus-steak",
-        "title": "Seared Cactus Steak",
+        "title": "Filete de Cactus Sellado",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -12668,7 +12668,7 @@
     "category": "Armaduras y Ropa",
     "description": "Qué sombrero tan tonto.",
     "weight": 2,
-    "repairCost": "2 wool cloth",
+    "repairCost": "2 tela de lana",
     "release": "15 April 2025",
     "powerLevel": 1,
     "stats": {
@@ -12887,7 +12887,7 @@
       "combo": 5,
       "durability": 1050,
       "armourRating": null,
-      "specialAction": "Barcaza ((sin marco|ancho=25x25 25)",
+      "specialAction": "Barcaza (",
       "specialEffect": "* MAYOR probabilidad de conseguir golpes CRÍTICOS con ATAQUES de espada * DAÑO reducido"
     },
     "recipe": {
@@ -13384,7 +13384,7 @@
       },
       {
         "id": "ring-of-recoil",
-        "title": "Anillo de Repulsión",
+        "title": "Anillo de Repulsión (Recoil)",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco del Joyero",
@@ -13920,7 +13920,7 @@
       },
       {
         "id": "plant-cure",
-        "title": "Plant Cure",
+        "title": "Cura para Plantas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -13928,7 +13928,7 @@
       },
       {
         "id": "pumpkin-spice-infusion",
-        "title": "Calabaza Spice Infusion",
+        "title": "Infusión de Calabaza con Especias",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -13936,7 +13936,7 @@
       },
       {
         "id": "redberry-infusion",
-        "title": "Redberry Infusion",
+        "title": "Infusión de Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -13944,7 +13944,7 @@
       },
       {
         "id": "relentless-infusion",
-        "title": "Relentless Infusion",
+        "title": "Infusión Implacable",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -13952,7 +13952,7 @@
       },
       {
         "id": "strong-sweet-tea",
-        "title": "Strong Sweet Tea",
+        "title": "Té Dulce Fuerte",
         "category": "Pociones y Comida",
         "quantityNeeded": 3,
         "facility": "Cocina de Hierro",
@@ -13960,7 +13960,7 @@
       },
       {
         "id": "strong-tea",
-        "title": "Strong Tea",
+        "title": "Té Fuerte",
         "category": "Pociones y Comida",
         "quantityNeeded": 3,
         "facility": "Cocina de Hierro",
@@ -14079,7 +14079,7 @@
       },
       {
         "id": "leggings-of-lightness",
-        "title": "Leggings Of Lightness",
+        "title": "Perneras de Ligereza",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Mesa de Artesanía",
@@ -14087,7 +14087,7 @@
       },
       {
         "id": "purple-torch",
-        "title": "Purple Torch",
+        "title": "Antorcha Morada",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -14095,7 +14095,7 @@
       },
       {
         "id": "red-torch",
-        "title": "Red Torch",
+        "title": "Antorcha Roja",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -14103,7 +14103,7 @@
       },
       {
         "id": "torch",
-        "title": "Torch",
+        "title": "Antorcha",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -14119,7 +14119,7 @@
       },
       {
         "id": "yellow-torch",
-        "title": "Yellow Torch",
+        "title": "Antorcha Amarilla",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -14334,7 +14334,7 @@
       },
       {
         "id": "leather-body",
-        "title": "Peto / Coraza de Cuero",
+        "title": "Peto de Cuero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Mesa de Artesanía",
@@ -14342,7 +14342,7 @@
       },
       {
         "id": "leather-chaps",
-        "title": "Pantalones de Cuero",
+        "title": "Perneras de Cuero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Mesa de Artesanía",
@@ -15489,7 +15489,7 @@
       },
       {
         "id": "black-sword",
-        "title": "Espada Negroa",
+        "title": "Espada Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 5,
         "facility": "Banco del Herrero",
@@ -15497,7 +15497,7 @@
       },
       {
         "id": "black-greataxe",
-        "title": "Gran Hacha de Guerra Negroa",
+        "title": "Gran Hacha de Guerra Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -15529,7 +15529,7 @@
       },
       {
         "id": "mithril-pickaxe",
-        "title": "Pico de Minería de Mithril",
+        "title": "Pico de Mithril",
         "category": "Herramientas",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -15537,7 +15537,7 @@
       },
       {
         "id": "mithril-platebody",
-        "title": "Coraza de Placas de Mithril",
+        "title": "Coraza de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -15545,7 +15545,7 @@
       },
       {
         "id": "mithril-platelegs",
-        "title": "Perneras de Placas de Mithril",
+        "title": "Perneras de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -15609,7 +15609,7 @@
       },
       {
         "id": "mithril-med-helm",
-        "title": "Casco Mediano de Mithril",
+        "title": "Casco Medio de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -15625,7 +15625,7 @@
       },
       {
         "id": "mystic-robes",
-        "title": "Mystic Robes",
+        "title": "Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -15633,7 +15633,7 @@
       },
       {
         "id": "mystic-robe-legs",
-        "title": "Mystic Robe Legs",
+        "title": "Falda de Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -15641,7 +15641,7 @@
       },
       {
         "id": "shadow-cowl",
-        "title": "Shadow Cowl",
+        "title": "Capucha Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -15649,7 +15649,7 @@
       },
       {
         "id": "shadow-body",
-        "title": "Shadow Body",
+        "title": "Peto Sombrío",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -15657,7 +15657,7 @@
       },
       {
         "id": "shadow-chaps",
-        "title": "Shadow Chaps",
+        "title": "Perneras Sombrías",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -15665,7 +15665,7 @@
       },
       {
         "id": "zamorak-staff",
-        "title": "Zamorak Staff",
+        "title": "Báculo de Zamorak",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Fragua Mística",
@@ -15682,7 +15682,7 @@
     "category": "Armaduras y Ropa",
     "description": "Una capucha mística, popular entre los magos más atrevidos.",
     "weight": 4,
-    "repairCost": "1 padded cloth",
+    "repairCost": "1 tela acolchada",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -15740,7 +15740,7 @@
     "category": "Armaduras y Ropa",
     "description": "Armadura mágica ligera para lanzadores de hechizos más atrevidos.",
     "weight": 6,
-    "repairCost": "1 padded cloth",
+    "repairCost": "1 tela acolchada",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -15798,7 +15798,7 @@
     "category": "Armaduras y Ropa",
     "description": "Armadura mágica para el mago más atrevido.",
     "weight": 8,
-    "repairCost": "1 padded cloth",
+    "repairCost": "1 tela acolchada",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -15988,7 +15988,7 @@
       },
       {
         "id": "black-sword",
-        "title": "Espada Negroa",
+        "title": "Espada Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -16012,7 +16012,7 @@
       },
       {
         "id": "mithril-platebody",
-        "title": "Coraza de Placas de Mithril",
+        "title": "Coraza de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -16020,7 +16020,7 @@
       },
       {
         "id": "mithril-platelegs",
-        "title": "Perneras de Placas de Mithril",
+        "title": "Perneras de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -16028,7 +16028,7 @@
       },
       {
         "id": "mithril-med-helm",
-        "title": "Casco Mediano de Mithril",
+        "title": "Casco Medio de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -16044,7 +16044,7 @@
       },
       {
         "id": "mystic-robes",
-        "title": "Mystic Robes",
+        "title": "Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -16052,7 +16052,7 @@
       },
       {
         "id": "mystic-robe-legs",
-        "title": "Mystic Robe Legs",
+        "title": "Falda de Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -16060,7 +16060,7 @@
       },
       {
         "id": "shadow-cowl",
-        "title": "Shadow Cowl",
+        "title": "Capucha Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -16076,7 +16076,7 @@
       },
       {
         "id": "shadow-body",
-        "title": "Shadow Body",
+        "title": "Peto Sombrío",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -16084,7 +16084,7 @@
       },
       {
         "id": "shadow-chaps",
-        "title": "Shadow Chaps",
+        "title": "Perneras Sombrías",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -16092,7 +16092,7 @@
       },
       {
         "id": "zamorak-staff",
-        "title": "Zamorak Staff",
+        "title": "Báculo de Zamorak",
         "category": "Armas de Combate",
         "quantityNeeded": 6,
         "facility": "Fragua Mística",
@@ -16100,7 +16100,7 @@
       },
       {
         "id": "zamorak-hood",
-        "title": "Zamorak Hood",
+        "title": "Capucha de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -16108,7 +16108,7 @@
       },
       {
         "id": "zamorak-robes",
-        "title": "Zamorak Robes",
+        "title": "Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -16116,7 +16116,7 @@
       },
       {
         "id": "zamorak-robe-legs",
-        "title": "Zamorak Robe Legs",
+        "title": "Falda de Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -16261,7 +16261,7 @@
     "category": "Armaduras y Ropa",
     "description": "Una capucha ligera tejida para el duro sol del desierto. Protege al usuario del calor y de la arena flotante.",
     "weight": 4,
-    "repairCost": "1 garou weave",
+    "repairCost": "1 tejido garou",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -16362,7 +16362,7 @@
     "category": "Armaduras y Ropa",
     "description": "Mallas ligeras diseñadas para viajes por el desierto, que ofrecen protección contra el calor y permiten un fácil movimiento por la arena.",
     "weight": 6,
-    "repairCost": "1 garou weave",
+    "repairCost": "1 tejido garou",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -16420,7 +16420,7 @@
     "category": "Armaduras y Ropa",
     "description": "Esta bata, holgada y transpirable, protege contra el intenso resplandor del sol y permite que el aire fluya libremente.",
     "weight": 8,
-    "repairCost": "2 garou weave",
+    "repairCost": "2 tejido garou",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -16577,7 +16577,7 @@
       },
       {
         "id": "kalphite-bait",
-        "title": "Kalphite Bait",
+        "title": "Cebo para Kalphite",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -16593,7 +16593,7 @@
       },
       {
         "id": "toktz-xil-ak",
-        "title": "TokTz-Xil-Ak (Obsidiana)",
+        "title": "Toktz-Xil-Ak (Espada de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Banco del Herrero",
@@ -16760,7 +16760,7 @@
       },
       {
         "id": "zamorak-staff",
-        "title": "Zamorak Staff",
+        "title": "Báculo de Zamorak",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Fragua Mística",
@@ -16957,7 +16957,7 @@
     "category": "Armas de Combate",
     "description": "El arma emblemática de la tribu de trasgos Dorgeshuun. ¡Dispara pernos de hueso y está sorprendentemente bien fabricado!",
     "weight": 6,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -17247,7 +17247,7 @@
       },
       {
         "id": "necromancer-s-crown",
-        "title": "Necromancer's Crown",
+        "title": "Corona de Nigromante",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -17263,7 +17263,7 @@
       },
       {
         "id": "ranger-hat",
-        "title": "Ranger Hat",
+        "title": "Sombrero de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -17271,7 +17271,7 @@
       },
       {
         "id": "ranger-tunic",
-        "title": "Ranger Tunic",
+        "title": "Túnica de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17279,7 +17279,7 @@
       },
       {
         "id": "ranger-tights",
-        "title": "Ranger Tights",
+        "title": "Mallas de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -17303,7 +17303,7 @@
       },
       {
         "id": "shadowscale-hood",
-        "title": "Shadowscale Hood",
+        "title": "Capucha de Escama Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17311,7 +17311,7 @@
       },
       {
         "id": "steel-pickaxe",
-        "title": "Pico de Minería de Acero",
+        "title": "Pico de Acero",
         "category": "Herramientas",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -17327,7 +17327,7 @@
       },
       {
         "id": "steel-full-helm",
-        "title": "Gran Yelmo de Acero",
+        "title": "Casco Completo de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17335,7 +17335,7 @@
       },
       {
         "id": "steel-platebody",
-        "title": "Coraza de Placas de Acero",
+        "title": "Coraza de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -17343,7 +17343,7 @@
       },
       {
         "id": "steel-platelegs",
-        "title": "Perneras de Placas de Acero",
+        "title": "Perneras de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17431,7 +17431,7 @@
       },
       {
         "id": "steel-med-helm",
-        "title": "Casco Mediano de Acero",
+        "title": "Casco Medio de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17455,7 +17455,7 @@
       },
       {
         "id": "white-full-helm",
-        "title": "Gran Yelmo Blancoo",
+        "title": "Gran Yelmo Blanco",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -17686,7 +17686,7 @@
       },
       {
         "id": "magic-shortbow",
-        "title": "Arco Corto Mágicoo",
+        "title": "Arco Corto Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Mesa de Flechería",
@@ -17694,7 +17694,7 @@
       },
       {
         "id": "magic-longbow",
-        "title": "Arco Largo Mágicoo",
+        "title": "Arco Largo Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Mesa de Flechería",
@@ -17710,7 +17710,7 @@
       },
       {
         "id": "rune-platebody",
-        "title": "Coraza de Placas Rúnica",
+        "title": "Coraza de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -17718,7 +17718,7 @@
       },
       {
         "id": "rune-platelegs",
-        "title": "Perneras de Placas Rúnico",
+        "title": "Perneras de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -17726,7 +17726,7 @@
       },
       {
         "id": "rune-dagger",
-        "title": "Daga Rúnica",
+        "title": "Daga de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -17734,7 +17734,7 @@
       },
       {
         "id": "rune-mace",
-        "title": "Maza Rúnico",
+        "title": "Maza de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -17742,7 +17742,7 @@
       },
       {
         "id": "rune-pickaxe",
-        "title": "Pico de Minería Rúnico",
+        "title": "Pico de Runita",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Banco del Herrero",
@@ -17766,7 +17766,7 @@
       },
       {
         "id": "rune-sword",
-        "title": "Espada Rúnica",
+        "title": "Espada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -17774,7 +17774,7 @@
       },
       {
         "id": "rune-scimitar",
-        "title": "Cimitarra Rúnica",
+        "title": "Cimitarra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -17798,7 +17798,7 @@
       },
       {
         "id": "rune-warhammer",
-        "title": "Martillo de Guerra Rúnico",
+        "title": "Martillo de Guerra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -17806,7 +17806,7 @@
       },
       {
         "id": "rune-crossbow",
-        "title": "Ballesta Rúnica",
+        "title": "Ballesta de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Mesa de Flechería",
@@ -18076,7 +18076,7 @@
       "combo": 5,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Barra inclinada (sin marco|ancho=25x25 25)",
+      "specialAction": "Barra inclinada",
       "specialEffect": "Inflige mayor DAÑO a los dragones."
     },
     "recipe": null,
@@ -18143,7 +18143,7 @@
       },
       {
         "id": "lumberjack-potion",
-        "title": "Poción de Lumberjack",
+        "title": "Poción de Leñador",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -18197,7 +18197,7 @@
     "category": "Armaduras y Ropa",
     "description": "El espíritu de Velgar pervive en este escudo, corrompiendo a los enemigos que osan golpearlo.",
     "weight": 10,
-    "repairCost": "1 noxious draconic visage",
+    "repairCost": "1 semblante dracónico nocivo",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -18255,7 +18255,7 @@
     "category": "Armas de Combate",
     "description": "Una hoja feroz imbuida de la furia primigenia de los dragones.",
     "weight": 5,
-    "repairCost": "1 ram horn",
+    "repairCost": "1 cuerno de carnero",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -18266,7 +18266,7 @@
       "combo": 7,
       "durability": 1300,
       "armourRating": null,
-      "specialAction": "Lacerar (sin marco|ancho=25x25 25)",
+      "specialAction": "Lacerar",
       "specialEffect": "* Incrementa OPORTUNIDAD DE CRIT * DURABILIDAD Reducida"
     },
     "recipe": {
@@ -18339,7 +18339,7 @@
     "category": "Armaduras y Ropa",
     "description": "El espíritu de la dragona Imaru reside en el interior de este legendario escudo protector.",
     "weight": 10,
-    "repairCost": "1 undead draconic visage",
+    "repairCost": "1 semblante dracónico no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -18397,7 +18397,7 @@
     "category": "Armaduras y Ropa",
     "description": "Un escudo forjado tras la caída de Fuzan. Sus escamas aún brillan con un calor incandescente, como si la furia del dragón se negara a extinguirse.",
     "weight": 10,
-    "repairCost": "1 smouldering draconic visage",
+    "repairCost": "1 semblante dracónico ardiente",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -18737,7 +18737,7 @@
       },
       {
         "id": "magic-shortbow",
-        "title": "Arco Corto Mágicoo",
+        "title": "Arco Corto Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Mesa de Flechería",
@@ -18745,7 +18745,7 @@
       },
       {
         "id": "magic-longbow",
-        "title": "Arco Largo Mágicoo",
+        "title": "Arco Largo Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Mesa de Flechería",
@@ -18753,7 +18753,7 @@
       },
       {
         "id": "master-wand",
-        "title": "Master Wand",
+        "title": "Varita de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Fragua Mística",
@@ -18761,7 +18761,7 @@
       },
       {
         "id": "master-s-staff",
-        "title": "Master's Staff",
+        "title": "Bastón de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Fragua Mística",
@@ -18777,7 +18777,7 @@
       },
       {
         "id": "rune-crossbow",
-        "title": "Ballesta Rúnica",
+        "title": "Ballesta de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -18793,7 +18793,7 @@
       },
       {
         "id": "toktz-mej-tal",
-        "title": "TokTz-Mej-Tal (Obsidiana)",
+        "title": "Toktz-Mej-Tal (Bastón de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Fragua Mística",
@@ -18977,7 +18977,7 @@
       },
       {
         "id": "squeaking-sausage",
-        "title": "Squeaking Sausage",
+        "title": "Salchicha Chillona",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -18985,7 +18985,7 @@
       },
       {
         "id": "stir-fry",
-        "title": "Stir-Fry",
+        "title": "Salteado",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19045,7 +19045,7 @@
     "usedIn": [
       {
         "id": "stir-fry",
-        "title": "Stir-Fry",
+        "title": "Salteado",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19053,7 +19053,7 @@
       },
       {
         "id": "stuffed-catfish",
-        "title": "Stuffed Catfish",
+        "title": "Pez Gato Relleno",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19133,7 +19133,7 @@
       "skillxp": 10,
       "materials": [
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         }
@@ -19164,7 +19164,7 @@
       },
       {
         "id": "glazed-pumpkin-sandwich",
-        "title": "Glazed Calabaza Sandwich",
+        "title": "Sándwich de Calabaza Glaseada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19180,7 +19180,7 @@
       },
       {
         "id": "meat-twist-sandwich",
-        "title": "Meat Twist Sandwich",
+        "title": "Sándwich Enrollado de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19188,7 +19188,7 @@
       },
       {
         "id": "redberry-crunchies",
-        "title": "Redberry Crunchies",
+        "title": "Crujientes de Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Olla de Cocina",
@@ -19196,7 +19196,7 @@
       },
       {
         "id": "redberry-roast-rat",
-        "title": "Redberry Roast Rat",
+        "title": "Rata Asada con Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -19204,7 +19204,7 @@
       },
       {
         "id": "roast-dinner",
-        "title": "Roast Dinner",
+        "title": "Cena Asada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -19212,7 +19212,7 @@
       },
       {
         "id": "sauteed-sardines",
-        "title": "Sauteed Sardines",
+        "title": "Sardinas Salteadas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -19220,7 +19220,7 @@
       },
       {
         "id": "sweet-veg-ball",
-        "title": "Sweet Veg Ball",
+        "title": "Albóndiga Vegetal Dulce",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -19228,7 +19228,7 @@
       },
       {
         "id": "victoria-sponge-cake",
-        "title": "Victoria Sponge Cake",
+        "title": "Bizcocho Victoria",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Cocina de Piedra",
@@ -19854,7 +19854,7 @@
     "usedIn": [
       {
         "id": "enchanted-blurite-bolts",
-        "title": "Pernos de Blurite Encantados",
+        "title": "Pernos de Blurita Encantados",
         "category": "Armas de Combate",
         "quantityNeeded": 15,
         "facility": "Mesa de Flechería",
@@ -19922,7 +19922,7 @@
       },
       {
         "id": "shroud-of-noggin",
-        "title": "Shroud of Noggin",
+        "title": "Sudario de Noggin",
         "category": "Vestigios y Patrones",
         "quantityNeeded": 8,
         "facility": "Mesa de Artesanía",
@@ -19930,7 +19930,7 @@
       },
       {
         "id": "spooky-bait",
-        "title": "Spooky Bait",
+        "title": "Cebo Fantasmagórico",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -19986,7 +19986,7 @@
       },
       {
         "id": "victoria-sponge-cake",
-        "title": "Victoria Sponge Cake",
+        "title": "Bizcocho Victoria",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Cocina de Piedra",
@@ -20028,7 +20028,7 @@
           "englishItem": "Fried Egg"
         },
         {
-          "item": "Fried Salmón Cocinado",
+          "item": "Salmón Frito",
           "quantity": 1,
           "englishItem": "Fried Salmon"
         }
@@ -21061,7 +21061,7 @@
       },
       {
         "id": "poisoned-fang-arrow",
-        "title": "Poisoned Fang Arrow",
+        "title": "Flecha de Colmillo Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -21482,7 +21482,7 @@
       },
       {
         "id": "kalphite-bait",
-        "title": "Kalphite Bait",
+        "title": "Cebo para Kalphite",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -21514,7 +21514,7 @@
       },
       {
         "id": "rune-arrow",
-        "title": "Flecha Rúnica",
+        "title": "Flecha de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -21546,7 +21546,7 @@
       },
       {
         "id": "spooky-bait",
-        "title": "Spooky Bait",
+        "title": "Cebo Fantasmagórico",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -21696,7 +21696,7 @@
     "usedIn": [
       {
         "id": "meat-stew",
-        "title": "Meat Estofado Rústico",
+        "title": "Estofado Rústico de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -21704,7 +21704,7 @@
       },
       {
         "id": "meat-pizza",
-        "title": "Meat Pizza",
+        "title": "Pizza de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -21712,7 +21712,7 @@
       },
       {
         "id": "mixed-grill",
-        "title": "Mixed Grill",
+        "title": "Parrillada Mixta",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -21777,7 +21777,7 @@
       },
       {
         "id": "necromancer-s-crown",
-        "title": "Necromancer's Crown",
+        "title": "Corona de Nigromante",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -21793,7 +21793,7 @@
       },
       {
         "id": "ranger-hat",
-        "title": "Ranger Hat",
+        "title": "Sombrero de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -21801,7 +21801,7 @@
       },
       {
         "id": "ranger-tunic",
-        "title": "Ranger Tunic",
+        "title": "Túnica de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -21809,7 +21809,7 @@
       },
       {
         "id": "ranger-tights",
-        "title": "Ranger Tights",
+        "title": "Mallas de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -21817,7 +21817,7 @@
       },
       {
         "id": "shadowscale-hood",
-        "title": "Shadowscale Hood",
+        "title": "Capucha de Escama Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -21825,7 +21825,7 @@
       },
       {
         "id": "steel-full-helm",
-        "title": "Gran Yelmo de Acero",
+        "title": "Casco Completo de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -21833,7 +21833,7 @@
       },
       {
         "id": "steel-platebody",
-        "title": "Coraza de Placas de Acero",
+        "title": "Coraza de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -21841,7 +21841,7 @@
       },
       {
         "id": "steel-platelegs",
-        "title": "Perneras de Placas de Acero",
+        "title": "Perneras de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -21881,7 +21881,7 @@
       },
       {
         "id": "steel-med-helm",
-        "title": "Casco Mediano de Acero",
+        "title": "Casco Medio de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -21897,7 +21897,7 @@
       },
       {
         "id": "white-full-helm",
-        "title": "Gran Yelmo Blancoo",
+        "title": "Gran Yelmo Blanco",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -22040,7 +22040,7 @@
       },
       {
         "id": "shroud-of-noggin",
-        "title": "Shroud of Noggin",
+        "title": "Sudario de Noggin",
         "category": "Vestigios y Patrones",
         "quantityNeeded": 3,
         "facility": "Mesa de Artesanía",
@@ -22264,7 +22264,7 @@
       },
       {
         "id": "rune-fire-arrow",
-        "title": "Flecha de Fuego Rúnico",
+        "title": "Flecha de Fuego de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -22466,7 +22466,7 @@
     "usedIn": [
       {
         "id": "meat-pizza",
-        "title": "Meat Pizza",
+        "title": "Pizza de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -22474,7 +22474,7 @@
       },
       {
         "id": "meat-sandwich",
-        "title": "Meat Sandwich",
+        "title": "Sándwich de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -22482,7 +22482,7 @@
       },
       {
         "id": "meat-twist-sandwich",
-        "title": "Meat Twist Sandwich",
+        "title": "Sándwich Enrollado de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -22490,7 +22490,7 @@
       },
       {
         "id": "roast-dinner",
-        "title": "Roast Dinner",
+        "title": "Cena Asada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -22498,7 +22498,7 @@
       },
       {
         "id": "steak-sandwich",
-        "title": "Steak Sandwich",
+        "title": "Sándwich de Bistec",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -22726,7 +22726,7 @@
     "usedIn": [
       {
         "id": "super-focused-agility-potion",
-        "title": "Poción de Super Focused Agility",
+        "title": "Súper Poción de Agilidad Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -22788,7 +22788,7 @@
     "usedIn": [
       {
         "id": "super-focused-artisan-potion",
-        "title": "Poción de Super Focused Artisan",
+        "title": "Súper Poción de Artesanía Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -22850,7 +22850,7 @@
     "usedIn": [
       {
         "id": "super-focused-attack-potion",
-        "title": "Poción de Super Focused Attack",
+        "title": "Súper Poción de Ataque Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -22912,7 +22912,7 @@
     "usedIn": [
       {
         "id": "super-focused-construction-potion",
-        "title": "Poción de Super Focused Construction",
+        "title": "Súper Poción de Construcción Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -22974,7 +22974,7 @@
     "usedIn": [
       {
         "id": "super-focused-cooking-potion",
-        "title": "Poción de Super Focused Cooking",
+        "title": "Súper Poción de Cocina Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23036,7 +23036,7 @@
     "usedIn": [
       {
         "id": "super-focused-farming-potion",
-        "title": "Poción de Super Focused Farming",
+        "title": "Súper Poción de Agricultura Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23098,7 +23098,7 @@
     "usedIn": [
       {
         "id": "super-focused-fishing-potion",
-        "title": "Poción de Super Focused Fishing",
+        "title": "Súper Poción de Pesca Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23160,7 +23160,7 @@
     "usedIn": [
       {
         "id": "super-focused-mining-potion",
-        "title": "Poción de Super Focused Mining",
+        "title": "Súper Poción de Minería Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23222,7 +23222,7 @@
     "usedIn": [
       {
         "id": "super-focused-runecrafting-potion",
-        "title": "Poción de Super Focused Runecrafting",
+        "title": "Súper Poción de Creación de Runas Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23264,7 +23264,7 @@
           "englishItem": "Irit"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         },
@@ -23284,7 +23284,7 @@
     "usedIn": [
       {
         "id": "super-focused-woodcutting-potion",
-        "title": "Poción de Super Focused Woodcutting",
+        "title": "Súper Poción de Tala Concentrada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Barril de Imbuir",
@@ -23625,7 +23625,7 @@
       },
       {
         "id": "mushroom-kebab",
-        "title": "Mushroom Kebab",
+        "title": "Kebab de Champiñones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23633,7 +23633,7 @@
       },
       {
         "id": "pungent-omelette",
-        "title": "Pungent Omelette",
+        "title": "Tortilla Olorosa",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23641,7 +23641,7 @@
       },
       {
         "id": "pumpkin-soup",
-        "title": "Calabaza Soup",
+        "title": "Sopa de Calabaza",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23649,7 +23649,7 @@
       },
       {
         "id": "sweet-veg-ball",
-        "title": "Sweet Veg Ball",
+        "title": "Albóndiga Vegetal Dulce",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -23657,7 +23657,7 @@
       },
       {
         "id": "stuffed-catfish",
-        "title": "Stuffed Catfish",
+        "title": "Pez Gato Relleno",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23665,7 +23665,7 @@
       },
       {
         "id": "vegetable-soup",
-        "title": "Vegetable Soup",
+        "title": "Sopa de Verduras",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -23673,7 +23673,7 @@
       },
       {
         "id": "vegan-fryup",
-        "title": "Vegan Fryup",
+        "title": "Fritura Vegana",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -23741,7 +23741,7 @@
       },
       {
         "id": "pungent-omelette",
-        "title": "Pungent Omelette",
+        "title": "Tortilla Olorosa",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23749,7 +23749,7 @@
       },
       {
         "id": "shrimp-omelette",
-        "title": "Shrimp Omelette",
+        "title": "Tortilla de Camarones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -23757,7 +23757,7 @@
       },
       {
         "id": "steak-n-eggs",
-        "title": "Steak 'N' Eggs",
+        "title": "Filete con Huevos",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -23809,7 +23809,7 @@
     "usedIn": [
       {
         "id": "squeaking-sausage",
-        "title": "Squeaking Sausage",
+        "title": "Salchicha Chillona",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23817,7 +23817,7 @@
       },
       {
         "id": "steak-sandwich",
-        "title": "Steak Sandwich",
+        "title": "Sándwich de Bistec",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -23937,7 +23937,7 @@
       },
       {
         "id": "sauteed-sardines",
-        "title": "Sauteed Sardines",
+        "title": "Sardinas Salteadas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -24114,7 +24114,7 @@
     "usedIn": [
       {
         "id": "lunar-garou-hat",
-        "title": "Lunar Garou Hat",
+        "title": "Sombrero Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -24122,7 +24122,7 @@
       },
       {
         "id": "lunar-garou-robes",
-        "title": "Lunar Garou Robes",
+        "title": "Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -24130,7 +24130,7 @@
       },
       {
         "id": "lunar-garou-robe-legs",
-        "title": "Lunar Garou Robe Legs",
+        "title": "Falda de Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -24312,7 +24312,7 @@
       },
       {
         "id": "kalphite-carapace-chest",
-        "title": "Kalphite Carapace Chest",
+        "title": "Coraza de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -24320,7 +24320,7 @@
       },
       {
         "id": "kalphite-carapace-helmet",
-        "title": "Kalphite Carapace Helmet",
+        "title": "Casco de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -24328,7 +24328,7 @@
       },
       {
         "id": "kalphite-carapace-legs",
-        "title": "Kalphite Carapace Legs",
+        "title": "Perneras de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -24336,7 +24336,7 @@
       },
       {
         "id": "lunar-garou-hat",
-        "title": "Lunar Garou Hat",
+        "title": "Sombrero Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -24344,7 +24344,7 @@
       },
       {
         "id": "lunar-garou-robes",
-        "title": "Lunar Garou Robes",
+        "title": "Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 9,
         "facility": "Banco de Armaduras",
@@ -24352,7 +24352,7 @@
       },
       {
         "id": "lunar-garou-robe-legs",
-        "title": "Lunar Garou Robe Legs",
+        "title": "Falda de Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -25003,7 +25003,7 @@
       },
       {
         "id": "lumberjack-potion",
-        "title": "Poción de Lumberjack",
+        "title": "Poción de Leñador",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -25027,7 +25027,7 @@
       },
       {
         "id": "stamina-potion",
-        "title": "Poción de Resistencia",
+        "title": "Poción de Resistencia (Stamina)",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -25082,7 +25082,7 @@
           "englishItem": "Roast Pumpkin"
         },
         {
-          "item": "Syrup de Arce",
+          "item": "Jarabe de Arce",
           "quantity": 1,
           "englishItem": "Maple Syrup"
         },
@@ -25110,7 +25110,7 @@
     "category": "Armas de Combate",
     "description": "Una pequeña hacha sorprendentemente desagradable. Popular entre los guerreros duendes.",
     "weight": 8,
-    "repairCost": "2 animal bones",
+    "repairCost": "2 huesos de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -25121,7 +25121,7 @@
       "combo": 5,
       "durability": 850,
       "armourRating": null,
-      "specialAction": "Rompebloques (sin marco|ancho=25x25 33)",
+      "specialAction": "Rompebloques",
       "specialEffect": "* Ataques COMBO DE CLUB que causan DAÑO DE CORTE, con mayor DAÑO * DURABILIDAD reducida"
     },
     "recipe": {
@@ -25314,7 +25314,7 @@
       },
       {
         "id": "dragonkin-mage-robes",
-        "title": "Mage Robes Dragonkin",
+        "title": "Túnica de Mago Dragonkin",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -25410,7 +25410,7 @@
       },
       {
         "id": "ring-of-recoil",
-        "title": "Anillo de Repulsión",
+        "title": "Anillo de Repulsión (Recoil)",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco del Joyero",
@@ -25442,7 +25442,7 @@
       },
       {
         "id": "wild-archer-body",
-        "title": "Wild Archer Body",
+        "title": "Peto de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -25450,7 +25450,7 @@
       },
       {
         "id": "wild-archer-chaps",
-        "title": "Wild Archer Chaps",
+        "title": "Perneras de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -25458,7 +25458,7 @@
       },
       {
         "id": "wild-archer-cowl",
-        "title": "Wild Archer Cowl",
+        "title": "Capucha de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -25696,7 +25696,7 @@
       },
       {
         "id": "large-wardstone",
-        "title": "Large Wardstone",
+        "title": "Piedra Guardiana Mayor",
         "category": "Materiales y Minerales",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -25732,7 +25732,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Ariete (sin marco|ancho=25x25 50)",
+      "specialAction": "Ariete",
       "specialEffect": "* Ariete Inflige DAÑO pesado al objetivo y lo DERRIBA * OVERKILL Utiliza un COMBO WARHAMMER único que sobresale contra OBJETIVOS ÚNICOS * VELOCIDAD DE ATAQUE reducida NO MANEJABLE"
     },
     "recipe": {
@@ -26208,7 +26208,7 @@
       },
       {
         "id": "ranger-hat",
-        "title": "Ranger Hat",
+        "title": "Sombrero de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -26216,7 +26216,7 @@
       },
       {
         "id": "ranger-tunic",
-        "title": "Ranger Tunic",
+        "title": "Túnica de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -26224,7 +26224,7 @@
       },
       {
         "id": "ranger-tights",
-        "title": "Ranger Tights",
+        "title": "Mallas de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -26498,7 +26498,7 @@
       },
       {
         "id": "mushroom-kebab",
-        "title": "Mushroom Kebab",
+        "title": "Kebab de Champiñones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -26506,7 +26506,7 @@
       },
       {
         "id": "pungent-omelette",
-        "title": "Pungent Omelette",
+        "title": "Tortilla Olorosa",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -26514,7 +26514,7 @@
       },
       {
         "id": "steak-sandwich",
-        "title": "Steak Sandwich",
+        "title": "Sándwich de Bistec",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -26574,7 +26574,7 @@
       },
       {
         "id": "undead-delight",
-        "title": "Undead Delight",
+        "title": "Delicia No-Muerta",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -26582,7 +26582,7 @@
       },
       {
         "id": "vegan-fryup",
-        "title": "Vegan Fryup",
+        "title": "Fritura Vegana",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -26642,7 +26642,7 @@
       },
       {
         "id": "herb-baked-trout",
-        "title": "Herb Baked Trucha Cocinada",
+        "title": "Trucha Horneada con Hierbas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -26694,7 +26694,7 @@
     "usedIn": [
       {
         "id": "undead-delight",
-        "title": "Undead Delight",
+        "title": "Delicia No-Muerta",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -27098,7 +27098,7 @@
       "skillxp": 0,
       "materials": [
         {
-          "item": "Sandstone",
+          "item": "Arenisca",
           "quantity": 1,
           "englishItem": "Sandstone"
         }
@@ -27166,7 +27166,7 @@
       "skillxp": 0,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 1,
           "englishItem": "Stone"
         }
@@ -27224,7 +27224,7 @@
     "usedIn": [
       {
         "id": "strong-sweet-tea",
-        "title": "Strong Sweet Tea",
+        "title": "Té Dulce Fuerte",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -27232,7 +27232,7 @@
       },
       {
         "id": "strong-tea",
-        "title": "Strong Tea",
+        "title": "Té Fuerte",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -27518,7 +27518,7 @@
       },
       {
         "id": "kalphite-carapace-chest",
-        "title": "Kalphite Carapace Chest",
+        "title": "Coraza de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -27526,7 +27526,7 @@
       },
       {
         "id": "kalphite-carapace-helmet",
-        "title": "Kalphite Carapace Helmet",
+        "title": "Casco de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -27534,7 +27534,7 @@
       },
       {
         "id": "kalphite-carapace-legs",
-        "title": "Kalphite Carapace Legs",
+        "title": "Perneras de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -27542,7 +27542,7 @@
       },
       {
         "id": "lunar-garou-hat",
-        "title": "Lunar Garou Hat",
+        "title": "Sombrero Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -27550,7 +27550,7 @@
       },
       {
         "id": "lunar-garou-robes",
-        "title": "Lunar Garou Robes",
+        "title": "Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -27558,7 +27558,7 @@
       },
       {
         "id": "lunar-garou-robe-legs",
-        "title": "Lunar Garou Robe Legs",
+        "title": "Falda de Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -27566,7 +27566,7 @@
       },
       {
         "id": "master-wand",
-        "title": "Master Wand",
+        "title": "Varita de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Fragua Mística",
@@ -27574,7 +27574,7 @@
       },
       {
         "id": "master-s-staff",
-        "title": "Master's Staff",
+        "title": "Bastón de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Fragua Mística",
@@ -27784,7 +27784,7 @@
       },
       {
         "id": "dragonkin-mage-robes",
-        "title": "Mage Robes Dragonkin",
+        "title": "Túnica de Mago Dragonkin",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco de Armaduras",
@@ -27880,7 +27880,7 @@
       },
       {
         "id": "iron-platebody",
-        "title": "Coraza de Placas de Hierro",
+        "title": "Coraza de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -27888,7 +27888,7 @@
       },
       {
         "id": "iron-pickaxe",
-        "title": "Pico de Minería de Hierro",
+        "title": "Pico de Hierro",
         "category": "Herramientas",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -27904,7 +27904,7 @@
       },
       {
         "id": "iron-platelegs",
-        "title": "Perneras de Placas de Hierro",
+        "title": "Perneras de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -27960,7 +27960,7 @@
       },
       {
         "id": "iron-med-helm",
-        "title": "Casco Mediano de Hierro",
+        "title": "Casco Medio de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -27968,7 +27968,7 @@
       },
       {
         "id": "paladin-s-platebody",
-        "title": "Paladin's Platebody",
+        "title": "Coraza de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -27976,7 +27976,7 @@
       },
       {
         "id": "paladin-platelegs",
-        "title": "Paladin Platelegs",
+        "title": "Perneras de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -27984,7 +27984,7 @@
       },
       {
         "id": "paladin-s-helm",
-        "title": "Paladin's Helm",
+        "title": "Yelmo de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -28024,7 +28024,7 @@
       },
       {
         "id": "wild-archer-body",
-        "title": "Wild Archer Body",
+        "title": "Peto de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -28032,7 +28032,7 @@
       },
       {
         "id": "wild-archer-chaps",
-        "title": "Wild Archer Chaps",
+        "title": "Perneras de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -28040,7 +28040,7 @@
       },
       {
         "id": "wild-archer-cowl",
-        "title": "Wild Archer Cowl",
+        "title": "Capucha de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -28401,7 +28401,7 @@
       },
       {
         "id": "rune-platebody",
-        "title": "Coraza de Placas Rúnica",
+        "title": "Coraza de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -28409,7 +28409,7 @@
       },
       {
         "id": "rune-platelegs",
-        "title": "Perneras de Placas Rúnico",
+        "title": "Perneras de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -28417,7 +28417,7 @@
       },
       {
         "id": "rune-dagger",
-        "title": "Daga Rúnica",
+        "title": "Daga de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -28516,7 +28516,7 @@
     "usedIn": [
       {
         "id": "meat-stew",
-        "title": "Meat Estofado Rústico",
+        "title": "Estofado Rústico de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -28524,7 +28524,7 @@
       },
       {
         "id": "meat-pizza",
-        "title": "Meat Pizza",
+        "title": "Pizza de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -28532,7 +28532,7 @@
       },
       {
         "id": "mixed-grill",
-        "title": "Mixed Grill",
+        "title": "Parrillada Mixta",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -28540,7 +28540,7 @@
       },
       {
         "id": "mushroom-kebab",
-        "title": "Mushroom Kebab",
+        "title": "Kebab de Champiñones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -28635,7 +28635,7 @@
           "englishItem": "Onion"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 2,
           "englishItem": "Redberries"
         }
@@ -29008,7 +29008,7 @@
     "category": "Armas de Combate",
     "description": "Con su {{sic.",
     "weight": 15,
-    "repairCost": "3 antlers",
+    "repairCost": "3 cornamentas de ciervo",
     "release": "15 April 2025",
     "powerLevel": 4,
     "stats": {
@@ -29128,7 +29128,7 @@
     "category": "Armas de Combate",
     "description": "Una cimitarra forjada a partir del rostro de Imaru.",
     "weight": 15,
-    "repairCost": "1 undead draconic visage",
+    "repairCost": "1 semblante dracónico no-muerto",
     "release": "24 February 2026",
     "powerLevel": 5,
     "stats": {
@@ -29139,7 +29139,7 @@
       "combo": 5,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Rompebloques con barra saltadora (sin marco|ancho=25x25 33)",
+      "specialAction": "Rompebloques con barra saltadora",
       "specialEffect": "* Soul Feast OTORGA Una porción de salud al matar a un ENEMIGO"
     },
     "recipe": {
@@ -29362,7 +29362,7 @@
       },
       {
         "id": "black-greataxe",
-        "title": "Gran Hacha de Guerra Negroa",
+        "title": "Gran Hacha de Guerra Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 32,
         "facility": "Banco del Herrero",
@@ -29482,7 +29482,7 @@
       },
       {
         "id": "mystic-robes",
-        "title": "Mystic Robes",
+        "title": "Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 32,
         "facility": "Banco de Armaduras",
@@ -29490,7 +29490,7 @@
       },
       {
         "id": "mystic-robe-legs",
-        "title": "Mystic Robe Legs",
+        "title": "Falda de Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 24,
         "facility": "Banco de Armaduras",
@@ -29514,7 +29514,7 @@
       },
       {
         "id": "zamorak-staff",
-        "title": "Zamorak Staff",
+        "title": "Báculo de Zamorak",
         "category": "Armas de Combate",
         "quantityNeeded": 64,
         "facility": "Fragua Mística",
@@ -29522,7 +29522,7 @@
       },
       {
         "id": "zamorak-hood",
-        "title": "Zamorak Hood",
+        "title": "Capucha de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -29530,7 +29530,7 @@
       },
       {
         "id": "zamorak-robes",
-        "title": "Zamorak Robes",
+        "title": "Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 32,
         "facility": "Banco de Armaduras",
@@ -29538,7 +29538,7 @@
       },
       {
         "id": "zamorak-robe-legs",
-        "title": "Zamorak Robe Legs",
+        "title": "Falda de Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 24,
         "facility": "Banco de Armaduras",
@@ -29627,7 +29627,7 @@
       },
       {
         "id": "lunar-garou-hat",
-        "title": "Lunar Garou Hat",
+        "title": "Sombrero Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -29635,7 +29635,7 @@
       },
       {
         "id": "lunar-garou-robes",
-        "title": "Lunar Garou Robes",
+        "title": "Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -29643,7 +29643,7 @@
       },
       {
         "id": "lunar-garou-robe-legs",
-        "title": "Lunar Garou Robe Legs",
+        "title": "Falda de Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -29651,7 +29651,7 @@
       },
       {
         "id": "master-wand",
-        "title": "Master Wand",
+        "title": "Varita de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Fragua Mística",
@@ -29659,7 +29659,7 @@
       },
       {
         "id": "master-s-staff",
-        "title": "Master's Staff",
+        "title": "Bastón de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Fragua Mística",
@@ -30734,7 +30734,7 @@
       },
       {
         "id": "lumberjack-potion",
-        "title": "Poción de Lumberjack",
+        "title": "Poción de Leñador",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Caldero de Pociones",
@@ -30742,7 +30742,7 @@
       },
       {
         "id": "pumpkin-spice-infusion",
-        "title": "Calabaza Spice Infusion",
+        "title": "Infusión de Calabaza con Especias",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -30828,7 +30828,7 @@
       },
       {
         "id": "poisoned-iron-arrow",
-        "title": "Poisoned Iron Arrow",
+        "title": "Flecha de Hierro Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -30920,7 +30920,7 @@
       },
       {
         "id": "iron-platebody",
-        "title": "Coraza de Placas de Hierro",
+        "title": "Coraza de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco de Armaduras",
@@ -30944,7 +30944,7 @@
       },
       {
         "id": "iron-pickaxe",
-        "title": "Pico de Minería de Hierro",
+        "title": "Pico de Hierro",
         "category": "Herramientas",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -30960,7 +30960,7 @@
       },
       {
         "id": "iron-platelegs",
-        "title": "Perneras de Placas de Hierro",
+        "title": "Perneras de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -31048,7 +31048,7 @@
       },
       {
         "id": "iron-med-helm",
-        "title": "Casco Mediano de Hierro",
+        "title": "Casco Medio de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -31056,7 +31056,7 @@
       },
       {
         "id": "paladin-s-platebody",
-        "title": "Paladin's Platebody",
+        "title": "Coraza de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -31064,7 +31064,7 @@
       },
       {
         "id": "paladin-platelegs",
-        "title": "Paladin Platelegs",
+        "title": "Perneras de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -31072,7 +31072,7 @@
       },
       {
         "id": "paladin-s-helm",
-        "title": "Paladin's Helm",
+        "title": "Yelmo de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -32303,7 +32303,7 @@
     "category": "Armaduras y Ropa",
     "description": "Esta armadura de pecho está hecha de partes de los calfitos. Su naturaleza duradera pero flexible lo hace excelente para los guardabosques.",
     "weight": 12,
-    "repairCost": "3 kalphite shells",
+    "repairCost": "3 caparazones de kalphite",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -32361,7 +32361,7 @@
     "category": "Armaduras y Ropa",
     "description": "Este casco está hecho de partes de los calfitos. Su naturaleza duradera pero flexible lo hace excelente para los guardabosques.",
     "weight": 6,
-    "repairCost": "1 kalphite shell",
+    "repairCost": "1 caparazón de kalphite",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -32419,7 +32419,7 @@
     "category": "Armaduras y Ropa",
     "description": "Esta armadura de pierna está hecha de partes de los calfitos. Su naturaleza duradera pero flexible lo hace excelente para los guardabosques.",
     "weight": 9,
-    "repairCost": "2 kalphite shells",
+    "repairCost": "2 caparazones de kalphite",
     "release": "23 June 2026",
     "powerLevel": 7,
     "stats": {
@@ -32500,7 +32500,7 @@
     "usedIn": [
       {
         "id": "kalphite-bait",
-        "title": "Kalphite Bait",
+        "title": "Cebo para Kalphite",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -32568,7 +32568,7 @@
       "combo": 7,
       "durability": 1600,
       "armourRating": null,
-      "specialAction": "Lacerar (sin marco|ancho=25x25 33)",
+      "specialAction": "Lacerar",
       "specialEffect": "DAÑO aumentado contra CALFITAS"
     },
     "recipe": {
@@ -32620,8 +32620,8 @@
   },
   {
     "id": "kuldra-s-wrath",
-    "title": "Kuldra's Wrath",
-    "name": "Kuldra's Wrath",
+    "title": "Ira de Kuldra",
+    "name": "Ira de Kuldra",
     "itemType": "Arma Mágica",
     "category": "Armas de Combate",
     "description": "Una varita magistralmente elaborada, imbuida de la furia de Kuldra, que canaliza el poder arcano con una eficiencia aterradora.",
@@ -32972,7 +32972,7 @@
       },
       {
         "id": "leather-body",
-        "title": "Peto / Coraza de Cuero",
+        "title": "Peto de Cuero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Mesa de Artesanía",
@@ -32980,7 +32980,7 @@
       },
       {
         "id": "leather-chaps",
-        "title": "Pantalones de Cuero",
+        "title": "Perneras de Cuero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Mesa de Artesanía",
@@ -32988,7 +32988,7 @@
       },
       {
         "id": "reinforced-helmet",
-        "title": "Reinforced Helmet",
+        "title": "Casco Reforzado",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Mesa de Artesanía",
@@ -32996,7 +32996,7 @@
       },
       {
         "id": "reinforced-body",
-        "title": "Reinforced Body",
+        "title": "Peto Reforzado",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Mesa de Artesanía",
@@ -33004,7 +33004,7 @@
       },
       {
         "id": "reinforced-legs",
-        "title": "Reinforced Legs",
+        "title": "Perneras Reforzadas",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Mesa de Artesanía",
@@ -33397,7 +33397,7 @@
           "englishItem": "Snapdragon"
         },
         {
-          "item": "Sandstone",
+          "item": "Arenisca",
           "quantity": 1,
           "englishItem": "Sandstone"
         }
@@ -33768,7 +33768,7 @@
           "englishItem": "Snapdragon"
         },
         {
-          "item": "Sandstone",
+          "item": "Arenisca",
           "quantity": 1,
           "englishItem": "Sandstone"
         }
@@ -34217,8 +34217,8 @@
   },
   {
     "id": "lougrim-s-staff",
-    "title": "Lougrim's Staff",
-    "name": "Lougrim's Staff",
+    "title": "Bastón de Lougrim",
+    "name": "Bastón de Lougrim",
     "itemType": "Objeto de Misión",
     "category": "Armas de Combate",
     "description": "El mismo bastón que Lougrim llevó a su muerte dentro del vientre de Kuldra.",
@@ -34248,8 +34248,8 @@
   },
   {
     "id": "lumberjack-potion",
-    "title": "Poción de Lumberjack",
-    "name": "Poción de Lumberjack",
+    "title": "Poción de Leñador",
+    "name": "Poción de Leñador",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "BENEFICIO: Lumberjack IIREDUCE el coste de energía de la tala de madera en un 66%.",
@@ -34339,7 +34339,7 @@
     "usedIn": [
       {
         "id": "rune-bar",
-        "title": "Barra Rúnica",
+        "title": "Barra de Runita",
         "category": "Materiales y Minerales",
         "quantityNeeded": 3,
         "facility": "Alto Horno",
@@ -34683,7 +34683,7 @@
       },
       {
         "id": "magic-shortbow",
-        "title": "Arco Corto Mágicoo",
+        "title": "Arco Corto Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Mesa de Flechería",
@@ -34691,7 +34691,7 @@
       },
       {
         "id": "magic-longbow",
-        "title": "Arco Largo Mágicoo",
+        "title": "Arco Largo Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Mesa de Flechería",
@@ -34699,7 +34699,7 @@
       },
       {
         "id": "rune-mace",
-        "title": "Maza Rúnico",
+        "title": "Maza de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -34707,7 +34707,7 @@
       },
       {
         "id": "rune-pickaxe",
-        "title": "Pico de Minería Rúnico",
+        "title": "Pico de Runita",
         "category": "Herramientas",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -34731,7 +34731,7 @@
       },
       {
         "id": "rune-arrow",
-        "title": "Flecha Rúnica",
+        "title": "Flecha de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -34739,7 +34739,7 @@
       },
       {
         "id": "rune-crossbow",
-        "title": "Ballesta Rúnica",
+        "title": "Ballesta de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Mesa de Flechería",
@@ -34996,7 +34996,7 @@
           "englishItem": "Clean Water"
         },
         {
-          "item": "Syrup de Arce",
+          "item": "Jarabe de Arce",
           "quantity": 1,
           "englishItem": "Maple Syrup"
         },
@@ -35055,7 +35055,7 @@
       },
       {
         "id": "black-greataxe",
-        "title": "Gran Hacha de Guerra Negroa",
+        "title": "Gran Hacha de Guerra Negra",
         "category": "Armas de Combate",
         "quantityNeeded": 5,
         "facility": "Banco del Herrero",
@@ -35103,7 +35103,7 @@
       },
       {
         "id": "mithril-pickaxe",
-        "title": "Pico de Minería de Mithril",
+        "title": "Pico de Mithril",
         "category": "Herramientas",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -35422,7 +35422,7 @@
     "usedIn": [
       {
         "id": "glazed-pumpkin-sandwich",
-        "title": "Glazed Calabaza Sandwich",
+        "title": "Sándwich de Calabaza Glaseada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -35446,7 +35446,7 @@
       },
       {
         "id": "strong-sweet-tea",
-        "title": "Strong Sweet Tea",
+        "title": "Té Dulce Fuerte",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -35488,7 +35488,7 @@
           "englishItem": "Dried Redberries"
         },
         {
-          "item": "Syrup de Arce",
+          "item": "Jarabe de Arce",
           "quantity": 1,
           "englishItem": "Maple Syrup"
         },
@@ -35805,8 +35805,8 @@
   },
   {
     "id": "master-s-staff",
-    "title": "Master's Staff",
-    "name": "Master's Staff",
+    "title": "Bastón de Maestro",
+    "name": "Bastón de Maestro",
     "itemType": "Arma Mágica",
     "category": "Armas de Combate",
     "description": "Un bastón mágico diseñado para un maestro de las artes místicas. Irradia poder.",
@@ -36111,7 +36111,7 @@
       "skillxp": 10,
       "materials": [
         {
-          "item": "Sandstone",
+          "item": "Arenisca",
           "quantity": 1,
           "englishItem": "Sandstone"
         },
@@ -36285,7 +36285,7 @@
       },
       {
         "id": "poisoned-mithril-arrow",
-        "title": "Poisoned Mithril Arrow",
+        "title": "Flecha de Mithril Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -36446,7 +36446,7 @@
       },
       {
         "id": "mithril-pickaxe",
-        "title": "Pico de Minería de Mithril",
+        "title": "Pico de Mithril",
         "category": "Herramientas",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -36462,7 +36462,7 @@
       },
       {
         "id": "mithril-platebody",
-        "title": "Coraza de Placas de Mithril",
+        "title": "Coraza de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco de Armaduras",
@@ -36470,7 +36470,7 @@
       },
       {
         "id": "mithril-platelegs",
-        "title": "Perneras de Placas de Mithril",
+        "title": "Perneras de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -36558,7 +36558,7 @@
       },
       {
         "id": "mithril-med-helm",
-        "title": "Casco Mediano de Mithril",
+        "title": "Casco Medio de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -37739,7 +37739,7 @@
           "englishItem": "Haunch"
         },
         {
-          "item": "Steak",
+          "item": "Filete",
           "quantity": 1,
           "englishItem": "Steak"
         }
@@ -37961,7 +37961,7 @@
     "usedIn": [
       {
         "id": "monkfish-skewers",
-        "title": "Monkfish Skewers",
+        "title": "Brochetas de Rape",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -38609,7 +38609,7 @@
       },
       {
         "id": "mithril-platebody",
-        "title": "Coraza de Placas de Mithril",
+        "title": "Coraza de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -38617,7 +38617,7 @@
       },
       {
         "id": "mithril-platelegs",
-        "title": "Perneras de Placas de Mithril",
+        "title": "Perneras de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -38633,7 +38633,7 @@
       },
       {
         "id": "mithril-med-helm",
-        "title": "Casco Mediano de Mithril",
+        "title": "Casco Medio de Mithril",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -38649,7 +38649,7 @@
       },
       {
         "id": "mystic-robes",
-        "title": "Mystic Robes",
+        "title": "Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 12,
         "facility": "Banco de Armaduras",
@@ -38657,7 +38657,7 @@
       },
       {
         "id": "mystic-robe-legs",
-        "title": "Mystic Robe Legs",
+        "title": "Falda de Túnica Mística",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -38673,7 +38673,7 @@
       },
       {
         "id": "zamorak-hood",
-        "title": "Zamorak Hood",
+        "title": "Capucha de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -38681,7 +38681,7 @@
       },
       {
         "id": "zamorak-robes",
-        "title": "Zamorak Robes",
+        "title": "Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -38689,7 +38689,7 @@
       },
       {
         "id": "zamorak-robe-legs",
-        "title": "Zamorak Robe Legs",
+        "title": "Falda de Túnica de Zamorak",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -39009,13 +39009,13 @@
   },
   {
     "id": "necromancer-s-crown",
-    "title": "Necromancer's Crown",
-    "name": "Necromancer's Crown",
+    "title": "Corona de Nigromante",
+    "name": "Corona de Nigromante",
     "itemType": "Ropaje Mágico",
     "category": "Armaduras y Ropa",
     "description": "Calzas diseñadas según los señores ancestrales de Ashenfall.",
     "weight": 4,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -39078,7 +39078,7 @@
     "category": "Armaduras y Ropa",
     "description": "Calzas diseñadas según los señores ancestrales de Ashenfall.",
     "weight": 6,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -39141,7 +39141,7 @@
     "category": "Armaduras y Ropa",
     "description": "Calzas diseñadas según los señores ancestrales de Ashenfall.",
     "weight": 4,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -39204,7 +39204,7 @@
     "category": "Armas de Combate",
     "description": "La esencia nigromántica todavía emana de este bastón.",
     "weight": 15,
-    "repairCost": "4 undead bones",
+    "repairCost": "4 huesos no-muertos",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -40210,7 +40210,7 @@
       },
       {
         "id": "hearty-stew",
-        "title": "Hearty Estofado Rústico",
+        "title": "Estofado Rústico Contundente",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -40443,7 +40443,7 @@
       },
       {
         "id": "dragonkin-mage-robes",
-        "title": "Mage Robes Dragonkin",
+        "title": "Túnica de Mago Dragonkin",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -40507,7 +40507,7 @@
       },
       {
         "id": "iron-platebody",
-        "title": "Coraza de Placas de Hierro",
+        "title": "Coraza de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -40523,7 +40523,7 @@
       },
       {
         "id": "iron-platelegs",
-        "title": "Perneras de Placas de Hierro",
+        "title": "Perneras de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -40539,7 +40539,7 @@
       },
       {
         "id": "iron-med-helm",
-        "title": "Casco Mediano de Hierro",
+        "title": "Casco Medio de Hierro",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -40547,7 +40547,7 @@
       },
       {
         "id": "paladin-s-platebody",
-        "title": "Paladin's Platebody",
+        "title": "Coraza de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -40555,7 +40555,7 @@
       },
       {
         "id": "paladin-platelegs",
-        "title": "Paladin Platelegs",
+        "title": "Perneras de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -40563,7 +40563,7 @@
       },
       {
         "id": "paladin-s-helm",
-        "title": "Paladin's Helm",
+        "title": "Yelmo de Paladín",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -40603,7 +40603,7 @@
       },
       {
         "id": "wild-archer-body",
-        "title": "Wild Archer Body",
+        "title": "Peto de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -40611,7 +40611,7 @@
       },
       {
         "id": "wild-archer-chaps",
-        "title": "Wild Archer Chaps",
+        "title": "Perneras de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -40619,7 +40619,7 @@
       },
       {
         "id": "wild-archer-cowl",
-        "title": "Wild Archer Cowl",
+        "title": "Capucha de Arquero Salvaje",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -40688,8 +40688,8 @@
   },
   {
     "id": "paladin-s-helm",
-    "title": "Paladin's Helm",
-    "name": "Paladin's Helm",
+    "title": "Yelmo de Paladín",
+    "name": "Yelmo de Paladín",
     "itemType": "Armadura Cuerpo a Cuerpo",
     "category": "Armaduras y Ropa",
     "description": "Un yelmo de metal, usado por los paladines al servicio de la iglesia de Saradomin.",
@@ -40746,8 +40746,8 @@
   },
   {
     "id": "paladin-s-platebody",
-    "title": "Paladin's Platebody",
-    "name": "Paladin's Platebody",
+    "title": "Coraza de Paladín",
+    "name": "Coraza de Paladín",
     "itemType": "Armadura Cuerpo a Cuerpo",
     "category": "Armaduras y Ropa",
     "description": "Una pesada coraza usada por los paladines de Saradomin.",
@@ -41213,8 +41213,8 @@
   },
   {
     "id": "pioneer-s-scarf",
-    "title": "Pioneer's Scarf",
-    "name": "Pioneer's Scarf",
+    "title": "Bufanda de Pionero",
+    "name": "Bufanda de Pionero",
     "itemType": "Objeto Básico",
     "category": "Armaduras y Ropa",
     "description": "Una bufanda que usaron los primeros exploradores de Ashenfall.",
@@ -41334,8 +41334,8 @@
   },
   {
     "id": "plate-of-pure-obsidian",
-    "title": "Plate of Pure Obsidian",
-    "name": "Plate of Pure Obsidian",
+    "title": "Placa de Obsidiana Pura",
+    "name": "Placa de Obsidiana Pura",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Quizás puedas aprender algo de ello.",
@@ -42290,7 +42290,7 @@
       },
       {
         "id": "roast-pumpkin",
-        "title": "Roast Calabaza",
+        "title": "Calabaza Asada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -42852,7 +42852,7 @@
     "category": "Armaduras y Ropa",
     "description": "Equipo de cabeza de guardabosques. Usar esto te da la necesidad de robar a los ricos para ayudar a los pobres por alguna razón.",
     "weight": 6,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -42915,7 +42915,7 @@
     "category": "Armaduras y Ropa",
     "description": "Equipo de piernas de guardabosques que te hace sentir ágil y ligeramente rebelde.",
     "weight": 9,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -42978,7 +42978,7 @@
     "category": "Armaduras y Ropa",
     "description": "¡Armadura de guardabosques que es tan peligrosa como elegante!",
     "weight": 12,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -43084,7 +43084,7 @@
       },
       {
         "id": "meat-sandwich",
-        "title": "Meat Sandwich",
+        "title": "Sándwich de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -43092,7 +43092,7 @@
       },
       {
         "id": "meat-twist-sandwich",
-        "title": "Meat Twist Sandwich",
+        "title": "Sándwich Enrollado de Carne",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -43100,7 +43100,7 @@
       },
       {
         "id": "redberry-roast-rat",
-        "title": "Redberry Roast Rat",
+        "title": "Rata Asada con Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -43108,7 +43108,7 @@
       },
       {
         "id": "squeaking-sausage",
-        "title": "Squeaking Sausage",
+        "title": "Salchicha Chillona",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -43222,7 +43222,7 @@
       },
       {
         "id": "seared-anchovies",
-        "title": "Seared Anchovies",
+        "title": "Anchoas Selladas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43318,7 +43318,7 @@
       },
       {
         "id": "steamed-beltfish",
-        "title": "Steamed Beltfish",
+        "title": "Pez Cinto al Vapor",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43382,7 +43382,7 @@
       },
       {
         "id": "mixed-platter",
-        "title": "Mixed Platter",
+        "title": "Plato Combinado",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -43390,7 +43390,7 @@
       },
       {
         "id": "redberry-glazed-roast-flank",
-        "title": "Redberry Glazed Roast Flank",
+        "title": "Falda Asada Glaseada con Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -43446,7 +43446,7 @@
       },
       {
         "id": "hearty-stew",
-        "title": "Hearty Estofado Rústico",
+        "title": "Estofado Rústico Contundente",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -43494,7 +43494,7 @@
       },
       {
         "id": "sun-baked-sole",
-        "title": "Sun Baked Sole",
+        "title": "Lenguado Horneado al Sol",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43542,7 +43542,7 @@
       },
       {
         "id": "steak",
-        "title": "Steak",
+        "title": "Filete",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43694,7 +43694,7 @@
       },
       {
         "id": "smoked-herring",
-        "title": "Smoked Herring",
+        "title": "Arenque Ahumado",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43742,7 +43742,7 @@
       },
       {
         "id": "smoked-infernal-eel",
-        "title": "Smoked Infernal Eel",
+        "title": "Anguila Infernal Ahumada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43790,7 +43790,7 @@
       },
       {
         "id": "lobster-bait",
-        "title": "Lobster Bait",
+        "title": "Cebo para Langostas",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -43798,7 +43798,7 @@
       },
       {
         "id": "roasted-lobster",
-        "title": "Roasted Lobster",
+        "title": "Langosta Asada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43846,7 +43846,7 @@
       },
       {
         "id": "monkfish-bait",
-        "title": "Monkfish Bait",
+        "title": "Cebo para Rape",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -43854,7 +43854,7 @@
       },
       {
         "id": "monkfish-fillets",
-        "title": "Monkfish Fillets",
+        "title": "Filetes de Rape",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43910,7 +43910,7 @@
       },
       {
         "id": "fortifying-stew",
-        "title": "Fortifying Estofado Rústico",
+        "title": "Estofado Rústico Fortificante",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -43918,7 +43918,7 @@
       },
       {
         "id": "mixed-platter",
-        "title": "Mixed Platter",
+        "title": "Plato Combinado",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -43926,7 +43926,7 @@
       },
       {
         "id": "rat-roast",
-        "title": "Rat Roast",
+        "title": "Asado de Rata",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -43974,7 +43974,7 @@
       },
       {
         "id": "fried-salmon",
-        "title": "Fried Salmón Cocinado",
+        "title": "Salmón Frito",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -44070,7 +44070,7 @@
       },
       {
         "id": "sauteed-shrimp",
-        "title": "Sauteed Shrimp",
+        "title": "Camarones Salteados",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Hoguera de Campamento",
@@ -44078,7 +44078,7 @@
       },
       {
         "id": "shrimp-bait",
-        "title": "Shrimp Bait",
+        "title": "Cebo para Camarones",
         "category": "Herramientas",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -44616,7 +44616,7 @@
       },
       {
         "id": "tzhaar-ket-om",
-        "title": "TzHaar-Ket-Om (Obsidiana)",
+        "title": "TzHaar-Ket-Om (Mazo de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Banco del Herrero",
@@ -44780,8 +44780,8 @@
   },
   {
     "id": "redberries",
-    "title": "Redberries",
-    "name": "Redberries",
+    "title": "Bayas Rojas",
+    "name": "Bayas Rojas",
     "itemType": "Comida / Sustento",
     "category": "Pociones y Comida",
     "description": "Recogidos de los arbustos, cómelos para obtener una pequeña cantidad de sustento.",
@@ -44849,7 +44849,7 @@
       },
       {
         "id": "redberry-glazed-roast-flank",
-        "title": "Redberry Glazed Roast Flank",
+        "title": "Falda Asada Glaseada con Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Olla de Cocina",
@@ -44857,7 +44857,7 @@
       },
       {
         "id": "redberry-infusion",
-        "title": "Redberry Infusion",
+        "title": "Infusión de Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -44963,7 +44963,7 @@
           "englishItem": "Raw Bestial Meat"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 2,
           "englishItem": "Redberries"
         }
@@ -45011,7 +45011,7 @@
           "englishItem": "Clean Water"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         }
@@ -45026,7 +45026,7 @@
     "usedIn": [
       {
         "id": "victoria-sponge-cake",
-        "title": "Victoria Sponge Cake",
+        "title": "Bizcocho Victoria",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Cocina de Piedra",
@@ -45237,7 +45237,7 @@
       },
       {
         "id": "lunar-garou-hat",
-        "title": "Lunar Garou Hat",
+        "title": "Sombrero Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -45245,7 +45245,7 @@
       },
       {
         "id": "lunar-garou-robes",
-        "title": "Lunar Garou Robes",
+        "title": "Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -45253,7 +45253,7 @@
       },
       {
         "id": "lunar-garou-robe-legs",
-        "title": "Lunar Garou Robe Legs",
+        "title": "Falda de Túnica Garou Lunar",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -45261,7 +45261,7 @@
       },
       {
         "id": "master-wand",
-        "title": "Master Wand",
+        "title": "Varita de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Fragua Mística",
@@ -45269,7 +45269,7 @@
       },
       {
         "id": "master-s-staff",
-        "title": "Master's Staff",
+        "title": "Bastón de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 6,
         "facility": "Fragua Mística",
@@ -45325,7 +45325,7 @@
       },
       {
         "id": "toktz-mej-tal",
-        "title": "TokTz-Mej-Tal (Obsidiana)",
+        "title": "Toktz-Mej-Tal (Bastón de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 22,
         "facility": "Fragua Mística",
@@ -45333,7 +45333,7 @@
       },
       {
         "id": "toktz-ket-xil",
-        "title": "TokTz-Ket-Xil (Obsidiana)",
+        "title": "TokTz-Ket-Xil (Escudo de Obsidiana)",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco del Herrero",
@@ -45341,7 +45341,7 @@
       },
       {
         "id": "toktz-xil-ak",
-        "title": "TokTz-Xil-Ak (Obsidiana)",
+        "title": "Toktz-Xil-Ak (Espada de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Banco del Herrero",
@@ -45349,7 +45349,7 @@
       },
       {
         "id": "tzhaar-ket-om",
-        "title": "TzHaar-Ket-Om (Obsidiana)",
+        "title": "TzHaar-Ket-Om (Mazo de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Banco del Herrero",
@@ -45366,7 +45366,7 @@
     "category": "Armaduras y Ropa",
     "description": "Un pesado peto hecho de Cuero y Hueso.",
     "weight": 16,
-    "repairCost": "2 animal bones",
+    "repairCost": "2 huesos de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -45414,7 +45414,7 @@
     "category": "Armaduras y Ropa",
     "description": "Protege tu cabeza con este tocado básico hecho de cuero y hueso.",
     "weight": 8,
-    "repairCost": "1 animal bone",
+    "repairCost": "1 hueso de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -45462,7 +45462,7 @@
     "category": "Armaduras y Ropa",
     "description": "Placas pesadas hechas de Cuero y Hueso.",
     "weight": 12,
-    "repairCost": "1 animal bone",
+    "repairCost": "1 hueso de animal",
     "release": "15 April 2025",
     "powerLevel": 2,
     "stats": {
@@ -45926,7 +45926,7 @@
       },
       {
         "id": "glazed-pumpkin-sandwich",
-        "title": "Glazed Calabaza Sandwich",
+        "title": "Sándwich de Calabaza Glaseada",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -45934,7 +45934,7 @@
       },
       {
         "id": "pumpkin-spice-infusion",
-        "title": "Calabaza Spice Infusion",
+        "title": "Infusión de Calabaza con Especias",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -45942,7 +45942,7 @@
       },
       {
         "id": "pumpkin-soup",
-        "title": "Calabaza Soup",
+        "title": "Sopa de Calabaza",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -45950,7 +45950,7 @@
       },
       {
         "id": "umbral-kebab",
-        "title": "Kebab Umbrío/a",
+        "title": "Kebab Umbrío",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -46078,7 +46078,7 @@
       },
       {
         "id": "wizard-hat",
-        "title": "Wizard Hat",
+        "title": "Sombrero de Mago",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -46086,7 +46086,7 @@
       },
       {
         "id": "wizard-robe-legs",
-        "title": "Wizard Robe Legs",
+        "title": "Falda de Túnica de Mago",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -46094,7 +46094,7 @@
       },
       {
         "id": "wizard-robes",
-        "title": "Wizard Robes",
+        "title": "Túnica de Mago",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -46196,7 +46196,7 @@
     "usedIn": [
       {
         "id": "poisoned-rune-arrow",
-        "title": "Poisoned Rune Arrow",
+        "title": "Flecha Rúnica Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -46204,7 +46204,7 @@
       },
       {
         "id": "rune-fire-arrow",
-        "title": "Flecha de Fuego Rúnico",
+        "title": "Flecha de Fuego de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -46212,7 +46212,7 @@
       },
       {
         "id": "rune-barbed-arrow",
-        "title": "Flecha Dentada Rúnico",
+        "title": "Flecha Dentada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -46317,7 +46317,7 @@
       },
       {
         "id": "magic-shortbow",
-        "title": "Arco Corto Mágicoo",
+        "title": "Arco Corto Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Mesa de Flechería",
@@ -46325,7 +46325,7 @@
       },
       {
         "id": "magic-longbow",
-        "title": "Arco Largo Mágicoo",
+        "title": "Arco Largo Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Mesa de Flechería",
@@ -46341,7 +46341,7 @@
       },
       {
         "id": "rune-platebody",
-        "title": "Coraza de Placas Rúnica",
+        "title": "Coraza de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco de Armaduras",
@@ -46349,7 +46349,7 @@
       },
       {
         "id": "rune-platelegs",
-        "title": "Perneras de Placas Rúnico",
+        "title": "Perneras de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -46357,7 +46357,7 @@
       },
       {
         "id": "rune-dagger",
-        "title": "Daga Rúnica",
+        "title": "Daga de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -46365,7 +46365,7 @@
       },
       {
         "id": "rune-mace",
-        "title": "Maza Rúnico",
+        "title": "Maza de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -46373,7 +46373,7 @@
       },
       {
         "id": "rune-pickaxe",
-        "title": "Pico de Minería Rúnico",
+        "title": "Pico de Runita",
         "category": "Herramientas",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -46421,7 +46421,7 @@
       },
       {
         "id": "rune-sword",
-        "title": "Espada Rúnica",
+        "title": "Espada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Banco del Herrero",
@@ -46429,7 +46429,7 @@
       },
       {
         "id": "rune-scimitar",
-        "title": "Cimitarra Rúnica",
+        "title": "Cimitarra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 10,
         "facility": "Banco del Herrero",
@@ -46453,7 +46453,7 @@
       },
       {
         "id": "rune-warhammer",
-        "title": "Martillo de Guerra Rúnico",
+        "title": "Martillo de Guerra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Banco del Herrero",
@@ -46461,7 +46461,7 @@
       },
       {
         "id": "rune-arrow",
-        "title": "Flecha Rúnica",
+        "title": "Flecha de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -46697,7 +46697,7 @@
     "usedIn": [
       {
         "id": "rune-crossbow",
-        "title": "Ballesta Rúnica",
+        "title": "Ballesta de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -46875,7 +46875,7 @@
       },
       {
         "id": "leggings-of-lightness",
-        "title": "Leggings Of Lightness",
+        "title": "Perneras de Ligereza",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Mesa de Artesanía",
@@ -46883,7 +46883,7 @@
       },
       {
         "id": "law-rune",
-        "title": "Runa de la Ley",
+        "title": "Runa de Ley",
         "category": "Runas y Magia",
         "quantityNeeded": 1,
         "facility": "Altar de Runas",
@@ -46891,7 +46891,7 @@
       },
       {
         "id": "large-wardstone",
-        "title": "Large Wardstone",
+        "title": "Piedra Guardiana Mayor",
         "category": "Materiales y Minerales",
         "quantityNeeded": 15,
         "facility": "Mesa de Artesanía",
@@ -46899,7 +46899,7 @@
       },
       {
         "id": "medium-wardstone",
-        "title": "Medium Wardstone",
+        "title": "Piedra Guardiana Mediana",
         "category": "Materiales y Minerales",
         "quantityNeeded": 10,
         "facility": "Mesa de Artesanía",
@@ -47913,7 +47913,7 @@
     "usedIn": [
       {
         "id": "rune-bar",
-        "title": "Barra Rúnica",
+        "title": "Barra de Runita",
         "category": "Materiales y Minerales",
         "quantityNeeded": 3,
         "facility": "Alto Horno",
@@ -48039,7 +48039,7 @@
       },
       {
         "id": "necromancer-s-crown",
-        "title": "Necromancer's Crown",
+        "title": "Corona de Nigromante",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48055,7 +48055,7 @@
       },
       {
         "id": "ranger-hat",
-        "title": "Ranger Hat",
+        "title": "Sombrero de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48063,7 +48063,7 @@
       },
       {
         "id": "ranger-tunic",
-        "title": "Ranger Tunic",
+        "title": "Túnica de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -48071,7 +48071,7 @@
       },
       {
         "id": "ranger-tights",
-        "title": "Ranger Tights",
+        "title": "Mallas de Explorador",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -48079,7 +48079,7 @@
       },
       {
         "id": "shadowscale-hood",
-        "title": "Shadowscale Hood",
+        "title": "Capucha de Escama Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48087,7 +48087,7 @@
       },
       {
         "id": "steel-full-helm",
-        "title": "Gran Yelmo de Acero",
+        "title": "Casco Completo de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48095,7 +48095,7 @@
       },
       {
         "id": "steel-platebody",
-        "title": "Coraza de Placas de Acero",
+        "title": "Coraza de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -48103,7 +48103,7 @@
       },
       {
         "id": "steel-platelegs",
-        "title": "Perneras de Placas de Acero",
+        "title": "Perneras de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -48151,7 +48151,7 @@
       },
       {
         "id": "steel-med-helm",
-        "title": "Casco Mediano de Acero",
+        "title": "Casco Medio de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48167,7 +48167,7 @@
       },
       {
         "id": "white-full-helm",
-        "title": "Gran Yelmo Blancoo",
+        "title": "Gran Yelmo Blanco",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 1,
         "facility": "Banco de Armaduras",
@@ -48249,8 +48249,8 @@
   },
   {
     "id": "sandstone",
-    "title": "Sandstone",
-    "name": "Sandstone",
+    "title": "Arenisca",
+    "name": "Arenisca",
     "itemType": "Material Básico",
     "category": "Materiales y Minerales",
     "description": "Un material de construcción; se puede moler hasta convertirlo en arena.",
@@ -48302,7 +48302,7 @@
       },
       {
         "id": "medium-wardstone",
-        "title": "Medium Wardstone",
+        "title": "Piedra Guardiana Mediana",
         "category": "Materiales y Minerales",
         "quantityNeeded": 1,
         "facility": "Mesa de Artesanía",
@@ -48366,7 +48366,7 @@
       },
       {
         "id": "ring-of-recoil",
-        "title": "Anillo de Repulsión",
+        "title": "Anillo de Repulsión (Recoil)",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco del Joyero",
@@ -48597,7 +48597,7 @@
     "usedIn": [
       {
         "id": "shrimp-omelette",
-        "title": "Shrimp Omelette",
+        "title": "Tortilla de Camarones",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -48827,7 +48827,7 @@
       },
       {
         "id": "kalphite-carapace-chest",
-        "title": "Kalphite Carapace Chest",
+        "title": "Coraza de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 8,
         "facility": "Banco de Armaduras",
@@ -48835,7 +48835,7 @@
       },
       {
         "id": "kalphite-carapace-helmet",
-        "title": "Kalphite Carapace Helmet",
+        "title": "Casco de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -48843,7 +48843,7 @@
       },
       {
         "id": "kalphite-carapace-legs",
-        "title": "Kalphite Carapace Legs",
+        "title": "Perneras de Kalphite",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -48907,7 +48907,7 @@
       },
       {
         "id": "toktz-ket-xil",
-        "title": "TokTz-Ket-Xil (Obsidiana)",
+        "title": "TokTz-Ket-Xil (Escudo de Obsidiana)",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco del Herrero",
@@ -48915,7 +48915,7 @@
       },
       {
         "id": "toktz-xil-ak",
-        "title": "TokTz-Xil-Ak (Obsidiana)",
+        "title": "Toktz-Xil-Ak (Espada de Obsidiana)",
         "category": "Armas de Combate",
         "quantityNeeded": 5,
         "facility": "Banco del Herrero",
@@ -49050,7 +49050,7 @@
     "usedIn": [
       {
         "id": "monkfish-skewers",
-        "title": "Monkfish Skewers",
+        "title": "Brochetas de Rape",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -49058,7 +49058,7 @@
       },
       {
         "id": "umbral-kebab",
-        "title": "Kebab Umbrío/a",
+        "title": "Kebab Umbrío",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -49396,7 +49396,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Corte torbellino (sin marco|ancho=25x25 33)",
+      "specialAction": "Corte torbellino",
       "specialEffect": "DAÑO aumentado contra ENEMIGOS ESPECTRALES"
     },
     "recipe": {
@@ -49742,8 +49742,8 @@
   },
   {
     "id": "shrapnel",
-    "title": "Shrapnel",
-    "name": "Shrapnel",
+    "title": "Metralla",
+    "name": "Metralla",
     "itemType": "Material Básico",
     "category": "Materiales y Minerales",
     "description": "Una colección de varios objetos afilados.",
@@ -49928,8 +49928,8 @@
   },
   {
     "id": "shroud-of-noggin",
-    "title": "Shroud of Noggin",
-    "name": "Shroud of Noggin",
+    "title": "Sudario de Noggin",
+    "name": "Sudario de Noggin",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Una máscara fantasmal de arpillera. Reduce la acumulación de marchitez mientras se usa.",
@@ -49981,8 +49981,8 @@
   },
   {
     "id": "sigil-of-a-phoenix",
-    "title": "Sigil of a Phoenix",
-    "name": "Sigil of a Phoenix",
+    "title": "Sigilo de Fénix",
+    "name": "Sigilo de Fénix",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Ardiéndose y reconstituyéndose sin cesar. Quizás puedas aprender de ello.",
@@ -50237,7 +50237,7 @@
       },
       {
         "id": "white-full-helm",
-        "title": "Gran Yelmo Blancoo",
+        "title": "Gran Yelmo Blanco",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -50523,7 +50523,7 @@
       "combo": 5,
       "durability": 1050,
       "armourRating": null,
-      "specialAction": "Rompebloques (sin marco|ancho=25x25 33)",
+      "specialAction": "Rompebloques",
       "specialEffect": "* Mayor PROBABILIDAD de conseguir GOLPES CRÍTICOS con ATAQUES DE CLUB * BLOQUEO reducido"
     },
     "recipe": {
@@ -50737,7 +50737,7 @@
           "englishItem": "Rune Essence"
         },
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 1,
           "englishItem": "Stone"
         }
@@ -50847,7 +50847,7 @@
     "usedIn": [
       {
         "id": "stir-fry",
-        "title": "Stir-Fry",
+        "title": "Salteado",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -51934,8 +51934,8 @@
   },
   {
     "id": "steak",
-    "title": "Steak",
-    "name": "Steak",
+    "title": "Filete",
+    "name": "Filete",
     "itemType": "Comida / Sustento",
     "category": "Pociones y Comida",
     "description": "Un bistec delicioso. La comida perfecta para una fogata.",
@@ -51983,7 +51983,7 @@
       },
       {
         "id": "mixed-grill",
-        "title": "Mixed Grill",
+        "title": "Parrillada Mixta",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -51991,7 +51991,7 @@
       },
       {
         "id": "steak-n-eggs",
-        "title": "Steak 'N' Eggs",
+        "title": "Filete con Huevos",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Piedra",
@@ -51999,7 +51999,7 @@
       },
       {
         "id": "umbral-kebab",
-        "title": "Kebab Umbrío/a",
+        "title": "Kebab Umbrío",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -52010,8 +52010,8 @@
   },
   {
     "id": "steak-n-eggs",
-    "title": "Steak 'N' Eggs",
-    "name": "Steak 'N' Eggs",
+    "title": "Filete con Huevos",
+    "name": "Filete con Huevos",
     "itemType": "Comida / Sustento",
     "category": "Pociones y Comida",
     "description": "Una manera maravillosa de comenzar el día.",
@@ -52041,7 +52041,7 @@
           "englishItem": "Fried Egg"
         },
         {
-          "item": "Steak",
+          "item": "Filete",
           "quantity": 1,
           "englishItem": "Steak"
         }
@@ -52165,7 +52165,7 @@
       },
       {
         "id": "swabbie-pie",
-        "title": "Swabbie Pie",
+        "title": "Pastel de Marinero",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -52227,7 +52227,7 @@
     "usedIn": [
       {
         "id": "poisoned-steel-arrow",
-        "title": "Poisoned Steel Arrow",
+        "title": "Flecha de Acero Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 33,
         "facility": "Mesa de Flechería",
@@ -52356,7 +52356,7 @@
       },
       {
         "id": "steel-pickaxe",
-        "title": "Pico de Minería de Acero",
+        "title": "Pico de Acero",
         "category": "Herramientas",
         "quantityNeeded": 8,
         "facility": "Banco del Herrero",
@@ -52380,7 +52380,7 @@
       },
       {
         "id": "steel-full-helm",
-        "title": "Gran Yelmo de Acero",
+        "title": "Casco Completo de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -52388,7 +52388,7 @@
       },
       {
         "id": "steel-platebody",
-        "title": "Coraza de Placas de Acero",
+        "title": "Coraza de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 10,
         "facility": "Banco de Armaduras",
@@ -52396,7 +52396,7 @@
       },
       {
         "id": "steel-platelegs",
-        "title": "Perneras de Placas de Acero",
+        "title": "Perneras de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -52500,7 +52500,7 @@
       },
       {
         "id": "steel-med-helm",
-        "title": "Casco Mediano de Acero",
+        "title": "Casco Medio de Acero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -52532,7 +52532,7 @@
       },
       {
         "id": "white-full-helm",
-        "title": "Gran Yelmo Blancoo",
+        "title": "Gran Yelmo Blanco",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 4,
         "facility": "Banco de Armaduras",
@@ -53812,8 +53812,8 @@
   },
   {
     "id": "stir-fry",
-    "title": "Stir-Fry",
-    "name": "Stir-Fry",
+    "title": "Salteado",
+    "name": "Salteado",
     "itemType": "Comida / Sustento",
     "category": "Pociones y Comida",
     "description": "Elaborado combinando krill gigante seco y moras rojas secas.",
@@ -53865,8 +53865,8 @@
   },
   {
     "id": "stone",
-    "title": "Stone",
-    "name": "Stone",
+    "title": "Piedra",
+    "name": "Piedra",
     "itemType": "Material Básico",
     "category": "Materiales y Minerales",
     "description": "Un material básico de construcción y artesanía.",
@@ -53950,7 +53950,7 @@
       },
       {
         "id": "stone-block",
-        "title": "Stone Block",
+        "title": "Bloque de Piedra",
         "category": "Materiales y Minerales",
         "quantityNeeded": 2,
         "facility": "Cortador de Piedra",
@@ -53995,7 +53995,7 @@
       "skillxp": 20,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 1,
           "englishItem": "Stone"
         },
@@ -54048,7 +54048,7 @@
       "skillxp": 0,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 2,
           "englishItem": "Stone"
         }
@@ -54091,7 +54091,7 @@
       "skillxp": 20,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 8,
           "englishItem": "Stone"
         },
@@ -54139,7 +54139,7 @@
       "skillxp": 20,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 8,
           "englishItem": "Stone"
         },
@@ -54187,7 +54187,7 @@
       "skillxp": 20,
       "materials": [
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 6,
           "englishItem": "Stone"
         },
@@ -54240,7 +54240,7 @@
           "englishItem": "Ash Logs"
         },
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 8,
           "englishItem": "Stone"
         }
@@ -54330,7 +54330,7 @@
           "englishItem": "Clean Water"
         },
         {
-          "item": "Syrup de Arce",
+          "item": "Jarabe de Arce",
           "quantity": 1,
           "englishItem": "Maple Syrup"
         }
@@ -54752,7 +54752,7 @@
     "usedIn": [
       {
         "id": "swabbie-pie",
-        "title": "Swabbie Pie",
+        "title": "Pastel de Marinero",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Cocina de Hierro",
@@ -54806,8 +54806,8 @@
   },
   {
     "id": "sun-bleached-head-wrap",
-    "title": "Sun-Bleached Head Wrap",
-    "name": "Sun-Bleached Head Wrap",
+    "title": "Envoltura Abrasada por el Sol",
+    "name": "Envoltura Abrasada por el Sol",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Quizás puedas aprender algo de ello al examinarlo.",
@@ -54837,8 +54837,8 @@
   },
   {
     "id": "sun-bleached-leggings",
-    "title": "Sun-Bleached Leggings",
-    "name": "Sun-Bleached Leggings",
+    "title": "Polainas Abrasadas por el Sol",
+    "name": "Polainas Abrasadas por el Sol",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Quizás puedas aprender algo de ello al examinarlo.",
@@ -54868,8 +54868,8 @@
   },
   {
     "id": "sun-bleached-vest",
-    "title": "Sun-Bleached Vest",
-    "name": "Sun-Bleached Vest",
+    "title": "Chaleco Abrasado por el Sol",
+    "name": "Chaleco Abrasado por el Sol",
     "itemType": "Vestigio Antiguo",
     "category": "Vestigios y Patrones",
     "description": "Quizás puedas aprender algo de ello al examinarlo.",
@@ -55026,8 +55026,8 @@
   },
   {
     "id": "super-focused-agility-potion",
-    "title": "Poción de Super Focused Agility",
-    "name": "Poción de Super Focused Agility",
+    "title": "Súper Poción de Agilidad Concentrada",
+    "name": "Súper Poción de Agilidad Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Agilidad enfocada II Otorga un AUMENTO de XP del 30% para la habilidad Agilidad.",
@@ -55074,8 +55074,8 @@
   },
   {
     "id": "super-focused-artisan-potion",
-    "title": "Poción de Super Focused Artisan",
-    "name": "Poción de Super Focused Artisan",
+    "title": "Súper Poción de Artesanía Concentrada",
+    "name": "Súper Poción de Artesanía Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Focused Artisan II otorga un AUMENTO de XP del 30 % para la habilidad ARTESANO.",
@@ -55100,7 +55100,7 @@
       "skillxp": 40,
       "materials": [
         {
-          "item": "Poción de Focused Artisan",
+          "item": "Poción de Artesanía Concentrada",
           "quantity": 1,
           "englishItem": "Focused Artisan Potion"
         }
@@ -55117,8 +55117,8 @@
   },
   {
     "id": "super-focused-attack-potion",
-    "title": "Poción de Super Focused Attack",
-    "name": "Poción de Super Focused Attack",
+    "title": "Súper Poción de Ataque Concentrada",
+    "name": "Súper Poción de Ataque Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Ataque enfocado II Otorga un AUMENTO de XP del 30% para la habilidad ATAQUE.",
@@ -55165,8 +55165,8 @@
   },
   {
     "id": "super-focused-construction-potion",
-    "title": "Poción de Super Focused Construction",
-    "name": "Poción de Super Focused Construction",
+    "title": "Súper Poción de Construcción Concentrada",
+    "name": "Súper Poción de Construcción Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Construcción enfocada II Otorga un AUMENTO de XP del 30% para la habilidad CONSTRUCCIÓN.",
@@ -55191,7 +55191,7 @@
       "skillxp": 40,
       "materials": [
         {
-          "item": "Poción de Focused Construction",
+          "item": "Poción de Construcción Concentrada",
           "quantity": 1,
           "englishItem": "Focused Construction Potion"
         },
@@ -55213,8 +55213,8 @@
   },
   {
     "id": "super-focused-cooking-potion",
-    "title": "Poción de Super Focused Cooking",
-    "name": "Poción de Super Focused Cooking",
+    "title": "Súper Poción de Cocina Concentrada",
+    "name": "Súper Poción de Cocina Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Cocina enfocada IIOtorga un AUMENTO de XP del 30% para la habilidad cocina.",
@@ -55261,8 +55261,8 @@
   },
   {
     "id": "super-focused-farming-potion",
-    "title": "Poción de Super Focused Farming",
-    "name": "Poción de Super Focused Farming",
+    "title": "Súper Poción de Agricultura Concentrada",
+    "name": "Súper Poción de Agricultura Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Agricultura enfocada II Otorga un AUMENTO de XP del 30 % para la habilidad agrícola.",
@@ -55309,8 +55309,8 @@
   },
   {
     "id": "super-focused-fishing-potion",
-    "title": "Poción de Super Focused Fishing",
-    "name": "Poción de Super Focused Fishing",
+    "title": "Súper Poción de Pesca Concentrada",
+    "name": "Súper Poción de Pesca Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Pesca enfocada II Otorga un AUMENTO de XP del 30 % para la habilidad pesca.",
@@ -55357,8 +55357,8 @@
   },
   {
     "id": "super-focused-mining-potion",
-    "title": "Poción de Super Focused Mining",
-    "name": "Poción de Super Focused Mining",
+    "title": "Súper Poción de Minería Concentrada",
+    "name": "Súper Poción de Minería Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "PERK: Minería enfocada IIOtorga un BOOST de XP del 30% para la habilidad de minería.",
@@ -55405,8 +55405,8 @@
   },
   {
     "id": "super-focused-runecrafting-potion",
-    "title": "Poción de Super Focused Runecrafting",
-    "name": "Poción de Super Focused Runecrafting",
+    "title": "Súper Poción de Creación de Runas Concentrada",
+    "name": "Súper Poción de Creación de Runas Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Focused Runecrafting II Otorga un AUMENTO DE XP del 30% para la habilidad RUNECRAFING.",
@@ -55453,8 +55453,8 @@
   },
   {
     "id": "super-focused-woodcutting-potion",
-    "title": "Poción de Super Focused Woodcutting",
-    "name": "Poción de Super Focused Woodcutting",
+    "title": "Súper Poción de Tala Concentrada",
+    "name": "Súper Poción de Tala Concentrada",
     "itemType": "Poción / Brebaje",
     "category": "Pociones y Comida",
     "description": "VENTAJA: Tala de madera II enfocada Otorga un AUMENTO de XP del 30% para la habilidad tala de madera.",
@@ -55527,7 +55527,7 @@
       "skillxp": 40,
       "materials": [
         {
-          "item": "Poción de Lumberjack",
+          "item": "Poción de Leñador",
           "quantity": 1,
           "englishItem": "Lumberjack Potion"
         }
@@ -56071,7 +56071,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Diezmar (sin marco|ancho=25x25 50)",
+      "specialAction": "Diezmar",
       "specialEffect": "* Mayor DAÑO * Mayor costo de energía"
     },
     "recipe": {
@@ -56226,7 +56226,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Llamas de ira (sin marco|ancho=25x25 33)",
+      "specialAction": "Llamas de ira",
       "specialEffect": "* LLAMAS DE RABIA Activa el EFECTO DE FUEGO a tu alrededor, causando DAÑO a todos los enemigos y provocando QUEMADURA en ellos * EJECUCIÓN ARDIENTE MATAR a un enemigo con el ATAQUE ESPECIAL ENCANTA al espada con FUEGO. Matar a un enemigo ACTUALIZA el efecto de ENCANTO * Arma ENCANTADA No puedes lanzar ENCANTOS adicionales en esta arma."
     },
     "recipe": {
@@ -56512,7 +56512,7 @@
       "combo": 5,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Barcaza (sin marco|ancho=25x25 33)",
+      "specialAction": "Barcaza",
       "specialEffect": "MAYOR probabilidad de conseguir GOLPES CRÍTICOS DURABILIDAD reducida"
     },
     "recipe": {
@@ -57475,8 +57475,8 @@
   },
   {
     "id": "torch",
-    "title": "Torch",
-    "name": "Torch",
+    "title": "Antorcha",
+    "name": "Antorcha",
     "itemType": "Herramienta de Trabajo",
     "category": "Herramientas",
     "description": "Una fuente ligera confiable.",
@@ -57633,7 +57633,7 @@
       "combo": 4,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "TERREMOTO (sin marco|ancho=25x25 50)",
+      "specialAction": "TERREMOTO",
       "specialEffect": "* LOS GOLPES causan acumulación de SANGRADO en los objetivos * DURABILIDAD reducida"
     },
     "recipe": {
@@ -57800,7 +57800,7 @@
           "englishItem": "Roast Pumpkin"
         },
         {
-          "item": "Steak",
+          "item": "Filete",
           "quantity": 1,
           "englishItem": "Steak"
         }
@@ -57963,7 +57963,7 @@
       },
       {
         "id": "necromancer-s-crown",
-        "title": "Necromancer's Crown",
+        "title": "Corona de Nigromante",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -57979,7 +57979,7 @@
       },
       {
         "id": "shadowscale-hood",
-        "title": "Shadowscale Hood",
+        "title": "Capucha de Escama Sombría",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 6,
         "facility": "Banco de Armaduras",
@@ -58116,7 +58116,7 @@
     "category": "Armas de Combate",
     "description": "Este arco todavía dispara con una precisión mortal.",
     "weight": 10,
-    "repairCost": "3 undead bones",
+    "repairCost": "3 huesos no-muertos",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -58462,7 +58462,7 @@
       },
       {
         "id": "miner-ring",
-        "title": "Miner Ring",
+        "title": "Anillo de Minero",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Forja de Herrería",
@@ -58900,7 +58900,7 @@
       },
       {
         "id": "rune-platebody",
-        "title": "Coraza de Placas Rúnica",
+        "title": "Coraza de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 3,
         "facility": "Banco de Armaduras",
@@ -58908,7 +58908,7 @@
       },
       {
         "id": "rune-platelegs",
-        "title": "Perneras de Placas Rúnico",
+        "title": "Perneras de Runita",
         "category": "Armaduras y Ropa",
         "quantityNeeded": 2,
         "facility": "Banco de Armaduras",
@@ -58924,7 +58924,7 @@
       },
       {
         "id": "rune-scimitar",
-        "title": "Cimitarra Rúnica",
+        "title": "Cimitarra de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 2,
         "facility": "Banco del Herrero",
@@ -58989,7 +58989,7 @@
     "usedIn": [
       {
         "id": "magic-shortbow",
-        "title": "Arco Corto Mágicoo",
+        "title": "Arco Corto Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 4,
         "facility": "Mesa de Flechería",
@@ -58997,7 +58997,7 @@
       },
       {
         "id": "magic-longbow",
-        "title": "Arco Largo Mágicoo",
+        "title": "Arco Largo Mágico",
         "category": "Armas de Combate",
         "quantityNeeded": 8,
         "facility": "Mesa de Flechería",
@@ -59005,7 +59005,7 @@
       },
       {
         "id": "rune-dagger",
-        "title": "Daga Rúnica",
+        "title": "Daga de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Banco del Herrero",
@@ -59021,7 +59021,7 @@
       },
       {
         "id": "rune-sword",
-        "title": "Espada Rúnica",
+        "title": "Espada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 3,
         "facility": "Banco del Herrero",
@@ -59037,7 +59037,7 @@
       },
       {
         "id": "rune-crossbow",
-        "title": "Ballesta Rúnica",
+        "title": "Ballesta de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 6,
         "facility": "Mesa de Flechería",
@@ -59407,7 +59407,7 @@
           "englishItem": "Marrentil"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         },
@@ -59884,7 +59884,7 @@
           "englishItem": "Harralander"
         },
         {
-          "item": "Redberries",
+          "item": "Bayas Rojas",
           "quantity": 1,
           "englishItem": "Redberries"
         },
@@ -60103,7 +60103,7 @@
       },
       {
         "id": "rune-barbed-arrow",
-        "title": "Flecha Dentada Rúnico",
+        "title": "Flecha Dentada de Runita",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60173,7 +60173,7 @@
     "usedIn": [
       {
         "id": "poisoned-fang-arrow",
-        "title": "Poisoned Fang Arrow",
+        "title": "Flecha de Colmillo Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60181,7 +60181,7 @@
       },
       {
         "id": "poisoned-bronze-arrow",
-        "title": "Poisoned Bronze Arrow",
+        "title": "Flecha de Bronce Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60189,7 +60189,7 @@
       },
       {
         "id": "poisoned-iron-arrow",
-        "title": "Poisoned Iron Arrow",
+        "title": "Flecha de Hierro Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60197,7 +60197,7 @@
       },
       {
         "id": "poisoned-steel-arrow",
-        "title": "Poisoned Steel Arrow",
+        "title": "Flecha de Acero Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60205,7 +60205,7 @@
       },
       {
         "id": "poisoned-mithril-arrow",
-        "title": "Poisoned Mithril Arrow",
+        "title": "Flecha de Mithril Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60213,7 +60213,7 @@
       },
       {
         "id": "poisoned-adamant-arrow",
-        "title": "Poisoned Adamant Arrow",
+        "title": "Flecha de Adamantita Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60221,7 +60221,7 @@
       },
       {
         "id": "poisoned-rune-arrow",
-        "title": "Poisoned Rune Arrow",
+        "title": "Flecha Rúnica Envenenada",
         "category": "Armas de Combate",
         "quantityNeeded": 1,
         "facility": "Mesa de Flechería",
@@ -60232,8 +60232,8 @@
   },
   {
     "id": "weeds",
-    "title": "Weeds",
-    "name": "Weeds",
+    "title": "Malas Hierbas",
+    "name": "Malas Hierbas",
     "itemType": "Material Básico",
     "category": "Materiales y Minerales",
     "description": "Un montón de malas hierbas.",
@@ -60261,7 +60261,7 @@
     "usedIn": [
       {
         "id": "plant-cure",
-        "title": "Plant Cure",
+        "title": "Cura para Plantas",
         "category": "Pociones y Comida",
         "quantityNeeded": 2,
         "facility": "Cocina de Piedra",
@@ -60364,7 +60364,7 @@
       },
       {
         "id": "redberry-crunchies",
-        "title": "Redberry Crunchies",
+        "title": "Crujientes de Bayas Rojas",
         "category": "Pociones y Comida",
         "quantityNeeded": 1,
         "facility": "Olla de Cocina",
@@ -60372,7 +60372,7 @@
       },
       {
         "id": "victoria-sponge-cake",
-        "title": "Victoria Sponge Cake",
+        "title": "Bizcocho Victoria",
         "category": "Pociones y Comida",
         "quantityNeeded": 4,
         "facility": "Cocina de Piedra",
@@ -60445,7 +60445,7 @@
           "englishItem": "Granite"
         },
         {
-          "item": "Stone",
+          "item": "Piedra",
           "quantity": 10,
           "englishItem": "Stone"
         }
@@ -60610,7 +60610,7 @@
     "category": "Armaduras y Ropa",
     "description": "Un casco usado por un miembro de la Santa Orden de los Caballeros Blancos. es blanco puro.",
     "weight": 6,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -60777,7 +60777,7 @@
     "category": "Armaduras y Ropa",
     "description": "Platelegs blancos usados ​​por un miembro de la Sagrada Orden de los Caballeros Blancos.",
     "weight": 6,
-    "repairCost": "1 undead bone",
+    "repairCost": "1 hueso no-muerto",
     "release": "15 December 2025",
     "powerLevel": 5,
     "stats": {
@@ -61205,7 +61205,7 @@
       },
       {
         "id": "steel-pickaxe",
-        "title": "Pico de Minería de Acero",
+        "title": "Pico de Acero",
         "category": "Herramientas",
         "quantityNeeded": 6,
         "facility": "Banco del Herrero",
@@ -61823,7 +61823,7 @@
       "combo": 7,
       "durability": 1300,
       "armourRating": null,
-      "specialAction": "Lacerar (sin marco|ancho=25x25 25)",
+      "specialAction": "Lacerar",
       "specialEffect": "DAÑO aumentado contra LOBOS"
     },
     "recipe": {
@@ -62116,7 +62116,7 @@
       "combo": 5,
       "durability": 850,
       "armourRating": null,
-      "specialAction": "Barcaza (sin marco|ancho=25x25 25)",
+      "specialAction": "Barcaza",
       "specialEffect": ""
     },
     "recipe": {
@@ -62679,7 +62679,7 @@
       },
       {
         "id": "master-wand",
-        "title": "Master Wand",
+        "title": "Varita de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 8,
         "facility": "Fragua Mística",
@@ -62687,7 +62687,7 @@
       },
       {
         "id": "master-s-staff",
-        "title": "Master's Staff",
+        "title": "Bastón de Maestro",
         "category": "Armas de Combate",
         "quantityNeeded": 16,
         "facility": "Fragua Mística",
@@ -63271,7 +63271,7 @@
     "category": "Armas de Combate",
     "description": "El brazo de un zombie con propiedades electrizantes. ¡Choca esos cinco!",
     "weight": 15,
-    "repairCost": "1 animal bone",
+    "repairCost": "1 hueso de animal",
     "release": "23 June 2026",
     "powerLevel": 4,
     "stats": {
@@ -63282,7 +63282,7 @@
       "combo": 5,
       "durability": 1,
       "armourRating": null,
-      "specialAction": "Rompebloques (sin marco|ancho=25x25 33)",
+      "specialAction": "Rompebloques",
       "specialEffect": "LOS ATAQUES causan ACUMULACIÓN DE CHOQUE en los objetivos."
     },
     "recipe": {
@@ -63376,7 +63376,7 @@
       "combo": 5,
       "durability": 1300,
       "armourRating": null,
-      "specialAction": "Rompebloques (sin marco|ancho=25x25 33)",
+      "specialAction": "Rompebloques",
       "specialEffect": "Las ofertas aumentaron el DAÑO. Los ataques causan daño SLASH y CRUSH"
     },
     "recipe": {
@@ -63914,7 +63914,7 @@
       "facility": "Mortero",
       "materials": [
         {
-          "item": "Device de Obsidiana",
+          "item": "Mortero de Obsidiana",
           "quantity": 1
         }
       ]

@@ -7,8 +7,18 @@ const __dirname = path.dirname(__filename);
 
 const items = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../src/data/items.json'), 'utf8'));
 
+// Nombres propios canónicos de RuneScape que se conservan en castellano
+const ALLOWED_PROPER_NAMES = new Set([
+  'Keris', 'Moonstone', 'Vis Wax', 'Draconic Vis Wax',
+  'Irit', 'Marrentill', 'Marrentil', 'Harralander', 'Tarromin', 'Guam',
+  'Ranarr', 'Avantoe', 'Kwuarm', 'Cadantine', 'Lantadyme',
+  'Torstol', 'Snapdragon', 'Toadflax', 'Victoria Sponge Cake', 'Guthix Rest', 'Jade'
+]);
+
 const untranslatedNames = [];
 const untranslatedDescriptions = [];
+const untranslatedRepairCosts = [];
+const untranslatedMaterials = [];
 const untranslatedItemTypes = new Set();
 const untranslatedFacilities = new Set();
 const untranslatedDamageTypes = new Set();
@@ -17,14 +27,15 @@ const untranslatedAttackStyles = new Set();
 const englishWords = [' the ', ' of ', ' a ', ' and ', ' with ', ' to ', ' for ', ' from ', ' in ', ' on ', ' by ', ' an '];
 
 items.forEach(it => {
-  // Check name
-  const nameIsEng = it.name === it.englishTitle || it.name === it.title;
-  // Let's check if name contains english words or is standard english
-  if (nameIsEng) {
-    untranslatedNames.push({ id: it.id, name: it.name, category: it.category, itemType: it.itemType });
+  // Comprobación de Nombre: Solo si coincide con el título en inglés y no es nombre propio permitido,
+  // o si contiene patrones evidentes en inglés sin traducir
+  const isEngTitle = it.englishTitle && it.name === it.englishTitle && !ALLOWED_PROPER_NAMES.has(it.name);
+  const hasEngMarkers = /\b(Super Focused|Focused [A-Z]|Potion of)\b/i.test(it.name);
+  if (isEngTitle || hasEngMarkers) {
+    untranslatedNames.push({ id: it.id, name: it.name, englishTitle: it.englishTitle });
   }
 
-  // Check description
+  // Comprobación de Descripción
   if (it.description) {
     const isEn = englishWords.some(w => it.description.toLowerCase().includes(w));
     if (isEn) {
@@ -32,37 +43,49 @@ items.forEach(it => {
     }
   }
 
-  if (it.itemType && /^[A-Za-z\s&]+$/.test(it.itemType) && !['Herramienta', 'Recurso', 'Armadura', 'Consumible'].includes(it.itemType)) {
-    // check if english itemType
-    if (['Arrow', 'Ammo', 'Melee Armour', 'Basic Item', 'Quest Item', 'Mage Armour', 'Seed', 'Raw Ingredient', 'Ranged Armour', 'Shield', 'Cape', 'Consumables & Potions', 'Special Material', 'Consumable Tome', 'Bow'].includes(it.itemType)) {
-      untranslatedItemTypes.add(it.itemType);
+  // Comprobación de repairCost
+  if (it.repairCost && typeof it.repairCost === 'string' && it.repairCost.trim().length > 0) {
+    if (/\b(horn|visage|bone|bones|scrap|scraps|leather scrap)\b/i.test(it.repairCost)) {
+      untranslatedRepairCosts.push({ id: it.id, name: it.name, repairCost: it.repairCost });
     }
   }
 
-  if (it.recipe?.facility) {
-    if (['Armour Bench', 'Stone Range', 'Sawmill', 'Grindstone', 'Cooking Range', 'Advanced Tannery', 'Kiln', 'Grill', 'Pottery Wheel', 'Blacksmith Bench', 'Smithing Forge', 'Fletching Table', 'Stonecutter', 'Imbuing Barrel', 'Advanced Spinning Wheel'].includes(it.recipe.facility)) {
-      untranslatedFacilities.add(it.recipe.facility);
-    }
+  // Comprobación de Materiales de Receta
+  if (it.recipe?.materials) {
+    it.recipe.materials.forEach(m => {
+      if (['Redberries', 'Syrup de Arce', 'Device de Obsidiana'].includes(m.item) || /\b(Super Focused|Focused Construction|Focused Artisan)\b/i.test(m.item)) {
+        untranslatedMaterials.push({ id: it.id, material: m.item });
+      }
+    });
   }
 
-  if (it.stats?.damageType) {
-    if (['Arrow', 'Bolt', 'Water', 'Fire', 'Slash and Crush'].includes(it.stats.damageType)) {
-      untranslatedDamageTypes.add(it.stats.damageType);
-    }
+  // Comprobación de itemType
+  if (it.itemType && ['Arrow', 'Ammo', 'Melee Armour', 'Basic Item', 'Quest Item', 'Mage Armour', 'Seed', 'Raw Ingredient', 'Ranged Armour', 'Shield', 'Cape', 'Consumables & Potions', 'Special Material', 'Consumable Tome', 'Bow'].includes(it.itemType)) {
+    untranslatedItemTypes.add(it.itemType);
   }
 
-  if (it.stats?.attackStyle) {
-    if (['2-Handed Weapon', 'Two Handed', 'Main Hand', 'Ranged Weapon', 'Maul'].includes(it.stats.attackStyle)) {
-      untranslatedAttackStyles.add(it.stats.attackStyle);
-    }
+  // Comprobación de Instalaciones
+  if (it.recipe?.facility && ['Armour Bench', 'Stone Range', 'Sawmill', 'Grindstone', 'Cooking Range', 'Advanced Tannery', 'Kiln', 'Grill', 'Pottery Wheel', 'Blacksmith Bench', 'Smithing Forge', 'Fletching Table', 'Stonecutter', 'Imbuing Barrel', 'Advanced Spinning Wheel'].includes(it.recipe.facility)) {
+    untranslatedFacilities.add(it.recipe.facility);
+  }
+
+  // Comprobación de Tipos de Daño
+  if (it.stats?.damageType && ['Arrow', 'Bolt', 'Water', 'Fire', 'Slash and Crush'].includes(it.stats.damageType)) {
+    untranslatedDamageTypes.add(it.stats.damageType);
+  }
+
+  // Comprobación de Estilos de Ataque
+  if (it.stats?.attackStyle && ['2-Handed Weapon', 'Two Handed', 'Main Hand', 'Ranged Weapon', 'Maul'].includes(it.stats.attackStyle)) {
+    untranslatedAttackStyles.add(it.stats.attackStyle);
   }
 });
 
-console.log('Untranslated Names count:', untranslatedNames.length);
-console.log('Sample untranslated names (first 25):', untranslatedNames.slice(0, 25).map(x => x.name));
-console.log('Untranslated Descriptions count:', untranslatedDescriptions.length);
-console.log('Sample untranslated descriptions (first 5):', untranslatedDescriptions.slice(0, 5));
-console.log('Untranslated ItemTypes:', Array.from(untranslatedItemTypes));
-console.log('Untranslated Facilities:', Array.from(untranslatedFacilities));
-console.log('Untranslated DamageTypes:', Array.from(untranslatedDamageTypes));
-console.log('Untranslated AttackStyles:', Array.from(untranslatedAttackStyles));
+console.log('=== Verificación de Textos No Traducidos ===');
+console.log('Nombres no traducidos:', untranslatedNames.length, untranslatedNames);
+console.log('Descripciones en inglés:', untranslatedDescriptions.length);
+console.log('Costes de reparación en inglés:', untranslatedRepairCosts.length);
+console.log('Materiales en inglés:', untranslatedMaterials.length);
+console.log('ItemTypes en inglés:', Array.from(untranslatedItemTypes));
+console.log('Instalaciones en inglés:', Array.from(untranslatedFacilities));
+console.log('Tipos de daño en inglés:', Array.from(untranslatedDamageTypes));
+console.log('Estilos de ataque en inglés:', Array.from(untranslatedAttackStyles));

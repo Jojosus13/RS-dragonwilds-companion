@@ -12,7 +12,9 @@ export default function HeroBanner({
 }) {
   return (
     <section className="menu-hero-banner">
-      <div className="menu-hero-glow-orb" />
+      <div className="menu-hero-glow-container">
+        <div className="menu-hero-glow-orb" />
+      </div>
 
       <div className="menu-hero-content">
         <h1 className="menu-hero-title">
